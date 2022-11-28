@@ -1,0 +1,242 @@
+// // データファイル読み込み
+    int readData(FILE* fp, char* filename);
+    simple_printf("File read start\n");
+    char* datafilename = "C:\\Users\\Naoki Kanada\\Documents\\NUOPT\\mpc_kanada\\PathTrack\\MPC_koga\\nuopt_files_kanada\\parameter.txt";
+    // char* datafilename = "C:\\Users\\Naoki Kanada\\Documents\\NUOPT\\mpc_kanada\\PathTrack\\MPC_koga\\nuopt_files_kanada\\parameter_MPC.txt";
+    FILE* fp = fopen(datafilename,"r"); // データファイルを開く
+    readData(fp, datafilename); // データファイルを読み込む
+    fclose(fp);
+    simple_printf("\nFile read end\n");
+    
+    // 集合の定義
+    Parameter rcd_horizon ;
+    Parameter T_delta;
+    
+    Set tempSet = "0 .. 100";
+    Element i(set=tempSet);
+    Parameter a(index=i);
+    for(int m = 0;m < rcd_horizon+1;m++){
+        a[m] = 1;
+    }
+    
+    Set Horizon = setOf(i,a[i] > 0);  // ホライズンの長さ
+    
+    Element Idx( set = Horizon );
+    Parameter b(index=i);
+    for(int m = 0;m < rcd_horizon;m++){
+        b[m] = 1;
+    }
+    Set Tm = setOf(i,b[i] > 0);
+    Element tm(set = Tm);
+
+// パラメータ
+    // バイシクルモデルの係数行列に使うパラメータ
+    Parameter a11;
+    Parameter a12;
+    Parameter a21;
+    Parameter a22;
+    Parameter b1;
+    Parameter b2;
+    
+    Parameter K_log;
+    Parameter K_penalty;
+    Parameter K_noise_y;
+    Parameter K_noise_theta;
+    
+    Parameter Mean_y;
+    Parameter Mean_y_dot;
+    Parameter Mean_y_2dot;
+    Parameter Mean_theta;
+    Parameter Mean_theta_dot;
+    Parameter Mean_theta_2dot;   
+    
+    Parameter Variance_y;
+    Parameter Variance_y_dot;
+    Parameter Variance_y_2dot;
+    Parameter Variance_theta;
+    Parameter Variance_theta_dot;
+    Parameter Variance_theta_2dot;   
+    
+    Parameter p_y, p_theta;
+    Expression Chance_y, Chance_theta;
+    
+    Parameter Q_v;
+    Parameter Q_acc;
+    Parameter Q_y;
+    Parameter Q_y_dot;
+    Parameter Q_y_2dot;
+    Parameter Q_theta;
+    Parameter Q_theta_dot;
+    Parameter Q_theta_2dot;
+    Parameter Q_delta;
+    Parameter Q_delta_dot;
+    
+    Parameter Sf_v;
+    Parameter Sf_acc;
+    Parameter Sf_y;
+    Parameter Sf_y_dot;
+    Parameter Sf_y_2dot;
+    Parameter Sf_theta;
+    Parameter Sf_theta_dot;
+    Parameter Sf_theta_2dot;
+    Parameter Sf_delta;
+    Parameter Sf_delta_dot;
+    
+    Parameter Spre_v;
+    Parameter Spre_acc;
+    Parameter Spre_y;
+    Parameter Spre_y_dot;
+    Parameter Spre_y_2dot;
+    Parameter Spre_theta;
+    Parameter Spre_theta_dot;
+    Parameter Spre_theta_2dot;
+    Parameter Spre_delta;
+    Parameter Spre_delta_dot;
+    
+// 決定変数の定義,式クラス
+    Variable u( index = Idx );
+    Variable v( index = Idx );
+    Variable acc( index = Idx  );
+    Variable y( index = Idx );
+    Variable y_dot( index = Idx );
+    Variable y_2dot( index = Idx );
+    Variable theta( index = Idx );
+    Variable theta_dot( index = Idx );
+    Variable theta_2dot( index = Idx );
+    Variable delta( index = Idx ); 
+    Variable delta_dot( index = Idx );
+    
+// 制約条件の定義
+    VariableParameter u_init;
+    VariableParameter v_init;
+    VariableParameter acc_init;
+    VariableParameter y_init;
+    VariableParameter y_dot_init;
+    VariableParameter y_2dot_init;
+    VariableParameter theta_init;
+    VariableParameter theta_dot_init;
+    VariableParameter theta_2dot_init;
+    VariableParameter delta_init;
+    VariableParameter delta_dot_init;   
+        
+    VariableParameter u_pre;
+    VariableParameter v_pre;
+    VariableParameter acc_pre;
+    VariableParameter y_pre;
+    VariableParameter y_dot_pre;
+    VariableParameter y_2dot_pre;
+    VariableParameter theta_pre;
+    VariableParameter theta_dot_pre;
+    VariableParameter theta_2dot_pre;
+    VariableParameter delta_pre;
+    VariableParameter delta_dot_pre;
+    
+    VariableParameter v_ref( index = Idx );
+    VariableParameter v_max( index = Idx );
+    VariableParameter y_ref( index = Idx );
+    VariableParameter y_max( index = Idx );
+    VariableParameter y_min( index = Idx );
+    VariableParameter Rho( index = Idx );
+    
+// 制約条件
+    // 初期条件         
+    u[0] == u_init;
+    v[0] == v_init;
+    // acc[0] == acc_init;
+    y[0] == y_init;
+    // y_dot[0] == y_dot_init;
+    // y_2dot[0] == y_2dot_init;
+    theta[0] == theta_init;
+    // theta_dot[0] == theta_dot_init;
+    // theta_2dot[0] == theta_2dot_init;
+    delta[0] == delta_init;
+    // delta_dot[0] == delta_dot_init;   
+        
+        
+    // 値の更新    
+    // for文
+    for(int k = 0; k < rcd_horizon; k++)
+    {
+        acc[k+1] == (v[k+1] - v[k])/T_delta;
+        // v[k+1] = v[k] + acc[k]*T_delta;
+        u[k+1] == u[k] + v[k]*T_delta;
+        
+        y_2dot[k+1] == -a11*y_dot[k]/v[k] + a11*theta[k] + a12*theta_dot[k]/v[k] + b1*delta[k] + (a12 - v[k]*v[k])*Rho[k];
+        y_dot[k+1] == y_dot[k] + y_2dot[k]*T_delta;
+        y[k+1] == y[k] + y_dot[k]*T_delta;
+        
+        theta_2dot[k+1] == -a21*y_dot[k]/v[k] + a21*theta[k] + a22*theta_dot[k]/v[k] + b2*delta[k] + a22*Rho[k];
+        theta_dot[k+1] == theta_dot[k] + theta_2dot[k]*T_delta;
+        theta[k+1] == theta[k] + theta_dot[k]*T_delta; 
+        
+        delta_dot[k+1] == (delta[k+1] - delta[k])/T_delta;
+        // delta[k+1] = delta[k] + delta_dot[k]*T_delta;
+    }
+    
+    acc[Idx] >= -3, Idx;
+    acc[Idx] <= 3, Idx;
+    v[Idx] >= 0, Idx;
+    v[Idx] <= v_max[Idx], Idx;  
+    // y[Idx] >= y_min[Idx], Idx;
+    // y[Idx] <= y_max[Idx], Idx;
+    delta[Idx] <= 1.0472, Idx;
+    delta[Idx] >= -1.0472, Idx;
+    delta_dot[Idx] <= 0.18509305803, Idx; // ステア切る時1[s]でpiを意識
+    delta_dot[Idx] >= -0.18509305803, Idx;
+    
+    // SMPC's Chance Constraint
+    Chance_y = sqrt((p_y/(1-p_y))*Variance_y);
+    y_min[Idx] + Chance_y <= y[Idx], Idx;
+    y[Idx] <= y_max[Idx] - Chance_y, Idx;
+    
+// 目的関数
+    // options.noDefaultSolve = 1;
+    Objective obj(type=minimize); 
+    // Reference_free
+    obj =
+			Sf_v * (v[rcd_horizon] - v_ref[rcd_horizon]) * (v[rcd_horizon] - v_ref[rcd_horizon])
+			+ Sf_y * (y[rcd_horizon] - y_ref[rcd_horizon]) * (y[rcd_horizon] - y_ref[rcd_horizon])
+			
+			// last step
+			//+ Sf_acc * acc[rcd_horizon] * acc[rcd_horizon]
+			//+ Sf_delta_dot * delta_dot[rcd_horizon] * delta_dot[rcd_horizon]
+
+// 			// last and last-1
+// 			+ Spre_acc * (acc[rcd_horizon] - acc[rcd_horizon - 1]) * (acc[rcd_horizon] - acc[rcd_horizon - 1])
+// 			+ Spre_delta_dot * (delta_dot[rcd_horizon] - delta_dot[rcd_horizon - 1]) * (delta_dot[rcd_horizon] - delta_dot[rcd_horizon - 1])
+
+// 			// pre optとの比較
+// 			+ Spre_v * (v[1] - v_pre) * (v[1] - v_pre)
+// 			+ Spre_delta * (delta[1] - delta_pre) * (delta[1] - delta_pre)
+
+// 			// initial
+// 			+ Sf_acc * (acc[0] - acc_pre) * (acc[0] - acc_pre)
+// 			+ Sf_delta_dot * (delta_dot[0] - delta_dot_pre) * (delta_dot[0] - delta_dot_pre)
+
+			+ sum((
+				//Q_delta_dot * (delta_dot[tm + 1] - delta_dot[tm]) * (delta_dot[tm + 1] - delta_dot[tm])
+				//+ Q_acc * (acc[tm + 1] - acc[tm]) * (acc[tm + 1] - acc[tm])
+
+				Q_delta_dot * delta_dot[tm] * delta_dot[tm]
+				+ Q_acc * acc[tm] * acc[tm]
+
+				+ Q_v * (v[tm] - v_ref[tm]) * (v[tm] - v_ref[tm]))
+				// + Q_delta * delta[tm] * delta[tm]
+				
+				// + Q_y_2dot * y_2dot[tm] * y_2dot[tm]
+				// + Q_theta_2dot * theta_2dot[tm] * theta_2dot[tm]	
+
+				// + K_penalty *
+				// (y[tm] - y_ref[tm])
+				// *(y[tm] - y_ref[tm])
+				// *(y[tm] - y_ref[tm])
+				// *(y[tm] - y_ref[tm])
+				//+ K_penalty *
+				//(y[tm] - 0.5 * (y_max[tm] + y_min[tm]))
+				//*(y[tm] - 0.5 * (y_max[tm] + y_min[tm]))
+				//*(y[tm] - 0.5 * (y_max[tm] + y_min[tm]))
+				//*(y[tm] - 0.5 * (y_max[tm] + y_min[tm]))
+				, tm);
+    // MPC
+    // obj = Sf_y * (y[rcd_horizon]) * (y[rcd_horizon]) + Sf_theta * theta[rcd_horizon]* theta[rcd_horizon] + Sf_v * (v[rcd_horizon] - v_ref[rcd_horizon]) * (v[rcd_horizon] - v_ref[rcd_horizon]) + sum((Q_y * y[tm] * y[tm] * Q_delta_dot * delta_dot[tm] * delta_dot[tm] + Q_acc * acc[tm] * acc[tm] + Q_v * (v[tm] - v_ref[tm]) * (v[tm] - v_ref[tm])) + Q_delta * delta[tm] * delta[tm] - K_log*log(-y[tm]+y_max[tm]) - K_log*log(y[tm]-y_min[tm]), tm );
+    

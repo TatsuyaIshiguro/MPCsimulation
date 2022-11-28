@@ -1,0 +1,1239 @@
+{
+  "simplecontrol": [], 
+  "required": [], 
+  "vardata": [
+    {
+      "DEPEND": [], 
+      "SYMBOL": "rcd_horizon", 
+      "LINENO": 12, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 1, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"rcd_horizon\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "T_delta", 
+      "LINENO": 13, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 2, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"T_delta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "tempSet", 
+      "LINENO": 15, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 3, 
+      "TYPE": "Set", 
+      "OPTIONS": {
+        "name": "\"tempSet\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "tempSet"
+      ], 
+      "SYMBOL": "i", 
+      "LINENO": 16, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 4, 
+      "TYPE": "Element", 
+      "OPTIONS": {
+        "set": "tempSet", 
+        "name": "\"i\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "i"
+      ], 
+      "SYMBOL": "a", 
+      "LINENO": 17, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 5, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "index": "i", 
+        "name": "\"a\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Horizon", 
+      "LINENO": 22, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 6, 
+      "TYPE": "Set", 
+      "OPTIONS": {
+        "name": "\"Horizon\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Horizon"
+      ], 
+      "SYMBOL": "Idx", 
+      "LINENO": 24, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 7, 
+      "TYPE": "Element", 
+      "OPTIONS": {
+        "set": "Horizon", 
+        "name": "\"Idx\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "i"
+      ], 
+      "SYMBOL": "b", 
+      "LINENO": 25, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 8, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "index": "i", 
+        "name": "\"b\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Tm", 
+      "LINENO": 29, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 9, 
+      "TYPE": "Set", 
+      "OPTIONS": {
+        "name": "\"Tm\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Tm"
+      ], 
+      "SYMBOL": "tm", 
+      "LINENO": 30, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 10, 
+      "TYPE": "Element", 
+      "OPTIONS": {
+        "set": "Tm", 
+        "name": "\"tm\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "a11", 
+      "LINENO": 34, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 11, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"a11\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "a12", 
+      "LINENO": 35, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 12, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"a12\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "a21", 
+      "LINENO": 36, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 13, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"a21\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "a22", 
+      "LINENO": 37, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 14, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"a22\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "b1", 
+      "LINENO": 38, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 15, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"b1\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "b2", 
+      "LINENO": 39, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 16, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"b2\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "K_log", 
+      "LINENO": 41, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 17, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"K_log\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "K_penalty", 
+      "LINENO": 42, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 18, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"K_penalty\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "K_noise_y", 
+      "LINENO": 43, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 19, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"K_noise_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "K_noise_theta", 
+      "LINENO": 44, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 20, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"K_noise_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Mean_y", 
+      "LINENO": 46, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 21, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Mean_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Mean_y_dot", 
+      "LINENO": 47, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 22, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Mean_y_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Mean_y_2dot", 
+      "LINENO": 48, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 23, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Mean_y_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Mean_theta", 
+      "LINENO": 49, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 24, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Mean_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Mean_theta_dot", 
+      "LINENO": 50, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 25, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Mean_theta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Mean_theta_2dot", 
+      "LINENO": 51, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 26, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Mean_theta_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Variance_y", 
+      "LINENO": 53, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 27, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Variance_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Variance_y_dot", 
+      "LINENO": 54, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 28, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Variance_y_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Variance_y_2dot", 
+      "LINENO": 55, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 29, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Variance_y_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Variance_theta", 
+      "LINENO": 56, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 30, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Variance_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Variance_theta_dot", 
+      "LINENO": 57, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 31, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Variance_theta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Variance_theta_2dot", 
+      "LINENO": 58, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 32, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Variance_theta_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "p_y", 
+      "LINENO": 60, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 33, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"p_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "p_theta", 
+      "LINENO": 60, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 34, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"p_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Chance_y", 
+      "LINENO": 61, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 35, 
+      "TYPE": "Expression", 
+      "OPTIONS": {
+        "name": "\"Chance_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Chance_theta", 
+      "LINENO": 61, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 36, 
+      "TYPE": "Expression", 
+      "OPTIONS": {
+        "name": "\"Chance_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_v", 
+      "LINENO": 63, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 37, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_v\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_acc", 
+      "LINENO": 64, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 38, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_acc\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_y", 
+      "LINENO": 65, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 39, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_y_dot", 
+      "LINENO": 66, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 40, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_y_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_y_2dot", 
+      "LINENO": 67, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 41, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_y_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_theta", 
+      "LINENO": 68, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 42, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_theta_dot", 
+      "LINENO": 69, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 43, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_theta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_theta_2dot", 
+      "LINENO": 70, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 44, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_theta_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_delta", 
+      "LINENO": 71, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 45, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_delta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Q_delta_dot", 
+      "LINENO": 72, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 46, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Q_delta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_v", 
+      "LINENO": 74, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 47, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_v\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_acc", 
+      "LINENO": 75, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 48, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_acc\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_y", 
+      "LINENO": 76, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 49, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_y_dot", 
+      "LINENO": 77, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 50, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_y_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_y_2dot", 
+      "LINENO": 78, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 51, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_y_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_theta", 
+      "LINENO": 79, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 52, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_theta_dot", 
+      "LINENO": 80, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 53, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_theta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_theta_2dot", 
+      "LINENO": 81, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 54, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_theta_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_delta", 
+      "LINENO": 82, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 55, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_delta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Sf_delta_dot", 
+      "LINENO": 83, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 56, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Sf_delta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_v", 
+      "LINENO": 85, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 57, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_v\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_acc", 
+      "LINENO": 86, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 58, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_acc\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_y", 
+      "LINENO": 87, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 59, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_y\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_y_dot", 
+      "LINENO": 88, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 60, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_y_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_y_2dot", 
+      "LINENO": 89, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 61, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_y_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_theta", 
+      "LINENO": 90, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 62, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_theta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_theta_dot", 
+      "LINENO": 91, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 63, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_theta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_theta_2dot", 
+      "LINENO": 92, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 64, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_theta_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_delta", 
+      "LINENO": 93, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 65, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_delta\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "Spre_delta_dot", 
+      "LINENO": 94, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 66, 
+      "TYPE": "Parameter", 
+      "OPTIONS": {
+        "name": "\"Spre_delta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "u", 
+      "LINENO": 97, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 67, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"u\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "v", 
+      "LINENO": 98, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 68, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"v\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "acc", 
+      "LINENO": 99, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 69, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"acc\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "y", 
+      "LINENO": 100, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 70, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"y\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "y_dot", 
+      "LINENO": 101, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 71, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"y_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "y_2dot", 
+      "LINENO": 102, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 72, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"y_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "theta", 
+      "LINENO": 103, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 73, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"theta\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "theta_dot", 
+      "LINENO": 104, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 74, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"theta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "theta_2dot", 
+      "LINENO": 105, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 75, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"theta_2dot\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "delta", 
+      "LINENO": 106, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 76, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"delta\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "delta_dot", 
+      "LINENO": 107, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 77, 
+      "TYPE": "Variable", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"delta_dot\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "u_init", 
+      "LINENO": 110, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 78, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"u_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "v_init", 
+      "LINENO": 111, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 79, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"v_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "acc_init", 
+      "LINENO": 112, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 80, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"acc_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "y_init", 
+      "LINENO": 113, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 81, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"y_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "y_dot_init", 
+      "LINENO": 114, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 82, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"y_dot_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "y_2dot_init", 
+      "LINENO": 115, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 83, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"y_2dot_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "theta_init", 
+      "LINENO": 116, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 84, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"theta_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "theta_dot_init", 
+      "LINENO": 117, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 85, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"theta_dot_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "theta_2dot_init", 
+      "LINENO": 118, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 86, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"theta_2dot_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "delta_init", 
+      "LINENO": 119, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 87, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"delta_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "delta_dot_init", 
+      "LINENO": 120, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 88, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"delta_dot_init\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "u_pre", 
+      "LINENO": 122, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 89, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"u_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "v_pre", 
+      "LINENO": 123, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 90, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"v_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "acc_pre", 
+      "LINENO": 124, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 91, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"acc_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "y_pre", 
+      "LINENO": 125, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 92, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"y_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "y_dot_pre", 
+      "LINENO": 126, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 93, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"y_dot_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "y_2dot_pre", 
+      "LINENO": 127, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 94, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"y_2dot_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "theta_pre", 
+      "LINENO": 128, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 95, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"theta_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "theta_dot_pre", 
+      "LINENO": 129, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 96, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"theta_dot_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "theta_2dot_pre", 
+      "LINENO": 130, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 97, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"theta_2dot_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "delta_pre", 
+      "LINENO": 131, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 98, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"delta_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "delta_dot_pre", 
+      "LINENO": 132, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 99, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "name": "\"delta_dot_pre\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "v_ref", 
+      "LINENO": 134, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 100, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"v_ref\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "v_max", 
+      "LINENO": 135, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 101, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"v_max\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "y_ref", 
+      "LINENO": 136, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 102, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"y_ref\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "y_max", 
+      "LINENO": 137, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 103, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"y_max\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "y_min", 
+      "LINENO": 138, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 104, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"y_min\""
+      }
+    }, 
+    {
+      "DEPEND": [
+        "Idx"
+      ], 
+      "SYMBOL": "Rho", 
+      "LINENO": 139, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 105, 
+      "TYPE": "VariableParameter", 
+      "OPTIONS": {
+        "index": "Idx", 
+        "name": "\"Rho\""
+      }
+    }, 
+    {
+      "DEPEND": [], 
+      "SYMBOL": "obj", 
+      "LINENO": 194, 
+      "FILE": "NUOPT.smp", 
+      "DECLAREID": 106, 
+      "TYPE": "Objective", 
+      "OPTIONS": {
+        "type": "minimize", 
+        "name": "\"obj\""
+      }
+    }
+  ]
+}
