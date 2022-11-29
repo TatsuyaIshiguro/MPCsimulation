@@ -93,7 +93,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\eigen;C:\boost\include;C:\Users\ISHIGURO TATSUYA\source\repos\YusukeOi97\MPCsimulation\Common;C:\Users\ISHIGURO TATSUYA\source\repos\YusukeOi97\MPCsimulation\Launcher;$(IncludePath)</IncludePath>
+    <IncludePath>C:\eigen;C:\boost\include;C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;$(IncludePath)</IncludePath>
     <LibraryPath>C:\boost\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>

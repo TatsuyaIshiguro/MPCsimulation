@@ -17,7 +17,7 @@ constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
-char path[] = "\"C:\\MPCsimulation_backup\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
+char path[] = "\"C:\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
 
 bool CreateSharedMemory(const wchar_t* sharedMemoryName, DWORD size)
 {
@@ -333,7 +333,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
 	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
 
-	fprintf(gp, "set xrange[%f:%f]\n", 45.0,55.0);//x軸の範囲を指定x_ref_min-10.0,x_ref_max+10.0
+	fprintf(gp, "set xrange[%f:%f]\n", 25.0,75.0);//x軸の範囲を指定//x_ref_min-10.0,x_ref_max+10.0//45.0,55.0
 	fprintf(gp, "set yrang[%f:%f]\n",y_ref_min-5.0,y_ref_max+5.0);
 	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
 	fprintf(gp, "set ylabel \"y\"\n");
@@ -479,7 +479,7 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv
-	double u_start = 40; //Initial u
+	double u_start = 25; //Initial u
 	double u_end = 100; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
