@@ -224,10 +224,10 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); VariableParameter Rho(index = Idx, name = "Rho");	this->Rho.setEntity(Rho); Rho.entryOutput();
 
 		//•àsŽÒ
-		smp_line(__LINE__, __FILE__); VariableParameter x_pd(index = Idx, name = "x_pd");	this->x_pd.setEntity(x_pd); x_pd.entryOutput();
-		smp_line(__LINE__, __FILE__); VariableParameter y_pd(index = Idx, name = "y_pd");	this->y_pd.setEntity(y_pd); y_pd.entryOutput();
-		smp_line(__LINE__, __FILE__); VariableParameter vel_pd(index = Idx, name = "vel_pd");	this->vel_pd.setEntity(vel_pd); vel_pd.entryOutput();
-		smp_line(__LINE__, __FILE__); VariableParameter closs_pd(index = Idx, name = "closs_pd");	this->closs_pd.setEntity(closs_pd); closs_pd.entryOutput();
+		smp_line(__LINE__, __FILE__); VariableParameter x_pd(name = "x_pd");	this->x_pd.setEntity(x_pd); x_pd.entryOutput();
+		smp_line(__LINE__, __FILE__); VariableParameter y_pd(name = "y_pd");	this->y_pd.setEntity(y_pd); y_pd.entryOutput();
+		smp_line(__LINE__, __FILE__); VariableParameter vel_pd(name = "vel_pd");	this->vel_pd.setEntity(vel_pd); vel_pd.entryOutput();
+		smp_line(__LINE__, __FILE__); VariableParameter closs_pd(name = "closs_pd");	this->closs_pd.setEntity(closs_pd); closs_pd.entryOutput();
 		smp_line(__LINE__, __FILE__); Variable Dist(index = Idx, name = "Dist");	this->Dist.setEntity(Dist); Dist.entryOutput();
 
 		smp_line(__LINE__, __FILE__); u[0] == init_u;
@@ -264,8 +264,9 @@ System_NUOPT::System_NUOPT()
 			smp_line(__LINE__, __FILE__); v_center_r[k + 1] == v[k + 1] + (dist_front * sin(theta[k + 1] - theta_front) + dist_rear * sin(theta[k + 1] + M_PI + theta_rear)) / 2;
 			smp_line(__LINE__, __FILE__); v_rear_l[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI - theta_rear);
 			smp_line(__LINE__, __FILE__); v_rear_r[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI + theta_rear);
-			smp_line(__LINE__, __FILE__); Dist[k] == sqrt(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2));
+			smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2), 0.5);
 		}
+		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(pow(u[rcd_horizon] - x_pd, 2) + pow(v[rcd_horizon] - y_pd, 2), 0.5);
 
 		//§–ñðŒ
 		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;

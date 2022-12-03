@@ -86,14 +86,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\MPCsimulation_backup\MPCsimulation\Common;C:\MPCsimulation_backup\MPCsimulation\Launcher;C:\eigen;C:\boost\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;C:\eigen;C:\boost\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\boost\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\eigen;C:\boost\include;C:\Users\ISHIGURO TATSUYA\source\repos\YusukeOi97\MPCsimulation\Common;C:\Users\ISHIGURO TATSUYA\source\repos\YusukeOi97\MPCsimulation\Launcher;$(IncludePath)</IncludePath>
+    <IncludePath>C:\eigen;C:\boost\include;C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;$(IncludePath)</IncludePath>
     <LibraryPath>C:\boost\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>

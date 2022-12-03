@@ -415,6 +415,8 @@ void MyProblem::Solve()
 	v_front_max.SetData();
 	VariableDumper v_front_min(m->v_front_min.val);
 	v_front_min.SetData();
+	VariableDumper Dist(m->Dist.val);
+	Dist.SetData();
 
 	this->u = u.data;
 	this->vel = vel.data;

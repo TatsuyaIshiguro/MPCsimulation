@@ -17,7 +17,7 @@ constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
-char path[] = "\"C:\\MPCsimulation_backup\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
+char path[] = "\"C:\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
 
 bool CreateSharedMemory(const wchar_t* sharedMemoryName, DWORD size)
 {
@@ -197,7 +197,7 @@ UpdatePed(Pedestrian& ped, double T_delta)
 void plot_course(std::vector<double> x_ref,std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
 {
 	FILE* gp;
-	gp=_popen("C:\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
+	gp=_popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
 	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
     //  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
 	x_ref.resize(400);
@@ -270,7 +270,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	}
 
 	//csv読み込み
-	RTCLib::CSVLoader CSV_prm("C:\\MPCLauncher\\MPCLauncher\\Parameter_setting\\parameter.csv", 1);
+	RTCLib::CSVLoader CSV_prm("C:\\MPCsimulation\\Common\\Parameter_setting\\parameter.csv", 1);
 	Prm prm;
 	prm.Load_Prm(CSV_prm, 0);
 
@@ -309,7 +309,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	vector<double> y_min;
 
 	FILE* gp,*fp;
-	gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");//gnuplotを起動//-persistがあるとずっと表示
+	gp = _popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe", "w");//gnuplotを起動//-persistがあるとずっと表示
 	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
 	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
 	x_ref.resize(400);
@@ -333,7 +333,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
 	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
 
-	fprintf(gp, "set xrange[%f:%f]\n", 45.0,55.0);//x軸の範囲を指定x_ref_min-10.0,x_ref_max+10.0
+	fprintf(gp, "set xrange[%f:%f]\n", 40.0,60.0);//x軸の範囲を指定x_ref_min-10.0,x_ref_max+10.0
 	fprintf(gp, "set yrang[%f:%f]\n",y_ref_min-5.0,y_ref_max+5.0);
 	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
 	fprintf(gp, "set ylabel \"y\"\n");
@@ -478,7 +478,7 @@ int main()
 #endif // SINE
 
 #ifdef CSV
-	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv
+	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv
 	double u_start = 40; //Initial u
 	double u_end = 100; //goal of u
 	double v_start = 0; //Initial v
