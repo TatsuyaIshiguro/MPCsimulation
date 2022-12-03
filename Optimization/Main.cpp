@@ -115,7 +115,6 @@ int main()
 	myProblem.SetV(shareddata->vel_ref);
 	myProblem.SetAllState();
 	myProblem.Solve();
-	//myProblem.UpdateState();
 
 	//‹OÕ‚ğGlobal‚É•ÏŠ·
 	for (int i = 0; i < vsize; i++)

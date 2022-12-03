@@ -20,7 +20,7 @@ constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
-FILE*gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
+FILE*gp = _popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
 
 char path[] = "\"C:\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
 
@@ -186,8 +186,9 @@ UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
 
 
 	//データの受け渡し
-	shareddata->x_pd = ped.x_pd ;
+	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
+	shareddata->vel_pd = ped.vel_pd;
 	shareddata->closs_pd = ped.closs_pd;
 
 }
@@ -199,7 +200,7 @@ UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
 void plot_course(std::vector<double> x_ref, std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
 {
 	FILE* gp, * fp;
-	gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
+	gp = _popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
 	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
 	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
 	x_ref.resize(400);
@@ -420,8 +421,10 @@ void result_point(SharedData* shareddata, FILE* gp,bool IsFirst)
 #endif//OA
 
 #ifdef CSV
-	x_range_min = x_ref_min - 10.0;
-	x_range_max = x_ref_max + 10.0;
+	//x_range_min = x_ref_min - 10.0;
+	//x_range_max = x_ref_max + 10.0;
+	x_range_min = 25;
+	x_range_max = 40;
 #endif //CSV
 
 	fprintf(gp, "set xrange[%f:%f]\n", x_range_min, x_range_max);//x軸の範囲を指定
@@ -633,7 +636,7 @@ int main()
 #endif // SINE
 
 #ifdef CSV
-	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv
+	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv
 	double u_start = 25; //Initial u
 	double u_end = 75; //goal of u
 	double v_start = 0; //Initial v

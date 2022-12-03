@@ -229,8 +229,8 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); VariableParameter vel_pd(name = "vel_pd");	this->vel_pd.setEntity(vel_pd); vel_pd.entryOutput();
 		smp_line(__LINE__, __FILE__); VariableParameter closs_pd(name = "closs_pd");	this->closs_pd.setEntity(closs_pd); closs_pd.entryOutput();
 		smp_line(__LINE__, __FILE__); Variable Dist(index = Idx, name = "Dist");	this->Dist.setEntity(Dist); Dist.entryOutput();
-		smp_line(__LINE__, __FILE__); VariableParameter x_PD(index = Idx, name = "x_PD");	this->x_PD.setEntity(x_PD); x_PD.entryOutput();
-		smp_line(__LINE__, __FILE__); VariableParameter y_PD(index = Idx, name = "y_PD");	this->y_PD.setEntity(y_PD); y_PD.entryOutput();
+		smp_line(__LINE__, __FILE__); Variable x_PD(index = Idx, name = "x_PD");	this->x_PD.setEntity(x_PD); x_PD.entryOutput();
+		smp_line(__LINE__, __FILE__); Variable y_PD(index = Idx, name = "y_PD");	this->y_PD.setEntity(y_PD); y_PD.entryOutput();
 
 		smp_line(__LINE__, __FILE__); u[0] == init_u;
 		smp_line(__LINE__, __FILE__); vel[0] == init_vel;
@@ -281,7 +281,7 @@ System_NUOPT::System_NUOPT()
 			
 
 		}
-		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(pow(u[rcd_horizon] - x_pd, 2) + pow(v[rcd_horizon] - y_pd, 2), 0.5);
+		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2), 0.5);
 
 		//§–ñðŒ
 		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;
