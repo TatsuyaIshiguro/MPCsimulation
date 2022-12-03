@@ -26,7 +26,7 @@ FUNC_EVAL_COUNT                                             0
 FACTORIZATION_COUNT                                         0
 RESIDUAL                                      1.181385281e-15
 CONSTRAINT_INFEASIBILITY                          1.442695041
-ELAPSED_TIME(sec.)                                       0.05
+ELAPSED_TIME(sec.)                                       0.04
 
 %%
 %% VARIABLES 

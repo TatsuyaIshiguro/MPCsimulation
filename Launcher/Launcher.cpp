@@ -186,8 +186,9 @@ UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
 
 
 	//データの受け渡し
-	shareddata->x_pd = ped.x_pd ;
+	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
+	shareddata->vel_pd = ped.vel_pd;
 	shareddata->closs_pd = ped.closs_pd;
 
 }
@@ -420,8 +421,10 @@ void result_point(SharedData* shareddata, FILE* gp,bool IsFirst)
 #endif//OA
 
 #ifdef CSV
-	x_range_min = x_ref_min - 10.0;
-	x_range_max = x_ref_max + 10.0;
+	//x_range_min = x_ref_min - 10.0;
+	//x_range_max = x_ref_max + 10.0;
+	x_range_min = 25;
+	x_range_max = 40;
 #endif //CSV
 
 	fprintf(gp, "set xrange[%f:%f]\n", x_range_min, x_range_max);//x軸の範囲を指定
@@ -502,7 +505,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	}
 
 	//csv読み込み
-	RTCLib::CSVLoader CSV_prm("C:\\MPCLauncher\\MPCLauncher\\Parameter_setting\\parameter.csv", 1);
+	RTCLib::CSVLoader CSV_prm("C:\\MPCsimulation\\Common\\Parameter_setting\\parameter.csv", 1);
 	Prm prm;
 	prm.Load_Prm(CSV_prm, 0);
 
@@ -550,9 +553,9 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 #ifdef PD
 		UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
 #endif //PD
-		//result_plot(shareddata,gp);//結果プロット
+		result_plot(shareddata,gp);//結果プロット
 		
-		result_point(shareddata, gp, IsFirst);
+		//result_point(shareddata, gp, IsFirst);
 	
 
 		if (!ReadSharedMemory(SHARED_MEMORY_SIZE))
