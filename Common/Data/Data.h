@@ -13,6 +13,7 @@ struct SharedData
 	double vel_ref;
 	double u[vsize], vel[vsize], acc[vsize], v[vsize], v_dot[vsize], v_2dot[vsize], theta[vsize], theta_dot[vsize], theta_2dot[vsize], delta[vsize], delta_dot[vsize], front_u[vsize], lateral_G[vsize], lateral_jerk[vsize], longitudinal_jerk[vsize];
 	double x[vsize], y[vsize], yaw[vsize];
+	double x_PD[vsize], y_PD[vsize];//歩行者の状態量
 
 	double l_f, l_r, width, dist_front, dist_rear, theta_front, theta_rear; //dist_front->フロントオーバーハングを考慮したときの左右の頂点と重心との距離、theta_front, theta_rear->左右頂点と重心間の線分と軸との角度
 	double a11, a12, a21, a22, b1, b2; //DBMにおける係数

@@ -51,6 +51,8 @@ MyProblem::MyProblem(SharedData* shareddata)
 		y_pd = shareddata->y_pd;
 		vel_pd = shareddata->vel_pd;
 		closs_pd = shareddata->closs_pd;
+		//
+
 
 		l_f = shareddata->l_f;
 		l_r = shareddata->l_r;
@@ -143,6 +145,9 @@ void MyProblem::InitOptVec()
 	x.resize(vsize);
 	y.resize(vsize);
 	yaw.resize(vsize);
+	//
+	x_PD.resize(vsize);
+	y_PD.resize(vsize);
 }
 
 void MyProblem::InitState(SharedData* shareddata)
@@ -160,6 +165,10 @@ void MyProblem::InitState(SharedData* shareddata)
 		v_2dot[i] = shareddata->v_2dot[i];
 		theta_2dot[i] = shareddata->theta_2dot[i];
 		delta[i] = shareddata->delta[i];
+		//
+		x_PD[i] = shareddata->x_PD[i];
+		y_PD[i] = shareddata->y_PD[i];
+		//
 	}
 	u[rcd_horizon - 1] = u[rcd_horizon - 2] + vel[rcd_horizon - 2] * T_delta;
 
@@ -309,6 +318,10 @@ void MyProblem::SetAllState()
 		m->v_2dot[i] = v_2dot[i];
 		m->theta_2dot[i] = theta_2dot[i];
 		m->delta[i] = delta[i];
+		//
+		m->x_PD[i] = x_PD[i];
+		m->y_PD[i] = y_PD[i];
+		//
 	}
 
 
@@ -333,6 +346,10 @@ void MyProblem::UpdateState()
 		v_2dot[i] = v_2dot[i + 1];
 		theta_2dot[i] = theta_2dot[i + 1];
 		delta[i] = delta[i + 1];
+		//
+		x_PD[i] = x_PD[i + 1];
+		y_PD[i] = y_PD[i + 1];
+		//
 	}
 	u[rcd_horizon - 1] = u[rcd_horizon - 2] + vel[rcd_horizon - 1] * T_delta;
 }
@@ -415,6 +432,12 @@ void MyProblem::Solve()
 	v_front_max.SetData();
 	VariableDumper v_front_min(m->v_front_min.val);
 	v_front_min.SetData();
+	//
+	VariableDumper x_PD(m->x_PD.val);
+	x_PD.SetData();
+	VariableDumper y_PD(m->y_PD.val);
+	y_PD.SetData();
+	//
 
 	this->u = u.data;
 	this->vel = vel.data;
@@ -427,6 +450,10 @@ void MyProblem::Solve()
 	this->theta_2dot = theta_2dot.data;
 	this->delta = delta.data;
 	this->delta_dot = delta_dot.data;
+	//
+	this->x_PD = x_PD.data;
+	this->y_PD = y_PD.data;
+	//
 
 	this->v_ref = v_ref.data;
 	this->v_max = v_max.data;

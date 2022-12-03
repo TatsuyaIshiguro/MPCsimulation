@@ -9,13 +9,18 @@
 #include <ParameterLoader/MyParameters.h>
 #include "Pedestrian.h"
 #include <cmath>
-
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
 
 //Setting of shared memory
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
 constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
+
+FILE*gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
 
 char path[] = "\"C:\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
 
@@ -156,50 +161,47 @@ void UpdateState()
 	}
 }
 
-//歩行者の初期設定
-//void InitsettingPD(Pedestrian& ped)
-//{
-//	ped.x_pd = ped.x_pd_start;
-//	ped.y_pd = ped.y_pd_start;
-//	ped.vel_pd = ped.vel_pd_start;
-//
-//}
+
 
 //歩行者の更新
 void 
-UpdatePed(Pedestrian& ped, double T_delta)
+UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
 {
 	double x_car, y_car;
 	x_car = shareddata->x[0];
 	y_car = shareddata->y[0];
 	double dist_Car_Pd = sqrt(pow(ped.x_pd - x_car, 2) + pow(ped.y_pd - y_car, 2));
-	double closs_pd = (ped.y_pd_start) * sqrt(pow(6, 2) + pow(ped.vel_pd, 2)) / (ped.vel_pd);//pow(6, 2)をpow(vel_ref,2)にしたい
+	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
+
+
 
 	ped.x_pd = ped.x_pd;
 
-	if (dist_Car_Pd >= closs_pd) {
-		ped.y_pd = ped.y_pd;
-	}
-	else {
+	if (x_car+ped.closs_range >= closs_pd) {
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 	}
+	else {
+		ped.y_pd = ped.y_pd;
+	}
 
+
+	//データの受け渡し
 	shareddata->x_pd = ped.x_pd ;
 	shareddata->y_pd = ped.y_pd;
 	shareddata->closs_pd = ped.closs_pd;
 
-
-
 }
 
 
+
+
 //コースの表示
-void plot_course(std::vector<double> x_ref,std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
+void plot_course(std::vector<double> x_ref, std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
 {
-	FILE* gp;
-	gp=_popen("C:\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
+	FILE* gp, * fp;
+	gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
 	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
-    //  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
+	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
 	x_ref.resize(400);
 	y_ref.resize(400);
 	x_max.resize(400);
@@ -221,35 +223,265 @@ void plot_course(std::vector<double> x_ref,std::vector<double> y_ref, std::vecto
 	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
 	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
 
-	fprintf(gp, "set xrange[x_ref_min-5.0:x_ref_max+5.0]\n");//x軸の範囲を指定
-	fprintf(gp, "set yrange[y_ref_min-5.0:y_ref_max+5.0]\n");
+	fprintf(gp, "set xrange[%f:%f]\n", x_ref_min - 10.0, x_ref_max + 10.0);//x軸の範囲を指定
+	fprintf(gp, "set yrange[% f:% f]\n", y_ref_min - 5.0, y_ref_max + 5.0);
 	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
 	fprintf(gp, "set ylabel \"y\"\n");
 
-	fprintf(gp, "plot '-' pt 7 ps 0.5 lc 'red' \n");//points/lineなどでグラフの種類を指定
-	//pt=pointtype 番号を指定してポイントの型を決める
-	//ps=pointsize 数字を入力してポイントのサイズを決める
-	//lc カラー名を入れる　lc "red"　見たいな感じ
+	fp = fopen("course.dat", "w");
 
-	for (int i = 0; i < x_ref.size(); i++)
+	for (int i = 0; i < 400; i++)
 	{
-		fprintf(gp, "%lf %lf\n", x_ref[i], y_ref[i]);
-		fprintf(gp, "%lf %lf\n", x_max[i], y_max[i]);
-		fprintf(gp, "%lf %lf\n", x_min[i], y_min[i]);
-		fflush(gp);//バッファにため込まれているデータを解放する//必須
+		fprintf(fp, "%f %f\n", x_max[i], y_max[i]);
 	}
 
-	fprintf(gp, "e\n");//グラフを書き終わったら書くやつ
-	fflush(gp);//バッファにため込まれているデータを解放する//必須
+	fclose(fp);
+
+	fp = fopen("course.dat", "a");
+
+	for (int i = 0; i < 400; i++)
+	{
+		fprintf(fp, "%f %f\n", x_min[i], y_min[i]);
+	}
+
+	fclose(fp);
+
+	fp = fopen("course.dat", "a");
+
+	for (int i = 0; i < 400; i++)
+	{
+		fprintf(fp, "%f %f\n", x_ref[i], y_ref[i]);
+	}
+
+	fclose(fp);
+
+	fprintf(gp, "plot 'course.dat'  pt 7 ps 0.4 lc 'red'\n");
+
+	fclose(fp);
+	fflush(gp);
+
 	fprintf(gp, "exit\n");//gnuplotの終了
 	_pclose(gp);
-
 }
 
+//結果の表示のコース
+void result_course_plot(SharedData* shareddata)
+{
+	FILE *fp;
+	vector<double> x_max;
+	vector<double> y_max;
+	vector<double> x_min;
+	vector<double> y_min;
+
+	x_max.resize(400);
+	y_max.resize(400);
+	x_min.resize(400);
+	y_min.resize(400);
+
+	for (int i = 0; i < 400; i++) {
+		x_max[i] = shareddata->course[8][i];
+		y_max[i] = shareddata->course[9][i];
+		x_min[i] = shareddata->course[6][i];
+		y_min[i] = shareddata->course[7][i];
+	}
+
+	fp = fopen("result_point.dat", "w");
+
+	for (int i = 0; i < 400; i++)
+	{
+		fprintf(fp, "%f %f\n", x_max[i], y_max[i]);
+	}
+
+	fclose(fp);
+
+	fp = fopen("result_point.dat", "a");
+
+	for (int i = 0; i < 400; i++)
+	{
+		fprintf(fp, "%f %f\n", x_min[i], y_min[i]);
+	}
+
+	fclose(fp);
+}
+
+//結果の表示(line)
+void result_plot(SharedData* shareddata ,FILE*gp)
+{
+	double x_MPC = shareddata->x[0];
+	double y_MPC = shareddata->y[0];
+#ifdef PD
+	double x_pd = shareddata->x_pd;
+	double y_pd = shareddata->y_pd;
+#endif//PD
+
+	vector<double> x_ref;
+	vector<double> y_ref;
 
 
+	x_ref.resize(400);
+	y_ref.resize(400);
+
+	for (int i = 0; i < 400; i++) {
+		x_ref[i] = shareddata->course[0][i];
+		y_ref[i] = shareddata->course[1][i];
+
+	}
+	double x_ref_max, y_ref_max, x_ref_min, y_ref_min;
+	x_ref_max = *std::max_element(x_ref.begin(), x_ref.end());
+	y_ref_max = *std::max_element(y_ref.begin(), y_ref.end());
+	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
+	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
+
+	double x_range_min, x_range_max;
+
+#ifdef SINE
+	x_range_min = x_ref_min - 10.0;
+	x_range_max = x_ref_max + 10.0;
+#endif//SINE
+
+#ifdef OA
+	x_range_min = 25.0;
+	x_range_max = 85.0;
+#endif//OA
+
+#ifdef CSV
+	x_range_min = x_ref_min - 10.0;
+	x_range_max = x_ref_max + 10.0;
+#endif //CSV
+
+	fprintf(gp, "set xrange[%f:%f]\n", x_range_min, x_range_max);//x軸の範囲を指定
+	fprintf(gp, "set yrang[%f:%f]\n", y_ref_min - 5.0, y_ref_max + 5.0);
+	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
+	fprintf(gp, "set ylabel \"y\"\n");
+	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
+
+	FILE * fp;
+	//gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");
 
 
+	//fprintf(gp, "set term gif animate\n");	// 出力ターミナルをgif, animateオプションを付ける
+	//fprintf(gp, "set output 'test.gif'\n");	// 出力ファイル名
+	
+
+	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
+
+	fp = fopen("result_point.dat", "a");
+	fprintf(fp, "%f %f\n", x_MPC, y_MPC);
+
+#ifdef PD
+	fprintf(fp, "%f %f\n", x_pd, y_pd);
+#endif//PD
+
+	fprintf(gp, "plot 'result_point.dat'  pt 7 ps 0.4 lc 'blue'\n");
+
+	fclose(fp);
+	fflush(gp);
+}
+
+//結果の表示(points)
+void result_point(SharedData* shareddata, FILE* gp,bool IsFirst)
+{
+	FILE* fp1,*fp2;
+	double x_MPC = shareddata->x[0];
+	double y_MPC = shareddata->y[0];
+#ifdef PD
+	double x_pd = shareddata->x_pd;
+	double y_pd = shareddata->y_pd;
+#endif//PD
+
+	vector<double> x_ref;
+	vector<double> y_ref;
+
+
+	x_ref.resize(400);
+	y_ref.resize(400);
+
+	for (int i = 0; i < 400; i++) {
+		x_ref[i] = shareddata->course[0][i];
+		y_ref[i] = shareddata->course[1][i];
+
+	}
+	double x_ref_max, y_ref_max, x_ref_min, y_ref_min;
+	x_ref_max = *std::max_element(x_ref.begin(), x_ref.end());
+	y_ref_max = *std::max_element(y_ref.begin(), y_ref.end());
+	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
+	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
+
+	double x_range_min, x_range_max;
+
+#ifdef SINE
+	x_range_min = x_ref_min - 10.0;
+	x_range_max = x_ref_max + 10.0;
+#endif//SINE
+
+#ifdef OA
+	x_range_min = 25.0;
+	x_range_max = 85.0;
+#endif//OA
+
+#ifdef CSV
+	x_range_min = x_ref_min - 10.0;
+	x_range_max = x_ref_max + 10.0;
+#endif //CSV
+
+	fprintf(gp, "set xrange[%f:%f]\n", x_range_min, x_range_max);//x軸の範囲を指定
+	fprintf(gp, "set yrang[%f:%f]\n", y_ref_min - 5.0, y_ref_max + 5.0);
+	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
+	fprintf(gp, "set ylabel \"y\"\n");
+	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
+
+	//bool IsFirst = true;
+	if (IsFirst) {
+		fp1 = fopen("result_point.dat", "a");
+		fprintf(fp1, "%f %f\n", x_MPC, y_MPC);
+
+#ifdef PD
+		fprintf(fp1, "%f %f\n", x_pd, y_pd);
+#endif//PD
+		fprintf(gp, "plot 'result_point.dat'  pt 7 ps 0.4 lc 'blue'\n");
+
+		fclose(fp1);
+		fflush(gp);
+		IsFirst = false;
+
+	}
+	else {
+		ifstream ifs("result_point.dat");
+		if (ifs.fail()) {
+			cerr << "Cannot open file\n";
+			exit(0);
+		}
+		string str;
+		vector<double> x_point, y_point;
+		double x_temp, y_temp;
+		while (getline(ifs, str)) {
+			stringstream ss(str);
+			ss >> x_temp >> y_temp;
+			x_point.push_back(x_temp);
+			y_point.push_back(y_temp);
+			
+		}
+		x_point.erase(x_point.end() - 1);
+		y_point.erase(y_point.end() - 1);
+
+		fp2 = fopen("result_pd_point.dat", "w");
+
+		for (int i = 0; i < size(x_point); i++)
+		{
+			fprintf(fp2, "%f %f\n", x_point[i], y_point[i]);
+		}
+
+		fprintf(fp2, "%f %f\n", x_MPC, y_MPC);
+
+#ifdef PD
+		fprintf(fp2, "%f %f\n", x_pd, y_pd);
+#endif//PD
+		fprintf(gp, "plot 'result_pd_point.dat'  pt 7 ps 0.4 lc 'blue'\n");
+
+		fclose(fp2);
+		fflush(gp);
+	}
+}
 
 
 void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref)
@@ -274,7 +506,9 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	Prm prm;
 	prm.Load_Prm(CSV_prm, 0);
 
+#ifdef PD	//歩行者の初期設定
 	Pedestrian ped;
+#endif //PD
 
 	//線形補間用
 	LinearInterporater table;
@@ -294,79 +528,18 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	InitSetting(course, prm, vel_ref);
 	InitState(u_start, v_start, theta_start, vel_ref, prm.T_delta);
 	
-	//歩行者の初期設定
-	//InitsettingPD(ped);
+
 
 	//コースのプロット
 	plot_course(course[0], course[1], course[6], course[7], course[8], course[9]);
 
-	///////////計算結果のプロット//////////////////////////////////////////////////////////////////////////////////////////////////////////
-	vector<double> x_ref;
-	vector<double> y_ref;
-	vector<double> x_max;
-	vector<double> y_max;
-	vector<double> x_min;
-	vector<double> y_min;
-
-	FILE* gp,*fp;
-	gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");//gnuplotを起動//-persistがあるとずっと表示
-	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
-	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
-	x_ref.resize(400);
-	y_ref.resize(400);
-	x_max.resize(400);
-	y_max.resize(400);
-	x_min.resize(400);
-	y_min.resize(400);
-
-	for (int i = 0; i < 400; i++) {
-		x_ref[i] = shareddata->course[0][i];
-		y_ref[i] = shareddata->course[1][i];
-		x_max[i] = shareddata->course[8][i];
-		y_max[i] = shareddata->course[9][i];
-		x_min[i] = shareddata->course[6][i];
-		y_min[i] = shareddata->course[7][i];
-	}
-	double x_ref_max, y_ref_max, x_ref_min, y_ref_min;
-	x_ref_max = *std::max_element(x_ref.begin(), x_ref.end());
-	y_ref_max = *std::max_element(y_ref.begin(), y_ref.end());
-	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
-	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
-
-	fprintf(gp, "set xrange[%f:%f]\n", 25.0,75.0);//x軸の範囲を指定//x_ref_min-10.0,x_ref_max+10.0//45.0,55.0
-	fprintf(gp, "set yrang[%f:%f]\n",y_ref_min-5.0,y_ref_max+5.0);
-	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
-	fprintf(gp, "set ylabel \"y\"\n");
-
-
-	//gifの保存用　
-	//リアルタイムで動きを見たいときにはこの下の２行をコメントアウトする
-	//fprintf(gp, "set terminal gif animate delay 1\n");//出力ターミナルをgif, animateオプションをつける
-	//fprintf(gp, "set output 'result.gif'\n");//出力ファイル名
-	
-
-	fp = fopen("result_point.dat", "w");
-
-	for (int i = 0; i < 400; i++)
-	{
-		fprintf(fp, "%f %f\n", x_max[i], y_max[i]);
-	}
-
-	fclose(fp);
-
-	fp = fopen("result_point.dat", "a");
-
-	for (int i = 0; i < 400; i++)
-	{
-		fprintf(fp, "%f %f\n", x_min[i], y_min[i]);
-	}
-
-	fclose(fp);
-	double x_MPC, y_MPC;
-	double x_pd, y_pd;
-
+	//結果のプロットの準備
+	result_course_plot(shareddata);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	bool IsFirst = true;
 
 
 	//loop
@@ -374,26 +547,13 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	{
 		system(path);
 		UpdateState();
-		UpdatePed(ped,prm.T_delta);//歩行者
+#ifdef PD
+		UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
+#endif //PD
+		//result_plot(shareddata,gp);//結果プロット
 		
-
-		///////結果のプロット用/////////////////////////////////////////////////////////////////////////////////////////
-		x_MPC = shareddata->x[0];
-		y_MPC = shareddata->y[0];
-		x_pd = shareddata->x_pd;
-		y_pd = shareddata->y_pd;
-
-
-		fp = fopen("result_point.dat", "a");
-		fprintf(fp, "%f %f\n", x_MPC, y_MPC);
-		fprintf(fp, "%f %f\n", x_pd, y_pd);
-		fprintf(gp, "plot 'result_point.dat'  pt 7 ps 0.4 lc 'blue'\n");
-		
-		fclose(fp);
-		fflush(gp);
-
-		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		
+		result_point(shareddata, gp, IsFirst);
+	
 
 		if (!ReadSharedMemory(SHARED_MEMORY_SIZE))
 		{
@@ -405,12 +565,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 	UnInitializeSharedMemory();
 
-	////////////////////////////////////////////////////////////////////////////////
-	fprintf(gp, "exit\n");//gnuplotの終了
-	fflush(gp);//バッファにため込まれているデータを解放する//必須
-	//fprintf(gp, "set output\n");//gifの出力
-	_pclose(gp);
-	////////////////////////////////////////////////////////////////////////////////
+	
 
 }
 
@@ -480,10 +635,10 @@ int main()
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv
 	double u_start = 25; //Initial u
-	double u_end = 100; //goal of u
+	double u_end = 75; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
-	double vel_ref = 6; //Reference velocity
+	double vel_ref = 6; //Reference velocit
 
 	course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 	SetFrenet(course, setting, frenet);
