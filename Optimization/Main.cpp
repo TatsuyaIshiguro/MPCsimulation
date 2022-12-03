@@ -66,6 +66,10 @@ bool SetSharedData(MyProblem myProblem)
 		shareddata->yaw[i] = myProblem.yaw[i];
 		shareddata->lateral_jerk[i] = myProblem.lateral_jerk[i];
 		shareddata->longitudinal_jerk[i] = myProblem.longitudinal_jerk[i];
+		//
+		shareddata->x_PD[i] = myProblem.x_PD[i];
+		shareddata->y_PD[i] = myProblem.y_PD[i];
+		//
 	}
 
 	shareddata->error_code = myProblem.error_code;

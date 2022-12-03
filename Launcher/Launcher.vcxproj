@@ -86,14 +86,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;C:\eigen;C:\boost\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;C:\Eigen;C:\boost\include</IncludePath>
     <LibraryPath>C:\boost\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\eigen;C:\boost\include;C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;$(IncludePath)</IncludePath>
+    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Launcher;C:\Eigen;C:\boost\include</IncludePath>
     <LibraryPath>C:\boost\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>
@@ -176,6 +176,7 @@
     <ClInclude Include="header\Frenetcoordinate.h" />
     <ClInclude Include="header\TableLinearInterporater.h" />
     <ClInclude Include="Pedestrian.h" />
+    <ClInclude Include="random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

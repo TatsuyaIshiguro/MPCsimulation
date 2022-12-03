@@ -84,13 +84,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Optimization;C:\eigen;$(IncludePath)</IncludePath>
+    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Optimization;C:\Eigen</IncludePath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\eigen;C:\MPCsimulation\Common;C:\MPCsimulation\Optimization;$(IncludePath)</IncludePath>
+    <IncludePath>C:\MPCsimulation\Common;C:\MPCsimulation\Optimization;C:\Eigen</IncludePath>
     <OutDir>exe\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>out\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>

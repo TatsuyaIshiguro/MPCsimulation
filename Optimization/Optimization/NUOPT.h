@@ -104,6 +104,9 @@ System_NUOPT();
   VariableParameterProxy closs_pd;
   VariableProxy Dist;
   //
+  VariableProxy x_PD;
+  VariableProxy y_PD;
+  //
 
 
   VariableParameterProxy delta_dot_init;

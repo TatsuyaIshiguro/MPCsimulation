@@ -70,6 +70,8 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("16residual", shareddata->residual);
 	logger.push_back<double>("17average_lateral_jerk", shareddata->average_lateral_jerk);
 	logger.push_back<double>("18average_longitudinal_jerk", shareddata->average_longitudinal_jerk);
+	logger.push_back<double>("19x", shareddata->x_pd);
+	logger.push_back<double>("20y", shareddata->y_pd);
 
 	//«—ˆ‹““®‚ÌŒ‹‰Ê‚ğo—Í
 	std::string data_name;
