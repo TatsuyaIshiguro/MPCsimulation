@@ -70,8 +70,9 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("16residual", shareddata->residual);
 	logger.push_back<double>("17average_lateral_jerk", shareddata->average_lateral_jerk);
 	logger.push_back<double>("18average_longitudinal_jerk", shareddata->average_longitudinal_jerk);
-	logger.push_back<double>("19x", shareddata->x_pd);
-	logger.push_back<double>("20y", shareddata->y_pd);
+	logger.push_back<double>("19x_pd", shareddata->x_pd);
+	logger.push_back<double>("20y_pd", shareddata->y_pd);
+	logger.push_back<double>("21vel_pd", shareddata->vel_pd);
 
 	//«—ˆ‹““®‚ÌŒ‹‰Ê‚ğo—Í
 	std::string data_name;
@@ -129,9 +130,9 @@ void OutData_Course(DataLogger& logger, std::vector<std::vector<double>> course)
 	logger.push_back<double>("5v_min", v_min);
 	logger.push_back<double>("6v_max", v_max);
 	logger.push_back<double>("7x_min", x_min);
-	logger.push_back<double>("8y_min", v_min);
+	logger.push_back<double>("8y_min", y_min);
 	logger.push_back<double>("9x_max", x_max);
-	logger.push_back<double>("10y_max", v_max);
+	logger.push_back<double>("10y_max", y_max);
 	logger.push_back<double>("11rho", rho);
 	logger.PrintHeader();
 

@@ -13,6 +13,8 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <random.h>
+
 
 //Setting of shared memory
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
@@ -163,14 +165,13 @@ void UpdateState()
 
 
 
-//歩行者の更新
-void 
-UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
+//歩行者の更新//判断なし
+void UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
 {
 	double x_car, y_car;
 	x_car = shareddata->x[0];
 	y_car = shareddata->y[0];
-	double dist_Car_Pd = sqrt(pow(ped.x_pd - x_car, 2) + pow(ped.y_pd - y_car, 2));
+	//double dist_Car_Pd = sqrt(pow(ped.x_pd - x_car, 2) + pow(ped.y_pd - y_car, 2));
 	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
 
 
@@ -193,6 +194,75 @@ UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
 
 }
 
+//歩行者の更新//判断あり
+void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata)
+{
+	double x_car, y_car;
+	x_car = shareddata->x[0];
+	y_car = shareddata->y[0];
+	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
+	int trigger = shareddata->trigger;
+	ped.x_pd = ped.x_pd;
+	if (trigger==0)
+	{
+		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
+			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+			trigger = 1;
+		}
+		else {
+			ped.y_pd = ped.y_pd;
+		}
+	}
+	else if (trigger == 1)
+	{
+		if (ped.y_pd >= 1.7)//道路わきに来た
+		{
+			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+		}
+		else 
+		{
+			ped.y_pd = ped.y_pd;
+			trigger = 2;
+		}
+	}
+	else if (trigger == 2)
+	{
+		random_num rand_num;
+		int judgement = rand_num.Make_num() % 3;//0=stop, 1=go, 2=go_fast
+		//int judgement = 2;
+		if (judgement == 0) {
+			ped.y_pd = ped.y_pd;
+			ped.vel_pd = 0;
+			trigger = 3;
+		}
+		else if (judgement == 1) {
+			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+			trigger = 4;
+		}
+		else if (judgement == 2) {
+			ped.vel_pd = 1.5 * ped.vel_pd;
+			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+			trigger = 4;
+		}
+
+	}
+	else if (trigger == 3) {
+		ped.y_pd = ped.y_pd;
+		if (x_car >= ped.x_pd + 5.0) {
+			ped.vel_pd = ped.vel_pd_start;
+			trigger = 4;
+		}
+	}
+	else {
+		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+	}
+
+	shareddata->x_pd = ped.x_pd;
+	shareddata->y_pd = ped.y_pd;
+	shareddata->vel_pd = ped.vel_pd;
+	shareddata->closs_pd = ped.closs_pd;
+	shareddata->trigger=trigger ;
+}
 
 
 
@@ -225,6 +295,7 @@ void plot_course(std::vector<double> x_ref, std::vector<double> y_ref, std::vect
 	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
 
 	fprintf(gp, "set xrange[%f:%f]\n", x_ref_min - 10.0, x_ref_max + 10.0);//x軸の範囲を指定
+	//fprintf(gp, "set xrange[%f:%f]\n",25.0, 75.0);
 	fprintf(gp, "set yrange[% f:% f]\n", y_ref_min - 5.0, y_ref_max + 5.0);
 	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
 	fprintf(gp, "set ylabel \"y\"\n");
@@ -346,8 +417,10 @@ void result_plot(SharedData* shareddata ,FILE*gp)
 #endif//OA
 
 #ifdef CSV
-	x_range_min = x_ref_min - 10.0;
-	x_range_max = x_ref_max + 10.0;
+	//x_range_min = x_ref_min - 10.0;
+	//x_range_max = x_ref_max + 10.0;
+	x_range_min = 0.0;
+	x_range_max = 70.0;
 #endif //CSV
 
 	fprintf(gp, "set xrange[%f:%f]\n", x_range_min, x_range_max);//x軸の範囲を指定
@@ -360,8 +433,8 @@ void result_plot(SharedData* shareddata ,FILE*gp)
 	//gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");
 
 
-	//fprintf(gp, "set term gif animate\n");	// 出力ターミナルをgif, animateオプションを付ける
-	//fprintf(gp, "set output 'test.gif'\n");	// 出力ファイル名
+	fprintf(gp, "set term gif animate\n");	// 出力ターミナルをgif, animateオプションを付ける
+	fprintf(gp, "set output 'pd_avoid.gif'\n");	// 出力ファイル名
 	
 
 	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
@@ -379,112 +452,6 @@ void result_plot(SharedData* shareddata ,FILE*gp)
 	fflush(gp);
 }
 
-//結果の表示(points)
-void result_point(SharedData* shareddata, FILE* gp,bool IsFirst)
-{
-	FILE* fp1,*fp2;
-	double x_MPC = shareddata->x[0];
-	double y_MPC = shareddata->y[0];
-#ifdef PD
-	double x_pd = shareddata->x_pd;
-	double y_pd = shareddata->y_pd;
-#endif//PD
-
-	vector<double> x_ref;
-	vector<double> y_ref;
-
-
-	x_ref.resize(400);
-	y_ref.resize(400);
-
-	for (int i = 0; i < 400; i++) {
-		x_ref[i] = shareddata->course[0][i];
-		y_ref[i] = shareddata->course[1][i];
-
-	}
-	double x_ref_max, y_ref_max, x_ref_min, y_ref_min;
-	x_ref_max = *std::max_element(x_ref.begin(), x_ref.end());
-	y_ref_max = *std::max_element(y_ref.begin(), y_ref.end());
-	x_ref_min = *std::min_element(x_ref.begin(), x_ref.end());
-	y_ref_min = *std::min_element(y_ref.begin(), y_ref.end());
-
-	double x_range_min, x_range_max;
-
-#ifdef SINE
-	x_range_min = x_ref_min - 10.0;
-	x_range_max = x_ref_max + 10.0;
-#endif//SINE
-
-#ifdef OA
-	x_range_min = 25.0;
-	x_range_max = 85.0;
-#endif//OA
-
-#ifdef CSV
-	//x_range_min = x_ref_min - 10.0;
-	//x_range_max = x_ref_max + 10.0;
-	x_range_min = 25;
-	x_range_max = 40;
-#endif //CSV
-
-	fprintf(gp, "set xrange[%f:%f]\n", x_range_min, x_range_max);//x軸の範囲を指定
-	fprintf(gp, "set yrang[%f:%f]\n", y_ref_min - 5.0, y_ref_max + 5.0);
-	fprintf(gp, "set xlabel \"x\"\n");//x軸のラベルを指定
-	fprintf(gp, "set ylabel \"y\"\n");
-	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
-
-	//bool IsFirst = true;
-	if (IsFirst) {
-		fp1 = fopen("result_point.dat", "a");
-		fprintf(fp1, "%f %f\n", x_MPC, y_MPC);
-
-#ifdef PD
-		fprintf(fp1, "%f %f\n", x_pd, y_pd);
-#endif//PD
-		fprintf(gp, "plot 'result_point.dat'  pt 7 ps 0.4 lc 'blue'\n");
-
-		fclose(fp1);
-		fflush(gp);
-		IsFirst = false;
-
-	}
-	else {
-		ifstream ifs("result_point.dat");
-		if (ifs.fail()) {
-			cerr << "Cannot open file\n";
-			exit(0);
-		}
-		string str;
-		vector<double> x_point, y_point;
-		double x_temp, y_temp;
-		while (getline(ifs, str)) {
-			stringstream ss(str);
-			ss >> x_temp >> y_temp;
-			x_point.push_back(x_temp);
-			y_point.push_back(y_temp);
-			
-		}
-		x_point.erase(x_point.end() - 1);
-		y_point.erase(y_point.end() - 1);
-
-		fp2 = fopen("result_pd_point.dat", "w");
-
-		for (int i = 0; i < size(x_point); i++)
-		{
-			fprintf(fp2, "%f %f\n", x_point[i], y_point[i]);
-		}
-
-		fprintf(fp2, "%f %f\n", x_MPC, y_MPC);
-
-#ifdef PD
-		fprintf(fp2, "%f %f\n", x_pd, y_pd);
-#endif//PD
-		fprintf(gp, "plot 'result_pd_point.dat'  pt 7 ps 0.4 lc 'blue'\n");
-
-		fclose(fp2);
-		fflush(gp);
-	}
-}
 
 
 void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref)
@@ -542,7 +509,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-	bool IsFirst = true;
+	shareddata->trigger = 0;
 
 
 	//loop
@@ -551,11 +518,12 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		system(path);
 		UpdateState();
 #ifdef PD
-		UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
+		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
+		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
 #endif //PD
-		result_plot(shareddata,gp);//結果プロット
 		
-		//result_point(shareddata, gp, IsFirst);
+		//result_plot(shareddata,gp);//結果プロット
+
 	
 
 		if (!ReadSharedMemory(SHARED_MEMORY_SIZE))
@@ -568,7 +536,8 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 	UnInitializeSharedMemory();
 
-	
+	fprintf(gp, "set output \n");	// GIFの出力
+	fprintf(gp, "set terminal wxt enhanced \n");	// GIFの出力
 
 }
 
@@ -636,8 +605,8 @@ int main()
 #endif // SINE
 
 #ifdef CSV
-	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv
-	double u_start = 25; //Initial u
+	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
+	double u_start = 0; //Initial u
 	double u_end = 75; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta

@@ -4,10 +4,11 @@
 
 namespace fs = boost::filesystem;
 
-class SaveParam {
+class SaveParam
+{
 public:
 
-	static constexpr char* parameterPath = (char*)"C:\\MPCLauncher\\MPCLauncher\\Parameter_setting\\parameter.csv";
+	static constexpr char* parameterPath = (char*)"C:\\MPCsimulation\\Common\\Parameter_setting\\parameter.csv";
 
 	void save_prm(std::string save_path) {
 		fs::path nuopt_prm_path = parameterPath;

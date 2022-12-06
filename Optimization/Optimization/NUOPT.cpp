@@ -271,9 +271,11 @@ System_NUOPT::System_NUOPT()
 			smp_line(__LINE__, __FILE__); v_center_r[k + 1] == v[k + 1] + (dist_front * sin(theta[k + 1] - theta_front) + dist_rear * sin(theta[k + 1] + M_PI + theta_rear)) / 2;
 			smp_line(__LINE__, __FILE__); v_rear_l[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI - theta_rear);
 			smp_line(__LINE__, __FILE__); v_rear_r[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI + theta_rear);
-			//
+			//歩行者の予測あり
 			smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_PD[k], 2) + pow(v[k] - y_PD[k], 2), 0.5);
-			//
+			//歩行者の予測なし
+			//smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2), 0.5);
+			
 
 			//歩行者
 			smp_line(__LINE__, __FILE__); x_PD[k + 1] == x_PD[k];
@@ -284,14 +286,14 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2), 0.5);
 
 		//制約条件
-		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;
-		smp_line(__LINE__, __FILE__); acc[Idx] <= 3.3, Idx;
-		smp_line(__LINE__, __FILE__); vel[Idx] >= 0, Idx;
-		smp_line(__LINE__, __FILE__); vel[Idx] <= vel_max[Idx], Idx;
-		smp_line(__LINE__, __FILE__); v_front_r[Idx] >= v_front_min[Idx], Idx;
-		smp_line(__LINE__, __FILE__); v_front_l[Idx] <= v_front_max[Idx], Idx;
-		smp_line(__LINE__, __FILE__); v_center_r[Idx] >= v_min[Idx], Idx;
-		smp_line(__LINE__, __FILE__); v_center_l[Idx] <= v_max[Idx], Idx;
+		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;//加速度
+		smp_line(__LINE__, __FILE__); acc[Idx] <= 3.3, Idx;//加速度
+		smp_line(__LINE__, __FILE__); vel[Idx] >= 0, Idx;//速度
+		smp_line(__LINE__, __FILE__); vel[Idx] <= vel_max[Idx], Idx;//速度
+		smp_line(__LINE__, __FILE__); v_front_r[Idx] >= v_front_min[Idx], Idx;//衝突判定
+		smp_line(__LINE__, __FILE__); v_front_l[Idx] <= v_front_max[Idx], Idx;//衝突判定
+		smp_line(__LINE__, __FILE__); v_center_r[Idx] >= v_min[Idx], Idx;//衝突判定
+		smp_line(__LINE__, __FILE__); v_center_l[Idx] <= v_max[Idx], Idx;//衝突判定
 		//smp_line(__LINE__, __FILE__); v_rear_r[Idx] >= v_rear_min[Idx], Idx;
 		//smp_line(__LINE__, __FILE__); v_rear_l[Idx] <= v_rear_max[Idx], Idx;
 
@@ -302,8 +304,8 @@ System_NUOPT::System_NUOPT()
 
 
 
-		smp_line(__LINE__, __FILE__); delta[Idx] <= 1.0472, Idx;
-		smp_line(__LINE__, __FILE__); delta[Idx] >= -1.0472, Idx;
+		smp_line(__LINE__, __FILE__); delta[Idx] <= 1.0472, Idx;//タイヤ角
+		smp_line(__LINE__, __FILE__); delta[Idx] >= -1.0472, Idx;//タイヤ角
 		//smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.5, Idx;
 		//smp_line(__LINE__, __FILE__); delta_dot[Idx] >= -0.5, Idx;
 		//smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.15, Idx;
@@ -313,27 +315,27 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); Objective obj(type = minimize, name = "obj"); this->obj.setEntity(obj); obj.entryOutput();
 		smp_line(__LINE__, __FILE__);
 		obj =
-			+Sf_v * (v[rcd_horizon] - v_ref[rcd_horizon]) * (v[rcd_horizon] - v_ref[rcd_horizon])
-			+ Sf_v_dot * v_dot[rcd_horizon] * v_dot[rcd_horizon]
-			+ Sf_theta * theta[rcd_horizon] * theta[rcd_horizon]
-			+ Sf_theta_dot * theta_dot[rcd_horizon] * theta_dot[rcd_horizon]
-			+ Sf_v_2dot * v_2dot[rcd_horizon] * v_2dot[rcd_horizon]
-			+ Sf_theta_2dot * theta_2dot[rcd_horizon] * theta_2dot[rcd_horizon]
-			+ Sf_vel * (vel[rcd_horizon] - vel_ref[rcd_horizon]) * (vel[rcd_horizon] - vel_ref[rcd_horizon])
-			+ Sf_acc * acc[rcd_horizon] * acc[rcd_horizon]
-			+ Sf_delta * delta[rcd_horizon] * delta[rcd_horizon]
-			+ Sf_delta_dot * delta_dot[rcd_horizon] * delta_dot[rcd_horizon]
+			+Sf_v * (v[rcd_horizon] - v_ref[rcd_horizon]) * (v[rcd_horizon] - v_ref[rcd_horizon])//参照経路に沿うように
+			+ Sf_v_dot * v_dot[rcd_horizon] * v_dot[rcd_horizon]//横滑りの速度
+			+ Sf_theta * theta[rcd_horizon] * theta[rcd_horizon]//角度偏差が小さくなるように
+			+ Sf_theta_dot * theta_dot[rcd_horizon] * theta_dot[rcd_horizon]//角速度が小さくなように
+			+ Sf_v_2dot * v_2dot[rcd_horizon] * v_2dot[rcd_horizon]//横滑りの加速度
+			+ Sf_theta_2dot * theta_2dot[rcd_horizon] * theta_2dot[rcd_horizon]//角加速度
+			+ Sf_vel * (vel[rcd_horizon] - vel_ref[rcd_horizon]) * (vel[rcd_horizon] - vel_ref[rcd_horizon])//参照速度に沿うように
+			+ Sf_acc * acc[rcd_horizon] * acc[rcd_horizon]//加速度
+			+ Sf_delta * delta[rcd_horizon] * delta[rcd_horizon]//タイヤ角
+			+ Sf_delta_dot * delta_dot[rcd_horizon] * delta_dot[rcd_horizon]//タイヤ角速度
 
-			+sum(Q_v * (v[Idx_eval] - v_ref[Idx_eval]) * (v[Idx_eval] - v_ref[Idx_eval])
-				+ Q_v_dot * v_dot[Idx_eval] * v_dot[Idx_eval]
-				+ Q_theta * theta[Idx_eval] * theta[Idx_eval]
-				+ Q_theta_dot * theta_dot[Idx_eval] * theta_dot[Idx_eval]
-				+ Q_v_2dot * v_2dot[Idx_eval] * v_2dot[Idx_eval]
-				+ Q_theta_2dot * theta_2dot[Idx_eval] * theta_2dot[Idx_eval]
-				+ Q_vel * (vel[Idx_eval] - vel_ref[Idx_eval]) * (vel[Idx_eval] - vel_ref[Idx_eval])
-				+ Q_acc * acc[Idx_eval] * acc[Idx_eval]
-				+ Q_delta * delta[Idx_eval] * delta[Idx_eval]
-				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval], Idx_eval);
+			+sum(Q_v * (v[Idx_eval] - v_ref[Idx_eval]) * (v[Idx_eval] - v_ref[Idx_eval])//
+				+ Q_v_dot * v_dot[Idx_eval] * v_dot[Idx_eval]//
+				+ Q_theta * theta[Idx_eval] * theta[Idx_eval]//
+				+ Q_theta_dot * theta_dot[Idx_eval] * theta_dot[Idx_eval]//
+				+ Q_v_2dot * v_2dot[Idx_eval] * v_2dot[Idx_eval]//
+				+ Q_theta_2dot * theta_2dot[Idx_eval] * theta_2dot[Idx_eval]//
+				+ Q_vel * (vel[Idx_eval] - vel_ref[Idx_eval]) * (vel[Idx_eval] - vel_ref[Idx_eval])//
+				+ Q_acc * acc[Idx_eval] * acc[Idx_eval]//
+				+ Q_delta * delta[Idx_eval] * delta[Idx_eval]//
+				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval], Idx_eval);//
 
 		smp_line(__LINE__, __FILE__); smp_line(244 - 1, "NUOPT.smp");
 	}
