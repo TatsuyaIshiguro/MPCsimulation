@@ -318,7 +318,7 @@ System_NUOPT::System_NUOPT()
 			+Sf_v * (v[rcd_horizon] - v_ref[rcd_horizon]) * (v[rcd_horizon] - v_ref[rcd_horizon])//参照経路に沿うように
 			+ Sf_v_dot * v_dot[rcd_horizon] * v_dot[rcd_horizon]//横滑りの速度
 			+ Sf_theta * theta[rcd_horizon] * theta[rcd_horizon]//角度偏差が小さくなるように
-			+ Sf_theta_dot * theta_dot[rcd_horizon] * theta_dot[rcd_horizon]//角速度が小さくなように
+			+ Sf_theta_dot * theta_dot[rcd_horizon] * theta_dot[rcd_horizon]//角速度が小さくなるように
 			+ Sf_v_2dot * v_2dot[rcd_horizon] * v_2dot[rcd_horizon]//横滑りの加速度
 			+ Sf_theta_2dot * theta_2dot[rcd_horizon] * theta_2dot[rcd_horizon]//角加速度
 			+ Sf_vel * (vel[rcd_horizon] - vel_ref[rcd_horizon]) * (vel[rcd_horizon] - vel_ref[rcd_horizon])//参照速度に沿うように
@@ -326,7 +326,7 @@ System_NUOPT::System_NUOPT()
 			+ Sf_delta * delta[rcd_horizon] * delta[rcd_horizon]//タイヤ角
 			+ Sf_delta_dot * delta_dot[rcd_horizon] * delta_dot[rcd_horizon]//タイヤ角速度
 
-			+sum(Q_v * (v[Idx_eval] - v_ref[Idx_eval]) * (v[Idx_eval] - v_ref[Idx_eval])//
+			+ sum(Q_v * (v[Idx_eval] - v_ref[Idx_eval]) * (v[Idx_eval] - v_ref[Idx_eval])//
 				+ Q_v_dot * v_dot[Idx_eval] * v_dot[Idx_eval]//
 				+ Q_theta * theta[Idx_eval] * theta[Idx_eval]//
 				+ Q_theta_dot * theta_dot[Idx_eval] * theta_dot[Idx_eval]//
@@ -335,7 +335,13 @@ System_NUOPT::System_NUOPT()
 				+ Q_vel * (vel[Idx_eval] - vel_ref[Idx_eval]) * (vel[Idx_eval] - vel_ref[Idx_eval])//
 				+ Q_acc * acc[Idx_eval] * acc[Idx_eval]//
 				+ Q_delta * delta[Idx_eval] * delta[Idx_eval]//
-				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval], Idx_eval);//
+				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval], Idx_eval)//
+			+ 1.0 * (vel * vel / (pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
+			+ 1.0 * (1 / (pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)));
+
+		//減速させる項
+		// J=Q_vel*(vel*vel/(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
+		 //+Q_dist*sum(1/(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
 
 		smp_line(__LINE__, __FILE__); smp_line(244 - 1, "NUOPT.smp");
 	}

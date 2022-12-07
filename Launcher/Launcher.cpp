@@ -228,8 +228,8 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 	else if (trigger == 2)
 	{
 		random_num rand_num;
-		int judgement = rand_num.Make_num() % 3;//0=stop, 1=go, 2=go_fast
-		//int judgement = 2;
+		//int judgement = rand_num.Make_num() % 3;//0=stop, 1=go, 2=go_fast
+		int judgement = 1;
 		if (judgement == 0) {
 			ped.y_pd = ped.y_pd;
 			ped.vel_pd = 0;
@@ -501,10 +501,10 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 
 	//コースのプロット
-	plot_course(course[0], course[1], course[6], course[7], course[8], course[9]);
+	//plot_course(course[0], course[1], course[6], course[7], course[8], course[9]);
 
 	//結果のプロットの準備
-	result_course_plot(shareddata);
+	//result_course_plot(shareddata);
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -606,11 +606,11 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 0; //Initial u
-	double u_end = 75; //goal of u
+	double u_start = 5; //Initial u
+	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
-	double vel_ref = 6; //Reference velocit
+	double vel_ref = 6; //Reference velocit defo=6
 
 	course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 	SetFrenet(course, setting, frenet);
