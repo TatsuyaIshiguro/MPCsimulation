@@ -477,7 +477,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	prm.Load_Prm(CSV_prm, 0);
 
 #ifdef PD	//•àsÒ‚Ì‰Šúİ’è
-	Pedestrian ped;
+	Pedestrian ped(vel_ref,course[5]);
 #endif //PD
 
 	//üŒ`•âŠÔ—p
@@ -610,7 +610,9 @@ int main()
 	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
-	double vel_ref = 6; //Reference velocit defo=6
+	double vel_ref = 6; //Reference velocity defo=6
+
+	
 
 	course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 	SetFrenet(course, setting, frenet);

@@ -232,6 +232,7 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); Variable x_PD(index = Idx, name = "x_PD");	this->x_PD.setEntity(x_PD); x_PD.entryOutput();
 		smp_line(__LINE__, __FILE__); Variable y_PD(index = Idx, name = "y_PD");	this->y_PD.setEntity(y_PD); y_PD.entryOutput();
 
+
 		smp_line(__LINE__, __FILE__); u[0] == init_u;
 		smp_line(__LINE__, __FILE__); vel[0] == init_vel;
 		smp_line(__LINE__, __FILE__); v[0] == init_v;
@@ -272,7 +273,7 @@ System_NUOPT::System_NUOPT()
 			smp_line(__LINE__, __FILE__); v_rear_l[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI - theta_rear);
 			smp_line(__LINE__, __FILE__); v_rear_r[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI + theta_rear);
 			//歩行者の予測あり
-			smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_PD[k], 2) + pow(v[k] - y_PD[k], 2), 0.5);
+			smp_line(__LINE__, __FILE__); Dist[k] == pow(u[k] - x_PD[k], 2) + pow(v[k] - y_PD[k], 2);//距離の2乗
 			//歩行者の予測なし
 			//smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2), 0.5);
 			
@@ -283,7 +284,7 @@ System_NUOPT::System_NUOPT()
 			
 
 		}
-		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2), 0.5);
+		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2);
 
 		//制約条件
 		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;//加速度
@@ -298,7 +299,7 @@ System_NUOPT::System_NUOPT()
 		//smp_line(__LINE__, __FILE__); v_rear_l[Idx] <= v_rear_max[Idx], Idx;
 
 		//歩行者がいる時の制約
-		smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.8, Idx;
+		smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.9, Idx;
 		//歩行者と車の距離が1m以上の制約
 
 
@@ -335,9 +336,9 @@ System_NUOPT::System_NUOPT()
 				+ Q_vel * (vel[Idx_eval] - vel_ref[Idx_eval]) * (vel[Idx_eval] - vel_ref[Idx_eval])//
 				+ Q_acc * acc[Idx_eval] * acc[Idx_eval]//
 				+ Q_delta * delta[Idx_eval] * delta[Idx_eval]//
-				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval], Idx_eval)//
-			+ 1.0 * (vel * vel / (pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
-			+ 1.0 * (1 / (pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)));
+				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval]
+				+ 1.0 * (vel[Idx_eval] * vel[Idx_eval] / (Dist[Idx_eval]))
+				+ 1.0 * (1 / Dist[Idx_eval]), Idx_eval);
 
 		//減速させる項
 		// J=Q_vel*(vel*vel/(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))

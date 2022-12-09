@@ -24,5 +24,5 @@ struct SharedData
 
 	double x_pd, y_pd, vel_pd, closs_pd;
 	int trigger ;
-
+	
 };
