@@ -445,6 +445,11 @@ void MyProblem::Solve()
 	VariableDumper y_PD(m->y_PD.val);
 	y_PD.SetData();
 	//
+	VariableDumper v_rear_l(m->v_rear_l.val);
+	v_rear_l.SetData();
+	VariableDumper v_rear_r(m->v_rear_r.val);
+	v_rear_r.SetData();
+	//
 
 	this->u = u.data;
 	this->vel = vel.data;
@@ -460,6 +465,11 @@ void MyProblem::Solve()
 	//
 	this->x_PD = x_PD.data;
 	this->y_PD = y_PD.data;
+	//
+	this->v_front_r = v_front_r.data;
+	this->v_front_l = v_front_l.data;
+	this->v_rear_r = v_rear_r.data;
+	this->v_rear_l = v_rear_l.data;
 	//
 
 	this->v_ref = v_ref.data;
