@@ -536,8 +536,8 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 	UnInitializeSharedMemory();
 
-	fprintf(gp, "set output \n");	// GIFの出力
-	fprintf(gp, "set terminal wxt enhanced \n");	// GIFの出力
+	//fprintf(gp, "set output \n");	// GIFの出力
+	//fprintf(gp, "set terminal wxt enhanced \n");	// GIFの出力
 
 }
 

@@ -53,6 +53,12 @@ System_NUOPT();
   VariableProxy v_center_r;
   VariableProxy v_rear_l;
   VariableProxy v_rear_r;
+  VariableProxy u_front_l; //è’ìÀîªíËópÇÃèÛë‘
+  VariableProxy u_front_r;
+  VariableProxy u_center_l;
+  VariableProxy u_center_r;
+  VariableProxy u_rear_l;
+  VariableProxy u_rear_r;
   VariableProxy V_inv;
   VariableParameterProxy T_delta;
   VariableParameterProxy a11;
@@ -103,6 +109,10 @@ System_NUOPT();
   VariableParameterProxy vel_pd;
   VariableParameterProxy closs_pd;
   VariableProxy Dist;
+  VariableProxy Dist_f_r;
+  VariableProxy Dist_f_l;
+  VariableProxy Dist_r_r;
+  VariableProxy Dist_r_l;
   //
   VariableProxy x_PD;
   VariableProxy y_PD;

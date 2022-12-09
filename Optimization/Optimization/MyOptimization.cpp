@@ -321,6 +321,13 @@ void MyProblem::SetAllState()
 		//
 		m->x_PD[i] = x_PD[i];
 		m->y_PD[i] = y_PD[i];
+
+		m->u_front_r[i] = u_front_r[i];
+		m->u_front_l[i] = u_front_l[i];
+		m->u_center_r[i] = u_center_r[i];
+		m->u_center_l[i] = u_center_l[i];
+		m->u_rear_r[i] = u_rear_r[i];
+		m->u_rear_l[i] = u_rear_l[i];
 		//
 	}
 
