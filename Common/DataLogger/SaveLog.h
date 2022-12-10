@@ -73,7 +73,8 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("19x_pd", shareddata->x_pd);
 	logger.push_back<double>("20y_pd", shareddata->y_pd);
 	logger.push_back<double>("21vel_pd", shareddata->vel_pd);
-	logger.push_back<int>("22collision", shareddata->collision);
+	logger.push_back<double>("22closs_y_pd", shareddata->closs_y_pd);
+	logger.push_back<int>("23collision", shareddata->collision);
 
 	//«—ˆ‹““®‚ÌŒ‹‰Ê‚ğo—Í
 	std::string data_name;

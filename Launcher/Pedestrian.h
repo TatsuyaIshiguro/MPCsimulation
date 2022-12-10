@@ -10,6 +10,8 @@ struct Pedestrian
 	double vel_ref;
 	vector<double>  course_width ;
 	double range_min, range_max;
+	double closs_y_pd;
+
 
 
 	random_num rand_num;
@@ -22,6 +24,7 @@ struct Pedestrian
 	//range_min <= closs_range <= range_max
 
 	Pedestrian(double vel_ref,std::vector<double> course_width) {
+		
 		this->vel_ref =vel_ref;
 		this->course_width = course_width;
 		x_pd_start= rand_num.Make_num()%51+25.0;
@@ -36,6 +39,8 @@ struct Pedestrian
 		vel_pd = vel_pd_start;
 
 		closs_range = rand_num.num_range(range_min, range_max);
+		closs_y_pd = vel_pd * closs_range / vel_ref;
+		
 	
 	}
 

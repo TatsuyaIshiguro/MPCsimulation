@@ -24,7 +24,8 @@ struct SharedData
 	double Q_vel, Q_acc, Q_v, Q_v_dot, Q_v_2dot, Q_theta, Q_theta_dot, Q_theta_2dot, Q_delta, Q_delta_dot;
 	double Sf_vel, Sf_acc, Sf_v, Sf_v_dot, Sf_v_2dot, Sf_theta, Sf_theta_dot, Sf_theta_2dot, Sf_delta, Sf_delta_dot;
 
-	double x_pd, y_pd, vel_pd, closs_pd;
+	double x_pd, y_pd, vel_pd, closs_pd, closs_y_pd;
+
 	int trigger, collision;
 	
 };

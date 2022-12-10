@@ -18,7 +18,7 @@
 
 //Setting of shared memory
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
-constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
+constexpr auto SHARED_MEMORY_SIZE = 9 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
@@ -257,6 +257,7 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 	}
 
+	shareddata->closs_y_pd = ped.closs_y_pd;
 	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
 	shareddata->vel_pd = ped.vel_pd;
@@ -643,7 +644,7 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 5; //Initial u
+	double u_start = 0.25; //Initial u
 	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta

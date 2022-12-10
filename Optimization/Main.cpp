@@ -4,7 +4,7 @@
 
 //‹¤—Lƒƒ‚ƒŠ‚Ìİ’è
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
-constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
+constexpr auto SHARED_MEMORY_SIZE = 9 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
