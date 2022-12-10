@@ -22,7 +22,7 @@ constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
-FILE*gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
+FILE*gp = _popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
 
 char path[] = "\"C:\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
 
@@ -270,7 +270,7 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 void plot_course(std::vector<double> x_ref, std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
 {
 	FILE* gp, * fp;
-	gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
+	gp = _popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe -persist", "w");//gnuplotを起動//-persistがあるとずっと表示
 	fprintf(gp, "unset key\n");//グラフ凡例の表示/非表示
 	//  fprintf(gp, "set key left top\n");//グラフ凡例の位置の指定
 	x_ref.resize(400);
@@ -605,7 +605,7 @@ int main()
 #endif // SINE
 
 #ifdef CSV
-	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
+	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 5; //Initial u
 	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
