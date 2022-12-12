@@ -148,6 +148,11 @@ void MyProblem::InitOptVec()
 	//
 	x_PD.resize(vsize);
 	y_PD.resize(vsize);
+	//
+	v_front_l.resize(vsize);
+	v_front_r.resize(vsize);
+	v_rear_l.resize(vsize);
+	v_rear_r.resize(vsize);
 }
 
 void MyProblem::InitState(SharedData* shareddata)

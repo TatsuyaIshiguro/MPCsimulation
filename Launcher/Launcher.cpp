@@ -301,6 +301,7 @@ void judge_collision(Pedestrian& ped, SharedData* shareddata)
 		collision_judge = 1;
 	}
 	shareddata->collision = collision_judge;
+	//collision_judgeが0で衝突なし/1で衝突あり
 }
 
 //コースの表示
