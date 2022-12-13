@@ -335,13 +335,11 @@ System_NUOPT::System_NUOPT()
 				+ Q_vel * (vel[Idx_eval] - vel_ref[Idx_eval]) * (vel[Idx_eval] - vel_ref[Idx_eval])//
 				+ Q_acc * acc[Idx_eval] * acc[Idx_eval]//
 				+ Q_delta * delta[Idx_eval] * delta[Idx_eval]//
-				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval], Idx_eval);//
-			//+ 1.0 * (vel * vel / (pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
-			//+ 1.0 * (1 / (pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)));
+				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval]
+				+ 1.0 * (vel[Idx_eval] * vel[Idx_eval] / (Dist[Idx_eval] + 0.0001))
+				+ 1.0 * (1 /( Dist[Idx_eval]+0.001)), Idx_eval);
 
-		//å∏ë¨Ç≥ÇπÇÈçÄ
-		// J=Q_vel*(vel*vel/(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
-		 //+Q_dist*sum(1/(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
+		
 
 		smp_line(__LINE__, __FILE__); smp_line(244 - 1, "NUOPT.smp");
 	}

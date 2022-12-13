@@ -176,6 +176,7 @@
     <ClInclude Include="header\Frenetcoordinate.h" />
     <ClInclude Include="header\TableLinearInterporater.h" />
     <ClInclude Include="Pedestrian.h" />
+    <ClInclude Include="plot.h" />
     <ClInclude Include="random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
