@@ -4,7 +4,7 @@
 
 //‹¤—Lƒƒ‚ƒŠ‚ÌÝ’è
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
-constexpr auto SHARED_MEMORY_SIZE = 9 * 6500;
+constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
@@ -69,14 +69,6 @@ bool SetSharedData(MyProblem myProblem)
 		//
 		shareddata->x_PD[i] = myProblem.x_PD[i];
 		shareddata->y_PD[i] = myProblem.y_PD[i];
-		shareddata->u_front_r[i] = myProblem.u_front_r[i];
-		shareddata->u_front_l[i] = myProblem.u_front_r[i];
-		shareddata->u_center_r[i] = myProblem.u_center_r[i];
-		shareddata->u_center_l[i] = myProblem.u_center_l[i];
-		shareddata->u_rear_r[i] = myProblem.u_rear_r[i];
-		shareddata->u_rear_l[i] = myProblem.u_rear_l[i];
-
-
 		//
 	}
 

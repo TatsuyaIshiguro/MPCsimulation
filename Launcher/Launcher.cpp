@@ -18,7 +18,7 @@
 
 //Setting of shared memory
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
-constexpr auto SHARED_MEMORY_SIZE = 9 * 6500;
+constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
@@ -130,7 +130,7 @@ void InitState(double u_start, double v_start, double theta_start, double vel_st
 {
 	for (int i = 0; i < vsize; i++)
 	{
-		shareddata->u[i] = u_start + 3 * T_delta * i;
+		shareddata->u[i] = u_start + 40.0 * T_delta * i;
 		shareddata->vel[i] = vel_start;
 		shareddata->acc[i] = 0;
 		shareddata->v[i] = v_start;
@@ -200,7 +200,7 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 	double x_car, y_car;
 	x_car = shareddata->x[0];
 	y_car = shareddata->y[0];
-	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
+	double closs_pd = ped.x_pd  - vel_ref*(ped.y_pd / ped.vel_pd);
 	int trigger = shareddata->trigger;
 	ped.x_pd = ped.x_pd;
 	if (trigger==0)
@@ -257,7 +257,6 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 	}
 
-	shareddata->closs_y_pd = ped.closs_y_pd;
 	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
 	shareddata->vel_pd = ped.vel_pd;
@@ -265,44 +264,7 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 	shareddata->trigger=trigger ;
 }
 
-//歩行者との衝突判定
-void judge_collision(Pedestrian& ped, SharedData* shareddata)
-{
-	double x_car, y_car;
-	double x_front_r, y_front_r;
-	double x_front_l, y_front_l;
-	double x_rear_r, y_rear_r;
-	double x_rear_l, y_rear_l;
-	int collision_judge;
 
-	x_car = shareddata->x[0];
-	y_car = shareddata->y[0];
-	x_front_r = shareddata->u_front_r[0];
-	y_front_r = shareddata->v_front_r[0];
-	x_rear_r = shareddata->u_rear_r[0];
-	y_rear_r = shareddata->v_rear_r[0];
-	x_front_l = shareddata->u_front_l[0];
-	y_front_l = shareddata->v_front_l[0];
-	x_rear_l = shareddata->u_rear_l[0];
-	y_rear_l = shareddata->v_rear_l[0];
-
-	double dist_g, dist_f_r, dist_f_l, dist_r_r, dist_r_l;
-
-	dist_g = pow(pow((x_car - ped.x_pd), 2.0) + pow((y_car - ped.y_pd), 2.0), 0.5);
-	dist_f_r = pow(pow((x_front_r - ped.x_pd), 2.0) + pow((y_front_r - ped.y_pd), 2.0), 0.5);
-	dist_f_l = pow(pow((x_front_l - ped.x_pd), 2.0) + pow((y_front_l - ped.y_pd), 2.0), 0.5);
-	dist_r_r = pow(pow((x_rear_r - ped.x_pd), 2.0) + pow((y_rear_r - ped.y_pd), 2.0), 0.5);
-	dist_r_l = pow(pow((x_rear_l - ped.x_pd), 2.0) + pow((y_rear_l - ped.y_pd), 2.0), 0.5);
-
-	if (dist_g >= 0.3 && dist_f_r>=0.3 && dist_f_l >=0.3 && dist_r_r>=0.3 && dist_r_l >=0.3) {
-		collision_judge = 0;
-	}
-	else {
-		collision_judge = 1;
-	}
-	shareddata->collision = collision_judge;
-	//collision_judgeが0で衝突なし/1で衝突あり
-}
 
 //コースの表示
 void plot_course(std::vector<double> x_ref, std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
@@ -554,11 +516,20 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	while (shareddata->u[0] < u_end)
 	{
 		system(path);
-		//UpdateState();
+		UpdateState();
 #ifdef PD
+<<<<<<< HEAD
 		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者　判断なし
 		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);//歩行者　判断あり
+<<<<<<< HEAD
 		judge_collision(ped, shareddata); 
+=======
+		// judge_collision(ped, shareddata); //歩行者との衝突判定
+>>>>>>> 2942353e150a707a5a840466743353603b86a711
+=======
+		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
+		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
+>>>>>>> parent of 434d816 (commit)
 #endif //PD
 		
 		//result_plot(shareddata,gp);//結果プロット
@@ -644,9 +615,18 @@ int main()
 #endif // SINE
 
 #ifdef CSV
+<<<<<<< HEAD
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
+<<<<<<< HEAD
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 10; //Initial u
+=======
+	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
+	double u_start = 0.25; //Initial u
+>>>>>>> 2942353e150a707a5a840466743353603b86a711
+=======
+	double u_start = 5; //Initial u
+>>>>>>> parent of 434d816 (commit)
 	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta

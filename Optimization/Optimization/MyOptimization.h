@@ -17,7 +17,7 @@ public:
 	//ï‡çsé“
 	double x_pd, y_pd, vel_pd, closs_pd;
 	//
-	std::vector<double> x_PD, y_PD,v_front_r,v_front_l,v_rear_r,v_rear_l;
+	std::vector<double> x_PD, y_PD;
 
 
 	//jerkóp
