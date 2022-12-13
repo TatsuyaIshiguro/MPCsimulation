@@ -477,7 +477,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	prm.Load_Prm(CSV_prm, 0);
 
 #ifdef PD	//•àsÒ‚Ì‰Šúİ’è
-	Pedestrian ped;
+	Pedestrian ped(vel_ref, course[5]);
 #endif //PD
 
 	//üŒ`•âŠÔ—p
