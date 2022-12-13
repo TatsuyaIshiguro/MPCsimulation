@@ -4,7 +4,7 @@
 struct Pedestrian
 {
 
-	double x_pd, y_pd, vel_pd, closs_pd;
+	double x_pd, y_pd, vel_pd;
 	double x_pd_start, y_pd_start, vel_pd_start;
 	double closs_range;
 	double vel_ref;

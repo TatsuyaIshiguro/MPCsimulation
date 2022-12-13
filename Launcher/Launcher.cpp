@@ -15,6 +15,7 @@
 #include <sstream>
 #include <random.h>
 #include <plot.h>
+#include <ped_func.h>
 
 
 //Setting of shared memory
@@ -166,108 +167,6 @@ void UpdateState()
 
 
 
-//歩行者の更新//判断なし
-void UpdatePed(Pedestrian& ped, double T_delta ,double vel_ref)
-{
-	double x_car, y_car;
-	x_car = shareddata->x[0];
-	y_car = shareddata->y[0];
-	//double dist_Car_Pd = sqrt(pow(ped.x_pd - x_car, 2) + pow(ped.y_pd - y_car, 2));
-	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
-
-
-
-	ped.x_pd = ped.x_pd;
-
-	if (x_car+ped.closs_range >= closs_pd) {
-		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-	}
-	else {
-		ped.y_pd = ped.y_pd;
-	}
-
-
-	//データの受け渡し
-	shareddata->x_pd = ped.x_pd;
-	shareddata->y_pd = ped.y_pd;
-	shareddata->vel_pd = ped.vel_pd;
-	shareddata->closs_pd = ped.closs_pd;
-
-}
-
-//歩行者の更新//判断あり
-void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata)
-{
-	double x_car, y_car;
-	x_car = shareddata->x[0];
-	y_car = shareddata->y[0];
-	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
-	int trigger = shareddata->trigger;
-	ped.x_pd = ped.x_pd;
-	if (trigger==0)
-	{
-		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
-			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-			trigger = 1;
-		}
-		else {
-			ped.y_pd = ped.y_pd;
-		}
-	}
-	else if (trigger == 1)
-	{
-		if (ped.y_pd >= 1.7)//道路わきに来た
-		{
-			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-		}
-		else 
-		{
-			ped.y_pd = ped.y_pd;
-			trigger = 2;
-		}
-	}
-	else if (trigger == 2)
-	{
-		random_num rand_num;
-		//int judgement = rand_num.Make_num() % 3;//0=stop, 1=go, 2=go_fast
-		int judgement = 1;
-		if (judgement == 0) {
-			ped.y_pd = ped.y_pd;
-			ped.vel_pd = 0;
-			trigger = 3;
-		}
-		else if (judgement == 1) {
-			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-			trigger = 4;
-		}
-		else if (judgement == 2) {
-			ped.vel_pd = 1.5 * ped.vel_pd;
-			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-			trigger = 4;
-		}
-
-	}
-	else if (trigger == 3) {
-		ped.y_pd = ped.y_pd;
-		if (x_car >= ped.x_pd + 5.0) {
-			ped.vel_pd = ped.vel_pd_start;
-			trigger = 4;
-		}
-	}
-	else {
-		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-	}
-
-	shareddata->x_pd = ped.x_pd;
-	shareddata->y_pd = ped.y_pd;
-	shareddata->vel_pd = ped.vel_pd;
-	shareddata->closs_pd = ped.closs_pd;
-	shareddata->trigger=trigger ;
-}
-
-
-
-
 
 
 void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref)
@@ -294,6 +193,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 #ifdef PD	//歩行者の初期設定
 	Pedestrian ped(vel_ref, course[5]);
+	ped_func ped_func;
 #endif //PD
 
 	//線形補間用
@@ -314,6 +214,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	InitSetting(course, prm, vel_ref);
 	InitState(u_start, v_start, theta_start, vel_ref, prm.T_delta);
 	
+#ifdef PLOT
 	//plotのクラスの呼び出し
 	plot plot;
 
@@ -323,6 +224,8 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 	//結果のプロットの準備
 	plot.result_course_plot(shareddata);
+#endif//PLOT
+
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -336,12 +239,13 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		system(path);
 		UpdateState();
 #ifdef PD
-		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
-		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
+		//ped_func.UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
+		ped_func.UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
 #endif //PD
-		
-		plot.result_plot(shareddata,gp);//結果プロット
 
+#ifdef PLOT
+		plot.result_plot(shareddata,gp);//結果プロット
+#endif//PLOT
 	
 
 		if (!ReadSharedMemory(SHARED_MEMORY_SIZE))
@@ -354,8 +258,6 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 	UnInitializeSharedMemory();
 
-	fprintf(gp, "set output \n");	// GIFの出力
-	fprintf(gp, "set terminal wxt enhanced \n");	// GIFの出力
 
 }
 
