@@ -321,17 +321,8 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); v_front_l[Idx] <= v_front_max[Idx], Idx;//衝突判定
 		smp_line(__LINE__, __FILE__); v_center_r[Idx] >= v_min[Idx], Idx;//衝突判定
 		smp_line(__LINE__, __FILE__); v_center_l[Idx] <= v_max[Idx], Idx;//衝突判定
->>>>>>> parent of 434d816 (commit)
-		//smp_line(__LINE__, __FILE__); v_rear_r[Idx] >= v_rear_min[Idx], Idx;
-		//smp_line(__LINE__, __FILE__); v_rear_l[Idx] <= v_rear_max[Idx], Idx;
-=======
-		smp_line(__LINE__, __FILE__); v_front_r[Idx] >= v_front_min[Idx], Idx;//衝突判定
-		smp_line(__LINE__, __FILE__); v_front_l[Idx] <= v_front_max[Idx], Idx;//衝突判定
-		smp_line(__LINE__, __FILE__); v_center_r[Idx] >= v_min[Idx], Idx;//衝突判定
-		smp_line(__LINE__, __FILE__); v_center_l[Idx] <= v_max[Idx], Idx;//衝突判定
 		smp_line(__LINE__, __FILE__); v_rear_r[Idx] >= v_rear_min[Idx], Idx;
 		smp_line(__LINE__, __FILE__); v_rear_l[Idx] <= v_rear_max[Idx], Idx;
->>>>>>> 2942353e150a707a5a840466743353603b86a711
 
 		//歩行者がいる時の制約
 		smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.9, Idx;
@@ -358,9 +349,8 @@ System_NUOPT::System_NUOPT()
 =======
 		smp_line(__LINE__, __FILE__); delta[Idx] <= 1.0472, Idx;//タイヤ角
 		smp_line(__LINE__, __FILE__); delta[Idx] >= -1.0472, Idx;//タイヤ角
-		//smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.5, Idx;
-		//smp_line(__LINE__, __FILE__); delta_dot[Idx] >= -0.5, Idx;
->>>>>>> parent of 434d816 (commit)
+		smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.5, Idx;
+		smp_line(__LINE__, __FILE__); delta_dot[Idx] >= -0.5, Idx;
 		//smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.15, Idx;
 		//smp_line(__LINE__, __FILE__); delta_dot[Idx] >= -0.15, Idx;
 
@@ -389,18 +379,8 @@ System_NUOPT::System_NUOPT()
 				+ Q_acc * acc[Idx_eval] * acc[Idx_eval]//
 				+ Q_delta * delta[Idx_eval] * delta[Idx_eval]//
 				+ Q_delta_dot * delta_dot[Idx_eval] * delta_dot[Idx_eval]
-<<<<<<< HEAD
-<<<<<<< HEAD
-				/* + 1.0 * (vel[Idx_eval] * vel[Idx_eval] / (Dist[Idx_eval] + 0.0001))
-				+ 1.0 * (1 /( Dist[Idx_eval]+0.001))*/, Idx_eval);
-=======
 				+ 1.0 * (vel[Idx_eval] * vel[Idx_eval] / (Dist[Idx_eval] + 0.0001))
 				+ 1.0 * (1 /( Dist[Idx_eval]+0.001)), Idx_eval);
->>>>>>> 2942353e150a707a5a840466743353603b86a711
-=======
-				+ 1.0 * (vel[Idx_eval] * vel[Idx_eval] / (Dist[Idx_eval] + 0.0001))
-				+ 1.0 * (1 / (Dist[Idx_eval] + 0.0001)), Idx_eval);
->>>>>>> parent of 434d816 (commit)
 
 		//減速させる項
 		// J=Q_vel*(vel*vel/(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2)))
