@@ -18,7 +18,7 @@
 
 //Setting of shared memory
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
-constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
+constexpr auto SHARED_MEMORY_SIZE = 9 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
@@ -257,6 +257,7 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 	}
 
+	shareddata->closs_y_pd = ped.closs_y_pd;
 	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
 	shareddata->vel_pd = ped.vel_pd;
@@ -264,7 +265,44 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 	shareddata->trigger=trigger ;
 }
 
+//歩行者との衝突判定
+void judge_collision(Pedestrian& ped, SharedData* shareddata)
+{
+	double x_car, y_car;
+	double x_front_r, y_front_r;
+	double x_front_l, y_front_l;
+	double x_rear_r, y_rear_r;
+	double x_rear_l, y_rear_l;
+	int collision_judge;
 
+	x_car = shareddata->x[0];
+	y_car = shareddata->y[0];
+	x_front_r = shareddata->u_front_r[0];
+	y_front_r = shareddata->v_front_r[0];
+	x_rear_r = shareddata->u_rear_r[0];
+	y_rear_r = shareddata->v_rear_r[0];
+	x_front_l = shareddata->u_front_l[0];
+	y_front_l = shareddata->v_front_l[0];
+	x_rear_l = shareddata->u_rear_l[0];
+	y_rear_l = shareddata->v_rear_l[0];
+
+	double dist_g, dist_f_r, dist_f_l, dist_r_r, dist_r_l;
+
+	dist_g = pow(pow((x_car - ped.x_pd), 2.0) + pow((y_car - ped.y_pd), 2.0), 0.5);
+	dist_f_r = pow(pow((x_front_r - ped.x_pd), 2.0) + pow((y_front_r - ped.y_pd), 2.0), 0.5);
+	dist_f_l = pow(pow((x_front_l - ped.x_pd), 2.0) + pow((y_front_l - ped.y_pd), 2.0), 0.5);
+	dist_r_r = pow(pow((x_rear_r - ped.x_pd), 2.0) + pow((y_rear_r - ped.y_pd), 2.0), 0.5);
+	dist_r_l = pow(pow((x_rear_l - ped.x_pd), 2.0) + pow((y_rear_l - ped.y_pd), 2.0), 0.5);
+
+	if (dist_g >= 0.3 && dist_f_r>=0.3 && dist_f_l >=0.3 && dist_r_r>=0.3 && dist_r_l >=0.3) {
+		collision_judge = 0;
+	}
+	else {
+		collision_judge = 1;
+	}
+	shareddata->collision = collision_judge;
+	//collision_judgeが0で衝突なし/1で衝突あり
+}
 
 //コースの表示
 void plot_course(std::vector<double> x_ref, std::vector<double> y_ref, std::vector<double> x_max, std::vector<double> y_max, std::vector<double> x_min, std::vector<double> y_min)
@@ -516,10 +554,11 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	while (shareddata->u[0] < u_end)
 	{
 		system(path);
-		UpdateState();
+		//UpdateState();
 #ifdef PD
-		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者
-		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
+		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者　判断なし
+		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);//歩行者　判断あり
+		judge_collision(ped, shareddata); 
 #endif //PD
 		
 		//result_plot(shareddata,gp);//結果プロット
@@ -606,7 +645,8 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 5; //Initial u
+	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
+	double u_start = 10; //Initial u
 	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
