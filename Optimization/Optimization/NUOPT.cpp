@@ -310,13 +310,6 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); acc[Idx] <= 3.3, Idx;//加速度
 		smp_line(__LINE__, __FILE__); vel[Idx] >= 0, Idx;//速度
 		smp_line(__LINE__, __FILE__); vel[Idx] <= vel_max[Idx], Idx;//速度
-<<<<<<< HEAD
-<<<<<<< HEAD
-		//smp_line(__LINE__, __FILE__); v_front_r[Idx] >= v_front_min[Idx], Idx;//衝突判定
-		//smp_line(__LINE__, __FILE__); v_front_l[Idx] <= v_front_max[Idx], Idx;//衝突判定
-		//smp_line(__LINE__, __FILE__); v_center_r[Idx] >= v_min[Idx], Idx;//衝突判定
-		//smp_line(__LINE__, __FILE__); v_center_l[Idx] <= v_max[Idx], Idx;//衝突判定
-=======
 		smp_line(__LINE__, __FILE__); v_front_r[Idx] >= v_front_min[Idx], Idx;//衝突判定
 		smp_line(__LINE__, __FILE__); v_front_l[Idx] <= v_front_max[Idx], Idx;//衝突判定
 		smp_line(__LINE__, __FILE__); v_center_r[Idx] >= v_min[Idx], Idx;//衝突判定
@@ -332,21 +325,6 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); Dist_r_l[Idx] >= 0.3, Idx;
 
 		//歩行者と車の距離が1m以上の制約
-
-
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-		//smp_line(__LINE__, __FILE__); delta[Idx] <= 1.0472, Idx;//タイヤ角
-		//smp_line(__LINE__, __FILE__); delta[Idx] >= -1.0472, Idx;//タイヤ角
-=======
-		smp_line(__LINE__, __FILE__); delta[Idx] <= 1.0472, Idx;//タイヤ角
-		smp_line(__LINE__, __FILE__); delta[Idx] >= -1.0472, Idx;//タイヤ角
->>>>>>> 2942353e150a707a5a840466743353603b86a711
-		smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.5, Idx;
-		smp_line(__LINE__, __FILE__); delta_dot[Idx] >= -0.5, Idx;
-=======
 		smp_line(__LINE__, __FILE__); delta[Idx] <= 1.0472, Idx;//タイヤ角
 		smp_line(__LINE__, __FILE__); delta[Idx] >= -1.0472, Idx;//タイヤ角
 		smp_line(__LINE__, __FILE__); delta_dot[Idx] <= 0.5, Idx;

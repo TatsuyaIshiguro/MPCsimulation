@@ -644,13 +644,7 @@ int main()
 #endif // SINE
 
 #ifdef CSV
-<<<<<<< HEAD
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-<<<<<<< HEAD
-	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 10; //Initial u
-=======
-	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 0.25; //Initial u
 	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
