@@ -12,19 +12,20 @@ MSI Numerical Optimizer 21.1.0 (with GLOBAL module)
 %%
 %%
 PROBLEM_NAME                                            NUOPT
-NUMBER_OF_VARIABLES                                      2628
-NUMBER_OF_FUNCTIONS                                      1958
+NUMBER_OF_VARIABLES                                      2768
+NUMBER_OF_FUNCTIONS                                      2098
 PROBLEM_TYPE                                     MINIMIZATION
 METHOD                                       TRUST_REGION_IPM
 STATUS                                            NON_OPTIMAL
 ERROR_TYPE (NUOPT 2) infeasible(linear constraints and variable bounds).
 NO_IIS_FOUND_BY                                NON_LINEARLITY
 (#NONLINEAR_CONSTR.)                                      977
-VALUE_OF_OBJECTIVE                                          0
+VALUE_OF_OBJECTIVE                                  -62031000
 ITERATION_COUNT                                            -1
 FUNC_EVAL_COUNT                                             0
 FACTORIZATION_COUNT                                         0
-RESIDUAL                                      1.423376623e-15
+RESIDUAL                                      1.249374777e-15
+BOUND_INFEASIBILITY                           5.551115123e-16
 CONSTRAINT_INFEASIBILITY                          1.442695041
 ELAPSED_TIME(sec.)                                       0.08
 
@@ -732,76 +733,76 @@ V#  697 delta[66]                  0  FREE   1.04720000e+00 [ -1.0472 <=    delt
 V#  698 delta[67]                  0  FREE   1.04720000e+00 [ -1.0472 <=    delta[67]   <= 1.0472 ]
 V#  699 delta[68]                  0  FREE   1.04720000e+00 [ -1.0472 <=    delta[68]   <= 1.0472 ]
 V#  700 delta[69]                  0  FREE   1.04720000e+00 [ -1.0472 <=    delta[69]   <= 1.0472 ]
-V#  701 delta_dot[0]               0  FREE                  [    -Inf <=  delta_dot[0]  <= +Inf   ]
-V#  702 delta_dot[1]               0  FREE                  [    -Inf <=  delta_dot[1]  <= +Inf   ]
-V#  703 delta_dot[2]               0  FREE                  [    -Inf <=  delta_dot[2]  <= +Inf   ]
-V#  704 delta_dot[3]               0  FREE                  [    -Inf <=  delta_dot[3]  <= +Inf   ]
-V#  705 delta_dot[4]               0  FREE                  [    -Inf <=  delta_dot[4]  <= +Inf   ]
-V#  706 delta_dot[5]               0  FREE                  [    -Inf <=  delta_dot[5]  <= +Inf   ]
-V#  707 delta_dot[6]               0  FREE                  [    -Inf <=  delta_dot[6]  <= +Inf   ]
-V#  708 delta_dot[7]               0  FREE                  [    -Inf <=  delta_dot[7]  <= +Inf   ]
-V#  709 delta_dot[8]               0  FREE                  [    -Inf <=  delta_dot[8]  <= +Inf   ]
-V#  710 delta_dot[9]               0  FREE                  [    -Inf <=  delta_dot[9]  <= +Inf   ]
-V#  711 delta_dot[10]              0  FREE                  [    -Inf <=  delta_dot[10] <= +Inf   ]
-V#  712 delta_dot[11]              0  FREE                  [    -Inf <=  delta_dot[11] <= +Inf   ]
-V#  713 delta_dot[12]              0  FREE                  [    -Inf <=  delta_dot[12] <= +Inf   ]
-V#  714 delta_dot[13]              0  FREE                  [    -Inf <=  delta_dot[13] <= +Inf   ]
-V#  715 delta_dot[14]              0  FREE                  [    -Inf <=  delta_dot[14] <= +Inf   ]
-V#  716 delta_dot[15]              0  FREE                  [    -Inf <=  delta_dot[15] <= +Inf   ]
-V#  717 delta_dot[16]              0  FREE                  [    -Inf <=  delta_dot[16] <= +Inf   ]
-V#  718 delta_dot[17]              0  FREE                  [    -Inf <=  delta_dot[17] <= +Inf   ]
-V#  719 delta_dot[18]              0  FREE                  [    -Inf <=  delta_dot[18] <= +Inf   ]
-V#  720 delta_dot[19]              0  FREE                  [    -Inf <=  delta_dot[19] <= +Inf   ]
-V#  721 delta_dot[20]              0  FREE                  [    -Inf <=  delta_dot[20] <= +Inf   ]
-V#  722 delta_dot[21]              0  FREE                  [    -Inf <=  delta_dot[21] <= +Inf   ]
-V#  723 delta_dot[22]              0  FREE                  [    -Inf <=  delta_dot[22] <= +Inf   ]
-V#  724 delta_dot[23]              0  FREE                  [    -Inf <=  delta_dot[23] <= +Inf   ]
-V#  725 delta_dot[24]              0  FREE                  [    -Inf <=  delta_dot[24] <= +Inf   ]
-V#  726 delta_dot[25]              0  FREE                  [    -Inf <=  delta_dot[25] <= +Inf   ]
-V#  727 delta_dot[26]              0  FREE                  [    -Inf <=  delta_dot[26] <= +Inf   ]
-V#  728 delta_dot[27]              0  FREE                  [    -Inf <=  delta_dot[27] <= +Inf   ]
-V#  729 delta_dot[28]              0  FREE                  [    -Inf <=  delta_dot[28] <= +Inf   ]
-V#  730 delta_dot[29]              0  FREE                  [    -Inf <=  delta_dot[29] <= +Inf   ]
-V#  731 delta_dot[30]              0  FREE                  [    -Inf <=  delta_dot[30] <= +Inf   ]
-V#  732 delta_dot[31]              0  FREE                  [    -Inf <=  delta_dot[31] <= +Inf   ]
-V#  733 delta_dot[32]              0  FREE                  [    -Inf <=  delta_dot[32] <= +Inf   ]
-V#  734 delta_dot[33]              0  FREE                  [    -Inf <=  delta_dot[33] <= +Inf   ]
-V#  735 delta_dot[34]              0  FREE                  [    -Inf <=  delta_dot[34] <= +Inf   ]
-V#  736 delta_dot[35]              0  FREE                  [    -Inf <=  delta_dot[35] <= +Inf   ]
-V#  737 delta_dot[36]              0  FREE                  [    -Inf <=  delta_dot[36] <= +Inf   ]
-V#  738 delta_dot[37]              0  FREE                  [    -Inf <=  delta_dot[37] <= +Inf   ]
-V#  739 delta_dot[38]              0  FREE                  [    -Inf <=  delta_dot[38] <= +Inf   ]
-V#  740 delta_dot[39]              0  FREE                  [    -Inf <=  delta_dot[39] <= +Inf   ]
-V#  741 delta_dot[40]              0  FREE                  [    -Inf <=  delta_dot[40] <= +Inf   ]
-V#  742 delta_dot[41]              0  FREE                  [    -Inf <=  delta_dot[41] <= +Inf   ]
-V#  743 delta_dot[42]              0  FREE                  [    -Inf <=  delta_dot[42] <= +Inf   ]
-V#  744 delta_dot[43]              0  FREE                  [    -Inf <=  delta_dot[43] <= +Inf   ]
-V#  745 delta_dot[44]              0  FREE                  [    -Inf <=  delta_dot[44] <= +Inf   ]
-V#  746 delta_dot[45]              0  FREE                  [    -Inf <=  delta_dot[45] <= +Inf   ]
-V#  747 delta_dot[46]              0  FREE                  [    -Inf <=  delta_dot[46] <= +Inf   ]
-V#  748 delta_dot[47]              0  FREE                  [    -Inf <=  delta_dot[47] <= +Inf   ]
-V#  749 delta_dot[48]              0  FREE                  [    -Inf <=  delta_dot[48] <= +Inf   ]
-V#  750 delta_dot[49]              0  FREE                  [    -Inf <=  delta_dot[49] <= +Inf   ]
-V#  751 delta_dot[50]              0  FREE                  [    -Inf <=  delta_dot[50] <= +Inf   ]
-V#  752 delta_dot[51]              0  FREE                  [    -Inf <=  delta_dot[51] <= +Inf   ]
-V#  753 delta_dot[52]              0  FREE                  [    -Inf <=  delta_dot[52] <= +Inf   ]
-V#  754 delta_dot[53]              0  FREE                  [    -Inf <=  delta_dot[53] <= +Inf   ]
-V#  755 delta_dot[54]              0  FREE                  [    -Inf <=  delta_dot[54] <= +Inf   ]
-V#  756 delta_dot[55]              0  FREE                  [    -Inf <=  delta_dot[55] <= +Inf   ]
-V#  757 delta_dot[56]              0  FREE                  [    -Inf <=  delta_dot[56] <= +Inf   ]
-V#  758 delta_dot[57]              0  FREE                  [    -Inf <=  delta_dot[57] <= +Inf   ]
-V#  759 delta_dot[58]              0  FREE                  [    -Inf <=  delta_dot[58] <= +Inf   ]
-V#  760 delta_dot[59]              0  FREE                  [    -Inf <=  delta_dot[59] <= +Inf   ]
-V#  761 delta_dot[60]              0  FREE                  [    -Inf <=  delta_dot[60] <= +Inf   ]
-V#  762 delta_dot[61]              0  FREE                  [    -Inf <=  delta_dot[61] <= +Inf   ]
-V#  763 delta_dot[62]              0  FREE                  [    -Inf <=  delta_dot[62] <= +Inf   ]
-V#  764 delta_dot[63]              0  FREE                  [    -Inf <=  delta_dot[63] <= +Inf   ]
-V#  765 delta_dot[64]              0  FREE                  [    -Inf <=  delta_dot[64] <= +Inf   ]
-V#  766 delta_dot[65]              0  FREE                  [    -Inf <=  delta_dot[65] <= +Inf   ]
-V#  767 delta_dot[66]              0  FREE                  [    -Inf <=  delta_dot[66] <= +Inf   ]
-V#  768 delta_dot[67]              0  FREE                  [    -Inf <=  delta_dot[67] <= +Inf   ]
-V#  769 delta_dot[68]              0  FREE                  [    -Inf <=  delta_dot[68] <= +Inf   ]
-V#  770 delta_dot[69]              0  FREE                  [    -Inf <=  delta_dot[69] <= +Inf   ]
+V#  701 delta_dot[0]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[0]  <= 0.5    ]
+V#  702 delta_dot[1]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[1]  <= 0.5    ]
+V#  703 delta_dot[2]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[2]  <= 0.5    ]
+V#  704 delta_dot[3]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[3]  <= 0.5    ]
+V#  705 delta_dot[4]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[4]  <= 0.5    ]
+V#  706 delta_dot[5]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[5]  <= 0.5    ]
+V#  707 delta_dot[6]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[6]  <= 0.5    ]
+V#  708 delta_dot[7]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[7]  <= 0.5    ]
+V#  709 delta_dot[8]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[8]  <= 0.5    ]
+V#  710 delta_dot[9]            -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[9]  <= 0.5    ]
+V#  711 delta_dot[10]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[10] <= 0.5    ]
+V#  712 delta_dot[11]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[11] <= 0.5    ]
+V#  713 delta_dot[12]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[12] <= 0.5    ]
+V#  714 delta_dot[13]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[13] <= 0.5    ]
+V#  715 delta_dot[14]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[14] <= 0.5    ]
+V#  716 delta_dot[15]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[15] <= 0.5    ]
+V#  717 delta_dot[16]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[16] <= 0.5    ]
+V#  718 delta_dot[17]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[17] <= 0.5    ]
+V#  719 delta_dot[18]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[18] <= 0.5    ]
+V#  720 delta_dot[19]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[19] <= 0.5    ]
+V#  721 delta_dot[20]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[20] <= 0.5    ]
+V#  722 delta_dot[21]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[21] <= 0.5    ]
+V#  723 delta_dot[22]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[22] <= 0.5    ]
+V#  724 delta_dot[23]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[23] <= 0.5    ]
+V#  725 delta_dot[24]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[24] <= 0.5    ]
+V#  726 delta_dot[25]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[25] <= 0.5    ]
+V#  727 delta_dot[26]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[26] <= 0.5    ]
+V#  728 delta_dot[27]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[27] <= 0.5    ]
+V#  729 delta_dot[28]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[28] <= 0.5    ]
+V#  730 delta_dot[29]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[29] <= 0.5    ]
+V#  731 delta_dot[30]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[30] <= 0.5    ]
+V#  732 delta_dot[31]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[31] <= 0.5    ]
+V#  733 delta_dot[32]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[32] <= 0.5    ]
+V#  734 delta_dot[33]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[33] <= 0.5    ]
+V#  735 delta_dot[34]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[34] <= 0.5    ]
+V#  736 delta_dot[35]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[35] <= 0.5    ]
+V#  737 delta_dot[36]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[36] <= 0.5    ]
+V#  738 delta_dot[37]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[37] <= 0.5    ]
+V#  739 delta_dot[38]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[38] <= 0.5    ]
+V#  740 delta_dot[39]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[39] <= 0.5    ]
+V#  741 delta_dot[40]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[40] <= 0.5    ]
+V#  742 delta_dot[41]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[41] <= 0.5    ]
+V#  743 delta_dot[42]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[42] <= 0.5    ]
+V#  744 delta_dot[43]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[43] <= 0.5    ]
+V#  745 delta_dot[44]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[44] <= 0.5    ]
+V#  746 delta_dot[45]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[45] <= 0.5    ]
+V#  747 delta_dot[46]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[46] <= 0.5    ]
+V#  748 delta_dot[47]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[47] <= 0.5    ]
+V#  749 delta_dot[48]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[48] <= 0.5    ]
+V#  750 delta_dot[49]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[49] <= 0.5    ]
+V#  751 delta_dot[50]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[50] <= 0.5    ]
+V#  752 delta_dot[51]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[51] <= 0.5    ]
+V#  753 delta_dot[52]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[52] <= 0.5    ]
+V#  754 delta_dot[53]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[53] <= 0.5    ]
+V#  755 delta_dot[54]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[54] <= 0.5    ]
+V#  756 delta_dot[55]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[55] <= 0.5    ]
+V#  757 delta_dot[56]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[56] <= 0.5    ]
+V#  758 delta_dot[57]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[57] <= 0.5    ]
+V#  759 delta_dot[58]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[58] <= 0.5    ]
+V#  760 delta_dot[59]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[59] <= 0.5    ]
+V#  761 delta_dot[60]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[60] <= 0.5    ]
+V#  762 delta_dot[61]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[61] <= 0.5    ]
+V#  763 delta_dot[62]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[62] <= 0.5    ]
+V#  764 delta_dot[63]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[63] <= 0.5    ]
+V#  765 delta_dot[64]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[64] <= 0.5    ]
+V#  766 delta_dot[65]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[65] <= 0.5    ]
+V#  767 delta_dot[66]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[66] <= 0.5    ]
+V#  768 delta_dot[67]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[67] <= 0.5    ]
+V#  769 delta_dot[68]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[68] <= 0.5    ]
+V#  770 delta_dot[69]           -0.5  LOWER  0.00000000e+00 [    -0.5 <=  delta_dot[69] <= 0.5    ]
 V#  771 v_front_l[0]               0  FREE                  [    -Inf <=  v_front_l[0]  <= +Inf   ]
 V#  772 v_front_l[1]               0  FREE                  [    -Inf <=  v_front_l[1]  <= +Inf   ]
 V#  773 v_front_l[2]               0  FREE                  [    -Inf <=  v_front_l[2]  <= +Inf   ]
@@ -1570,75 +1571,75 @@ V# 1535 V_inv[65]                  0  FREE                  [    -Inf <=    V_in
 V# 1536 V_inv[66]                  0  FREE                  [    -Inf <=    V_inv[66]   <= +Inf   ]
 V# 1537 V_inv[67]                  0  FREE                  [    -Inf <=    V_inv[67]   <= +Inf   ]
 V# 1538 V_inv[68]                  0  FREE                  [    -Inf <=    V_inv[68]   <= +Inf   ]
-V# 1539 Dist[0]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[0]              ]
-V# 1540 Dist[1]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[1]              ]
-V# 1541 Dist[2]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[2]              ]
-V# 1542 Dist[3]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[3]              ]
-V# 1543 Dist[4]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[4]              ]
-V# 1544 Dist[5]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[5]              ]
-V# 1545 Dist[6]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[6]              ]
-V# 1546 Dist[7]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[7]              ]
-V# 1547 Dist[8]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[8]              ]
-V# 1548 Dist[9]                  0.9  REMVD  0.00000000e+00 [     0.9 <=     Dist[9]              ]
-V# 1549 Dist[10]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[10]              ]
-V# 1550 Dist[11]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[11]              ]
-V# 1551 Dist[12]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[12]              ]
-V# 1552 Dist[13]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[13]              ]
-V# 1553 Dist[14]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[14]              ]
-V# 1554 Dist[15]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[15]              ]
-V# 1555 Dist[16]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[16]              ]
-V# 1556 Dist[17]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[17]              ]
-V# 1557 Dist[18]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[18]              ]
-V# 1558 Dist[19]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[19]              ]
-V# 1559 Dist[20]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[20]              ]
-V# 1560 Dist[21]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[21]              ]
-V# 1561 Dist[22]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[22]              ]
-V# 1562 Dist[23]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[23]              ]
-V# 1563 Dist[24]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[24]              ]
-V# 1564 Dist[25]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[25]              ]
-V# 1565 Dist[26]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[26]              ]
-V# 1566 Dist[27]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[27]              ]
-V# 1567 Dist[28]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[28]              ]
-V# 1568 Dist[29]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[29]              ]
-V# 1569 Dist[30]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[30]              ]
-V# 1570 Dist[31]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[31]              ]
-V# 1571 Dist[32]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[32]              ]
-V# 1572 Dist[33]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[33]              ]
-V# 1573 Dist[34]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[34]              ]
-V# 1574 Dist[35]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[35]              ]
-V# 1575 Dist[36]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[36]              ]
-V# 1576 Dist[37]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[37]              ]
-V# 1577 Dist[38]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[38]              ]
-V# 1578 Dist[39]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[39]              ]
-V# 1579 Dist[40]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[40]              ]
-V# 1580 Dist[41]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[41]              ]
-V# 1581 Dist[42]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[42]              ]
-V# 1582 Dist[43]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[43]              ]
-V# 1583 Dist[44]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[44]              ]
-V# 1584 Dist[45]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[45]              ]
-V# 1585 Dist[46]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[46]              ]
-V# 1586 Dist[47]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[47]              ]
-V# 1587 Dist[48]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[48]              ]
-V# 1588 Dist[49]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[49]              ]
-V# 1589 Dist[50]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[50]              ]
-V# 1590 Dist[51]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[51]              ]
-V# 1591 Dist[52]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[52]              ]
-V# 1592 Dist[53]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[53]              ]
-V# 1593 Dist[54]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[54]              ]
-V# 1594 Dist[55]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[55]              ]
-V# 1595 Dist[56]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[56]              ]
-V# 1596 Dist[57]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[57]              ]
-V# 1597 Dist[58]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[58]              ]
-V# 1598 Dist[59]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[59]              ]
-V# 1599 Dist[60]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[60]              ]
-V# 1600 Dist[61]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[61]              ]
-V# 1601 Dist[62]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[62]              ]
-V# 1602 Dist[63]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[63]              ]
-V# 1603 Dist[64]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[64]              ]
-V# 1604 Dist[65]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[65]              ]
-V# 1605 Dist[66]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[66]              ]
-V# 1606 Dist[67]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[67]              ]
-V# 1607 Dist[68]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[68]              ]
+V# 1539 Dist[0]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[0]              ]
+V# 1540 Dist[1]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[1]              ]
+V# 1541 Dist[2]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[2]              ]
+V# 1542 Dist[3]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[3]              ]
+V# 1543 Dist[4]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[4]              ]
+V# 1544 Dist[5]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[5]              ]
+V# 1545 Dist[6]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[6]              ]
+V# 1546 Dist[7]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[7]              ]
+V# 1547 Dist[8]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[8]              ]
+V# 1548 Dist[9]                  0.9  LOWER -5.55111512e-16 [     0.9 <=     Dist[9]              ]
+V# 1549 Dist[10]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[10]              ]
+V# 1550 Dist[11]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[11]              ]
+V# 1551 Dist[12]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[12]              ]
+V# 1552 Dist[13]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[13]              ]
+V# 1553 Dist[14]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[14]              ]
+V# 1554 Dist[15]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[15]              ]
+V# 1555 Dist[16]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[16]              ]
+V# 1556 Dist[17]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[17]              ]
+V# 1557 Dist[18]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[18]              ]
+V# 1558 Dist[19]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[19]              ]
+V# 1559 Dist[20]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[20]              ]
+V# 1560 Dist[21]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[21]              ]
+V# 1561 Dist[22]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[22]              ]
+V# 1562 Dist[23]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[23]              ]
+V# 1563 Dist[24]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[24]              ]
+V# 1564 Dist[25]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[25]              ]
+V# 1565 Dist[26]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[26]              ]
+V# 1566 Dist[27]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[27]              ]
+V# 1567 Dist[28]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[28]              ]
+V# 1568 Dist[29]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[29]              ]
+V# 1569 Dist[30]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[30]              ]
+V# 1570 Dist[31]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[31]              ]
+V# 1571 Dist[32]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[32]              ]
+V# 1572 Dist[33]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[33]              ]
+V# 1573 Dist[34]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[34]              ]
+V# 1574 Dist[35]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[35]              ]
+V# 1575 Dist[36]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[36]              ]
+V# 1576 Dist[37]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[37]              ]
+V# 1577 Dist[38]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[38]              ]
+V# 1578 Dist[39]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[39]              ]
+V# 1579 Dist[40]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[40]              ]
+V# 1580 Dist[41]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[41]              ]
+V# 1581 Dist[42]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[42]              ]
+V# 1582 Dist[43]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[43]              ]
+V# 1583 Dist[44]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[44]              ]
+V# 1584 Dist[45]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[45]              ]
+V# 1585 Dist[46]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[46]              ]
+V# 1586 Dist[47]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[47]              ]
+V# 1587 Dist[48]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[48]              ]
+V# 1588 Dist[49]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[49]              ]
+V# 1589 Dist[50]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[50]              ]
+V# 1590 Dist[51]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[51]              ]
+V# 1591 Dist[52]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[52]              ]
+V# 1592 Dist[53]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[53]              ]
+V# 1593 Dist[54]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[54]              ]
+V# 1594 Dist[55]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[55]              ]
+V# 1595 Dist[56]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[56]              ]
+V# 1596 Dist[57]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[57]              ]
+V# 1597 Dist[58]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[58]              ]
+V# 1598 Dist[59]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[59]              ]
+V# 1599 Dist[60]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[60]              ]
+V# 1600 Dist[61]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[61]              ]
+V# 1601 Dist[62]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[62]              ]
+V# 1602 Dist[63]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[63]              ]
+V# 1603 Dist[64]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[64]              ]
+V# 1604 Dist[65]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[65]              ]
+V# 1605 Dist[66]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[66]              ]
+V# 1606 Dist[67]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[67]              ]
+V# 1607 Dist[68]                 0.9  LOWER -5.55111512e-16 [     0.9 <=    Dist[68]              ]
 V# 1608 Dist[69]                 0.9  REMVD  0.00000000e+00 [     0.9 <=    Dist[69]              ]
 V# 1609 Dist_f_r[0]              0.3  REMVD  0.00000000e+00 [     0.3 <=   Dist_f_r[0]            ]
 V# 1610 Dist_f_r[1]              0.3  REMVD  0.00000000e+00 [     0.3 <=   Dist_f_r[1]            ]
@@ -2588,3206 +2589,3696 @@ V# 2553 v_front_min[66]              0  REMVD  0.00000000e+00 [               v_
 V# 2554 v_front_min[67]              0  REMVD  0.00000000e+00 [               v_front_min[67]    == 0      ]
 V# 2555 v_front_min[68]              0  REMVD  0.00000000e+00 [               v_front_min[68]    == 0      ]
 V# 2556 v_front_min[69]              0  REMVD  0.00000000e+00 [               v_front_min[69]    == 0      ]
-V# 2557 Rho[0]                     0  REMVD  0.00000000e+00 [                Rho[0]     == 0      ]
-V# 2558 Rho[1]                     0  REMVD  0.00000000e+00 [                Rho[1]     == 0      ]
-V# 2559 Rho[2]                     0  REMVD  0.00000000e+00 [                Rho[2]     == 0      ]
-V# 2560 Rho[3]                     0  REMVD  0.00000000e+00 [                Rho[3]     == 0      ]
-V# 2561 Rho[4]                     0  REMVD  0.00000000e+00 [                Rho[4]     == 0      ]
-V# 2562 Rho[5]                     0  REMVD  0.00000000e+00 [                Rho[5]     == 0      ]
-V# 2563 Rho[6]                     0  REMVD  0.00000000e+00 [                Rho[6]     == 0      ]
-V# 2564 Rho[7]                     0  REMVD  0.00000000e+00 [                Rho[7]     == 0      ]
-V# 2565 Rho[8]                     0  REMVD  0.00000000e+00 [                Rho[8]     == 0      ]
-V# 2566 Rho[9]                     0  REMVD  0.00000000e+00 [                Rho[9]     == 0      ]
-V# 2567 Rho[10]                    0  REMVD  0.00000000e+00 [                Rho[10]    == 0      ]
-V# 2568 Rho[11]                    0  REMVD  0.00000000e+00 [                Rho[11]    == 0      ]
-V# 2569 Rho[12]                    0  REMVD  0.00000000e+00 [                Rho[12]    == 0      ]
-V# 2570 Rho[13]                    0  REMVD  0.00000000e+00 [                Rho[13]    == 0      ]
-V# 2571 Rho[14]                    0  REMVD  0.00000000e+00 [                Rho[14]    == 0      ]
-V# 2572 Rho[15]                    0  REMVD  0.00000000e+00 [                Rho[15]    == 0      ]
-V# 2573 Rho[16]                    0  REMVD  0.00000000e+00 [                Rho[16]    == 0      ]
-V# 2574 Rho[17]                    0  REMVD  0.00000000e+00 [                Rho[17]    == 0      ]
-V# 2575 Rho[18]                    0  REMVD  0.00000000e+00 [                Rho[18]    == 0      ]
-V# 2576 Rho[19]                    0  REMVD  0.00000000e+00 [                Rho[19]    == 0      ]
-V# 2577 Rho[20]                    0  REMVD  0.00000000e+00 [                Rho[20]    == 0      ]
-V# 2578 Rho[21]                    0  REMVD  0.00000000e+00 [                Rho[21]    == 0      ]
-V# 2579 Rho[22]                    0  REMVD  0.00000000e+00 [                Rho[22]    == 0      ]
-V# 2580 Rho[23]                    0  REMVD  0.00000000e+00 [                Rho[23]    == 0      ]
-V# 2581 Rho[24]                    0  REMVD  0.00000000e+00 [                Rho[24]    == 0      ]
-V# 2582 Rho[25]                    0  REMVD  0.00000000e+00 [                Rho[25]    == 0      ]
-V# 2583 Rho[26]                    0  REMVD  0.00000000e+00 [                Rho[26]    == 0      ]
-V# 2584 Rho[27]                    0  REMVD  0.00000000e+00 [                Rho[27]    == 0      ]
-V# 2585 Rho[28]                    0  REMVD  0.00000000e+00 [                Rho[28]    == 0      ]
-V# 2586 Rho[29]                    0  REMVD  0.00000000e+00 [                Rho[29]    == 0      ]
-V# 2587 Rho[30]                    0  REMVD  0.00000000e+00 [                Rho[30]    == 0      ]
-V# 2588 Rho[31]                    0  REMVD  0.00000000e+00 [                Rho[31]    == 0      ]
-V# 2589 Rho[32]                    0  REMVD  0.00000000e+00 [                Rho[32]    == 0      ]
-V# 2590 Rho[33]                    0  REMVD  0.00000000e+00 [                Rho[33]    == 0      ]
-V# 2591 Rho[34]                    0  REMVD  0.00000000e+00 [                Rho[34]    == 0      ]
-V# 2592 Rho[35]                    0  REMVD  0.00000000e+00 [                Rho[35]    == 0      ]
-V# 2593 Rho[36]                    0  REMVD  0.00000000e+00 [                Rho[36]    == 0      ]
-V# 2594 Rho[37]                    0  REMVD  0.00000000e+00 [                Rho[37]    == 0      ]
-V# 2595 Rho[38]                    0  REMVD  0.00000000e+00 [                Rho[38]    == 0      ]
-V# 2596 Rho[39]                    0  REMVD  0.00000000e+00 [                Rho[39]    == 0      ]
-V# 2597 Rho[40]                    0  REMVD  0.00000000e+00 [                Rho[40]    == 0      ]
-V# 2598 Rho[41]                    0  REMVD  0.00000000e+00 [                Rho[41]    == 0      ]
-V# 2599 Rho[42]                    0  REMVD  0.00000000e+00 [                Rho[42]    == 0      ]
-V# 2600 Rho[43]                    0  REMVD  0.00000000e+00 [                Rho[43]    == 0      ]
-V# 2601 Rho[44]                    0  REMVD  0.00000000e+00 [                Rho[44]    == 0      ]
-V# 2602 Rho[45]                    0  REMVD  0.00000000e+00 [                Rho[45]    == 0      ]
-V# 2603 Rho[46]                    0  REMVD  0.00000000e+00 [                Rho[46]    == 0      ]
-V# 2604 Rho[47]                    0  REMVD  0.00000000e+00 [                Rho[47]    == 0      ]
-V# 2605 Rho[48]                    0  REMVD  0.00000000e+00 [                Rho[48]    == 0      ]
-V# 2606 Rho[49]                    0  REMVD  0.00000000e+00 [                Rho[49]    == 0      ]
-V# 2607 Rho[50]                    0  REMVD  0.00000000e+00 [                Rho[50]    == 0      ]
-V# 2608 Rho[51]                    0  REMVD  0.00000000e+00 [                Rho[51]    == 0      ]
-V# 2609 Rho[52]                    0  REMVD  0.00000000e+00 [                Rho[52]    == 0      ]
-V# 2610 Rho[53]                    0  REMVD  0.00000000e+00 [                Rho[53]    == 0      ]
-V# 2611 Rho[54]                    0  REMVD  0.00000000e+00 [                Rho[54]    == 0      ]
-V# 2612 Rho[55]                    0  REMVD  0.00000000e+00 [                Rho[55]    == 0      ]
-V# 2613 Rho[56]                    0  REMVD  0.00000000e+00 [                Rho[56]    == 0      ]
-V# 2614 Rho[57]                    0  REMVD  0.00000000e+00 [                Rho[57]    == 0      ]
-V# 2615 Rho[58]                    0  REMVD  0.00000000e+00 [                Rho[58]    == 0      ]
-V# 2616 Rho[59]                    0  REMVD  0.00000000e+00 [                Rho[59]    == 0      ]
-V# 2617 Rho[60]                    0  REMVD  0.00000000e+00 [                Rho[60]    == 0      ]
-V# 2618 Rho[61]                    0  REMVD  0.00000000e+00 [                Rho[61]    == 0      ]
-V# 2619 Rho[62]                    0  REMVD  0.00000000e+00 [                Rho[62]    == 0      ]
-V# 2620 Rho[63]                    0  REMVD  0.00000000e+00 [                Rho[63]    == 0      ]
-V# 2621 Rho[64]                    0  REMVD  0.00000000e+00 [                Rho[64]    == 0      ]
-V# 2622 Rho[65]                    0  REMVD  0.00000000e+00 [                Rho[65]    == 0      ]
-V# 2623 Rho[66]                    0  REMVD  0.00000000e+00 [                Rho[66]    == 0      ]
-V# 2624 Rho[67]                    0  REMVD  0.00000000e+00 [                Rho[67]    == 0      ]
-V# 2625 Rho[68]                    0  REMVD  0.00000000e+00 [                Rho[68]    == 0      ]
-V# 2626 x_pd                       0  REMVD  0.00000000e+00 [                 x_pd      == 0      ]
-V# 2627 y_pd                       0  REMVD  0.00000000e+00 [                 y_pd      == 0      ]
-V# 2628 vel_pd                     0  REMVD  0.00000000e+00 [                vel_pd     == 0      ]
+V# 2557 v_rear_max[0]              0  REMVD  0.00000000e+00 [             v_rear_max[0] == 0      ]
+V# 2558 v_rear_max[1]              0  REMVD  0.00000000e+00 [             v_rear_max[1] == 0      ]
+V# 2559 v_rear_max[2]              0  REMVD  0.00000000e+00 [             v_rear_max[2] == 0      ]
+V# 2560 v_rear_max[3]              0  REMVD  0.00000000e+00 [             v_rear_max[3] == 0      ]
+V# 2561 v_rear_max[4]              0  REMVD  0.00000000e+00 [             v_rear_max[4] == 0      ]
+V# 2562 v_rear_max[5]              0  REMVD  0.00000000e+00 [             v_rear_max[5] == 0      ]
+V# 2563 v_rear_max[6]              0  REMVD  0.00000000e+00 [             v_rear_max[6] == 0      ]
+V# 2564 v_rear_max[7]              0  REMVD  0.00000000e+00 [             v_rear_max[7] == 0      ]
+V# 2565 v_rear_max[8]              0  REMVD  0.00000000e+00 [             v_rear_max[8] == 0      ]
+V# 2566 v_rear_max[9]              0  REMVD  0.00000000e+00 [             v_rear_max[9] == 0      ]
+V# 2567 v_rear_max[10]             0  REMVD  0.00000000e+00 [            v_rear_max[10] == 0      ]
+V# 2568 v_rear_max[11]             0  REMVD  0.00000000e+00 [            v_rear_max[11] == 0      ]
+V# 2569 v_rear_max[12]             0  REMVD  0.00000000e+00 [            v_rear_max[12] == 0      ]
+V# 2570 v_rear_max[13]             0  REMVD  0.00000000e+00 [            v_rear_max[13] == 0      ]
+V# 2571 v_rear_max[14]             0  REMVD  0.00000000e+00 [            v_rear_max[14] == 0      ]
+V# 2572 v_rear_max[15]             0  REMVD  0.00000000e+00 [            v_rear_max[15] == 0      ]
+V# 2573 v_rear_max[16]             0  REMVD  0.00000000e+00 [            v_rear_max[16] == 0      ]
+V# 2574 v_rear_max[17]             0  REMVD  0.00000000e+00 [            v_rear_max[17] == 0      ]
+V# 2575 v_rear_max[18]             0  REMVD  0.00000000e+00 [            v_rear_max[18] == 0      ]
+V# 2576 v_rear_max[19]             0  REMVD  0.00000000e+00 [            v_rear_max[19] == 0      ]
+V# 2577 v_rear_max[20]             0  REMVD  0.00000000e+00 [            v_rear_max[20] == 0      ]
+V# 2578 v_rear_max[21]             0  REMVD  0.00000000e+00 [            v_rear_max[21] == 0      ]
+V# 2579 v_rear_max[22]             0  REMVD  0.00000000e+00 [            v_rear_max[22] == 0      ]
+V# 2580 v_rear_max[23]             0  REMVD  0.00000000e+00 [            v_rear_max[23] == 0      ]
+V# 2581 v_rear_max[24]             0  REMVD  0.00000000e+00 [            v_rear_max[24] == 0      ]
+V# 2582 v_rear_max[25]             0  REMVD  0.00000000e+00 [            v_rear_max[25] == 0      ]
+V# 2583 v_rear_max[26]             0  REMVD  0.00000000e+00 [            v_rear_max[26] == 0      ]
+V# 2584 v_rear_max[27]             0  REMVD  0.00000000e+00 [            v_rear_max[27] == 0      ]
+V# 2585 v_rear_max[28]             0  REMVD  0.00000000e+00 [            v_rear_max[28] == 0      ]
+V# 2586 v_rear_max[29]             0  REMVD  0.00000000e+00 [            v_rear_max[29] == 0      ]
+V# 2587 v_rear_max[30]             0  REMVD  0.00000000e+00 [            v_rear_max[30] == 0      ]
+V# 2588 v_rear_max[31]             0  REMVD  0.00000000e+00 [            v_rear_max[31] == 0      ]
+V# 2589 v_rear_max[32]             0  REMVD  0.00000000e+00 [            v_rear_max[32] == 0      ]
+V# 2590 v_rear_max[33]             0  REMVD  0.00000000e+00 [            v_rear_max[33] == 0      ]
+V# 2591 v_rear_max[34]             0  REMVD  0.00000000e+00 [            v_rear_max[34] == 0      ]
+V# 2592 v_rear_max[35]             0  REMVD  0.00000000e+00 [            v_rear_max[35] == 0      ]
+V# 2593 v_rear_max[36]             0  REMVD  0.00000000e+00 [            v_rear_max[36] == 0      ]
+V# 2594 v_rear_max[37]             0  REMVD  0.00000000e+00 [            v_rear_max[37] == 0      ]
+V# 2595 v_rear_max[38]             0  REMVD  0.00000000e+00 [            v_rear_max[38] == 0      ]
+V# 2596 v_rear_max[39]             0  REMVD  0.00000000e+00 [            v_rear_max[39] == 0      ]
+V# 2597 v_rear_max[40]             0  REMVD  0.00000000e+00 [            v_rear_max[40] == 0      ]
+V# 2598 v_rear_max[41]             0  REMVD  0.00000000e+00 [            v_rear_max[41] == 0      ]
+V# 2599 v_rear_max[42]             0  REMVD  0.00000000e+00 [            v_rear_max[42] == 0      ]
+V# 2600 v_rear_max[43]             0  REMVD  0.00000000e+00 [            v_rear_max[43] == 0      ]
+V# 2601 v_rear_max[44]             0  REMVD  0.00000000e+00 [            v_rear_max[44] == 0      ]
+V# 2602 v_rear_max[45]             0  REMVD  0.00000000e+00 [            v_rear_max[45] == 0      ]
+V# 2603 v_rear_max[46]             0  REMVD  0.00000000e+00 [            v_rear_max[46] == 0      ]
+V# 2604 v_rear_max[47]             0  REMVD  0.00000000e+00 [            v_rear_max[47] == 0      ]
+V# 2605 v_rear_max[48]             0  REMVD  0.00000000e+00 [            v_rear_max[48] == 0      ]
+V# 2606 v_rear_max[49]             0  REMVD  0.00000000e+00 [            v_rear_max[49] == 0      ]
+V# 2607 v_rear_max[50]             0  REMVD  0.00000000e+00 [            v_rear_max[50] == 0      ]
+V# 2608 v_rear_max[51]             0  REMVD  0.00000000e+00 [            v_rear_max[51] == 0      ]
+V# 2609 v_rear_max[52]             0  REMVD  0.00000000e+00 [            v_rear_max[52] == 0      ]
+V# 2610 v_rear_max[53]             0  REMVD  0.00000000e+00 [            v_rear_max[53] == 0      ]
+V# 2611 v_rear_max[54]             0  REMVD  0.00000000e+00 [            v_rear_max[54] == 0      ]
+V# 2612 v_rear_max[55]             0  REMVD  0.00000000e+00 [            v_rear_max[55] == 0      ]
+V# 2613 v_rear_max[56]             0  REMVD  0.00000000e+00 [            v_rear_max[56] == 0      ]
+V# 2614 v_rear_max[57]             0  REMVD  0.00000000e+00 [            v_rear_max[57] == 0      ]
+V# 2615 v_rear_max[58]             0  REMVD  0.00000000e+00 [            v_rear_max[58] == 0      ]
+V# 2616 v_rear_max[59]             0  REMVD  0.00000000e+00 [            v_rear_max[59] == 0      ]
+V# 2617 v_rear_max[60]             0  REMVD  0.00000000e+00 [            v_rear_max[60] == 0      ]
+V# 2618 v_rear_max[61]             0  REMVD  0.00000000e+00 [            v_rear_max[61] == 0      ]
+V# 2619 v_rear_max[62]             0  REMVD  0.00000000e+00 [            v_rear_max[62] == 0      ]
+V# 2620 v_rear_max[63]             0  REMVD  0.00000000e+00 [            v_rear_max[63] == 0      ]
+V# 2621 v_rear_max[64]             0  REMVD  0.00000000e+00 [            v_rear_max[64] == 0      ]
+V# 2622 v_rear_max[65]             0  REMVD  0.00000000e+00 [            v_rear_max[65] == 0      ]
+V# 2623 v_rear_max[66]             0  REMVD  0.00000000e+00 [            v_rear_max[66] == 0      ]
+V# 2624 v_rear_max[67]             0  REMVD  0.00000000e+00 [            v_rear_max[67] == 0      ]
+V# 2625 v_rear_max[68]             0  REMVD  0.00000000e+00 [            v_rear_max[68] == 0      ]
+V# 2626 v_rear_max[69]             0  REMVD  0.00000000e+00 [            v_rear_max[69] == 0      ]
+V# 2627 v_rear_min[0]              0  REMVD  0.00000000e+00 [             v_rear_min[0] == 0      ]
+V# 2628 v_rear_min[1]              0  REMVD  0.00000000e+00 [             v_rear_min[1] == 0      ]
+V# 2629 v_rear_min[2]              0  REMVD  0.00000000e+00 [             v_rear_min[2] == 0      ]
+V# 2630 v_rear_min[3]              0  REMVD  0.00000000e+00 [             v_rear_min[3] == 0      ]
+V# 2631 v_rear_min[4]              0  REMVD  0.00000000e+00 [             v_rear_min[4] == 0      ]
+V# 2632 v_rear_min[5]              0  REMVD  0.00000000e+00 [             v_rear_min[5] == 0      ]
+V# 2633 v_rear_min[6]              0  REMVD  0.00000000e+00 [             v_rear_min[6] == 0      ]
+V# 2634 v_rear_min[7]              0  REMVD  0.00000000e+00 [             v_rear_min[7] == 0      ]
+V# 2635 v_rear_min[8]              0  REMVD  0.00000000e+00 [             v_rear_min[8] == 0      ]
+V# 2636 v_rear_min[9]              0  REMVD  0.00000000e+00 [             v_rear_min[9] == 0      ]
+V# 2637 v_rear_min[10]             0  REMVD  0.00000000e+00 [            v_rear_min[10] == 0      ]
+V# 2638 v_rear_min[11]             0  REMVD  0.00000000e+00 [            v_rear_min[11] == 0      ]
+V# 2639 v_rear_min[12]             0  REMVD  0.00000000e+00 [            v_rear_min[12] == 0      ]
+V# 2640 v_rear_min[13]             0  REMVD  0.00000000e+00 [            v_rear_min[13] == 0      ]
+V# 2641 v_rear_min[14]             0  REMVD  0.00000000e+00 [            v_rear_min[14] == 0      ]
+V# 2642 v_rear_min[15]             0  REMVD  0.00000000e+00 [            v_rear_min[15] == 0      ]
+V# 2643 v_rear_min[16]             0  REMVD  0.00000000e+00 [            v_rear_min[16] == 0      ]
+V# 2644 v_rear_min[17]             0  REMVD  0.00000000e+00 [            v_rear_min[17] == 0      ]
+V# 2645 v_rear_min[18]             0  REMVD  0.00000000e+00 [            v_rear_min[18] == 0      ]
+V# 2646 v_rear_min[19]             0  REMVD  0.00000000e+00 [            v_rear_min[19] == 0      ]
+V# 2647 v_rear_min[20]             0  REMVD  0.00000000e+00 [            v_rear_min[20] == 0      ]
+V# 2648 v_rear_min[21]             0  REMVD  0.00000000e+00 [            v_rear_min[21] == 0      ]
+V# 2649 v_rear_min[22]             0  REMVD  0.00000000e+00 [            v_rear_min[22] == 0      ]
+V# 2650 v_rear_min[23]             0  REMVD  0.00000000e+00 [            v_rear_min[23] == 0      ]
+V# 2651 v_rear_min[24]             0  REMVD  0.00000000e+00 [            v_rear_min[24] == 0      ]
+V# 2652 v_rear_min[25]             0  REMVD  0.00000000e+00 [            v_rear_min[25] == 0      ]
+V# 2653 v_rear_min[26]             0  REMVD  0.00000000e+00 [            v_rear_min[26] == 0      ]
+V# 2654 v_rear_min[27]             0  REMVD  0.00000000e+00 [            v_rear_min[27] == 0      ]
+V# 2655 v_rear_min[28]             0  REMVD  0.00000000e+00 [            v_rear_min[28] == 0      ]
+V# 2656 v_rear_min[29]             0  REMVD  0.00000000e+00 [            v_rear_min[29] == 0      ]
+V# 2657 v_rear_min[30]             0  REMVD  0.00000000e+00 [            v_rear_min[30] == 0      ]
+V# 2658 v_rear_min[31]             0  REMVD  0.00000000e+00 [            v_rear_min[31] == 0      ]
+V# 2659 v_rear_min[32]             0  REMVD  0.00000000e+00 [            v_rear_min[32] == 0      ]
+V# 2660 v_rear_min[33]             0  REMVD  0.00000000e+00 [            v_rear_min[33] == 0      ]
+V# 2661 v_rear_min[34]             0  REMVD  0.00000000e+00 [            v_rear_min[34] == 0      ]
+V# 2662 v_rear_min[35]             0  REMVD  0.00000000e+00 [            v_rear_min[35] == 0      ]
+V# 2663 v_rear_min[36]             0  REMVD  0.00000000e+00 [            v_rear_min[36] == 0      ]
+V# 2664 v_rear_min[37]             0  REMVD  0.00000000e+00 [            v_rear_min[37] == 0      ]
+V# 2665 v_rear_min[38]             0  REMVD  0.00000000e+00 [            v_rear_min[38] == 0      ]
+V# 2666 v_rear_min[39]             0  REMVD  0.00000000e+00 [            v_rear_min[39] == 0      ]
+V# 2667 v_rear_min[40]             0  REMVD  0.00000000e+00 [            v_rear_min[40] == 0      ]
+V# 2668 v_rear_min[41]             0  REMVD  0.00000000e+00 [            v_rear_min[41] == 0      ]
+V# 2669 v_rear_min[42]             0  REMVD  0.00000000e+00 [            v_rear_min[42] == 0      ]
+V# 2670 v_rear_min[43]             0  REMVD  0.00000000e+00 [            v_rear_min[43] == 0      ]
+V# 2671 v_rear_min[44]             0  REMVD  0.00000000e+00 [            v_rear_min[44] == 0      ]
+V# 2672 v_rear_min[45]             0  REMVD  0.00000000e+00 [            v_rear_min[45] == 0      ]
+V# 2673 v_rear_min[46]             0  REMVD  0.00000000e+00 [            v_rear_min[46] == 0      ]
+V# 2674 v_rear_min[47]             0  REMVD  0.00000000e+00 [            v_rear_min[47] == 0      ]
+V# 2675 v_rear_min[48]             0  REMVD  0.00000000e+00 [            v_rear_min[48] == 0      ]
+V# 2676 v_rear_min[49]             0  REMVD  0.00000000e+00 [            v_rear_min[49] == 0      ]
+V# 2677 v_rear_min[50]             0  REMVD  0.00000000e+00 [            v_rear_min[50] == 0      ]
+V# 2678 v_rear_min[51]             0  REMVD  0.00000000e+00 [            v_rear_min[51] == 0      ]
+V# 2679 v_rear_min[52]             0  REMVD  0.00000000e+00 [            v_rear_min[52] == 0      ]
+V# 2680 v_rear_min[53]             0  REMVD  0.00000000e+00 [            v_rear_min[53] == 0      ]
+V# 2681 v_rear_min[54]             0  REMVD  0.00000000e+00 [            v_rear_min[54] == 0      ]
+V# 2682 v_rear_min[55]             0  REMVD  0.00000000e+00 [            v_rear_min[55] == 0      ]
+V# 2683 v_rear_min[56]             0  REMVD  0.00000000e+00 [            v_rear_min[56] == 0      ]
+V# 2684 v_rear_min[57]             0  REMVD  0.00000000e+00 [            v_rear_min[57] == 0      ]
+V# 2685 v_rear_min[58]             0  REMVD  0.00000000e+00 [            v_rear_min[58] == 0      ]
+V# 2686 v_rear_min[59]             0  REMVD  0.00000000e+00 [            v_rear_min[59] == 0      ]
+V# 2687 v_rear_min[60]             0  REMVD  0.00000000e+00 [            v_rear_min[60] == 0      ]
+V# 2688 v_rear_min[61]             0  REMVD  0.00000000e+00 [            v_rear_min[61] == 0      ]
+V# 2689 v_rear_min[62]             0  REMVD  0.00000000e+00 [            v_rear_min[62] == 0      ]
+V# 2690 v_rear_min[63]             0  REMVD  0.00000000e+00 [            v_rear_min[63] == 0      ]
+V# 2691 v_rear_min[64]             0  REMVD  0.00000000e+00 [            v_rear_min[64] == 0      ]
+V# 2692 v_rear_min[65]             0  REMVD  0.00000000e+00 [            v_rear_min[65] == 0      ]
+V# 2693 v_rear_min[66]             0  REMVD  0.00000000e+00 [            v_rear_min[66] == 0      ]
+V# 2694 v_rear_min[67]             0  REMVD  0.00000000e+00 [            v_rear_min[67] == 0      ]
+V# 2695 v_rear_min[68]             0  REMVD  0.00000000e+00 [            v_rear_min[68] == 0      ]
+V# 2696 v_rear_min[69]             0  REMVD  0.00000000e+00 [            v_rear_min[69] == 0      ]
+V# 2697 Rho[0]                     0  REMVD  0.00000000e+00 [                Rho[0]     == 0      ]
+V# 2698 Rho[1]                     0  REMVD  0.00000000e+00 [                Rho[1]     == 0      ]
+V# 2699 Rho[2]                     0  REMVD  0.00000000e+00 [                Rho[2]     == 0      ]
+V# 2700 Rho[3]                     0  REMVD  0.00000000e+00 [                Rho[3]     == 0      ]
+V# 2701 Rho[4]                     0  REMVD  0.00000000e+00 [                Rho[4]     == 0      ]
+V# 2702 Rho[5]                     0  REMVD  0.00000000e+00 [                Rho[5]     == 0      ]
+V# 2703 Rho[6]                     0  REMVD  0.00000000e+00 [                Rho[6]     == 0      ]
+V# 2704 Rho[7]                     0  REMVD  0.00000000e+00 [                Rho[7]     == 0      ]
+V# 2705 Rho[8]                     0  REMVD  0.00000000e+00 [                Rho[8]     == 0      ]
+V# 2706 Rho[9]                     0  REMVD  0.00000000e+00 [                Rho[9]     == 0      ]
+V# 2707 Rho[10]                    0  REMVD  0.00000000e+00 [                Rho[10]    == 0      ]
+V# 2708 Rho[11]                    0  REMVD  0.00000000e+00 [                Rho[11]    == 0      ]
+V# 2709 Rho[12]                    0  REMVD  0.00000000e+00 [                Rho[12]    == 0      ]
+V# 2710 Rho[13]                    0  REMVD  0.00000000e+00 [                Rho[13]    == 0      ]
+V# 2711 Rho[14]                    0  REMVD  0.00000000e+00 [                Rho[14]    == 0      ]
+V# 2712 Rho[15]                    0  REMVD  0.00000000e+00 [                Rho[15]    == 0      ]
+V# 2713 Rho[16]                    0  REMVD  0.00000000e+00 [                Rho[16]    == 0      ]
+V# 2714 Rho[17]                    0  REMVD  0.00000000e+00 [                Rho[17]    == 0      ]
+V# 2715 Rho[18]                    0  REMVD  0.00000000e+00 [                Rho[18]    == 0      ]
+V# 2716 Rho[19]                    0  REMVD  0.00000000e+00 [                Rho[19]    == 0      ]
+V# 2717 Rho[20]                    0  REMVD  0.00000000e+00 [                Rho[20]    == 0      ]
+V# 2718 Rho[21]                    0  REMVD  0.00000000e+00 [                Rho[21]    == 0      ]
+V# 2719 Rho[22]                    0  REMVD  0.00000000e+00 [                Rho[22]    == 0      ]
+V# 2720 Rho[23]                    0  REMVD  0.00000000e+00 [                Rho[23]    == 0      ]
+V# 2721 Rho[24]                    0  REMVD  0.00000000e+00 [                Rho[24]    == 0      ]
+V# 2722 Rho[25]                    0  REMVD  0.00000000e+00 [                Rho[25]    == 0      ]
+V# 2723 Rho[26]                    0  REMVD  0.00000000e+00 [                Rho[26]    == 0      ]
+V# 2724 Rho[27]                    0  REMVD  0.00000000e+00 [                Rho[27]    == 0      ]
+V# 2725 Rho[28]                    0  REMVD  0.00000000e+00 [                Rho[28]    == 0      ]
+V# 2726 Rho[29]                    0  REMVD  0.00000000e+00 [                Rho[29]    == 0      ]
+V# 2727 Rho[30]                    0  REMVD  0.00000000e+00 [                Rho[30]    == 0      ]
+V# 2728 Rho[31]                    0  REMVD  0.00000000e+00 [                Rho[31]    == 0      ]
+V# 2729 Rho[32]                    0  REMVD  0.00000000e+00 [                Rho[32]    == 0      ]
+V# 2730 Rho[33]                    0  REMVD  0.00000000e+00 [                Rho[33]    == 0      ]
+V# 2731 Rho[34]                    0  REMVD  0.00000000e+00 [                Rho[34]    == 0      ]
+V# 2732 Rho[35]                    0  REMVD  0.00000000e+00 [                Rho[35]    == 0      ]
+V# 2733 Rho[36]                    0  REMVD  0.00000000e+00 [                Rho[36]    == 0      ]
+V# 2734 Rho[37]                    0  REMVD  0.00000000e+00 [                Rho[37]    == 0      ]
+V# 2735 Rho[38]                    0  REMVD  0.00000000e+00 [                Rho[38]    == 0      ]
+V# 2736 Rho[39]                    0  REMVD  0.00000000e+00 [                Rho[39]    == 0      ]
+V# 2737 Rho[40]                    0  REMVD  0.00000000e+00 [                Rho[40]    == 0      ]
+V# 2738 Rho[41]                    0  REMVD  0.00000000e+00 [                Rho[41]    == 0      ]
+V# 2739 Rho[42]                    0  REMVD  0.00000000e+00 [                Rho[42]    == 0      ]
+V# 2740 Rho[43]                    0  REMVD  0.00000000e+00 [                Rho[43]    == 0      ]
+V# 2741 Rho[44]                    0  REMVD  0.00000000e+00 [                Rho[44]    == 0      ]
+V# 2742 Rho[45]                    0  REMVD  0.00000000e+00 [                Rho[45]    == 0      ]
+V# 2743 Rho[46]                    0  REMVD  0.00000000e+00 [                Rho[46]    == 0      ]
+V# 2744 Rho[47]                    0  REMVD  0.00000000e+00 [                Rho[47]    == 0      ]
+V# 2745 Rho[48]                    0  REMVD  0.00000000e+00 [                Rho[48]    == 0      ]
+V# 2746 Rho[49]                    0  REMVD  0.00000000e+00 [                Rho[49]    == 0      ]
+V# 2747 Rho[50]                    0  REMVD  0.00000000e+00 [                Rho[50]    == 0      ]
+V# 2748 Rho[51]                    0  REMVD  0.00000000e+00 [                Rho[51]    == 0      ]
+V# 2749 Rho[52]                    0  REMVD  0.00000000e+00 [                Rho[52]    == 0      ]
+V# 2750 Rho[53]                    0  REMVD  0.00000000e+00 [                Rho[53]    == 0      ]
+V# 2751 Rho[54]                    0  REMVD  0.00000000e+00 [                Rho[54]    == 0      ]
+V# 2752 Rho[55]                    0  REMVD  0.00000000e+00 [                Rho[55]    == 0      ]
+V# 2753 Rho[56]                    0  REMVD  0.00000000e+00 [                Rho[56]    == 0      ]
+V# 2754 Rho[57]                    0  REMVD  0.00000000e+00 [                Rho[57]    == 0      ]
+V# 2755 Rho[58]                    0  REMVD  0.00000000e+00 [                Rho[58]    == 0      ]
+V# 2756 Rho[59]                    0  REMVD  0.00000000e+00 [                Rho[59]    == 0      ]
+V# 2757 Rho[60]                    0  REMVD  0.00000000e+00 [                Rho[60]    == 0      ]
+V# 2758 Rho[61]                    0  REMVD  0.00000000e+00 [                Rho[61]    == 0      ]
+V# 2759 Rho[62]                    0  REMVD  0.00000000e+00 [                Rho[62]    == 0      ]
+V# 2760 Rho[63]                    0  REMVD  0.00000000e+00 [                Rho[63]    == 0      ]
+V# 2761 Rho[64]                    0  REMVD  0.00000000e+00 [                Rho[64]    == 0      ]
+V# 2762 Rho[65]                    0  REMVD  0.00000000e+00 [                Rho[65]    == 0      ]
+V# 2763 Rho[66]                    0  REMVD  0.00000000e+00 [                Rho[66]    == 0      ]
+V# 2764 Rho[67]                    0  REMVD  0.00000000e+00 [                Rho[67]    == 0      ]
+V# 2765 Rho[68]                    0  REMVD  0.00000000e+00 [                Rho[68]    == 0      ]
+V# 2766 x_pd                       0  REMVD  0.00000000e+00 [                 x_pd      == 0      ]
+V# 2767 y_pd                       0  REMVD  0.00000000e+00 [                 y_pd      == 0      ]
+V# 2768 vel_pd                     0  REMVD  0.00000000e+00 [                vel_pd     == 0      ]
 
 %%
 %% FUNCTIONS 
 %%
-                               NAME                        VALUE STATUS      SLACK      [                         BOUND TYPE                        ]
-F#    1 C:\MPCsimulation\Optimization\NUOPT.smp:117            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:117   == 0 ]
-F#    2 C:\MPCsimulation\Optimization\NUOPT.smp:118            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:118   == 0 ]
-F#    3 C:\MPCsimulation\Optimization\NUOPT.smp:119            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:119   == 0 ]
-F#    4 C:\MPCsimulation\Optimization\NUOPT.smp:120            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:120   == 0 ]
-F#    5 C:\MPCsimulation\Optimization\NUOPT.smp:121            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:121   == 0 ]
-F#    6 C:\MPCsimulation\Optimization\NUOPT.smp:122            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:122   == 0 ]
-F#    7 C:\MPCsimulation\Optimization\NUOPT.smp:123            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:123   == 0 ]
-F#    8 C:\MPCsimulation\Optimization\NUOPT.smp:124_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:124   == 0 ]
-F#    9 C:\MPCsimulation\Optimization\NUOPT.smp:125_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:125   == 0 ]
-F#   10 C:\MPCsimulation\Optimization\NUOPT.smp:126_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:126   == 0 ]
-F#   11 C:\MPCsimulation\Optimization\NUOPT.smp:127_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:127   == 0 ]
-F#   12 C:\MPCsimulation\Optimization\NUOPT.smp:128_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:128   == 0 ]
-F#   13 C:\MPCsimulation\Optimization\NUOPT.smp:129_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:129   == 0 ]
-F#   14 C:\MPCsimulation\Optimization\NUOPT.smp:131            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:131   == 0 ]
-F#   15 C:\MPCsimulation\Optimization\NUOPT.smp:132            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:132   == 0 ]
-F#   16 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#   17 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#   18 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#   19 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#   20 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#   21 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#   22 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#   23 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#   24 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#   25 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#   26 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#   27 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#   28 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#   29 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#   30 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#   31 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#   32 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#   33 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#   34 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#   35 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#   36 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#   37 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#   38 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#   39 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#   40 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#   41 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#   42 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#   43 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#   44 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#   45 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#   46 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#   47 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#   48 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#   49 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#   50 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#   51 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#   52 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#   53 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#   54 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#   55 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#   56 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#   57 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#   58 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#   59 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#   60 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#   61 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#   62 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#   63 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#   64 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#   65 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#   66 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#   67 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#   68 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#   69 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#   70 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#   71 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#   72 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#   73 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#   74 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#   75 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#   76 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#   77 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#   78 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#   79 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#   80 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#   81 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#   82 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#   83 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#   84 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#   85 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#   86 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#   87 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#   88 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#   89 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#   90 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#   91 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#   92 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#   93 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#   94 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#   95 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#   96 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#   97 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#   98 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#   99 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  100 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  101 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  102 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  103 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  104 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  105 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  106 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  107 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  108 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  109 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  110 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  111 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  112 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  113 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  114 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  115 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  116 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  117 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  118 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  119 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  120 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  121 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  122 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  123 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  124 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  125 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  126 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  127 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  128 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  129 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  130 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  131 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  132 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  133 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  134 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  135 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  136 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  137 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  138 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  139 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  140 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  141 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  142 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  143 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  144 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  145 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  146 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  147 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  148 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  149 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  150 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  151 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  152 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  153 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  154 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  155 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  156 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  157 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  158 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  159 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  160 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  161 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  162 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  163 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  164 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  165 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  166 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  167 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  168 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  169 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  170 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  171 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  172 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  173 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  174 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  175 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  176 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  177 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  178 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  179 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  180 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  181 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  182 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  183 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  184 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  185 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  186 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  187 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  188 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  189 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  190 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  191 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  192 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  193 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  194 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  195 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  196 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  197 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  198 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  199 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  200 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  201 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  202 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  203 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  204 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  205 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  206 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  207 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  208 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  209 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  210 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  211 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  212 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  213 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  214 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  215 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  216 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  217 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  218 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  219 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  220 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  221 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  222 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  223 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  224 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  225 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  226 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  227 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  228 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  229 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  230 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  231 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  232 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  233 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  234 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  235 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  236 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  237 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  238 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  239 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  240 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  241 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  242 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  243 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  244 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  245 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  246 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  247 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  248 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  249 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  250 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  251 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  252 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  253 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  254 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  255 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  256 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  257 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  258 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  259 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  260 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  261 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  262 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  263 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  264 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  265 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  266 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  267 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  268 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  269 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  270 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  271 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  272 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  273 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  274 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  275 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  276 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  277 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  278 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  279 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  280 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  281 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  282 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  283 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  284 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  285 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  286 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  287 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  288 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  289 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  290 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  291 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  292 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  293 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  294 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  295 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  296 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  297 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  298 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  299 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  300 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  301 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  302 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  303 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  304 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  305 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  306 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  307 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  308 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  309 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  310 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  311 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  312 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  313 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  314 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  315 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  316 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  317 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  318 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  319 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  320 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  321 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  322 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  323 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  324 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  325 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  326 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  327 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  328 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  329 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  330 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  331 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  332 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  333 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  334 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  335 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  336 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  337 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  338 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  339 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  340 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  341 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  342 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  343 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  344 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  345 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  346 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  347 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  348 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  349 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  350 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  351 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  352 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  353 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  354 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  355 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  356 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  357 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  358 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  359 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  360 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  361 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  362 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  363 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  364 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  365 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  366 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  367 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  368 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  369 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  370 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  371 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  372 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  373 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  374 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  375 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  376 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  377 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  378 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  379 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  380 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  381 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  382 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  383 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  384 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  385 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  386 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  387 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  388 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  389 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  390 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  391 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  392 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  393 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  394 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  395 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  396 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  397 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  398 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  399 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  400 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  401 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  402 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  403 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  404 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  405 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  406 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  407 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  408 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  409 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  410 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  411 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  412 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  413 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  414 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  415 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  416 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  417 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  418 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  419 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  420 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  421 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  422 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  423 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  424 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  425 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  426 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  427 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  428 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  429 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  430 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  431 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  432 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  433 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  434 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  435 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  436 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  437 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  438 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  439 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  440 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  441 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  442 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  443 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  444 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  445 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  446 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  447 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  448 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  449 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  450 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  451 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  452 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  453 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  454 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  455 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  456 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  457 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  458 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  459 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  460 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  461 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  462 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  463 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  464 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  465 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  466 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  467 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  468 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  469 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  470 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  471 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  472 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  473 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  474 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  475 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  476 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  477 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  478 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  479 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  480 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  481 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  482 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  483 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  484 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  485 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  486 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  487 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  488 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  489 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  490 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  491 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  492 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  493 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  494 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  495 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  496 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  497 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  498 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  499 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  500 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  501 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  502 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  503 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  504 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  505 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  506 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  507 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  508 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  509 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  510 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  511 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  512 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  513 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  514 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  515 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  516 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  517 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  518 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  519 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  520 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  521 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  522 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  523 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  524 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  525 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  526 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  527 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  528 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  529 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  530 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  531 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  532 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  533 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  534 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  535 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  536 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  537 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  538 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  539 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  540 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  541 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  542 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  543 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  544 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  545 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  546 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  547 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  548 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  549 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  550 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  551 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  552 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  553 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  554 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  555 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  556 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  557 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  558 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  559 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  560 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  561 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  562 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  563 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  564 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  565 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  566 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  567 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  568 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  569 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  570 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  571 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  572 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  573 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  574 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  575 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  576 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  577 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  578 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  579 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  580 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  581 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  582 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  583 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  584 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  585 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  586 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  587 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  588 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  589 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  590 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  591 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  592 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  593 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  594 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  595 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  596 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  597 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  598 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  599 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  600 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  601 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  602 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  603 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  604 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  605 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  606 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  607 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  608 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  609 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  610 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  611 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  612 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  613 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  614 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  615 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  616 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  617 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  618 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  619 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  620 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  621 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  622 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  623 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  624 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  625 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  626 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  627 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  628 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  629 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  630 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  631 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  632 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  633 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  634 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  635 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  636 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  637 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  638 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  639 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  640 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  641 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  642 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  643 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  644 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  645 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  646 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  647 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  648 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  649 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  650 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  651 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  652 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  653 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  654 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  655 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  656 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  657 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  658 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  659 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  660 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  661 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  662 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  663 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  664 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  665 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  666 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  667 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  668 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  669 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  670 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  671 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  672 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  673 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  674 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  675 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  676 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  677 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  678 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  679 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  680 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  681 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  682 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  683 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  684 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  685 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  686 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  687 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  688 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  689 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  690 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  691 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  692 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  693 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  694 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  695 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  696 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  697 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  698 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  699 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  700 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  701 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  702 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  703 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  704 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  705 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  706 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  707 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  708 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  709 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  710 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  711 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  712 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  713 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  714 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  715 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  716 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  717 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  718 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  719 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  720 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  721 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  722 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  723 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  724 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  725 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  726 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  727 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  728 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  729 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  730 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  731 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  732 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  733 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  734 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  735 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  736 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  737 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  738 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  739 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  740 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  741 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  742 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  743 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  744 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  745 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  746 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  747 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  748 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  749 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  750 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  751 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  752 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  753 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  754 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  755 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  756 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  757 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  758 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  759 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  760 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  761 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  762 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  763 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  764 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  765 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  766 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  767 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  768 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  769 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  770 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  771 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  772 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  773 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  774 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  775 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  776 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  777 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  778 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  779 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  780 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  781 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  782 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  783 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  784 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  785 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  786 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  787 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  788 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  789 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  790 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  791 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  792 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  793 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  794 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  795 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  796 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  797 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  798 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  799 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  800 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  801 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  802 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  803 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  804 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  805 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  806 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  807 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  808 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  809 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  810 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  811 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  812 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  813 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  814 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  815 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  816 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  817 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  818 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  819 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  820 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  821 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  822 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  823 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  824 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  825 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  826 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  827 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  828 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  829 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  830 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  831 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  832 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  833 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  834 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  835 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  836 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  837 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  838 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  839 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  840 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  841 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  842 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  843 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  844 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  845 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  846 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  847 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  848 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  849 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  850 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  851 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  852 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  853 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  854 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  855 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  856 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  857 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  858 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  859 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  860 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  861 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  862 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  863 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  864 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  865 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  866 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  867 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  868 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  869 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  870 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  871 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  872 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  873 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  874 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  875 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  876 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  877 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  878 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  879 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  880 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  881 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  882 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  883 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  884 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  885 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  886 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  887 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  888 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  889 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  890 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  891 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  892 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  893 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  894 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  895 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  896 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  897 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  898 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  899 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  900 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  901 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  902 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  903 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  904 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  905 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  906 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  907 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  908 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  909 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  910 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  911 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  912 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  913 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  914 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  915 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  916 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  917 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  918 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  919 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  920 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  921 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  922 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  923 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  924 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  925 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  926 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  927 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  928 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  929 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  930 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  931 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  932 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  933 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  934 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  935 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  936 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  937 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  938 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  939 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  940 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  941 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  942 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  943 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  944 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  945 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  946 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  947 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  948 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  949 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  950 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  951 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  952 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  953 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  954 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  955 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  956 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  957 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  958 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  959 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  960 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  961 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  962 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  963 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  964 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  965 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  966 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  967 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  968 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  969 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  970 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  971 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  972 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  973 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  974 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  975 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  976 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F#  977 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F#  978 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F#  979 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F#  980 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F#  981 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F#  982 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F#  983 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F#  984 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F#  985 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F#  986 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F#  987 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F#  988 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F#  989 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F#  990 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F#  991 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F#  992 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F#  993 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F#  994 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F#  995 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F#  996 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F#  997 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F#  998 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F#  999 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1000 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1001 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1002 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1003 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1004 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1005 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1006 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1007 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1008 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1009 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1010 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1011 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1012 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1013 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1014 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1015 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1016 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1017 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1018 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1019 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1020 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1021 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1022 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1023 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1024 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1025 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1026 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1027 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1028 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1029 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1030 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1031 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1032 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1033 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1034 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1035 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1036 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1037 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1038 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1039 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1040 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1041 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1042 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1043 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1044 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1045 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1046 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1047 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1048 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1049 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1050 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1051 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1052 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1053 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1054 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1055 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1056 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1057 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1058 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1059 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1060 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1061 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1062 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1063 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1064 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1065 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1066 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1067 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1068 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1069 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1070 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1071 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1072 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1073 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1074 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1075 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1076 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1077 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1078 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1079 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1080 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1081 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1082 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1083 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1084 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1085 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1086 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1087 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1088 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1089 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1090 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1091 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1092 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1093 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1094 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1095 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1096 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1097 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1098 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1099 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1100 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1101 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1102 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1103 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1104 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1105 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1106 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1107 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1108 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1109 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1110 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1111 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1112 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1113 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1114 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1115 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1116 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1117 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1118 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1119 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1120 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1121 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1122 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1123 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1124 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1125 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1126 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1127 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1128 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1129 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1130 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1131 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1132 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1133 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1134 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1135 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1136 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1137 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1138 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1139 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1140 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1141 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1142 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1143 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1144 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1145 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1146 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1147 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1148 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1149 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1150 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1151 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1152 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1153 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1154 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1155 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1156 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1157 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1158 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1159 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1160 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1161 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1162 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1163 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1164 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1165 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1166 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1167 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1168 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1169 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1170 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1171 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1172 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1173 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1174 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1175 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1176 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1177 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1178 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1179 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1180 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1181 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1182 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1183 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1184 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1185 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1186 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1187 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1188 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1189 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1190 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1191 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1192 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1193 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1194 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1195 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1196 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1197 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1198 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1199 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1200 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1201 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1202 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1203 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1204 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1205 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1206 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1207 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1208 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1209 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1210 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1211 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1212 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1213 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1214 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1215 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1216 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1217 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1218 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1219 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1220 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1221 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1222 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1223 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1224 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1225 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1226 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1227 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1228 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1229 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1230 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1231 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1232 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1233 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1234 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1235 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1236 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1237 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1238 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1239 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1240 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1241 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1242 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1243 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1244 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1245 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1246 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1247 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1248 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1249 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1250 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1251 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1252 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1253 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1254 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1255 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1256 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1257 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1258 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1259 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1260 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1261 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1262 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1263 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1264 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1265 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1266 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1267 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1268 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1269 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1270 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1271 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1272 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1273 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1274 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1275 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1276 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1277 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1278 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1279 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1280 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1281 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1282 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1283 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1284 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1285 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1286 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1287 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1288 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1289 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1290 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1291 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1292 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1293 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1294 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1295 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1296 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1297 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1298 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1299 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1300 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1301 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1302 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1303 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1304 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1305 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1306 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1307 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1308 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1309 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1310 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1311 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1312 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1313 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1314 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1315 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1316 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1317 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1318 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1319 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1320 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1321 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1322 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1323 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1324 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1325 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1326 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1327 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1328 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1329 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1330 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1331 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1332 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1333 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1334 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1335 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1336 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1337 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1338 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1339 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1340 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1341 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1342 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1343 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1344 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1345 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1346 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1347 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1348 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1349 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1350 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1351 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1352 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1353 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1354 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1355 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1356 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1357 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1358 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1359 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1360 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1361 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1362 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1363 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1364 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1365 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1366 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1367 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1368 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1369 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1370 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1371 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1372 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1373 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1374 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1375 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1376 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1377 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1378 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1379 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1380 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1381 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1382 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1383 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1384 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1385 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1386 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1387 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1388 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1389 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1390 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1391 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1392 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1393 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1394 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1395 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1396 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1397 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1398 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1399 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1400 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1401 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1402 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1403 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1404 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1405 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1406 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1407 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1408 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1409 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1410 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1411 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1412 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1413 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1414 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1415 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1416 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1417 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1418 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1419 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1420 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1421 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1422 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1423 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1424 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1425 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1426 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1427 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1428 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1429 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1430 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1431 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1432 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1433 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1434 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1435 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1436 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1437 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1438 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1439 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1440 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1441 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1442 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1443 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1444 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1445 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1446 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1447 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1448 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1449 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1450 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1451 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1452 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1453 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1454 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1455 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1456 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1457 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1458 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1459 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1460 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1461 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1462 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1463 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1464 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1465 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1466 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1467 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1468 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1469 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1470 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1471 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1472 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1473 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1474 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1475 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1476 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1477 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1478 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1479 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1480 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1481 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1482 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1483 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1484 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1485 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1486 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1487 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1488 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1489 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1490 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1491 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1492 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1493 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1494 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1495 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1496 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1497 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1498 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1499 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1500 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1501 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1502 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1503 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1504 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1505 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1506 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1507 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1508 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1509 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1510 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1511 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1512 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1513 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1514 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1515 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1516 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1517 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1518 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1519 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1520 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1521 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1522 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1523 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1524 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1525 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1526 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1527 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1528 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1529 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1530 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1531 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1532 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1533 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1534 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1535 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1536 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1537 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1538 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1539 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1540 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1541 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1542 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1543 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1544 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1545 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1546 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1547 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1548 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1549 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1550 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1551 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1552 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1553 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1554 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1555 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1556 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1557 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1558 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1559 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1560 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1561 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1562 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1563 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1564 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1565 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1566 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1567 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1568 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1569 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1570 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1571 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1572 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1573 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1574 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1575 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1576 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1577 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1578 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1579 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1580 C:\MPCsimulation\Optimization\NUOPT.smp:140            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
-F# 1581 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR* 1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
-F# 1582 C:\MPCsimulation\Optimization\NUOPT.smp:142            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
-F# 1583 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
-F# 1584 C:\MPCsimulation\Optimization\NUOPT.smp:144            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
-F# 1585 C:\MPCsimulation\Optimization\NUOPT.smp:145            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
-F# 1586 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
-F# 1587 C:\MPCsimulation\Optimization\NUOPT.smp:147            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
-F# 1588 C:\MPCsimulation\Optimization\NUOPT.smp:148            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
-F# 1589 C:\MPCsimulation\Optimization\NUOPT.smp:149            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
-F# 1590 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
-F# 1591 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
-F# 1592 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
-F# 1593 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
-F# 1594 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
-F# 1595 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*      0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
-F# 1596 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
-F# 1597 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
-F# 1598 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
-F# 1599 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
-F# 1600 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
-F# 1601 C:\MPCsimulation\Optimization\NUOPT.smp:167            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
-F# 1602 C:\MPCsimulation\Optimization\NUOPT.smp:168            0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
-F# 1603 C:\MPCsimulation\Optimization\NUOPT.smp:172_*NLR*   -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:172   == 0 ]
-F# 1604 C:\MPCsimulation\Optimization\NUOPT.smp:173_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:173   == 0 ]
-F# 1605 C:\MPCsimulation\Optimization\NUOPT.smp:174_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:174   == 0 ]
-F# 1606 C:\MPCsimulation\Optimization\NUOPT.smp:175_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:175   == 0 ]
-F# 1607 C:\MPCsimulation\Optimization\NUOPT.smp:176_*NLR*   -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:176   == 0 ]
-F# 1608 C:\MPCsimulation\Optimization\NUOPT.smp:182[0]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[0]      ]
-F# 1609 C:\MPCsimulation\Optimization\NUOPT.smp:182[1]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[1]      ]
-F# 1610 C:\MPCsimulation\Optimization\NUOPT.smp:182[2]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[2]      ]
-F# 1611 C:\MPCsimulation\Optimization\NUOPT.smp:182[3]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[3]      ]
-F# 1612 C:\MPCsimulation\Optimization\NUOPT.smp:182[4]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[4]      ]
-F# 1613 C:\MPCsimulation\Optimization\NUOPT.smp:182[5]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[5]      ]
-F# 1614 C:\MPCsimulation\Optimization\NUOPT.smp:182[6]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[6]      ]
-F# 1615 C:\MPCsimulation\Optimization\NUOPT.smp:182[7]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[7]      ]
-F# 1616 C:\MPCsimulation\Optimization\NUOPT.smp:182[8]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[8]      ]
-F# 1617 C:\MPCsimulation\Optimization\NUOPT.smp:182[9]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[9]      ]
-F# 1618 C:\MPCsimulation\Optimization\NUOPT.smp:182[10]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[10]      ]
-F# 1619 C:\MPCsimulation\Optimization\NUOPT.smp:182[11]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[11]      ]
-F# 1620 C:\MPCsimulation\Optimization\NUOPT.smp:182[12]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[12]      ]
-F# 1621 C:\MPCsimulation\Optimization\NUOPT.smp:182[13]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[13]      ]
-F# 1622 C:\MPCsimulation\Optimization\NUOPT.smp:182[14]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[14]      ]
-F# 1623 C:\MPCsimulation\Optimization\NUOPT.smp:182[15]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[15]      ]
-F# 1624 C:\MPCsimulation\Optimization\NUOPT.smp:182[16]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[16]      ]
-F# 1625 C:\MPCsimulation\Optimization\NUOPT.smp:182[17]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[17]      ]
-F# 1626 C:\MPCsimulation\Optimization\NUOPT.smp:182[18]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[18]      ]
-F# 1627 C:\MPCsimulation\Optimization\NUOPT.smp:182[19]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[19]      ]
-F# 1628 C:\MPCsimulation\Optimization\NUOPT.smp:182[20]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[20]      ]
-F# 1629 C:\MPCsimulation\Optimization\NUOPT.smp:182[21]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[21]      ]
-F# 1630 C:\MPCsimulation\Optimization\NUOPT.smp:182[22]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[22]      ]
-F# 1631 C:\MPCsimulation\Optimization\NUOPT.smp:182[23]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[23]      ]
-F# 1632 C:\MPCsimulation\Optimization\NUOPT.smp:182[24]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[24]      ]
-F# 1633 C:\MPCsimulation\Optimization\NUOPT.smp:182[25]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[25]      ]
-F# 1634 C:\MPCsimulation\Optimization\NUOPT.smp:182[26]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[26]      ]
-F# 1635 C:\MPCsimulation\Optimization\NUOPT.smp:182[27]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[27]      ]
-F# 1636 C:\MPCsimulation\Optimization\NUOPT.smp:182[28]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[28]      ]
-F# 1637 C:\MPCsimulation\Optimization\NUOPT.smp:182[29]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[29]      ]
-F# 1638 C:\MPCsimulation\Optimization\NUOPT.smp:182[30]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[30]      ]
-F# 1639 C:\MPCsimulation\Optimization\NUOPT.smp:182[31]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[31]      ]
-F# 1640 C:\MPCsimulation\Optimization\NUOPT.smp:182[32]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[32]      ]
-F# 1641 C:\MPCsimulation\Optimization\NUOPT.smp:182[33]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[33]      ]
-F# 1642 C:\MPCsimulation\Optimization\NUOPT.smp:182[34]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[34]      ]
-F# 1643 C:\MPCsimulation\Optimization\NUOPT.smp:182[35]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[35]      ]
-F# 1644 C:\MPCsimulation\Optimization\NUOPT.smp:182[36]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[36]      ]
-F# 1645 C:\MPCsimulation\Optimization\NUOPT.smp:182[37]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[37]      ]
-F# 1646 C:\MPCsimulation\Optimization\NUOPT.smp:182[38]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[38]      ]
-F# 1647 C:\MPCsimulation\Optimization\NUOPT.smp:182[39]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[39]      ]
-F# 1648 C:\MPCsimulation\Optimization\NUOPT.smp:182[40]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[40]      ]
-F# 1649 C:\MPCsimulation\Optimization\NUOPT.smp:182[41]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[41]      ]
-F# 1650 C:\MPCsimulation\Optimization\NUOPT.smp:182[42]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[42]      ]
-F# 1651 C:\MPCsimulation\Optimization\NUOPT.smp:182[43]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[43]      ]
-F# 1652 C:\MPCsimulation\Optimization\NUOPT.smp:182[44]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[44]      ]
-F# 1653 C:\MPCsimulation\Optimization\NUOPT.smp:182[45]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[45]      ]
-F# 1654 C:\MPCsimulation\Optimization\NUOPT.smp:182[46]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[46]      ]
-F# 1655 C:\MPCsimulation\Optimization\NUOPT.smp:182[47]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[47]      ]
-F# 1656 C:\MPCsimulation\Optimization\NUOPT.smp:182[48]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[48]      ]
-F# 1657 C:\MPCsimulation\Optimization\NUOPT.smp:182[49]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[49]      ]
-F# 1658 C:\MPCsimulation\Optimization\NUOPT.smp:182[50]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[50]      ]
-F# 1659 C:\MPCsimulation\Optimization\NUOPT.smp:182[51]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[51]      ]
-F# 1660 C:\MPCsimulation\Optimization\NUOPT.smp:182[52]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[52]      ]
-F# 1661 C:\MPCsimulation\Optimization\NUOPT.smp:182[53]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[53]      ]
-F# 1662 C:\MPCsimulation\Optimization\NUOPT.smp:182[54]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[54]      ]
-F# 1663 C:\MPCsimulation\Optimization\NUOPT.smp:182[55]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[55]      ]
-F# 1664 C:\MPCsimulation\Optimization\NUOPT.smp:182[56]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[56]      ]
-F# 1665 C:\MPCsimulation\Optimization\NUOPT.smp:182[57]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[57]      ]
-F# 1666 C:\MPCsimulation\Optimization\NUOPT.smp:182[58]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[58]      ]
-F# 1667 C:\MPCsimulation\Optimization\NUOPT.smp:182[59]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[59]      ]
-F# 1668 C:\MPCsimulation\Optimization\NUOPT.smp:182[60]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[60]      ]
-F# 1669 C:\MPCsimulation\Optimization\NUOPT.smp:182[61]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[61]      ]
-F# 1670 C:\MPCsimulation\Optimization\NUOPT.smp:182[62]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[62]      ]
-F# 1671 C:\MPCsimulation\Optimization\NUOPT.smp:182[63]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[63]      ]
-F# 1672 C:\MPCsimulation\Optimization\NUOPT.smp:182[64]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[64]      ]
-F# 1673 C:\MPCsimulation\Optimization\NUOPT.smp:182[65]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[65]      ]
-F# 1674 C:\MPCsimulation\Optimization\NUOPT.smp:182[66]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[66]      ]
-F# 1675 C:\MPCsimulation\Optimization\NUOPT.smp:182[67]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[67]      ]
-F# 1676 C:\MPCsimulation\Optimization\NUOPT.smp:182[68]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[68]      ]
-F# 1677 C:\MPCsimulation\Optimization\NUOPT.smp:182[69]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[69]      ]
-F# 1678 C:\MPCsimulation\Optimization\NUOPT.smp:183[0]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[0] <= 0 ]
-F# 1679 C:\MPCsimulation\Optimization\NUOPT.smp:183[1]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[1] <= 0 ]
-F# 1680 C:\MPCsimulation\Optimization\NUOPT.smp:183[2]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[2] <= 0 ]
-F# 1681 C:\MPCsimulation\Optimization\NUOPT.smp:183[3]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[3] <= 0 ]
-F# 1682 C:\MPCsimulation\Optimization\NUOPT.smp:183[4]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[4] <= 0 ]
-F# 1683 C:\MPCsimulation\Optimization\NUOPT.smp:183[5]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[5] <= 0 ]
-F# 1684 C:\MPCsimulation\Optimization\NUOPT.smp:183[6]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[6] <= 0 ]
-F# 1685 C:\MPCsimulation\Optimization\NUOPT.smp:183[7]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[7] <= 0 ]
-F# 1686 C:\MPCsimulation\Optimization\NUOPT.smp:183[8]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[8] <= 0 ]
-F# 1687 C:\MPCsimulation\Optimization\NUOPT.smp:183[9]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[9] <= 0 ]
-F# 1688 C:\MPCsimulation\Optimization\NUOPT.smp:183[10]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[10] <= 0 ]
-F# 1689 C:\MPCsimulation\Optimization\NUOPT.smp:183[11]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[11] <= 0 ]
-F# 1690 C:\MPCsimulation\Optimization\NUOPT.smp:183[12]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[12] <= 0 ]
-F# 1691 C:\MPCsimulation\Optimization\NUOPT.smp:183[13]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[13] <= 0 ]
-F# 1692 C:\MPCsimulation\Optimization\NUOPT.smp:183[14]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[14] <= 0 ]
-F# 1693 C:\MPCsimulation\Optimization\NUOPT.smp:183[15]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[15] <= 0 ]
-F# 1694 C:\MPCsimulation\Optimization\NUOPT.smp:183[16]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[16] <= 0 ]
-F# 1695 C:\MPCsimulation\Optimization\NUOPT.smp:183[17]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[17] <= 0 ]
-F# 1696 C:\MPCsimulation\Optimization\NUOPT.smp:183[18]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[18] <= 0 ]
-F# 1697 C:\MPCsimulation\Optimization\NUOPT.smp:183[19]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[19] <= 0 ]
-F# 1698 C:\MPCsimulation\Optimization\NUOPT.smp:183[20]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[20] <= 0 ]
-F# 1699 C:\MPCsimulation\Optimization\NUOPT.smp:183[21]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[21] <= 0 ]
-F# 1700 C:\MPCsimulation\Optimization\NUOPT.smp:183[22]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[22] <= 0 ]
-F# 1701 C:\MPCsimulation\Optimization\NUOPT.smp:183[23]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[23] <= 0 ]
-F# 1702 C:\MPCsimulation\Optimization\NUOPT.smp:183[24]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[24] <= 0 ]
-F# 1703 C:\MPCsimulation\Optimization\NUOPT.smp:183[25]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[25] <= 0 ]
-F# 1704 C:\MPCsimulation\Optimization\NUOPT.smp:183[26]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[26] <= 0 ]
-F# 1705 C:\MPCsimulation\Optimization\NUOPT.smp:183[27]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[27] <= 0 ]
-F# 1706 C:\MPCsimulation\Optimization\NUOPT.smp:183[28]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[28] <= 0 ]
-F# 1707 C:\MPCsimulation\Optimization\NUOPT.smp:183[29]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[29] <= 0 ]
-F# 1708 C:\MPCsimulation\Optimization\NUOPT.smp:183[30]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[30] <= 0 ]
-F# 1709 C:\MPCsimulation\Optimization\NUOPT.smp:183[31]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[31] <= 0 ]
-F# 1710 C:\MPCsimulation\Optimization\NUOPT.smp:183[32]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[32] <= 0 ]
-F# 1711 C:\MPCsimulation\Optimization\NUOPT.smp:183[33]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[33] <= 0 ]
-F# 1712 C:\MPCsimulation\Optimization\NUOPT.smp:183[34]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[34] <= 0 ]
-F# 1713 C:\MPCsimulation\Optimization\NUOPT.smp:183[35]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[35] <= 0 ]
-F# 1714 C:\MPCsimulation\Optimization\NUOPT.smp:183[36]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[36] <= 0 ]
-F# 1715 C:\MPCsimulation\Optimization\NUOPT.smp:183[37]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[37] <= 0 ]
-F# 1716 C:\MPCsimulation\Optimization\NUOPT.smp:183[38]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[38] <= 0 ]
-F# 1717 C:\MPCsimulation\Optimization\NUOPT.smp:183[39]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[39] <= 0 ]
-F# 1718 C:\MPCsimulation\Optimization\NUOPT.smp:183[40]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[40] <= 0 ]
-F# 1719 C:\MPCsimulation\Optimization\NUOPT.smp:183[41]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[41] <= 0 ]
-F# 1720 C:\MPCsimulation\Optimization\NUOPT.smp:183[42]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[42] <= 0 ]
-F# 1721 C:\MPCsimulation\Optimization\NUOPT.smp:183[43]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[43] <= 0 ]
-F# 1722 C:\MPCsimulation\Optimization\NUOPT.smp:183[44]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[44] <= 0 ]
-F# 1723 C:\MPCsimulation\Optimization\NUOPT.smp:183[45]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[45] <= 0 ]
-F# 1724 C:\MPCsimulation\Optimization\NUOPT.smp:183[46]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[46] <= 0 ]
-F# 1725 C:\MPCsimulation\Optimization\NUOPT.smp:183[47]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[47] <= 0 ]
-F# 1726 C:\MPCsimulation\Optimization\NUOPT.smp:183[48]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[48] <= 0 ]
-F# 1727 C:\MPCsimulation\Optimization\NUOPT.smp:183[49]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[49] <= 0 ]
-F# 1728 C:\MPCsimulation\Optimization\NUOPT.smp:183[50]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[50] <= 0 ]
-F# 1729 C:\MPCsimulation\Optimization\NUOPT.smp:183[51]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[51] <= 0 ]
-F# 1730 C:\MPCsimulation\Optimization\NUOPT.smp:183[52]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[52] <= 0 ]
-F# 1731 C:\MPCsimulation\Optimization\NUOPT.smp:183[53]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[53] <= 0 ]
-F# 1732 C:\MPCsimulation\Optimization\NUOPT.smp:183[54]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[54] <= 0 ]
-F# 1733 C:\MPCsimulation\Optimization\NUOPT.smp:183[55]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[55] <= 0 ]
-F# 1734 C:\MPCsimulation\Optimization\NUOPT.smp:183[56]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[56] <= 0 ]
-F# 1735 C:\MPCsimulation\Optimization\NUOPT.smp:183[57]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[57] <= 0 ]
-F# 1736 C:\MPCsimulation\Optimization\NUOPT.smp:183[58]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[58] <= 0 ]
-F# 1737 C:\MPCsimulation\Optimization\NUOPT.smp:183[59]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[59] <= 0 ]
-F# 1738 C:\MPCsimulation\Optimization\NUOPT.smp:183[60]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[60] <= 0 ]
-F# 1739 C:\MPCsimulation\Optimization\NUOPT.smp:183[61]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[61] <= 0 ]
-F# 1740 C:\MPCsimulation\Optimization\NUOPT.smp:183[62]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[62] <= 0 ]
-F# 1741 C:\MPCsimulation\Optimization\NUOPT.smp:183[63]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[63] <= 0 ]
-F# 1742 C:\MPCsimulation\Optimization\NUOPT.smp:183[64]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[64] <= 0 ]
-F# 1743 C:\MPCsimulation\Optimization\NUOPT.smp:183[65]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[65] <= 0 ]
-F# 1744 C:\MPCsimulation\Optimization\NUOPT.smp:183[66]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[66] <= 0 ]
-F# 1745 C:\MPCsimulation\Optimization\NUOPT.smp:183[67]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[67] <= 0 ]
-F# 1746 C:\MPCsimulation\Optimization\NUOPT.smp:183[68]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[68] <= 0 ]
-F# 1747 C:\MPCsimulation\Optimization\NUOPT.smp:183[69]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[69] <= 0 ]
-F# 1748 C:\MPCsimulation\Optimization\NUOPT.smp:184[0]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[0]      ]
-F# 1749 C:\MPCsimulation\Optimization\NUOPT.smp:184[1]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[1]      ]
-F# 1750 C:\MPCsimulation\Optimization\NUOPT.smp:184[2]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[2]      ]
-F# 1751 C:\MPCsimulation\Optimization\NUOPT.smp:184[3]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[3]      ]
-F# 1752 C:\MPCsimulation\Optimization\NUOPT.smp:184[4]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[4]      ]
-F# 1753 C:\MPCsimulation\Optimization\NUOPT.smp:184[5]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[5]      ]
-F# 1754 C:\MPCsimulation\Optimization\NUOPT.smp:184[6]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[6]      ]
-F# 1755 C:\MPCsimulation\Optimization\NUOPT.smp:184[7]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[7]      ]
-F# 1756 C:\MPCsimulation\Optimization\NUOPT.smp:184[8]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[8]      ]
-F# 1757 C:\MPCsimulation\Optimization\NUOPT.smp:184[9]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[9]      ]
-F# 1758 C:\MPCsimulation\Optimization\NUOPT.smp:184[10]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[10]      ]
-F# 1759 C:\MPCsimulation\Optimization\NUOPT.smp:184[11]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[11]      ]
-F# 1760 C:\MPCsimulation\Optimization\NUOPT.smp:184[12]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[12]      ]
-F# 1761 C:\MPCsimulation\Optimization\NUOPT.smp:184[13]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[13]      ]
-F# 1762 C:\MPCsimulation\Optimization\NUOPT.smp:184[14]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[14]      ]
-F# 1763 C:\MPCsimulation\Optimization\NUOPT.smp:184[15]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[15]      ]
-F# 1764 C:\MPCsimulation\Optimization\NUOPT.smp:184[16]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[16]      ]
-F# 1765 C:\MPCsimulation\Optimization\NUOPT.smp:184[17]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[17]      ]
-F# 1766 C:\MPCsimulation\Optimization\NUOPT.smp:184[18]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[18]      ]
-F# 1767 C:\MPCsimulation\Optimization\NUOPT.smp:184[19]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[19]      ]
-F# 1768 C:\MPCsimulation\Optimization\NUOPT.smp:184[20]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[20]      ]
-F# 1769 C:\MPCsimulation\Optimization\NUOPT.smp:184[21]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[21]      ]
-F# 1770 C:\MPCsimulation\Optimization\NUOPT.smp:184[22]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[22]      ]
-F# 1771 C:\MPCsimulation\Optimization\NUOPT.smp:184[23]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[23]      ]
-F# 1772 C:\MPCsimulation\Optimization\NUOPT.smp:184[24]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[24]      ]
-F# 1773 C:\MPCsimulation\Optimization\NUOPT.smp:184[25]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[25]      ]
-F# 1774 C:\MPCsimulation\Optimization\NUOPT.smp:184[26]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[26]      ]
-F# 1775 C:\MPCsimulation\Optimization\NUOPT.smp:184[27]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[27]      ]
-F# 1776 C:\MPCsimulation\Optimization\NUOPT.smp:184[28]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[28]      ]
-F# 1777 C:\MPCsimulation\Optimization\NUOPT.smp:184[29]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[29]      ]
-F# 1778 C:\MPCsimulation\Optimization\NUOPT.smp:184[30]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[30]      ]
-F# 1779 C:\MPCsimulation\Optimization\NUOPT.smp:184[31]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[31]      ]
-F# 1780 C:\MPCsimulation\Optimization\NUOPT.smp:184[32]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[32]      ]
-F# 1781 C:\MPCsimulation\Optimization\NUOPT.smp:184[33]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[33]      ]
-F# 1782 C:\MPCsimulation\Optimization\NUOPT.smp:184[34]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[34]      ]
-F# 1783 C:\MPCsimulation\Optimization\NUOPT.smp:184[35]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[35]      ]
-F# 1784 C:\MPCsimulation\Optimization\NUOPT.smp:184[36]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[36]      ]
-F# 1785 C:\MPCsimulation\Optimization\NUOPT.smp:184[37]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[37]      ]
-F# 1786 C:\MPCsimulation\Optimization\NUOPT.smp:184[38]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[38]      ]
-F# 1787 C:\MPCsimulation\Optimization\NUOPT.smp:184[39]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[39]      ]
-F# 1788 C:\MPCsimulation\Optimization\NUOPT.smp:184[40]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[40]      ]
-F# 1789 C:\MPCsimulation\Optimization\NUOPT.smp:184[41]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[41]      ]
-F# 1790 C:\MPCsimulation\Optimization\NUOPT.smp:184[42]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[42]      ]
-F# 1791 C:\MPCsimulation\Optimization\NUOPT.smp:184[43]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[43]      ]
-F# 1792 C:\MPCsimulation\Optimization\NUOPT.smp:184[44]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[44]      ]
-F# 1793 C:\MPCsimulation\Optimization\NUOPT.smp:184[45]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[45]      ]
-F# 1794 C:\MPCsimulation\Optimization\NUOPT.smp:184[46]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[46]      ]
-F# 1795 C:\MPCsimulation\Optimization\NUOPT.smp:184[47]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[47]      ]
-F# 1796 C:\MPCsimulation\Optimization\NUOPT.smp:184[48]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[48]      ]
-F# 1797 C:\MPCsimulation\Optimization\NUOPT.smp:184[49]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[49]      ]
-F# 1798 C:\MPCsimulation\Optimization\NUOPT.smp:184[50]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[50]      ]
-F# 1799 C:\MPCsimulation\Optimization\NUOPT.smp:184[51]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[51]      ]
-F# 1800 C:\MPCsimulation\Optimization\NUOPT.smp:184[52]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[52]      ]
-F# 1801 C:\MPCsimulation\Optimization\NUOPT.smp:184[53]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[53]      ]
-F# 1802 C:\MPCsimulation\Optimization\NUOPT.smp:184[54]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[54]      ]
-F# 1803 C:\MPCsimulation\Optimization\NUOPT.smp:184[55]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[55]      ]
-F# 1804 C:\MPCsimulation\Optimization\NUOPT.smp:184[56]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[56]      ]
-F# 1805 C:\MPCsimulation\Optimization\NUOPT.smp:184[57]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[57]      ]
-F# 1806 C:\MPCsimulation\Optimization\NUOPT.smp:184[58]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[58]      ]
-F# 1807 C:\MPCsimulation\Optimization\NUOPT.smp:184[59]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[59]      ]
-F# 1808 C:\MPCsimulation\Optimization\NUOPT.smp:184[60]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[60]      ]
-F# 1809 C:\MPCsimulation\Optimization\NUOPT.smp:184[61]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[61]      ]
-F# 1810 C:\MPCsimulation\Optimization\NUOPT.smp:184[62]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[62]      ]
-F# 1811 C:\MPCsimulation\Optimization\NUOPT.smp:184[63]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[63]      ]
-F# 1812 C:\MPCsimulation\Optimization\NUOPT.smp:184[64]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[64]      ]
-F# 1813 C:\MPCsimulation\Optimization\NUOPT.smp:184[65]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[65]      ]
-F# 1814 C:\MPCsimulation\Optimization\NUOPT.smp:184[66]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[66]      ]
-F# 1815 C:\MPCsimulation\Optimization\NUOPT.smp:184[67]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[67]      ]
-F# 1816 C:\MPCsimulation\Optimization\NUOPT.smp:184[68]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[68]      ]
-F# 1817 C:\MPCsimulation\Optimization\NUOPT.smp:184[69]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[69]      ]
-F# 1818 C:\MPCsimulation\Optimization\NUOPT.smp:185[0]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[0] <= 0 ]
-F# 1819 C:\MPCsimulation\Optimization\NUOPT.smp:185[1]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[1] <= 0 ]
-F# 1820 C:\MPCsimulation\Optimization\NUOPT.smp:185[2]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[2] <= 0 ]
-F# 1821 C:\MPCsimulation\Optimization\NUOPT.smp:185[3]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[3] <= 0 ]
-F# 1822 C:\MPCsimulation\Optimization\NUOPT.smp:185[4]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[4] <= 0 ]
-F# 1823 C:\MPCsimulation\Optimization\NUOPT.smp:185[5]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[5] <= 0 ]
-F# 1824 C:\MPCsimulation\Optimization\NUOPT.smp:185[6]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[6] <= 0 ]
-F# 1825 C:\MPCsimulation\Optimization\NUOPT.smp:185[7]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[7] <= 0 ]
-F# 1826 C:\MPCsimulation\Optimization\NUOPT.smp:185[8]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[8] <= 0 ]
-F# 1827 C:\MPCsimulation\Optimization\NUOPT.smp:185[9]         0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[9] <= 0 ]
-F# 1828 C:\MPCsimulation\Optimization\NUOPT.smp:185[10]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[10] <= 0 ]
-F# 1829 C:\MPCsimulation\Optimization\NUOPT.smp:185[11]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[11] <= 0 ]
-F# 1830 C:\MPCsimulation\Optimization\NUOPT.smp:185[12]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[12] <= 0 ]
-F# 1831 C:\MPCsimulation\Optimization\NUOPT.smp:185[13]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[13] <= 0 ]
-F# 1832 C:\MPCsimulation\Optimization\NUOPT.smp:185[14]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[14] <= 0 ]
-F# 1833 C:\MPCsimulation\Optimization\NUOPT.smp:185[15]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[15] <= 0 ]
-F# 1834 C:\MPCsimulation\Optimization\NUOPT.smp:185[16]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[16] <= 0 ]
-F# 1835 C:\MPCsimulation\Optimization\NUOPT.smp:185[17]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[17] <= 0 ]
-F# 1836 C:\MPCsimulation\Optimization\NUOPT.smp:185[18]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[18] <= 0 ]
-F# 1837 C:\MPCsimulation\Optimization\NUOPT.smp:185[19]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[19] <= 0 ]
-F# 1838 C:\MPCsimulation\Optimization\NUOPT.smp:185[20]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[20] <= 0 ]
-F# 1839 C:\MPCsimulation\Optimization\NUOPT.smp:185[21]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[21] <= 0 ]
-F# 1840 C:\MPCsimulation\Optimization\NUOPT.smp:185[22]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[22] <= 0 ]
-F# 1841 C:\MPCsimulation\Optimization\NUOPT.smp:185[23]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[23] <= 0 ]
-F# 1842 C:\MPCsimulation\Optimization\NUOPT.smp:185[24]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[24] <= 0 ]
-F# 1843 C:\MPCsimulation\Optimization\NUOPT.smp:185[25]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[25] <= 0 ]
-F# 1844 C:\MPCsimulation\Optimization\NUOPT.smp:185[26]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[26] <= 0 ]
-F# 1845 C:\MPCsimulation\Optimization\NUOPT.smp:185[27]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[27] <= 0 ]
-F# 1846 C:\MPCsimulation\Optimization\NUOPT.smp:185[28]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[28] <= 0 ]
-F# 1847 C:\MPCsimulation\Optimization\NUOPT.smp:185[29]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[29] <= 0 ]
-F# 1848 C:\MPCsimulation\Optimization\NUOPT.smp:185[30]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[30] <= 0 ]
-F# 1849 C:\MPCsimulation\Optimization\NUOPT.smp:185[31]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[31] <= 0 ]
-F# 1850 C:\MPCsimulation\Optimization\NUOPT.smp:185[32]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[32] <= 0 ]
-F# 1851 C:\MPCsimulation\Optimization\NUOPT.smp:185[33]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[33] <= 0 ]
-F# 1852 C:\MPCsimulation\Optimization\NUOPT.smp:185[34]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[34] <= 0 ]
-F# 1853 C:\MPCsimulation\Optimization\NUOPT.smp:185[35]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[35] <= 0 ]
-F# 1854 C:\MPCsimulation\Optimization\NUOPT.smp:185[36]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[36] <= 0 ]
-F# 1855 C:\MPCsimulation\Optimization\NUOPT.smp:185[37]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[37] <= 0 ]
-F# 1856 C:\MPCsimulation\Optimization\NUOPT.smp:185[38]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[38] <= 0 ]
-F# 1857 C:\MPCsimulation\Optimization\NUOPT.smp:185[39]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[39] <= 0 ]
-F# 1858 C:\MPCsimulation\Optimization\NUOPT.smp:185[40]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[40] <= 0 ]
-F# 1859 C:\MPCsimulation\Optimization\NUOPT.smp:185[41]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[41] <= 0 ]
-F# 1860 C:\MPCsimulation\Optimization\NUOPT.smp:185[42]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[42] <= 0 ]
-F# 1861 C:\MPCsimulation\Optimization\NUOPT.smp:185[43]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[43] <= 0 ]
-F# 1862 C:\MPCsimulation\Optimization\NUOPT.smp:185[44]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[44] <= 0 ]
-F# 1863 C:\MPCsimulation\Optimization\NUOPT.smp:185[45]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[45] <= 0 ]
-F# 1864 C:\MPCsimulation\Optimization\NUOPT.smp:185[46]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[46] <= 0 ]
-F# 1865 C:\MPCsimulation\Optimization\NUOPT.smp:185[47]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[47] <= 0 ]
-F# 1866 C:\MPCsimulation\Optimization\NUOPT.smp:185[48]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[48] <= 0 ]
-F# 1867 C:\MPCsimulation\Optimization\NUOPT.smp:185[49]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[49] <= 0 ]
-F# 1868 C:\MPCsimulation\Optimization\NUOPT.smp:185[50]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[50] <= 0 ]
-F# 1869 C:\MPCsimulation\Optimization\NUOPT.smp:185[51]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[51] <= 0 ]
-F# 1870 C:\MPCsimulation\Optimization\NUOPT.smp:185[52]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[52] <= 0 ]
-F# 1871 C:\MPCsimulation\Optimization\NUOPT.smp:185[53]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[53] <= 0 ]
-F# 1872 C:\MPCsimulation\Optimization\NUOPT.smp:185[54]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[54] <= 0 ]
-F# 1873 C:\MPCsimulation\Optimization\NUOPT.smp:185[55]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[55] <= 0 ]
-F# 1874 C:\MPCsimulation\Optimization\NUOPT.smp:185[56]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[56] <= 0 ]
-F# 1875 C:\MPCsimulation\Optimization\NUOPT.smp:185[57]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[57] <= 0 ]
-F# 1876 C:\MPCsimulation\Optimization\NUOPT.smp:185[58]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[58] <= 0 ]
-F# 1877 C:\MPCsimulation\Optimization\NUOPT.smp:185[59]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[59] <= 0 ]
-F# 1878 C:\MPCsimulation\Optimization\NUOPT.smp:185[60]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[60] <= 0 ]
-F# 1879 C:\MPCsimulation\Optimization\NUOPT.smp:185[61]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[61] <= 0 ]
-F# 1880 C:\MPCsimulation\Optimization\NUOPT.smp:185[62]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[62] <= 0 ]
-F# 1881 C:\MPCsimulation\Optimization\NUOPT.smp:185[63]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[63] <= 0 ]
-F# 1882 C:\MPCsimulation\Optimization\NUOPT.smp:185[64]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[64] <= 0 ]
-F# 1883 C:\MPCsimulation\Optimization\NUOPT.smp:185[65]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[65] <= 0 ]
-F# 1884 C:\MPCsimulation\Optimization\NUOPT.smp:185[66]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[66] <= 0 ]
-F# 1885 C:\MPCsimulation\Optimization\NUOPT.smp:185[67]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[67] <= 0 ]
-F# 1886 C:\MPCsimulation\Optimization\NUOPT.smp:185[68]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[68] <= 0 ]
-F# 1887 C:\MPCsimulation\Optimization\NUOPT.smp:185[69]        0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[69] <= 0 ]
-F# 1888 C:\MPCsimulation\Optimization\NUOPT.smp:186[0]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[0]      ]
-F# 1889 C:\MPCsimulation\Optimization\NUOPT.smp:186[1]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[1]      ]
-F# 1890 C:\MPCsimulation\Optimization\NUOPT.smp:186[2]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[2]      ]
-F# 1891 C:\MPCsimulation\Optimization\NUOPT.smp:186[3]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[3]      ]
-F# 1892 C:\MPCsimulation\Optimization\NUOPT.smp:186[4]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[4]      ]
-F# 1893 C:\MPCsimulation\Optimization\NUOPT.smp:186[5]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[5]      ]
-F# 1894 C:\MPCsimulation\Optimization\NUOPT.smp:186[6]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[6]      ]
-F# 1895 C:\MPCsimulation\Optimization\NUOPT.smp:186[7]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[7]      ]
-F# 1896 C:\MPCsimulation\Optimization\NUOPT.smp:186[8]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[8]      ]
-F# 1897 C:\MPCsimulation\Optimization\NUOPT.smp:186[9]         0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[9]      ]
-F# 1898 C:\MPCsimulation\Optimization\NUOPT.smp:186[10]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[10]      ]
-F# 1899 C:\MPCsimulation\Optimization\NUOPT.smp:186[11]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[11]      ]
-F# 1900 C:\MPCsimulation\Optimization\NUOPT.smp:186[12]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[12]      ]
-F# 1901 C:\MPCsimulation\Optimization\NUOPT.smp:186[13]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[13]      ]
-F# 1902 C:\MPCsimulation\Optimization\NUOPT.smp:186[14]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[14]      ]
-F# 1903 C:\MPCsimulation\Optimization\NUOPT.smp:186[15]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[15]      ]
-F# 1904 C:\MPCsimulation\Optimization\NUOPT.smp:186[16]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[16]      ]
-F# 1905 C:\MPCsimulation\Optimization\NUOPT.smp:186[17]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[17]      ]
-F# 1906 C:\MPCsimulation\Optimization\NUOPT.smp:186[18]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[18]      ]
-F# 1907 C:\MPCsimulation\Optimization\NUOPT.smp:186[19]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[19]      ]
-F# 1908 C:\MPCsimulation\Optimization\NUOPT.smp:186[20]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[20]      ]
-F# 1909 C:\MPCsimulation\Optimization\NUOPT.smp:186[21]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[21]      ]
-F# 1910 C:\MPCsimulation\Optimization\NUOPT.smp:186[22]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[22]      ]
-F# 1911 C:\MPCsimulation\Optimization\NUOPT.smp:186[23]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[23]      ]
-F# 1912 C:\MPCsimulation\Optimization\NUOPT.smp:186[24]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[24]      ]
-F# 1913 C:\MPCsimulation\Optimization\NUOPT.smp:186[25]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[25]      ]
-F# 1914 C:\MPCsimulation\Optimization\NUOPT.smp:186[26]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[26]      ]
-F# 1915 C:\MPCsimulation\Optimization\NUOPT.smp:186[27]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[27]      ]
-F# 1916 C:\MPCsimulation\Optimization\NUOPT.smp:186[28]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[28]      ]
-F# 1917 C:\MPCsimulation\Optimization\NUOPT.smp:186[29]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[29]      ]
-F# 1918 C:\MPCsimulation\Optimization\NUOPT.smp:186[30]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[30]      ]
-F# 1919 C:\MPCsimulation\Optimization\NUOPT.smp:186[31]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[31]      ]
-F# 1920 C:\MPCsimulation\Optimization\NUOPT.smp:186[32]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[32]      ]
-F# 1921 C:\MPCsimulation\Optimization\NUOPT.smp:186[33]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[33]      ]
-F# 1922 C:\MPCsimulation\Optimization\NUOPT.smp:186[34]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[34]      ]
-F# 1923 C:\MPCsimulation\Optimization\NUOPT.smp:186[35]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[35]      ]
-F# 1924 C:\MPCsimulation\Optimization\NUOPT.smp:186[36]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[36]      ]
-F# 1925 C:\MPCsimulation\Optimization\NUOPT.smp:186[37]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[37]      ]
-F# 1926 C:\MPCsimulation\Optimization\NUOPT.smp:186[38]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[38]      ]
-F# 1927 C:\MPCsimulation\Optimization\NUOPT.smp:186[39]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[39]      ]
-F# 1928 C:\MPCsimulation\Optimization\NUOPT.smp:186[40]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[40]      ]
-F# 1929 C:\MPCsimulation\Optimization\NUOPT.smp:186[41]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[41]      ]
-F# 1930 C:\MPCsimulation\Optimization\NUOPT.smp:186[42]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[42]      ]
-F# 1931 C:\MPCsimulation\Optimization\NUOPT.smp:186[43]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[43]      ]
-F# 1932 C:\MPCsimulation\Optimization\NUOPT.smp:186[44]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[44]      ]
-F# 1933 C:\MPCsimulation\Optimization\NUOPT.smp:186[45]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[45]      ]
-F# 1934 C:\MPCsimulation\Optimization\NUOPT.smp:186[46]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[46]      ]
-F# 1935 C:\MPCsimulation\Optimization\NUOPT.smp:186[47]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[47]      ]
-F# 1936 C:\MPCsimulation\Optimization\NUOPT.smp:186[48]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[48]      ]
-F# 1937 C:\MPCsimulation\Optimization\NUOPT.smp:186[49]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[49]      ]
-F# 1938 C:\MPCsimulation\Optimization\NUOPT.smp:186[50]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[50]      ]
-F# 1939 C:\MPCsimulation\Optimization\NUOPT.smp:186[51]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[51]      ]
-F# 1940 C:\MPCsimulation\Optimization\NUOPT.smp:186[52]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[52]      ]
-F# 1941 C:\MPCsimulation\Optimization\NUOPT.smp:186[53]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[53]      ]
-F# 1942 C:\MPCsimulation\Optimization\NUOPT.smp:186[54]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[54]      ]
-F# 1943 C:\MPCsimulation\Optimization\NUOPT.smp:186[55]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[55]      ]
-F# 1944 C:\MPCsimulation\Optimization\NUOPT.smp:186[56]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[56]      ]
-F# 1945 C:\MPCsimulation\Optimization\NUOPT.smp:186[57]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[57]      ]
-F# 1946 C:\MPCsimulation\Optimization\NUOPT.smp:186[58]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[58]      ]
-F# 1947 C:\MPCsimulation\Optimization\NUOPT.smp:186[59]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[59]      ]
-F# 1948 C:\MPCsimulation\Optimization\NUOPT.smp:186[60]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[60]      ]
-F# 1949 C:\MPCsimulation\Optimization\NUOPT.smp:186[61]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[61]      ]
-F# 1950 C:\MPCsimulation\Optimization\NUOPT.smp:186[62]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[62]      ]
-F# 1951 C:\MPCsimulation\Optimization\NUOPT.smp:186[63]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[63]      ]
-F# 1952 C:\MPCsimulation\Optimization\NUOPT.smp:186[64]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[64]      ]
-F# 1953 C:\MPCsimulation\Optimization\NUOPT.smp:186[65]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[65]      ]
-F# 1954 C:\MPCsimulation\Optimization\NUOPT.smp:186[66]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[66]      ]
-F# 1955 C:\MPCsimulation\Optimization\NUOPT.smp:186[67]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[67]      ]
-F# 1956 C:\MPCsimulation\Optimization\NUOPT.smp:186[68]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[68]      ]
-F# 1957 C:\MPCsimulation\Optimization\NUOPT.smp:186[69]        0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[69]      ]
-F# 1958 obj                                                    0  FREE                  [                    OBJECTIVE (MINIMIZE)                   ]
+                               NAME                          VALUE    STATUS      SLACK      [                         BOUND TYPE                        ]
+F#    1 C:\MPCsimulation\Optimization\NUOPT.smp:117                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:117   == 0 ]
+F#    2 C:\MPCsimulation\Optimization\NUOPT.smp:118                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:118   == 0 ]
+F#    3 C:\MPCsimulation\Optimization\NUOPT.smp:119                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:119   == 0 ]
+F#    4 C:\MPCsimulation\Optimization\NUOPT.smp:120                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:120   == 0 ]
+F#    5 C:\MPCsimulation\Optimization\NUOPT.smp:121                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:121   == 0 ]
+F#    6 C:\MPCsimulation\Optimization\NUOPT.smp:122                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:122   == 0 ]
+F#    7 C:\MPCsimulation\Optimization\NUOPT.smp:123                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:123   == 0 ]
+F#    8 C:\MPCsimulation\Optimization\NUOPT.smp:124_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:124   == 0 ]
+F#    9 C:\MPCsimulation\Optimization\NUOPT.smp:125_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:125   == 0 ]
+F#   10 C:\MPCsimulation\Optimization\NUOPT.smp:126_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:126   == 0 ]
+F#   11 C:\MPCsimulation\Optimization\NUOPT.smp:127_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:127   == 0 ]
+F#   12 C:\MPCsimulation\Optimization\NUOPT.smp:128_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:128   == 0 ]
+F#   13 C:\MPCsimulation\Optimization\NUOPT.smp:129_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:129   == 0 ]
+F#   14 C:\MPCsimulation\Optimization\NUOPT.smp:131                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:131   == 0 ]
+F#   15 C:\MPCsimulation\Optimization\NUOPT.smp:132                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:132   == 0 ]
+F#   16 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#   17 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#   18 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#   19 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#   20 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#   21 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#   22 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#   23 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#   24 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#   25 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#   26 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#   27 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#   28 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#   29 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#   30 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#   31 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#   32 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#   33 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#   34 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#   35 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#   36 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#   37 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#   38 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#   39 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#   40 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#   41 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#   42 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#   43 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#   44 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#   45 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#   46 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#   47 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#   48 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#   49 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#   50 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#   51 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#   52 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#   53 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#   54 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#   55 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#   56 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#   57 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#   58 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#   59 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#   60 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#   61 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#   62 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#   63 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#   64 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#   65 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#   66 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#   67 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#   68 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#   69 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#   70 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#   71 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#   72 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#   73 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#   74 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#   75 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#   76 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#   77 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#   78 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#   79 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#   80 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#   81 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#   82 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#   83 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#   84 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#   85 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#   86 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#   87 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#   88 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#   89 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#   90 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#   91 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#   92 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#   93 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#   94 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#   95 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#   96 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#   97 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#   98 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#   99 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  100 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  101 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  102 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  103 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  104 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  105 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  106 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  107 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  108 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  109 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  110 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  111 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  112 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  113 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  114 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  115 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  116 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  117 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  118 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  119 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  120 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  121 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  122 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  123 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  124 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  125 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  126 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  127 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  128 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  129 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  130 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  131 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  132 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  133 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  134 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  135 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  136 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  137 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  138 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  139 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  140 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  141 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  142 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  143 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  144 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  145 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  146 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  147 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  148 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  149 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  150 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  151 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  152 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  153 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  154 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  155 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  156 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  157 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  158 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  159 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  160 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  161 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  162 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  163 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  164 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  165 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  166 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  167 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  168 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  169 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  170 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  171 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  172 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  173 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  174 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  175 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  176 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  177 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  178 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  179 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  180 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  181 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  182 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  183 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  184 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  185 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  186 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  187 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  188 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  189 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  190 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  191 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  192 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  193 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  194 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  195 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  196 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  197 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  198 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  199 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  200 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  201 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  202 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  203 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  204 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  205 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  206 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  207 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  208 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  209 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  210 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  211 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  212 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  213 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  214 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  215 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  216 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  217 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  218 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  219 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  220 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  221 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  222 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  223 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  224 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  225 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  226 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  227 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  228 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  229 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  230 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  231 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  232 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  233 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  234 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  235 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  236 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  237 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  238 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  239 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  240 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  241 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  242 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  243 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  244 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  245 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  246 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  247 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  248 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  249 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  250 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  251 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  252 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  253 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  254 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  255 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  256 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  257 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  258 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  259 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  260 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  261 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  262 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  263 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  264 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  265 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  266 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  267 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  268 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  269 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  270 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  271 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  272 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  273 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  274 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  275 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  276 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  277 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  278 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  279 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  280 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  281 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  282 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  283 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  284 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  285 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  286 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  287 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  288 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  289 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  290 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  291 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  292 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  293 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  294 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  295 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  296 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  297 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  298 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  299 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  300 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  301 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  302 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  303 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  304 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  305 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  306 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  307 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  308 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  309 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  310 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  311 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  312 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  313 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  314 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  315 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  316 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  317 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  318 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  319 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  320 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  321 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  322 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  323 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  324 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  325 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  326 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  327 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  328 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  329 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  330 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  331 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  332 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  333 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  334 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  335 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  336 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  337 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  338 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  339 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  340 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  341 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  342 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  343 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  344 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  345 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  346 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  347 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  348 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  349 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  350 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  351 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  352 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  353 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  354 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  355 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  356 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  357 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  358 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  359 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  360 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  361 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  362 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  363 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  364 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  365 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  366 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  367 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  368 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  369 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  370 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  371 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  372 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  373 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  374 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  375 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  376 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  377 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  378 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  379 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  380 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  381 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  382 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  383 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  384 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  385 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  386 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  387 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  388 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  389 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  390 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  391 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  392 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  393 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  394 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  395 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  396 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  397 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  398 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  399 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  400 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  401 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  402 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  403 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  404 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  405 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  406 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  407 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  408 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  409 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  410 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  411 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  412 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  413 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  414 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  415 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  416 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  417 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  418 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  419 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  420 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  421 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  422 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  423 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  424 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  425 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  426 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  427 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  428 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  429 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  430 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  431 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  432 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  433 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  434 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  435 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  436 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  437 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  438 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  439 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  440 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  441 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  442 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  443 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  444 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  445 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  446 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  447 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  448 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  449 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  450 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  451 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  452 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  453 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  454 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  455 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  456 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  457 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  458 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  459 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  460 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  461 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  462 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  463 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  464 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  465 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  466 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  467 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  468 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  469 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  470 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  471 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  472 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  473 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  474 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  475 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  476 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  477 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  478 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  479 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  480 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  481 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  482 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  483 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  484 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  485 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  486 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  487 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  488 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  489 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  490 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  491 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  492 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  493 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  494 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  495 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  496 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  497 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  498 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  499 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  500 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  501 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  502 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  503 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  504 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  505 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  506 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  507 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  508 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  509 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  510 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  511 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  512 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  513 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  514 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  515 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  516 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  517 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  518 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  519 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  520 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  521 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  522 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  523 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  524 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  525 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  526 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  527 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  528 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  529 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  530 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  531 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  532 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  533 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  534 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  535 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  536 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  537 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  538 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  539 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  540 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  541 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  542 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  543 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  544 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  545 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  546 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  547 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  548 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  549 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  550 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  551 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  552 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  553 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  554 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  555 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  556 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  557 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  558 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  559 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  560 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  561 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  562 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  563 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  564 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  565 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  566 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  567 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  568 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  569 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  570 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  571 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  572 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  573 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  574 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  575 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  576 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  577 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  578 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  579 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  580 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  581 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  582 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  583 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  584 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  585 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  586 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  587 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  588 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  589 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  590 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  591 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  592 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  593 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  594 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  595 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  596 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  597 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  598 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  599 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  600 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  601 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  602 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  603 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  604 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  605 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  606 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  607 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  608 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  609 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  610 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  611 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  612 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  613 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  614 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  615 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  616 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  617 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  618 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  619 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  620 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  621 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  622 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  623 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  624 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  625 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  626 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  627 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  628 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  629 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  630 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  631 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  632 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  633 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  634 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  635 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  636 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  637 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  638 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  639 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  640 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  641 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  642 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  643 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  644 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  645 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  646 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  647 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  648 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  649 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  650 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  651 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  652 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  653 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  654 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  655 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  656 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  657 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  658 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  659 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  660 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  661 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  662 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  663 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  664 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  665 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  666 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  667 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  668 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  669 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  670 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  671 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  672 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  673 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  674 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  675 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  676 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  677 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  678 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  679 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  680 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  681 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  682 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  683 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  684 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  685 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  686 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  687 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  688 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  689 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  690 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  691 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  692 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  693 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  694 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  695 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  696 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  697 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  698 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  699 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  700 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  701 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  702 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  703 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  704 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  705 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  706 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  707 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  708 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  709 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  710 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  711 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  712 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  713 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  714 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  715 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  716 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  717 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  718 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  719 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  720 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  721 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  722 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  723 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  724 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  725 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  726 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  727 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  728 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  729 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  730 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  731 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  732 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  733 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  734 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  735 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  736 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  737 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  738 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  739 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  740 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  741 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  742 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  743 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  744 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  745 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  746 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  747 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  748 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  749 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  750 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  751 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  752 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  753 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  754 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  755 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  756 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  757 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  758 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  759 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  760 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  761 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  762 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  763 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  764 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  765 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  766 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  767 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  768 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  769 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  770 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  771 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  772 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  773 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  774 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  775 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  776 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  777 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  778 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  779 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  780 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  781 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  782 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  783 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  784 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  785 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  786 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  787 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  788 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  789 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  790 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  791 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  792 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  793 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  794 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  795 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  796 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  797 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  798 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  799 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  800 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  801 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  802 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  803 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  804 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  805 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  806 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  807 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  808 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  809 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  810 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  811 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  812 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  813 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  814 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  815 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  816 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  817 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  818 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  819 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  820 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  821 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  822 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  823 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  824 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  825 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  826 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  827 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  828 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  829 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  830 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  831 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  832 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  833 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  834 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  835 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  836 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  837 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  838 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  839 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  840 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  841 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  842 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  843 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  844 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  845 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  846 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  847 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  848 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  849 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  850 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  851 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  852 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  853 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  854 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  855 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  856 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  857 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  858 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  859 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  860 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  861 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  862 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  863 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  864 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  865 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  866 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  867 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  868 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  869 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  870 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  871 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  872 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  873 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  874 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  875 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  876 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  877 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  878 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  879 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  880 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  881 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  882 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  883 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  884 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  885 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  886 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  887 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  888 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  889 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  890 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  891 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  892 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  893 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  894 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  895 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  896 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  897 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  898 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  899 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  900 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  901 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  902 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  903 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  904 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  905 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  906 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  907 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  908 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  909 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  910 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  911 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  912 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  913 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  914 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  915 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  916 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  917 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  918 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  919 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  920 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  921 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  922 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  923 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  924 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  925 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  926 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  927 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  928 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  929 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  930 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  931 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  932 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  933 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  934 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  935 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  936 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  937 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  938 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  939 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  940 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  941 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  942 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  943 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  944 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  945 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  946 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  947 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  948 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  949 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  950 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  951 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  952 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  953 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  954 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  955 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  956 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  957 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  958 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  959 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  960 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  961 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  962 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  963 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  964 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  965 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  966 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  967 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  968 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  969 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  970 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  971 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  972 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  973 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  974 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  975 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  976 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F#  977 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F#  978 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F#  979 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F#  980 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F#  981 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F#  982 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F#  983 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F#  984 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F#  985 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F#  986 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F#  987 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F#  988 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F#  989 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F#  990 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F#  991 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F#  992 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F#  993 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F#  994 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F#  995 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F#  996 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F#  997 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F#  998 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F#  999 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1000 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1001 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1002 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1003 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1004 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1005 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1006 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1007 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1008 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1009 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1010 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1011 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1012 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1013 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1014 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1015 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1016 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1017 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1018 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1019 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1020 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1021 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1022 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1023 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1024 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1025 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1026 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1027 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1028 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1029 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1030 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1031 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1032 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1033 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1034 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1035 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1036 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1037 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1038 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1039 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1040 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1041 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1042 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1043 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1044 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1045 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1046 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1047 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1048 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1049 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1050 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1051 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1052 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1053 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1054 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1055 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1056 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1057 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1058 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1059 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1060 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1061 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1062 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1063 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1064 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1065 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1066 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1067 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1068 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1069 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1070 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1071 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1072 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1073 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1074 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1075 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1076 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1077 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1078 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1079 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1080 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1081 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1082 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1083 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1084 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1085 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1086 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1087 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1088 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1089 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1090 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1091 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1092 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1093 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1094 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1095 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1096 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1097 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1098 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1099 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1100 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1101 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1102 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1103 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1104 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1105 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1106 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1107 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1108 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1109 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1110 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1111 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1112 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1113 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1114 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1115 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1116 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1117 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1118 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1119 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1120 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1121 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1122 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1123 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1124 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1125 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1126 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1127 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1128 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1129 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1130 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1131 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1132 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1133 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1134 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1135 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1136 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1137 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1138 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1139 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1140 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1141 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1142 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1143 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1144 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1145 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1146 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1147 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1148 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1149 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1150 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1151 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1152 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1153 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1154 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1155 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1156 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1157 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1158 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1159 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1160 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1161 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1162 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1163 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1164 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1165 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1166 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1167 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1168 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1169 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1170 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1171 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1172 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1173 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1174 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1175 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1176 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1177 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1178 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1179 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1180 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1181 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1182 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1183 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1184 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1185 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1186 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1187 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1188 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1189 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1190 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1191 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1192 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1193 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1194 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1195 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1196 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1197 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1198 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1199 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1200 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1201 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1202 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1203 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1204 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1205 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1206 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1207 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1208 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1209 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1210 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1211 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1212 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1213 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1214 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1215 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1216 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1217 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1218 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1219 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1220 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1221 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1222 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1223 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1224 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1225 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1226 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1227 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1228 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1229 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1230 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1231 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1232 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1233 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1234 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1235 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1236 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1237 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1238 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1239 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1240 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1241 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1242 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1243 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1244 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1245 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1246 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1247 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1248 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1249 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1250 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1251 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1252 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1253 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1254 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1255 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1256 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1257 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1258 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1259 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1260 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1261 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1262 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1263 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1264 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1265 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1266 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1267 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1268 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1269 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1270 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1271 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1272 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1273 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1274 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1275 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1276 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1277 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1278 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1279 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1280 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1281 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1282 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1283 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1284 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1285 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1286 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1287 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1288 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1289 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1290 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1291 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1292 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1293 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1294 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1295 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1296 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1297 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1298 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1299 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1300 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1301 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1302 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1303 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1304 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1305 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1306 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1307 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1308 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1309 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1310 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1311 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1312 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1313 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1314 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1315 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1316 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1317 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1318 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1319 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1320 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1321 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1322 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1323 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1324 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1325 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1326 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1327 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1328 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1329 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1330 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1331 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1332 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1333 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1334 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1335 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1336 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1337 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1338 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1339 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1340 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1341 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1342 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1343 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1344 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1345 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1346 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1347 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1348 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1349 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1350 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1351 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1352 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1353 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1354 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1355 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1356 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1357 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1358 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1359 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1360 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1361 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1362 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1363 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1364 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1365 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1366 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1367 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1368 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1369 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1370 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1371 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1372 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1373 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1374 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1375 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1376 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1377 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1378 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1379 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1380 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1381 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1382 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1383 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1384 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1385 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1386 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1387 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1388 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1389 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1390 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1391 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1392 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1393 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1394 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1395 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1396 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1397 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1398 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1399 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1400 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1401 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1402 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1403 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1404 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1405 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1406 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1407 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1408 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1409 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1410 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1411 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1412 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1413 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1414 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1415 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1416 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1417 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1418 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1419 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1420 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1421 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1422 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1423 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1424 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1425 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1426 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1427 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1428 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1429 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1430 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1431 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1432 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1433 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1434 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1435 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1436 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1437 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1438 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1439 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1440 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1441 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1442 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1443 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1444 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1445 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1446 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1447 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1448 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1449 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1450 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1451 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1452 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1453 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1454 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1455 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1456 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1457 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1458 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1459 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1460 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1461 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1462 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1463 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1464 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1465 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1466 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1467 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1468 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1469 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1470 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1471 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1472 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1473 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1474 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1475 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1476 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1477 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1478 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1479 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1480 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1481 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1482 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1483 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1484 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1485 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1486 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1487 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1488 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1489 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1490 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1491 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1492 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1493 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1494 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1495 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1496 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1497 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1498 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1499 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1500 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1501 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1502 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1503 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1504 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1505 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1506 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1507 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1508 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1509 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1510 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1511 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1512 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1513 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1514 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1515 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1516 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1517 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1518 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1519 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1520 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1521 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1522 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1523 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1524 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1525 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1526 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1527 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1528 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1529 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1530 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1531 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1532 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1533 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1534 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1535 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1536 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1537 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1538 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1539 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1540 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1541 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1542 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1543 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1544 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1545 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1546 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1547 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1548 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1549 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1550 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1551 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1552 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1553 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1554 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1555 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1556 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1557 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1558 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1559 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1560 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1561 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1562 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1563 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1564 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1565 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1566 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1567 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1568 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1569 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1570 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1571 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1572 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1573 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1574 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1575 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1576 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1577 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1578 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1579 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1580 C:\MPCsimulation\Optimization\NUOPT.smp:140                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:140   == 0 ]
+F# 1581 C:\MPCsimulation\Optimization\NUOPT.smp:141_*NLR*      1.4427  INFS   1.44269504e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:141   == 0 ]
+F# 1582 C:\MPCsimulation\Optimization\NUOPT.smp:142                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:142   == 0 ]
+F# 1583 C:\MPCsimulation\Optimization\NUOPT.smp:143_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:143   == 0 ]
+F# 1584 C:\MPCsimulation\Optimization\NUOPT.smp:144                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:144   == 0 ]
+F# 1585 C:\MPCsimulation\Optimization\NUOPT.smp:145                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:145   == 0 ]
+F# 1586 C:\MPCsimulation\Optimization\NUOPT.smp:146_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:146   == 0 ]
+F# 1587 C:\MPCsimulation\Optimization\NUOPT.smp:147                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:147   == 0 ]
+F# 1588 C:\MPCsimulation\Optimization\NUOPT.smp:148                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:148   == 0 ]
+F# 1589 C:\MPCsimulation\Optimization\NUOPT.smp:149                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:149   == 0 ]
+F# 1590 C:\MPCsimulation\Optimization\NUOPT.smp:150_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:150   == 0 ]
+F# 1591 C:\MPCsimulation\Optimization\NUOPT.smp:151_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:151   == 0 ]
+F# 1592 C:\MPCsimulation\Optimization\NUOPT.smp:152_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:152   == 0 ]
+F# 1593 C:\MPCsimulation\Optimization\NUOPT.smp:153_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:153   == 0 ]
+F# 1594 C:\MPCsimulation\Optimization\NUOPT.smp:154_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:154   == 0 ]
+F# 1595 C:\MPCsimulation\Optimization\NUOPT.smp:155_*NLR*           0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:155   == 0 ]
+F# 1596 C:\MPCsimulation\Optimization\NUOPT.smp:157_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:157   == 0 ]
+F# 1597 C:\MPCsimulation\Optimization\NUOPT.smp:158_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:158   == 0 ]
+F# 1598 C:\MPCsimulation\Optimization\NUOPT.smp:159_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:159   == 0 ]
+F# 1599 C:\MPCsimulation\Optimization\NUOPT.smp:160_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:160   == 0 ]
+F# 1600 C:\MPCsimulation\Optimization\NUOPT.smp:161_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:161   == 0 ]
+F# 1601 C:\MPCsimulation\Optimization\NUOPT.smp:167                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:167   == 0 ]
+F# 1602 C:\MPCsimulation\Optimization\NUOPT.smp:168                 0  EQUAL  0.00000000e+00 [        C:\MPCsimulation\Optimization\NUOPT.smp:168   == 0 ]
+F# 1603 C:\MPCsimulation\Optimization\NUOPT.smp:172_*NLR*        -0.9  INFS  -9.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:172   == 0 ]
+F# 1604 C:\MPCsimulation\Optimization\NUOPT.smp:173_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:173   == 0 ]
+F# 1605 C:\MPCsimulation\Optimization\NUOPT.smp:174_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:174   == 0 ]
+F# 1606 C:\MPCsimulation\Optimization\NUOPT.smp:175_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:175   == 0 ]
+F# 1607 C:\MPCsimulation\Optimization\NUOPT.smp:176_*NLR*        -0.3  INFS  -3.00000000e-01 [        C:\MPCsimulation\Optimization\NUOPT.smp:176   == 0 ]
+F# 1608 C:\MPCsimulation\Optimization\NUOPT.smp:182[0]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[0]      ]
+F# 1609 C:\MPCsimulation\Optimization\NUOPT.smp:182[1]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[1]      ]
+F# 1610 C:\MPCsimulation\Optimization\NUOPT.smp:182[2]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[2]      ]
+F# 1611 C:\MPCsimulation\Optimization\NUOPT.smp:182[3]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[3]      ]
+F# 1612 C:\MPCsimulation\Optimization\NUOPT.smp:182[4]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[4]      ]
+F# 1613 C:\MPCsimulation\Optimization\NUOPT.smp:182[5]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[5]      ]
+F# 1614 C:\MPCsimulation\Optimization\NUOPT.smp:182[6]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[6]      ]
+F# 1615 C:\MPCsimulation\Optimization\NUOPT.smp:182[7]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[7]      ]
+F# 1616 C:\MPCsimulation\Optimization\NUOPT.smp:182[8]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[8]      ]
+F# 1617 C:\MPCsimulation\Optimization\NUOPT.smp:182[9]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:182[9]      ]
+F# 1618 C:\MPCsimulation\Optimization\NUOPT.smp:182[10]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[10]      ]
+F# 1619 C:\MPCsimulation\Optimization\NUOPT.smp:182[11]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[11]      ]
+F# 1620 C:\MPCsimulation\Optimization\NUOPT.smp:182[12]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[12]      ]
+F# 1621 C:\MPCsimulation\Optimization\NUOPT.smp:182[13]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[13]      ]
+F# 1622 C:\MPCsimulation\Optimization\NUOPT.smp:182[14]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[14]      ]
+F# 1623 C:\MPCsimulation\Optimization\NUOPT.smp:182[15]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[15]      ]
+F# 1624 C:\MPCsimulation\Optimization\NUOPT.smp:182[16]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[16]      ]
+F# 1625 C:\MPCsimulation\Optimization\NUOPT.smp:182[17]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[17]      ]
+F# 1626 C:\MPCsimulation\Optimization\NUOPT.smp:182[18]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[18]      ]
+F# 1627 C:\MPCsimulation\Optimization\NUOPT.smp:182[19]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[19]      ]
+F# 1628 C:\MPCsimulation\Optimization\NUOPT.smp:182[20]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[20]      ]
+F# 1629 C:\MPCsimulation\Optimization\NUOPT.smp:182[21]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[21]      ]
+F# 1630 C:\MPCsimulation\Optimization\NUOPT.smp:182[22]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[22]      ]
+F# 1631 C:\MPCsimulation\Optimization\NUOPT.smp:182[23]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[23]      ]
+F# 1632 C:\MPCsimulation\Optimization\NUOPT.smp:182[24]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[24]      ]
+F# 1633 C:\MPCsimulation\Optimization\NUOPT.smp:182[25]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[25]      ]
+F# 1634 C:\MPCsimulation\Optimization\NUOPT.smp:182[26]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[26]      ]
+F# 1635 C:\MPCsimulation\Optimization\NUOPT.smp:182[27]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[27]      ]
+F# 1636 C:\MPCsimulation\Optimization\NUOPT.smp:182[28]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[28]      ]
+F# 1637 C:\MPCsimulation\Optimization\NUOPT.smp:182[29]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[29]      ]
+F# 1638 C:\MPCsimulation\Optimization\NUOPT.smp:182[30]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[30]      ]
+F# 1639 C:\MPCsimulation\Optimization\NUOPT.smp:182[31]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[31]      ]
+F# 1640 C:\MPCsimulation\Optimization\NUOPT.smp:182[32]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[32]      ]
+F# 1641 C:\MPCsimulation\Optimization\NUOPT.smp:182[33]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[33]      ]
+F# 1642 C:\MPCsimulation\Optimization\NUOPT.smp:182[34]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[34]      ]
+F# 1643 C:\MPCsimulation\Optimization\NUOPT.smp:182[35]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[35]      ]
+F# 1644 C:\MPCsimulation\Optimization\NUOPT.smp:182[36]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[36]      ]
+F# 1645 C:\MPCsimulation\Optimization\NUOPT.smp:182[37]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[37]      ]
+F# 1646 C:\MPCsimulation\Optimization\NUOPT.smp:182[38]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[38]      ]
+F# 1647 C:\MPCsimulation\Optimization\NUOPT.smp:182[39]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[39]      ]
+F# 1648 C:\MPCsimulation\Optimization\NUOPT.smp:182[40]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[40]      ]
+F# 1649 C:\MPCsimulation\Optimization\NUOPT.smp:182[41]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[41]      ]
+F# 1650 C:\MPCsimulation\Optimization\NUOPT.smp:182[42]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[42]      ]
+F# 1651 C:\MPCsimulation\Optimization\NUOPT.smp:182[43]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[43]      ]
+F# 1652 C:\MPCsimulation\Optimization\NUOPT.smp:182[44]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[44]      ]
+F# 1653 C:\MPCsimulation\Optimization\NUOPT.smp:182[45]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[45]      ]
+F# 1654 C:\MPCsimulation\Optimization\NUOPT.smp:182[46]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[46]      ]
+F# 1655 C:\MPCsimulation\Optimization\NUOPT.smp:182[47]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[47]      ]
+F# 1656 C:\MPCsimulation\Optimization\NUOPT.smp:182[48]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[48]      ]
+F# 1657 C:\MPCsimulation\Optimization\NUOPT.smp:182[49]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[49]      ]
+F# 1658 C:\MPCsimulation\Optimization\NUOPT.smp:182[50]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[50]      ]
+F# 1659 C:\MPCsimulation\Optimization\NUOPT.smp:182[51]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[51]      ]
+F# 1660 C:\MPCsimulation\Optimization\NUOPT.smp:182[52]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[52]      ]
+F# 1661 C:\MPCsimulation\Optimization\NUOPT.smp:182[53]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[53]      ]
+F# 1662 C:\MPCsimulation\Optimization\NUOPT.smp:182[54]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[54]      ]
+F# 1663 C:\MPCsimulation\Optimization\NUOPT.smp:182[55]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[55]      ]
+F# 1664 C:\MPCsimulation\Optimization\NUOPT.smp:182[56]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[56]      ]
+F# 1665 C:\MPCsimulation\Optimization\NUOPT.smp:182[57]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[57]      ]
+F# 1666 C:\MPCsimulation\Optimization\NUOPT.smp:182[58]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[58]      ]
+F# 1667 C:\MPCsimulation\Optimization\NUOPT.smp:182[59]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[59]      ]
+F# 1668 C:\MPCsimulation\Optimization\NUOPT.smp:182[60]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[60]      ]
+F# 1669 C:\MPCsimulation\Optimization\NUOPT.smp:182[61]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[61]      ]
+F# 1670 C:\MPCsimulation\Optimization\NUOPT.smp:182[62]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[62]      ]
+F# 1671 C:\MPCsimulation\Optimization\NUOPT.smp:182[63]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[63]      ]
+F# 1672 C:\MPCsimulation\Optimization\NUOPT.smp:182[64]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[64]      ]
+F# 1673 C:\MPCsimulation\Optimization\NUOPT.smp:182[65]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[65]      ]
+F# 1674 C:\MPCsimulation\Optimization\NUOPT.smp:182[66]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[66]      ]
+F# 1675 C:\MPCsimulation\Optimization\NUOPT.smp:182[67]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[67]      ]
+F# 1676 C:\MPCsimulation\Optimization\NUOPT.smp:182[68]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[68]      ]
+F# 1677 C:\MPCsimulation\Optimization\NUOPT.smp:182[69]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:182[69]      ]
+F# 1678 C:\MPCsimulation\Optimization\NUOPT.smp:183[0]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[0] <= 0 ]
+F# 1679 C:\MPCsimulation\Optimization\NUOPT.smp:183[1]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[1] <= 0 ]
+F# 1680 C:\MPCsimulation\Optimization\NUOPT.smp:183[2]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[2] <= 0 ]
+F# 1681 C:\MPCsimulation\Optimization\NUOPT.smp:183[3]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[3] <= 0 ]
+F# 1682 C:\MPCsimulation\Optimization\NUOPT.smp:183[4]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[4] <= 0 ]
+F# 1683 C:\MPCsimulation\Optimization\NUOPT.smp:183[5]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[5] <= 0 ]
+F# 1684 C:\MPCsimulation\Optimization\NUOPT.smp:183[6]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[6] <= 0 ]
+F# 1685 C:\MPCsimulation\Optimization\NUOPT.smp:183[7]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[7] <= 0 ]
+F# 1686 C:\MPCsimulation\Optimization\NUOPT.smp:183[8]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[8] <= 0 ]
+F# 1687 C:\MPCsimulation\Optimization\NUOPT.smp:183[9]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:183[9] <= 0 ]
+F# 1688 C:\MPCsimulation\Optimization\NUOPT.smp:183[10]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[10] <= 0 ]
+F# 1689 C:\MPCsimulation\Optimization\NUOPT.smp:183[11]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[11] <= 0 ]
+F# 1690 C:\MPCsimulation\Optimization\NUOPT.smp:183[12]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[12] <= 0 ]
+F# 1691 C:\MPCsimulation\Optimization\NUOPT.smp:183[13]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[13] <= 0 ]
+F# 1692 C:\MPCsimulation\Optimization\NUOPT.smp:183[14]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[14] <= 0 ]
+F# 1693 C:\MPCsimulation\Optimization\NUOPT.smp:183[15]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[15] <= 0 ]
+F# 1694 C:\MPCsimulation\Optimization\NUOPT.smp:183[16]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[16] <= 0 ]
+F# 1695 C:\MPCsimulation\Optimization\NUOPT.smp:183[17]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[17] <= 0 ]
+F# 1696 C:\MPCsimulation\Optimization\NUOPT.smp:183[18]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[18] <= 0 ]
+F# 1697 C:\MPCsimulation\Optimization\NUOPT.smp:183[19]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[19] <= 0 ]
+F# 1698 C:\MPCsimulation\Optimization\NUOPT.smp:183[20]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[20] <= 0 ]
+F# 1699 C:\MPCsimulation\Optimization\NUOPT.smp:183[21]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[21] <= 0 ]
+F# 1700 C:\MPCsimulation\Optimization\NUOPT.smp:183[22]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[22] <= 0 ]
+F# 1701 C:\MPCsimulation\Optimization\NUOPT.smp:183[23]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[23] <= 0 ]
+F# 1702 C:\MPCsimulation\Optimization\NUOPT.smp:183[24]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[24] <= 0 ]
+F# 1703 C:\MPCsimulation\Optimization\NUOPT.smp:183[25]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[25] <= 0 ]
+F# 1704 C:\MPCsimulation\Optimization\NUOPT.smp:183[26]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[26] <= 0 ]
+F# 1705 C:\MPCsimulation\Optimization\NUOPT.smp:183[27]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[27] <= 0 ]
+F# 1706 C:\MPCsimulation\Optimization\NUOPT.smp:183[28]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[28] <= 0 ]
+F# 1707 C:\MPCsimulation\Optimization\NUOPT.smp:183[29]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[29] <= 0 ]
+F# 1708 C:\MPCsimulation\Optimization\NUOPT.smp:183[30]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[30] <= 0 ]
+F# 1709 C:\MPCsimulation\Optimization\NUOPT.smp:183[31]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[31] <= 0 ]
+F# 1710 C:\MPCsimulation\Optimization\NUOPT.smp:183[32]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[32] <= 0 ]
+F# 1711 C:\MPCsimulation\Optimization\NUOPT.smp:183[33]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[33] <= 0 ]
+F# 1712 C:\MPCsimulation\Optimization\NUOPT.smp:183[34]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[34] <= 0 ]
+F# 1713 C:\MPCsimulation\Optimization\NUOPT.smp:183[35]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[35] <= 0 ]
+F# 1714 C:\MPCsimulation\Optimization\NUOPT.smp:183[36]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[36] <= 0 ]
+F# 1715 C:\MPCsimulation\Optimization\NUOPT.smp:183[37]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[37] <= 0 ]
+F# 1716 C:\MPCsimulation\Optimization\NUOPT.smp:183[38]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[38] <= 0 ]
+F# 1717 C:\MPCsimulation\Optimization\NUOPT.smp:183[39]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[39] <= 0 ]
+F# 1718 C:\MPCsimulation\Optimization\NUOPT.smp:183[40]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[40] <= 0 ]
+F# 1719 C:\MPCsimulation\Optimization\NUOPT.smp:183[41]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[41] <= 0 ]
+F# 1720 C:\MPCsimulation\Optimization\NUOPT.smp:183[42]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[42] <= 0 ]
+F# 1721 C:\MPCsimulation\Optimization\NUOPT.smp:183[43]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[43] <= 0 ]
+F# 1722 C:\MPCsimulation\Optimization\NUOPT.smp:183[44]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[44] <= 0 ]
+F# 1723 C:\MPCsimulation\Optimization\NUOPT.smp:183[45]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[45] <= 0 ]
+F# 1724 C:\MPCsimulation\Optimization\NUOPT.smp:183[46]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[46] <= 0 ]
+F# 1725 C:\MPCsimulation\Optimization\NUOPT.smp:183[47]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[47] <= 0 ]
+F# 1726 C:\MPCsimulation\Optimization\NUOPT.smp:183[48]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[48] <= 0 ]
+F# 1727 C:\MPCsimulation\Optimization\NUOPT.smp:183[49]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[49] <= 0 ]
+F# 1728 C:\MPCsimulation\Optimization\NUOPT.smp:183[50]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[50] <= 0 ]
+F# 1729 C:\MPCsimulation\Optimization\NUOPT.smp:183[51]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[51] <= 0 ]
+F# 1730 C:\MPCsimulation\Optimization\NUOPT.smp:183[52]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[52] <= 0 ]
+F# 1731 C:\MPCsimulation\Optimization\NUOPT.smp:183[53]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[53] <= 0 ]
+F# 1732 C:\MPCsimulation\Optimization\NUOPT.smp:183[54]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[54] <= 0 ]
+F# 1733 C:\MPCsimulation\Optimization\NUOPT.smp:183[55]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[55] <= 0 ]
+F# 1734 C:\MPCsimulation\Optimization\NUOPT.smp:183[56]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[56] <= 0 ]
+F# 1735 C:\MPCsimulation\Optimization\NUOPT.smp:183[57]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[57] <= 0 ]
+F# 1736 C:\MPCsimulation\Optimization\NUOPT.smp:183[58]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[58] <= 0 ]
+F# 1737 C:\MPCsimulation\Optimization\NUOPT.smp:183[59]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[59] <= 0 ]
+F# 1738 C:\MPCsimulation\Optimization\NUOPT.smp:183[60]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[60] <= 0 ]
+F# 1739 C:\MPCsimulation\Optimization\NUOPT.smp:183[61]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[61] <= 0 ]
+F# 1740 C:\MPCsimulation\Optimization\NUOPT.smp:183[62]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[62] <= 0 ]
+F# 1741 C:\MPCsimulation\Optimization\NUOPT.smp:183[63]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[63] <= 0 ]
+F# 1742 C:\MPCsimulation\Optimization\NUOPT.smp:183[64]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[64] <= 0 ]
+F# 1743 C:\MPCsimulation\Optimization\NUOPT.smp:183[65]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[65] <= 0 ]
+F# 1744 C:\MPCsimulation\Optimization\NUOPT.smp:183[66]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[66] <= 0 ]
+F# 1745 C:\MPCsimulation\Optimization\NUOPT.smp:183[67]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[67] <= 0 ]
+F# 1746 C:\MPCsimulation\Optimization\NUOPT.smp:183[68]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[68] <= 0 ]
+F# 1747 C:\MPCsimulation\Optimization\NUOPT.smp:183[69]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:183[69] <= 0 ]
+F# 1748 C:\MPCsimulation\Optimization\NUOPT.smp:184[0]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[0]      ]
+F# 1749 C:\MPCsimulation\Optimization\NUOPT.smp:184[1]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[1]      ]
+F# 1750 C:\MPCsimulation\Optimization\NUOPT.smp:184[2]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[2]      ]
+F# 1751 C:\MPCsimulation\Optimization\NUOPT.smp:184[3]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[3]      ]
+F# 1752 C:\MPCsimulation\Optimization\NUOPT.smp:184[4]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[4]      ]
+F# 1753 C:\MPCsimulation\Optimization\NUOPT.smp:184[5]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[5]      ]
+F# 1754 C:\MPCsimulation\Optimization\NUOPT.smp:184[6]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[6]      ]
+F# 1755 C:\MPCsimulation\Optimization\NUOPT.smp:184[7]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[7]      ]
+F# 1756 C:\MPCsimulation\Optimization\NUOPT.smp:184[8]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[8]      ]
+F# 1757 C:\MPCsimulation\Optimization\NUOPT.smp:184[9]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:184[9]      ]
+F# 1758 C:\MPCsimulation\Optimization\NUOPT.smp:184[10]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[10]      ]
+F# 1759 C:\MPCsimulation\Optimization\NUOPT.smp:184[11]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[11]      ]
+F# 1760 C:\MPCsimulation\Optimization\NUOPT.smp:184[12]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[12]      ]
+F# 1761 C:\MPCsimulation\Optimization\NUOPT.smp:184[13]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[13]      ]
+F# 1762 C:\MPCsimulation\Optimization\NUOPT.smp:184[14]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[14]      ]
+F# 1763 C:\MPCsimulation\Optimization\NUOPT.smp:184[15]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[15]      ]
+F# 1764 C:\MPCsimulation\Optimization\NUOPT.smp:184[16]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[16]      ]
+F# 1765 C:\MPCsimulation\Optimization\NUOPT.smp:184[17]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[17]      ]
+F# 1766 C:\MPCsimulation\Optimization\NUOPT.smp:184[18]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[18]      ]
+F# 1767 C:\MPCsimulation\Optimization\NUOPT.smp:184[19]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[19]      ]
+F# 1768 C:\MPCsimulation\Optimization\NUOPT.smp:184[20]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[20]      ]
+F# 1769 C:\MPCsimulation\Optimization\NUOPT.smp:184[21]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[21]      ]
+F# 1770 C:\MPCsimulation\Optimization\NUOPT.smp:184[22]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[22]      ]
+F# 1771 C:\MPCsimulation\Optimization\NUOPT.smp:184[23]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[23]      ]
+F# 1772 C:\MPCsimulation\Optimization\NUOPT.smp:184[24]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[24]      ]
+F# 1773 C:\MPCsimulation\Optimization\NUOPT.smp:184[25]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[25]      ]
+F# 1774 C:\MPCsimulation\Optimization\NUOPT.smp:184[26]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[26]      ]
+F# 1775 C:\MPCsimulation\Optimization\NUOPT.smp:184[27]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[27]      ]
+F# 1776 C:\MPCsimulation\Optimization\NUOPT.smp:184[28]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[28]      ]
+F# 1777 C:\MPCsimulation\Optimization\NUOPT.smp:184[29]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[29]      ]
+F# 1778 C:\MPCsimulation\Optimization\NUOPT.smp:184[30]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[30]      ]
+F# 1779 C:\MPCsimulation\Optimization\NUOPT.smp:184[31]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[31]      ]
+F# 1780 C:\MPCsimulation\Optimization\NUOPT.smp:184[32]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[32]      ]
+F# 1781 C:\MPCsimulation\Optimization\NUOPT.smp:184[33]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[33]      ]
+F# 1782 C:\MPCsimulation\Optimization\NUOPT.smp:184[34]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[34]      ]
+F# 1783 C:\MPCsimulation\Optimization\NUOPT.smp:184[35]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[35]      ]
+F# 1784 C:\MPCsimulation\Optimization\NUOPT.smp:184[36]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[36]      ]
+F# 1785 C:\MPCsimulation\Optimization\NUOPT.smp:184[37]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[37]      ]
+F# 1786 C:\MPCsimulation\Optimization\NUOPT.smp:184[38]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[38]      ]
+F# 1787 C:\MPCsimulation\Optimization\NUOPT.smp:184[39]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[39]      ]
+F# 1788 C:\MPCsimulation\Optimization\NUOPT.smp:184[40]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[40]      ]
+F# 1789 C:\MPCsimulation\Optimization\NUOPT.smp:184[41]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[41]      ]
+F# 1790 C:\MPCsimulation\Optimization\NUOPT.smp:184[42]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[42]      ]
+F# 1791 C:\MPCsimulation\Optimization\NUOPT.smp:184[43]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[43]      ]
+F# 1792 C:\MPCsimulation\Optimization\NUOPT.smp:184[44]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[44]      ]
+F# 1793 C:\MPCsimulation\Optimization\NUOPT.smp:184[45]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[45]      ]
+F# 1794 C:\MPCsimulation\Optimization\NUOPT.smp:184[46]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[46]      ]
+F# 1795 C:\MPCsimulation\Optimization\NUOPT.smp:184[47]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[47]      ]
+F# 1796 C:\MPCsimulation\Optimization\NUOPT.smp:184[48]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[48]      ]
+F# 1797 C:\MPCsimulation\Optimization\NUOPT.smp:184[49]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[49]      ]
+F# 1798 C:\MPCsimulation\Optimization\NUOPT.smp:184[50]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[50]      ]
+F# 1799 C:\MPCsimulation\Optimization\NUOPT.smp:184[51]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[51]      ]
+F# 1800 C:\MPCsimulation\Optimization\NUOPT.smp:184[52]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[52]      ]
+F# 1801 C:\MPCsimulation\Optimization\NUOPT.smp:184[53]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[53]      ]
+F# 1802 C:\MPCsimulation\Optimization\NUOPT.smp:184[54]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[54]      ]
+F# 1803 C:\MPCsimulation\Optimization\NUOPT.smp:184[55]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[55]      ]
+F# 1804 C:\MPCsimulation\Optimization\NUOPT.smp:184[56]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[56]      ]
+F# 1805 C:\MPCsimulation\Optimization\NUOPT.smp:184[57]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[57]      ]
+F# 1806 C:\MPCsimulation\Optimization\NUOPT.smp:184[58]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[58]      ]
+F# 1807 C:\MPCsimulation\Optimization\NUOPT.smp:184[59]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[59]      ]
+F# 1808 C:\MPCsimulation\Optimization\NUOPT.smp:184[60]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[60]      ]
+F# 1809 C:\MPCsimulation\Optimization\NUOPT.smp:184[61]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[61]      ]
+F# 1810 C:\MPCsimulation\Optimization\NUOPT.smp:184[62]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[62]      ]
+F# 1811 C:\MPCsimulation\Optimization\NUOPT.smp:184[63]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[63]      ]
+F# 1812 C:\MPCsimulation\Optimization\NUOPT.smp:184[64]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[64]      ]
+F# 1813 C:\MPCsimulation\Optimization\NUOPT.smp:184[65]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[65]      ]
+F# 1814 C:\MPCsimulation\Optimization\NUOPT.smp:184[66]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[66]      ]
+F# 1815 C:\MPCsimulation\Optimization\NUOPT.smp:184[67]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[67]      ]
+F# 1816 C:\MPCsimulation\Optimization\NUOPT.smp:184[68]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[68]      ]
+F# 1817 C:\MPCsimulation\Optimization\NUOPT.smp:184[69]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:184[69]      ]
+F# 1818 C:\MPCsimulation\Optimization\NUOPT.smp:185[0]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[0] <= 0 ]
+F# 1819 C:\MPCsimulation\Optimization\NUOPT.smp:185[1]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[1] <= 0 ]
+F# 1820 C:\MPCsimulation\Optimization\NUOPT.smp:185[2]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[2] <= 0 ]
+F# 1821 C:\MPCsimulation\Optimization\NUOPT.smp:185[3]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[3] <= 0 ]
+F# 1822 C:\MPCsimulation\Optimization\NUOPT.smp:185[4]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[4] <= 0 ]
+F# 1823 C:\MPCsimulation\Optimization\NUOPT.smp:185[5]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[5] <= 0 ]
+F# 1824 C:\MPCsimulation\Optimization\NUOPT.smp:185[6]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[6] <= 0 ]
+F# 1825 C:\MPCsimulation\Optimization\NUOPT.smp:185[7]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[7] <= 0 ]
+F# 1826 C:\MPCsimulation\Optimization\NUOPT.smp:185[8]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[8] <= 0 ]
+F# 1827 C:\MPCsimulation\Optimization\NUOPT.smp:185[9]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:185[9] <= 0 ]
+F# 1828 C:\MPCsimulation\Optimization\NUOPT.smp:185[10]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[10] <= 0 ]
+F# 1829 C:\MPCsimulation\Optimization\NUOPT.smp:185[11]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[11] <= 0 ]
+F# 1830 C:\MPCsimulation\Optimization\NUOPT.smp:185[12]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[12] <= 0 ]
+F# 1831 C:\MPCsimulation\Optimization\NUOPT.smp:185[13]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[13] <= 0 ]
+F# 1832 C:\MPCsimulation\Optimization\NUOPT.smp:185[14]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[14] <= 0 ]
+F# 1833 C:\MPCsimulation\Optimization\NUOPT.smp:185[15]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[15] <= 0 ]
+F# 1834 C:\MPCsimulation\Optimization\NUOPT.smp:185[16]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[16] <= 0 ]
+F# 1835 C:\MPCsimulation\Optimization\NUOPT.smp:185[17]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[17] <= 0 ]
+F# 1836 C:\MPCsimulation\Optimization\NUOPT.smp:185[18]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[18] <= 0 ]
+F# 1837 C:\MPCsimulation\Optimization\NUOPT.smp:185[19]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[19] <= 0 ]
+F# 1838 C:\MPCsimulation\Optimization\NUOPT.smp:185[20]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[20] <= 0 ]
+F# 1839 C:\MPCsimulation\Optimization\NUOPT.smp:185[21]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[21] <= 0 ]
+F# 1840 C:\MPCsimulation\Optimization\NUOPT.smp:185[22]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[22] <= 0 ]
+F# 1841 C:\MPCsimulation\Optimization\NUOPT.smp:185[23]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[23] <= 0 ]
+F# 1842 C:\MPCsimulation\Optimization\NUOPT.smp:185[24]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[24] <= 0 ]
+F# 1843 C:\MPCsimulation\Optimization\NUOPT.smp:185[25]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[25] <= 0 ]
+F# 1844 C:\MPCsimulation\Optimization\NUOPT.smp:185[26]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[26] <= 0 ]
+F# 1845 C:\MPCsimulation\Optimization\NUOPT.smp:185[27]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[27] <= 0 ]
+F# 1846 C:\MPCsimulation\Optimization\NUOPT.smp:185[28]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[28] <= 0 ]
+F# 1847 C:\MPCsimulation\Optimization\NUOPT.smp:185[29]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[29] <= 0 ]
+F# 1848 C:\MPCsimulation\Optimization\NUOPT.smp:185[30]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[30] <= 0 ]
+F# 1849 C:\MPCsimulation\Optimization\NUOPT.smp:185[31]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[31] <= 0 ]
+F# 1850 C:\MPCsimulation\Optimization\NUOPT.smp:185[32]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[32] <= 0 ]
+F# 1851 C:\MPCsimulation\Optimization\NUOPT.smp:185[33]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[33] <= 0 ]
+F# 1852 C:\MPCsimulation\Optimization\NUOPT.smp:185[34]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[34] <= 0 ]
+F# 1853 C:\MPCsimulation\Optimization\NUOPT.smp:185[35]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[35] <= 0 ]
+F# 1854 C:\MPCsimulation\Optimization\NUOPT.smp:185[36]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[36] <= 0 ]
+F# 1855 C:\MPCsimulation\Optimization\NUOPT.smp:185[37]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[37] <= 0 ]
+F# 1856 C:\MPCsimulation\Optimization\NUOPT.smp:185[38]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[38] <= 0 ]
+F# 1857 C:\MPCsimulation\Optimization\NUOPT.smp:185[39]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[39] <= 0 ]
+F# 1858 C:\MPCsimulation\Optimization\NUOPT.smp:185[40]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[40] <= 0 ]
+F# 1859 C:\MPCsimulation\Optimization\NUOPT.smp:185[41]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[41] <= 0 ]
+F# 1860 C:\MPCsimulation\Optimization\NUOPT.smp:185[42]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[42] <= 0 ]
+F# 1861 C:\MPCsimulation\Optimization\NUOPT.smp:185[43]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[43] <= 0 ]
+F# 1862 C:\MPCsimulation\Optimization\NUOPT.smp:185[44]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[44] <= 0 ]
+F# 1863 C:\MPCsimulation\Optimization\NUOPT.smp:185[45]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[45] <= 0 ]
+F# 1864 C:\MPCsimulation\Optimization\NUOPT.smp:185[46]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[46] <= 0 ]
+F# 1865 C:\MPCsimulation\Optimization\NUOPT.smp:185[47]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[47] <= 0 ]
+F# 1866 C:\MPCsimulation\Optimization\NUOPT.smp:185[48]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[48] <= 0 ]
+F# 1867 C:\MPCsimulation\Optimization\NUOPT.smp:185[49]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[49] <= 0 ]
+F# 1868 C:\MPCsimulation\Optimization\NUOPT.smp:185[50]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[50] <= 0 ]
+F# 1869 C:\MPCsimulation\Optimization\NUOPT.smp:185[51]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[51] <= 0 ]
+F# 1870 C:\MPCsimulation\Optimization\NUOPT.smp:185[52]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[52] <= 0 ]
+F# 1871 C:\MPCsimulation\Optimization\NUOPT.smp:185[53]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[53] <= 0 ]
+F# 1872 C:\MPCsimulation\Optimization\NUOPT.smp:185[54]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[54] <= 0 ]
+F# 1873 C:\MPCsimulation\Optimization\NUOPT.smp:185[55]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[55] <= 0 ]
+F# 1874 C:\MPCsimulation\Optimization\NUOPT.smp:185[56]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[56] <= 0 ]
+F# 1875 C:\MPCsimulation\Optimization\NUOPT.smp:185[57]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[57] <= 0 ]
+F# 1876 C:\MPCsimulation\Optimization\NUOPT.smp:185[58]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[58] <= 0 ]
+F# 1877 C:\MPCsimulation\Optimization\NUOPT.smp:185[59]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[59] <= 0 ]
+F# 1878 C:\MPCsimulation\Optimization\NUOPT.smp:185[60]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[60] <= 0 ]
+F# 1879 C:\MPCsimulation\Optimization\NUOPT.smp:185[61]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[61] <= 0 ]
+F# 1880 C:\MPCsimulation\Optimization\NUOPT.smp:185[62]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[62] <= 0 ]
+F# 1881 C:\MPCsimulation\Optimization\NUOPT.smp:185[63]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[63] <= 0 ]
+F# 1882 C:\MPCsimulation\Optimization\NUOPT.smp:185[64]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[64] <= 0 ]
+F# 1883 C:\MPCsimulation\Optimization\NUOPT.smp:185[65]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[65] <= 0 ]
+F# 1884 C:\MPCsimulation\Optimization\NUOPT.smp:185[66]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[66] <= 0 ]
+F# 1885 C:\MPCsimulation\Optimization\NUOPT.smp:185[67]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[67] <= 0 ]
+F# 1886 C:\MPCsimulation\Optimization\NUOPT.smp:185[68]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[68] <= 0 ]
+F# 1887 C:\MPCsimulation\Optimization\NUOPT.smp:185[69]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:185[69] <= 0 ]
+F# 1888 C:\MPCsimulation\Optimization\NUOPT.smp:186[0]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[0]      ]
+F# 1889 C:\MPCsimulation\Optimization\NUOPT.smp:186[1]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[1]      ]
+F# 1890 C:\MPCsimulation\Optimization\NUOPT.smp:186[2]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[2]      ]
+F# 1891 C:\MPCsimulation\Optimization\NUOPT.smp:186[3]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[3]      ]
+F# 1892 C:\MPCsimulation\Optimization\NUOPT.smp:186[4]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[4]      ]
+F# 1893 C:\MPCsimulation\Optimization\NUOPT.smp:186[5]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[5]      ]
+F# 1894 C:\MPCsimulation\Optimization\NUOPT.smp:186[6]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[6]      ]
+F# 1895 C:\MPCsimulation\Optimization\NUOPT.smp:186[7]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[7]      ]
+F# 1896 C:\MPCsimulation\Optimization\NUOPT.smp:186[8]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[8]      ]
+F# 1897 C:\MPCsimulation\Optimization\NUOPT.smp:186[9]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:186[9]      ]
+F# 1898 C:\MPCsimulation\Optimization\NUOPT.smp:186[10]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[10]      ]
+F# 1899 C:\MPCsimulation\Optimization\NUOPT.smp:186[11]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[11]      ]
+F# 1900 C:\MPCsimulation\Optimization\NUOPT.smp:186[12]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[12]      ]
+F# 1901 C:\MPCsimulation\Optimization\NUOPT.smp:186[13]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[13]      ]
+F# 1902 C:\MPCsimulation\Optimization\NUOPT.smp:186[14]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[14]      ]
+F# 1903 C:\MPCsimulation\Optimization\NUOPT.smp:186[15]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[15]      ]
+F# 1904 C:\MPCsimulation\Optimization\NUOPT.smp:186[16]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[16]      ]
+F# 1905 C:\MPCsimulation\Optimization\NUOPT.smp:186[17]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[17]      ]
+F# 1906 C:\MPCsimulation\Optimization\NUOPT.smp:186[18]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[18]      ]
+F# 1907 C:\MPCsimulation\Optimization\NUOPT.smp:186[19]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[19]      ]
+F# 1908 C:\MPCsimulation\Optimization\NUOPT.smp:186[20]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[20]      ]
+F# 1909 C:\MPCsimulation\Optimization\NUOPT.smp:186[21]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[21]      ]
+F# 1910 C:\MPCsimulation\Optimization\NUOPT.smp:186[22]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[22]      ]
+F# 1911 C:\MPCsimulation\Optimization\NUOPT.smp:186[23]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[23]      ]
+F# 1912 C:\MPCsimulation\Optimization\NUOPT.smp:186[24]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[24]      ]
+F# 1913 C:\MPCsimulation\Optimization\NUOPT.smp:186[25]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[25]      ]
+F# 1914 C:\MPCsimulation\Optimization\NUOPT.smp:186[26]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[26]      ]
+F# 1915 C:\MPCsimulation\Optimization\NUOPT.smp:186[27]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[27]      ]
+F# 1916 C:\MPCsimulation\Optimization\NUOPT.smp:186[28]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[28]      ]
+F# 1917 C:\MPCsimulation\Optimization\NUOPT.smp:186[29]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[29]      ]
+F# 1918 C:\MPCsimulation\Optimization\NUOPT.smp:186[30]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[30]      ]
+F# 1919 C:\MPCsimulation\Optimization\NUOPT.smp:186[31]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[31]      ]
+F# 1920 C:\MPCsimulation\Optimization\NUOPT.smp:186[32]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[32]      ]
+F# 1921 C:\MPCsimulation\Optimization\NUOPT.smp:186[33]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[33]      ]
+F# 1922 C:\MPCsimulation\Optimization\NUOPT.smp:186[34]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[34]      ]
+F# 1923 C:\MPCsimulation\Optimization\NUOPT.smp:186[35]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[35]      ]
+F# 1924 C:\MPCsimulation\Optimization\NUOPT.smp:186[36]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[36]      ]
+F# 1925 C:\MPCsimulation\Optimization\NUOPT.smp:186[37]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[37]      ]
+F# 1926 C:\MPCsimulation\Optimization\NUOPT.smp:186[38]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[38]      ]
+F# 1927 C:\MPCsimulation\Optimization\NUOPT.smp:186[39]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[39]      ]
+F# 1928 C:\MPCsimulation\Optimization\NUOPT.smp:186[40]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[40]      ]
+F# 1929 C:\MPCsimulation\Optimization\NUOPT.smp:186[41]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[41]      ]
+F# 1930 C:\MPCsimulation\Optimization\NUOPT.smp:186[42]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[42]      ]
+F# 1931 C:\MPCsimulation\Optimization\NUOPT.smp:186[43]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[43]      ]
+F# 1932 C:\MPCsimulation\Optimization\NUOPT.smp:186[44]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[44]      ]
+F# 1933 C:\MPCsimulation\Optimization\NUOPT.smp:186[45]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[45]      ]
+F# 1934 C:\MPCsimulation\Optimization\NUOPT.smp:186[46]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[46]      ]
+F# 1935 C:\MPCsimulation\Optimization\NUOPT.smp:186[47]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[47]      ]
+F# 1936 C:\MPCsimulation\Optimization\NUOPT.smp:186[48]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[48]      ]
+F# 1937 C:\MPCsimulation\Optimization\NUOPT.smp:186[49]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[49]      ]
+F# 1938 C:\MPCsimulation\Optimization\NUOPT.smp:186[50]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[50]      ]
+F# 1939 C:\MPCsimulation\Optimization\NUOPT.smp:186[51]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[51]      ]
+F# 1940 C:\MPCsimulation\Optimization\NUOPT.smp:186[52]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[52]      ]
+F# 1941 C:\MPCsimulation\Optimization\NUOPT.smp:186[53]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[53]      ]
+F# 1942 C:\MPCsimulation\Optimization\NUOPT.smp:186[54]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[54]      ]
+F# 1943 C:\MPCsimulation\Optimization\NUOPT.smp:186[55]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[55]      ]
+F# 1944 C:\MPCsimulation\Optimization\NUOPT.smp:186[56]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[56]      ]
+F# 1945 C:\MPCsimulation\Optimization\NUOPT.smp:186[57]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[57]      ]
+F# 1946 C:\MPCsimulation\Optimization\NUOPT.smp:186[58]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[58]      ]
+F# 1947 C:\MPCsimulation\Optimization\NUOPT.smp:186[59]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[59]      ]
+F# 1948 C:\MPCsimulation\Optimization\NUOPT.smp:186[60]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[60]      ]
+F# 1949 C:\MPCsimulation\Optimization\NUOPT.smp:186[61]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[61]      ]
+F# 1950 C:\MPCsimulation\Optimization\NUOPT.smp:186[62]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[62]      ]
+F# 1951 C:\MPCsimulation\Optimization\NUOPT.smp:186[63]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[63]      ]
+F# 1952 C:\MPCsimulation\Optimization\NUOPT.smp:186[64]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[64]      ]
+F# 1953 C:\MPCsimulation\Optimization\NUOPT.smp:186[65]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[65]      ]
+F# 1954 C:\MPCsimulation\Optimization\NUOPT.smp:186[66]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[66]      ]
+F# 1955 C:\MPCsimulation\Optimization\NUOPT.smp:186[67]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[67]      ]
+F# 1956 C:\MPCsimulation\Optimization\NUOPT.smp:186[68]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[68]      ]
+F# 1957 C:\MPCsimulation\Optimization\NUOPT.smp:186[69]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[69]      ]
+F# 1958 C:\MPCsimulation\Optimization\NUOPT.smp:187[0]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[0] <= 0 ]
+F# 1959 C:\MPCsimulation\Optimization\NUOPT.smp:187[1]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[1] <= 0 ]
+F# 1960 C:\MPCsimulation\Optimization\NUOPT.smp:187[2]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[2] <= 0 ]
+F# 1961 C:\MPCsimulation\Optimization\NUOPT.smp:187[3]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[3] <= 0 ]
+F# 1962 C:\MPCsimulation\Optimization\NUOPT.smp:187[4]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[4] <= 0 ]
+F# 1963 C:\MPCsimulation\Optimization\NUOPT.smp:187[5]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[5] <= 0 ]
+F# 1964 C:\MPCsimulation\Optimization\NUOPT.smp:187[6]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[6] <= 0 ]
+F# 1965 C:\MPCsimulation\Optimization\NUOPT.smp:187[7]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[7] <= 0 ]
+F# 1966 C:\MPCsimulation\Optimization\NUOPT.smp:187[8]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[8] <= 0 ]
+F# 1967 C:\MPCsimulation\Optimization\NUOPT.smp:187[9]              0  UPPER  0.00000000e+00 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[9] <= 0 ]
+F# 1968 C:\MPCsimulation\Optimization\NUOPT.smp:187[10]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[10] <= 0 ]
+F# 1969 C:\MPCsimulation\Optimization\NUOPT.smp:187[11]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[11] <= 0 ]
+F# 1970 C:\MPCsimulation\Optimization\NUOPT.smp:187[12]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[12] <= 0 ]
+F# 1971 C:\MPCsimulation\Optimization\NUOPT.smp:187[13]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[13] <= 0 ]
+F# 1972 C:\MPCsimulation\Optimization\NUOPT.smp:187[14]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[14] <= 0 ]
+F# 1973 C:\MPCsimulation\Optimization\NUOPT.smp:187[15]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[15] <= 0 ]
+F# 1974 C:\MPCsimulation\Optimization\NUOPT.smp:187[16]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[16] <= 0 ]
+F# 1975 C:\MPCsimulation\Optimization\NUOPT.smp:187[17]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[17] <= 0 ]
+F# 1976 C:\MPCsimulation\Optimization\NUOPT.smp:187[18]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[18] <= 0 ]
+F# 1977 C:\MPCsimulation\Optimization\NUOPT.smp:187[19]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[19] <= 0 ]
+F# 1978 C:\MPCsimulation\Optimization\NUOPT.smp:187[20]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[20] <= 0 ]
+F# 1979 C:\MPCsimulation\Optimization\NUOPT.smp:187[21]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[21] <= 0 ]
+F# 1980 C:\MPCsimulation\Optimization\NUOPT.smp:187[22]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[22] <= 0 ]
+F# 1981 C:\MPCsimulation\Optimization\NUOPT.smp:187[23]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[23] <= 0 ]
+F# 1982 C:\MPCsimulation\Optimization\NUOPT.smp:187[24]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[24] <= 0 ]
+F# 1983 C:\MPCsimulation\Optimization\NUOPT.smp:187[25]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[25] <= 0 ]
+F# 1984 C:\MPCsimulation\Optimization\NUOPT.smp:187[26]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[26] <= 0 ]
+F# 1985 C:\MPCsimulation\Optimization\NUOPT.smp:187[27]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[27] <= 0 ]
+F# 1986 C:\MPCsimulation\Optimization\NUOPT.smp:187[28]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[28] <= 0 ]
+F# 1987 C:\MPCsimulation\Optimization\NUOPT.smp:187[29]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[29] <= 0 ]
+F# 1988 C:\MPCsimulation\Optimization\NUOPT.smp:187[30]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[30] <= 0 ]
+F# 1989 C:\MPCsimulation\Optimization\NUOPT.smp:187[31]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[31] <= 0 ]
+F# 1990 C:\MPCsimulation\Optimization\NUOPT.smp:187[32]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[32] <= 0 ]
+F# 1991 C:\MPCsimulation\Optimization\NUOPT.smp:187[33]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[33] <= 0 ]
+F# 1992 C:\MPCsimulation\Optimization\NUOPT.smp:187[34]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[34] <= 0 ]
+F# 1993 C:\MPCsimulation\Optimization\NUOPT.smp:187[35]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[35] <= 0 ]
+F# 1994 C:\MPCsimulation\Optimization\NUOPT.smp:187[36]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[36] <= 0 ]
+F# 1995 C:\MPCsimulation\Optimization\NUOPT.smp:187[37]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[37] <= 0 ]
+F# 1996 C:\MPCsimulation\Optimization\NUOPT.smp:187[38]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[38] <= 0 ]
+F# 1997 C:\MPCsimulation\Optimization\NUOPT.smp:187[39]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[39] <= 0 ]
+F# 1998 C:\MPCsimulation\Optimization\NUOPT.smp:187[40]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[40] <= 0 ]
+F# 1999 C:\MPCsimulation\Optimization\NUOPT.smp:187[41]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[41] <= 0 ]
+F# 2000 C:\MPCsimulation\Optimization\NUOPT.smp:187[42]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[42] <= 0 ]
+F# 2001 C:\MPCsimulation\Optimization\NUOPT.smp:187[43]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[43] <= 0 ]
+F# 2002 C:\MPCsimulation\Optimization\NUOPT.smp:187[44]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[44] <= 0 ]
+F# 2003 C:\MPCsimulation\Optimization\NUOPT.smp:187[45]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[45] <= 0 ]
+F# 2004 C:\MPCsimulation\Optimization\NUOPT.smp:187[46]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[46] <= 0 ]
+F# 2005 C:\MPCsimulation\Optimization\NUOPT.smp:187[47]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[47] <= 0 ]
+F# 2006 C:\MPCsimulation\Optimization\NUOPT.smp:187[48]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[48] <= 0 ]
+F# 2007 C:\MPCsimulation\Optimization\NUOPT.smp:187[49]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[49] <= 0 ]
+F# 2008 C:\MPCsimulation\Optimization\NUOPT.smp:187[50]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[50] <= 0 ]
+F# 2009 C:\MPCsimulation\Optimization\NUOPT.smp:187[51]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[51] <= 0 ]
+F# 2010 C:\MPCsimulation\Optimization\NUOPT.smp:187[52]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[52] <= 0 ]
+F# 2011 C:\MPCsimulation\Optimization\NUOPT.smp:187[53]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[53] <= 0 ]
+F# 2012 C:\MPCsimulation\Optimization\NUOPT.smp:187[54]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[54] <= 0 ]
+F# 2013 C:\MPCsimulation\Optimization\NUOPT.smp:187[55]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[55] <= 0 ]
+F# 2014 C:\MPCsimulation\Optimization\NUOPT.smp:187[56]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[56] <= 0 ]
+F# 2015 C:\MPCsimulation\Optimization\NUOPT.smp:187[57]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[57] <= 0 ]
+F# 2016 C:\MPCsimulation\Optimization\NUOPT.smp:187[58]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[58] <= 0 ]
+F# 2017 C:\MPCsimulation\Optimization\NUOPT.smp:187[59]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[59] <= 0 ]
+F# 2018 C:\MPCsimulation\Optimization\NUOPT.smp:187[60]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[60] <= 0 ]
+F# 2019 C:\MPCsimulation\Optimization\NUOPT.smp:187[61]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[61] <= 0 ]
+F# 2020 C:\MPCsimulation\Optimization\NUOPT.smp:187[62]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[62] <= 0 ]
+F# 2021 C:\MPCsimulation\Optimization\NUOPT.smp:187[63]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[63] <= 0 ]
+F# 2022 C:\MPCsimulation\Optimization\NUOPT.smp:187[64]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[64] <= 0 ]
+F# 2023 C:\MPCsimulation\Optimization\NUOPT.smp:187[65]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[65] <= 0 ]
+F# 2024 C:\MPCsimulation\Optimization\NUOPT.smp:187[66]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[66] <= 0 ]
+F# 2025 C:\MPCsimulation\Optimization\NUOPT.smp:187[67]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[67] <= 0 ]
+F# 2026 C:\MPCsimulation\Optimization\NUOPT.smp:187[68]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[68] <= 0 ]
+F# 2027 C:\MPCsimulation\Optimization\NUOPT.smp:187[69]             0  UPPER  0.00000000e+00 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[69] <= 0 ]
+F# 2028 C:\MPCsimulation\Optimization\NUOPT.smp:188[0]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[0]      ]
+F# 2029 C:\MPCsimulation\Optimization\NUOPT.smp:188[1]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[1]      ]
+F# 2030 C:\MPCsimulation\Optimization\NUOPT.smp:188[2]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[2]      ]
+F# 2031 C:\MPCsimulation\Optimization\NUOPT.smp:188[3]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[3]      ]
+F# 2032 C:\MPCsimulation\Optimization\NUOPT.smp:188[4]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[4]      ]
+F# 2033 C:\MPCsimulation\Optimization\NUOPT.smp:188[5]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[5]      ]
+F# 2034 C:\MPCsimulation\Optimization\NUOPT.smp:188[6]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[6]      ]
+F# 2035 C:\MPCsimulation\Optimization\NUOPT.smp:188[7]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[7]      ]
+F# 2036 C:\MPCsimulation\Optimization\NUOPT.smp:188[8]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[8]      ]
+F# 2037 C:\MPCsimulation\Optimization\NUOPT.smp:188[9]              0  LOWER  0.00000000e+00 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[9]      ]
+F# 2038 C:\MPCsimulation\Optimization\NUOPT.smp:188[10]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[10]      ]
+F# 2039 C:\MPCsimulation\Optimization\NUOPT.smp:188[11]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[11]      ]
+F# 2040 C:\MPCsimulation\Optimization\NUOPT.smp:188[12]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[12]      ]
+F# 2041 C:\MPCsimulation\Optimization\NUOPT.smp:188[13]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[13]      ]
+F# 2042 C:\MPCsimulation\Optimization\NUOPT.smp:188[14]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[14]      ]
+F# 2043 C:\MPCsimulation\Optimization\NUOPT.smp:188[15]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[15]      ]
+F# 2044 C:\MPCsimulation\Optimization\NUOPT.smp:188[16]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[16]      ]
+F# 2045 C:\MPCsimulation\Optimization\NUOPT.smp:188[17]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[17]      ]
+F# 2046 C:\MPCsimulation\Optimization\NUOPT.smp:188[18]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[18]      ]
+F# 2047 C:\MPCsimulation\Optimization\NUOPT.smp:188[19]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[19]      ]
+F# 2048 C:\MPCsimulation\Optimization\NUOPT.smp:188[20]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[20]      ]
+F# 2049 C:\MPCsimulation\Optimization\NUOPT.smp:188[21]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[21]      ]
+F# 2050 C:\MPCsimulation\Optimization\NUOPT.smp:188[22]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[22]      ]
+F# 2051 C:\MPCsimulation\Optimization\NUOPT.smp:188[23]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[23]      ]
+F# 2052 C:\MPCsimulation\Optimization\NUOPT.smp:188[24]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[24]      ]
+F# 2053 C:\MPCsimulation\Optimization\NUOPT.smp:188[25]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[25]      ]
+F# 2054 C:\MPCsimulation\Optimization\NUOPT.smp:188[26]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[26]      ]
+F# 2055 C:\MPCsimulation\Optimization\NUOPT.smp:188[27]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[27]      ]
+F# 2056 C:\MPCsimulation\Optimization\NUOPT.smp:188[28]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[28]      ]
+F# 2057 C:\MPCsimulation\Optimization\NUOPT.smp:188[29]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[29]      ]
+F# 2058 C:\MPCsimulation\Optimization\NUOPT.smp:188[30]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[30]      ]
+F# 2059 C:\MPCsimulation\Optimization\NUOPT.smp:188[31]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[31]      ]
+F# 2060 C:\MPCsimulation\Optimization\NUOPT.smp:188[32]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[32]      ]
+F# 2061 C:\MPCsimulation\Optimization\NUOPT.smp:188[33]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[33]      ]
+F# 2062 C:\MPCsimulation\Optimization\NUOPT.smp:188[34]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[34]      ]
+F# 2063 C:\MPCsimulation\Optimization\NUOPT.smp:188[35]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[35]      ]
+F# 2064 C:\MPCsimulation\Optimization\NUOPT.smp:188[36]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[36]      ]
+F# 2065 C:\MPCsimulation\Optimization\NUOPT.smp:188[37]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[37]      ]
+F# 2066 C:\MPCsimulation\Optimization\NUOPT.smp:188[38]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[38]      ]
+F# 2067 C:\MPCsimulation\Optimization\NUOPT.smp:188[39]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[39]      ]
+F# 2068 C:\MPCsimulation\Optimization\NUOPT.smp:188[40]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[40]      ]
+F# 2069 C:\MPCsimulation\Optimization\NUOPT.smp:188[41]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[41]      ]
+F# 2070 C:\MPCsimulation\Optimization\NUOPT.smp:188[42]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[42]      ]
+F# 2071 C:\MPCsimulation\Optimization\NUOPT.smp:188[43]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[43]      ]
+F# 2072 C:\MPCsimulation\Optimization\NUOPT.smp:188[44]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[44]      ]
+F# 2073 C:\MPCsimulation\Optimization\NUOPT.smp:188[45]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[45]      ]
+F# 2074 C:\MPCsimulation\Optimization\NUOPT.smp:188[46]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[46]      ]
+F# 2075 C:\MPCsimulation\Optimization\NUOPT.smp:188[47]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[47]      ]
+F# 2076 C:\MPCsimulation\Optimization\NUOPT.smp:188[48]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[48]      ]
+F# 2077 C:\MPCsimulation\Optimization\NUOPT.smp:188[49]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[49]      ]
+F# 2078 C:\MPCsimulation\Optimization\NUOPT.smp:188[50]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[50]      ]
+F# 2079 C:\MPCsimulation\Optimization\NUOPT.smp:188[51]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[51]      ]
+F# 2080 C:\MPCsimulation\Optimization\NUOPT.smp:188[52]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[52]      ]
+F# 2081 C:\MPCsimulation\Optimization\NUOPT.smp:188[53]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[53]      ]
+F# 2082 C:\MPCsimulation\Optimization\NUOPT.smp:188[54]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[54]      ]
+F# 2083 C:\MPCsimulation\Optimization\NUOPT.smp:188[55]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[55]      ]
+F# 2084 C:\MPCsimulation\Optimization\NUOPT.smp:188[56]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[56]      ]
+F# 2085 C:\MPCsimulation\Optimization\NUOPT.smp:188[57]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[57]      ]
+F# 2086 C:\MPCsimulation\Optimization\NUOPT.smp:188[58]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[58]      ]
+F# 2087 C:\MPCsimulation\Optimization\NUOPT.smp:188[59]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[59]      ]
+F# 2088 C:\MPCsimulation\Optimization\NUOPT.smp:188[60]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[60]      ]
+F# 2089 C:\MPCsimulation\Optimization\NUOPT.smp:188[61]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[61]      ]
+F# 2090 C:\MPCsimulation\Optimization\NUOPT.smp:188[62]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[62]      ]
+F# 2091 C:\MPCsimulation\Optimization\NUOPT.smp:188[63]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[63]      ]
+F# 2092 C:\MPCsimulation\Optimization\NUOPT.smp:188[64]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[64]      ]
+F# 2093 C:\MPCsimulation\Optimization\NUOPT.smp:188[65]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[65]      ]
+F# 2094 C:\MPCsimulation\Optimization\NUOPT.smp:188[66]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[66]      ]
+F# 2095 C:\MPCsimulation\Optimization\NUOPT.smp:188[67]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[67]      ]
+F# 2096 C:\MPCsimulation\Optimization\NUOPT.smp:188[68]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[68]      ]
+F# 2097 C:\MPCsimulation\Optimization\NUOPT.smp:188[69]             0  LOWER  0.00000000e+00 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[69]      ]
+F# 2098 obj                                               -6.2031e+07  FREE                  [                    OBJECTIVE (MINIMIZE)                   ]
 
 %%
 %% BOUNDS 
 %%
-        [               BOUND TYPE             ]     DUAL VALUE   
-B#   71 [       0 <=      vel[0]               ]                 0
-B#   72 [       0 <=      vel[1]               ]                 0
-B#   73 [       0 <=      vel[2]               ]                 0
-B#   74 [       0 <=      vel[3]               ]                 0
-B#   75 [       0 <=      vel[4]               ]                 0
-B#   76 [       0 <=      vel[5]               ]                 0
-B#   77 [       0 <=      vel[6]               ]                 0
-B#   78 [       0 <=      vel[7]               ]                 0
-B#   79 [       0 <=      vel[8]               ]                 0
-B#   80 [       0 <=      vel[9]               ]                 0
-B#   81 [       0 <=     vel[10]               ]                 0
-B#   82 [       0 <=     vel[11]               ]                 0
-B#   83 [       0 <=     vel[12]               ]                 0
-B#   84 [       0 <=     vel[13]               ]                 0
-B#   85 [       0 <=     vel[14]               ]                 0
-B#   86 [       0 <=     vel[15]               ]                 0
-B#   87 [       0 <=     vel[16]               ]                 0
-B#   88 [       0 <=     vel[17]               ]                 0
-B#   89 [       0 <=     vel[18]               ]                 0
-B#   90 [       0 <=     vel[19]               ]                 0
-B#   91 [       0 <=     vel[20]               ]                 0
-B#   92 [       0 <=     vel[21]               ]                 0
-B#   93 [       0 <=     vel[22]               ]                 0
-B#   94 [       0 <=     vel[23]               ]                 0
-B#   95 [       0 <=     vel[24]               ]                 0
-B#   96 [       0 <=     vel[25]               ]                 0
-B#   97 [       0 <=     vel[26]               ]                 0
-B#   98 [       0 <=     vel[27]               ]                 0
-B#   99 [       0 <=     vel[28]               ]                 0
-B#  100 [       0 <=     vel[29]               ]                 0
-B#  101 [       0 <=     vel[30]               ]                 0
-B#  102 [       0 <=     vel[31]               ]                 0
-B#  103 [       0 <=     vel[32]               ]                 0
-B#  104 [       0 <=     vel[33]               ]                 0
-B#  105 [       0 <=     vel[34]               ]                 0
-B#  106 [       0 <=     vel[35]               ]                 0
-B#  107 [       0 <=     vel[36]               ]                 0
-B#  108 [       0 <=     vel[37]               ]                 0
-B#  109 [       0 <=     vel[38]               ]                 0
-B#  110 [       0 <=     vel[39]               ]                 0
-B#  111 [       0 <=     vel[40]               ]                 0
-B#  112 [       0 <=     vel[41]               ]                 0
-B#  113 [       0 <=     vel[42]               ]                 0
-B#  114 [       0 <=     vel[43]               ]                 0
-B#  115 [       0 <=     vel[44]               ]                 0
-B#  116 [       0 <=     vel[45]               ]                 0
-B#  117 [       0 <=     vel[46]               ]                 0
-B#  118 [       0 <=     vel[47]               ]                 0
-B#  119 [       0 <=     vel[48]               ]                 0
-B#  120 [       0 <=     vel[49]               ]                 0
-B#  121 [       0 <=     vel[50]               ]                 0
-B#  122 [       0 <=     vel[51]               ]                 0
-B#  123 [       0 <=     vel[52]               ]                 0
-B#  124 [       0 <=     vel[53]               ]                 0
-B#  125 [       0 <=     vel[54]               ]                 0
-B#  126 [       0 <=     vel[55]               ]                 0
-B#  127 [       0 <=     vel[56]               ]                 0
-B#  128 [       0 <=     vel[57]               ]                 0
-B#  129 [       0 <=     vel[58]               ]                 0
-B#  130 [       0 <=     vel[59]               ]                 0
-B#  131 [       0 <=     vel[60]               ]                 0
-B#  132 [       0 <=     vel[61]               ]                 0
-B#  133 [       0 <=     vel[62]               ]                 0
-B#  134 [       0 <=     vel[63]               ]                 0
-B#  135 [       0 <=     vel[64]               ]                 0
-B#  136 [       0 <=     vel[65]               ]                 0
-B#  137 [       0 <=     vel[66]               ]                 0
-B#  138 [       0 <=     vel[67]               ]                 0
-B#  139 [       0 <=     vel[68]               ]                 0
-B#  140 [       0 <=     vel[69]               ]                 0
-B#  141 [      -3 <=      acc[0]     <= 3.3    ]                 0
-B#  142 [      -3 <=      acc[1]     <= 3.3    ]                 0
-B#  143 [      -3 <=      acc[2]     <= 3.3    ]                 0
-B#  144 [      -3 <=      acc[3]     <= 3.3    ]                 0
-B#  145 [      -3 <=      acc[4]     <= 3.3    ]                 0
-B#  146 [      -3 <=      acc[5]     <= 3.3    ]                 0
-B#  147 [      -3 <=      acc[6]     <= 3.3    ]                 0
-B#  148 [      -3 <=      acc[7]     <= 3.3    ]                 0
-B#  149 [      -3 <=      acc[8]     <= 3.3    ]                 0
-B#  150 [      -3 <=      acc[9]     <= 3.3    ]                 0
-B#  151 [      -3 <=     acc[10]     <= 3.3    ]                 0
-B#  152 [      -3 <=     acc[11]     <= 3.3    ]                 0
-B#  153 [      -3 <=     acc[12]     <= 3.3    ]                 0
-B#  154 [      -3 <=     acc[13]     <= 3.3    ]                 0
-B#  155 [      -3 <=     acc[14]     <= 3.3    ]                 0
-B#  156 [      -3 <=     acc[15]     <= 3.3    ]                 0
-B#  157 [      -3 <=     acc[16]     <= 3.3    ]                 0
-B#  158 [      -3 <=     acc[17]     <= 3.3    ]                 0
-B#  159 [      -3 <=     acc[18]     <= 3.3    ]                 0
-B#  160 [      -3 <=     acc[19]     <= 3.3    ]                 0
-B#  161 [      -3 <=     acc[20]     <= 3.3    ]                 0
-B#  162 [      -3 <=     acc[21]     <= 3.3    ]                 0
-B#  163 [      -3 <=     acc[22]     <= 3.3    ]                 0
-B#  164 [      -3 <=     acc[23]     <= 3.3    ]                 0
-B#  165 [      -3 <=     acc[24]     <= 3.3    ]                 0
-B#  166 [      -3 <=     acc[25]     <= 3.3    ]                 0
-B#  167 [      -3 <=     acc[26]     <= 3.3    ]                 0
-B#  168 [      -3 <=     acc[27]     <= 3.3    ]                 0
-B#  169 [      -3 <=     acc[28]     <= 3.3    ]                 0
-B#  170 [      -3 <=     acc[29]     <= 3.3    ]                 0
-B#  171 [      -3 <=     acc[30]     <= 3.3    ]                 0
-B#  172 [      -3 <=     acc[31]     <= 3.3    ]                 0
-B#  173 [      -3 <=     acc[32]     <= 3.3    ]                 0
-B#  174 [      -3 <=     acc[33]     <= 3.3    ]                 0
-B#  175 [      -3 <=     acc[34]     <= 3.3    ]                 0
-B#  176 [      -3 <=     acc[35]     <= 3.3    ]                 0
-B#  177 [      -3 <=     acc[36]     <= 3.3    ]                 0
-B#  178 [      -3 <=     acc[37]     <= 3.3    ]                 0
-B#  179 [      -3 <=     acc[38]     <= 3.3    ]                 0
-B#  180 [      -3 <=     acc[39]     <= 3.3    ]                 0
-B#  181 [      -3 <=     acc[40]     <= 3.3    ]                 0
-B#  182 [      -3 <=     acc[41]     <= 3.3    ]                 0
-B#  183 [      -3 <=     acc[42]     <= 3.3    ]                 0
-B#  184 [      -3 <=     acc[43]     <= 3.3    ]                 0
-B#  185 [      -3 <=     acc[44]     <= 3.3    ]                 0
-B#  186 [      -3 <=     acc[45]     <= 3.3    ]                 0
-B#  187 [      -3 <=     acc[46]     <= 3.3    ]                 0
-B#  188 [      -3 <=     acc[47]     <= 3.3    ]                 0
-B#  189 [      -3 <=     acc[48]     <= 3.3    ]                 0
-B#  190 [      -3 <=     acc[49]     <= 3.3    ]                 0
-B#  191 [      -3 <=     acc[50]     <= 3.3    ]                 0
-B#  192 [      -3 <=     acc[51]     <= 3.3    ]                 0
-B#  193 [      -3 <=     acc[52]     <= 3.3    ]                 0
-B#  194 [      -3 <=     acc[53]     <= 3.3    ]                 0
-B#  195 [      -3 <=     acc[54]     <= 3.3    ]                 0
-B#  196 [      -3 <=     acc[55]     <= 3.3    ]                 0
-B#  197 [      -3 <=     acc[56]     <= 3.3    ]                 0
-B#  198 [      -3 <=     acc[57]     <= 3.3    ]                 0
-B#  199 [      -3 <=     acc[58]     <= 3.3    ]                 0
-B#  200 [      -3 <=     acc[59]     <= 3.3    ]                 0
-B#  201 [      -3 <=     acc[60]     <= 3.3    ]                 0
-B#  202 [      -3 <=     acc[61]     <= 3.3    ]                 0
-B#  203 [      -3 <=     acc[62]     <= 3.3    ]                 0
-B#  204 [      -3 <=     acc[63]     <= 3.3    ]                 0
-B#  205 [      -3 <=     acc[64]     <= 3.3    ]                 0
-B#  206 [      -3 <=     acc[65]     <= 3.3    ]                 0
-B#  207 [      -3 <=     acc[66]     <= 3.3    ]                 0
-B#  208 [      -3 <=     acc[67]     <= 3.3    ]                 0
-B#  209 [      -3 <=     acc[68]     <= 3.3    ]                 0
-B#  210 [      -3 <=     acc[69]     <= 3.3    ]                 0
-B#  631 [ -1.0472 <=     delta[0]    <= 1.0472 ]                 0
-B#  632 [ -1.0472 <=     delta[1]    <= 1.0472 ]                 0
-B#  633 [ -1.0472 <=     delta[2]    <= 1.0472 ]                 0
-B#  634 [ -1.0472 <=     delta[3]    <= 1.0472 ]                 0
-B#  635 [ -1.0472 <=     delta[4]    <= 1.0472 ]                 0
-B#  636 [ -1.0472 <=     delta[5]    <= 1.0472 ]                 0
-B#  637 [ -1.0472 <=     delta[6]    <= 1.0472 ]                 0
-B#  638 [ -1.0472 <=     delta[7]    <= 1.0472 ]                 0
-B#  639 [ -1.0472 <=     delta[8]    <= 1.0472 ]                 0
-B#  640 [ -1.0472 <=     delta[9]    <= 1.0472 ]                 0
-B#  641 [ -1.0472 <=    delta[10]    <= 1.0472 ]                 0
-B#  642 [ -1.0472 <=    delta[11]    <= 1.0472 ]                 0
-B#  643 [ -1.0472 <=    delta[12]    <= 1.0472 ]                 0
-B#  644 [ -1.0472 <=    delta[13]    <= 1.0472 ]                 0
-B#  645 [ -1.0472 <=    delta[14]    <= 1.0472 ]                 0
-B#  646 [ -1.0472 <=    delta[15]    <= 1.0472 ]                 0
-B#  647 [ -1.0472 <=    delta[16]    <= 1.0472 ]                 0
-B#  648 [ -1.0472 <=    delta[17]    <= 1.0472 ]                 0
-B#  649 [ -1.0472 <=    delta[18]    <= 1.0472 ]                 0
-B#  650 [ -1.0472 <=    delta[19]    <= 1.0472 ]                 0
-B#  651 [ -1.0472 <=    delta[20]    <= 1.0472 ]                 0
-B#  652 [ -1.0472 <=    delta[21]    <= 1.0472 ]                 0
-B#  653 [ -1.0472 <=    delta[22]    <= 1.0472 ]                 0
-B#  654 [ -1.0472 <=    delta[23]    <= 1.0472 ]                 0
-B#  655 [ -1.0472 <=    delta[24]    <= 1.0472 ]                 0
-B#  656 [ -1.0472 <=    delta[25]    <= 1.0472 ]                 0
-B#  657 [ -1.0472 <=    delta[26]    <= 1.0472 ]                 0
-B#  658 [ -1.0472 <=    delta[27]    <= 1.0472 ]                 0
-B#  659 [ -1.0472 <=    delta[28]    <= 1.0472 ]                 0
-B#  660 [ -1.0472 <=    delta[29]    <= 1.0472 ]                 0
-B#  661 [ -1.0472 <=    delta[30]    <= 1.0472 ]                 0
-B#  662 [ -1.0472 <=    delta[31]    <= 1.0472 ]                 0
-B#  663 [ -1.0472 <=    delta[32]    <= 1.0472 ]                 0
-B#  664 [ -1.0472 <=    delta[33]    <= 1.0472 ]                 0
-B#  665 [ -1.0472 <=    delta[34]    <= 1.0472 ]                 0
-B#  666 [ -1.0472 <=    delta[35]    <= 1.0472 ]                 0
-B#  667 [ -1.0472 <=    delta[36]    <= 1.0472 ]                 0
-B#  668 [ -1.0472 <=    delta[37]    <= 1.0472 ]                 0
-B#  669 [ -1.0472 <=    delta[38]    <= 1.0472 ]                 0
-B#  670 [ -1.0472 <=    delta[39]    <= 1.0472 ]                 0
-B#  671 [ -1.0472 <=    delta[40]    <= 1.0472 ]                 0
-B#  672 [ -1.0472 <=    delta[41]    <= 1.0472 ]                 0
-B#  673 [ -1.0472 <=    delta[42]    <= 1.0472 ]                 0
-B#  674 [ -1.0472 <=    delta[43]    <= 1.0472 ]                 0
-B#  675 [ -1.0472 <=    delta[44]    <= 1.0472 ]                 0
-B#  676 [ -1.0472 <=    delta[45]    <= 1.0472 ]                 0
-B#  677 [ -1.0472 <=    delta[46]    <= 1.0472 ]                 0
-B#  678 [ -1.0472 <=    delta[47]    <= 1.0472 ]                 0
-B#  679 [ -1.0472 <=    delta[48]    <= 1.0472 ]                 0
-B#  680 [ -1.0472 <=    delta[49]    <= 1.0472 ]                 0
-B#  681 [ -1.0472 <=    delta[50]    <= 1.0472 ]                 0
-B#  682 [ -1.0472 <=    delta[51]    <= 1.0472 ]                 0
-B#  683 [ -1.0472 <=    delta[52]    <= 1.0472 ]                 0
-B#  684 [ -1.0472 <=    delta[53]    <= 1.0472 ]                 0
-B#  685 [ -1.0472 <=    delta[54]    <= 1.0472 ]                 0
-B#  686 [ -1.0472 <=    delta[55]    <= 1.0472 ]                 0
-B#  687 [ -1.0472 <=    delta[56]    <= 1.0472 ]                 0
-B#  688 [ -1.0472 <=    delta[57]    <= 1.0472 ]                 0
-B#  689 [ -1.0472 <=    delta[58]    <= 1.0472 ]                 0
-B#  690 [ -1.0472 <=    delta[59]    <= 1.0472 ]                 0
-B#  691 [ -1.0472 <=    delta[60]    <= 1.0472 ]                 0
-B#  692 [ -1.0472 <=    delta[61]    <= 1.0472 ]                 0
-B#  693 [ -1.0472 <=    delta[62]    <= 1.0472 ]                 0
-B#  694 [ -1.0472 <=    delta[63]    <= 1.0472 ]                 0
-B#  695 [ -1.0472 <=    delta[64]    <= 1.0472 ]                 0
-B#  696 [ -1.0472 <=    delta[65]    <= 1.0472 ]                 0
-B#  697 [ -1.0472 <=    delta[66]    <= 1.0472 ]                 0
-B#  698 [ -1.0472 <=    delta[67]    <= 1.0472 ]                 0
-B#  699 [ -1.0472 <=    delta[68]    <= 1.0472 ]                 0
-B#  700 [ -1.0472 <=    delta[69]    <= 1.0472 ]                 0
-B# 1539 [     0.9 <=     Dist[0]               ]                 0
-B# 1540 [     0.9 <=     Dist[1]               ]                 0
-B# 1541 [     0.9 <=     Dist[2]               ]                 0
-B# 1542 [     0.9 <=     Dist[3]               ]                 0
-B# 1543 [     0.9 <=     Dist[4]               ]                 0
-B# 1544 [     0.9 <=     Dist[5]               ]                 0
-B# 1545 [     0.9 <=     Dist[6]               ]                 0
-B# 1546 [     0.9 <=     Dist[7]               ]                 0
-B# 1547 [     0.9 <=     Dist[8]               ]                 0
-B# 1548 [     0.9 <=     Dist[9]               ]                 0
-B# 1549 [     0.9 <=     Dist[10]              ]                 0
-B# 1550 [     0.9 <=     Dist[11]              ]                 0
-B# 1551 [     0.9 <=     Dist[12]              ]                 0
-B# 1552 [     0.9 <=     Dist[13]              ]                 0
-B# 1553 [     0.9 <=     Dist[14]              ]                 0
-B# 1554 [     0.9 <=     Dist[15]              ]                 0
-B# 1555 [     0.9 <=     Dist[16]              ]                 0
-B# 1556 [     0.9 <=     Dist[17]              ]                 0
-B# 1557 [     0.9 <=     Dist[18]              ]                 0
-B# 1558 [     0.9 <=     Dist[19]              ]                 0
-B# 1559 [     0.9 <=     Dist[20]              ]                 0
-B# 1560 [     0.9 <=     Dist[21]              ]                 0
-B# 1561 [     0.9 <=     Dist[22]              ]                 0
-B# 1562 [     0.9 <=     Dist[23]              ]                 0
-B# 1563 [     0.9 <=     Dist[24]              ]                 0
-B# 1564 [     0.9 <=     Dist[25]              ]                 0
-B# 1565 [     0.9 <=     Dist[26]              ]                 0
-B# 1566 [     0.9 <=     Dist[27]              ]                 0
-B# 1567 [     0.9 <=     Dist[28]              ]                 0
-B# 1568 [     0.9 <=     Dist[29]              ]                 0
-B# 1569 [     0.9 <=     Dist[30]              ]                 0
-B# 1570 [     0.9 <=     Dist[31]              ]                 0
-B# 1571 [     0.9 <=     Dist[32]              ]                 0
-B# 1572 [     0.9 <=     Dist[33]              ]                 0
-B# 1573 [     0.9 <=     Dist[34]              ]                 0
-B# 1574 [     0.9 <=     Dist[35]              ]                 0
-B# 1575 [     0.9 <=     Dist[36]              ]                 0
-B# 1576 [     0.9 <=     Dist[37]              ]                 0
-B# 1577 [     0.9 <=     Dist[38]              ]                 0
-B# 1578 [     0.9 <=     Dist[39]              ]                 0
-B# 1579 [     0.9 <=     Dist[40]              ]                 0
-B# 1580 [     0.9 <=     Dist[41]              ]                 0
-B# 1581 [     0.9 <=     Dist[42]              ]                 0
-B# 1582 [     0.9 <=     Dist[43]              ]                 0
-B# 1583 [     0.9 <=     Dist[44]              ]                 0
-B# 1584 [     0.9 <=     Dist[45]              ]                 0
-B# 1585 [     0.9 <=     Dist[46]              ]                 0
-B# 1586 [     0.9 <=     Dist[47]              ]                 0
-B# 1587 [     0.9 <=     Dist[48]              ]                 0
-B# 1588 [     0.9 <=     Dist[49]              ]                 0
-B# 1589 [     0.9 <=     Dist[50]              ]                 0
-B# 1590 [     0.9 <=     Dist[51]              ]                 0
-B# 1591 [     0.9 <=     Dist[52]              ]                 0
-B# 1592 [     0.9 <=     Dist[53]              ]                 0
-B# 1593 [     0.9 <=     Dist[54]              ]                 0
-B# 1594 [     0.9 <=     Dist[55]              ]                 0
-B# 1595 [     0.9 <=     Dist[56]              ]                 0
-B# 1596 [     0.9 <=     Dist[57]              ]                 0
-B# 1597 [     0.9 <=     Dist[58]              ]                 0
-B# 1598 [     0.9 <=     Dist[59]              ]                 0
-B# 1599 [     0.9 <=     Dist[60]              ]                 0
-B# 1600 [     0.9 <=     Dist[61]              ]                 0
-B# 1601 [     0.9 <=     Dist[62]              ]                 0
-B# 1602 [     0.9 <=     Dist[63]              ]                 0
-B# 1603 [     0.9 <=     Dist[64]              ]                 0
-B# 1604 [     0.9 <=     Dist[65]              ]                 0
-B# 1605 [     0.9 <=     Dist[66]              ]                 0
-B# 1606 [     0.9 <=     Dist[67]              ]                 0
-B# 1607 [     0.9 <=     Dist[68]              ]                 0
-B# 1608 [     0.9 <=     Dist[69]              ]                 0
-B# 1609 [     0.3 <=   Dist_f_r[0]             ]                 0
-B# 1610 [     0.3 <=   Dist_f_r[1]             ]                 0
-B# 1611 [     0.3 <=   Dist_f_r[2]             ]                 0
-B# 1612 [     0.3 <=   Dist_f_r[3]             ]                 0
-B# 1613 [     0.3 <=   Dist_f_r[4]             ]                 0
-B# 1614 [     0.3 <=   Dist_f_r[5]             ]                 0
-B# 1615 [     0.3 <=   Dist_f_r[6]             ]                 0
-B# 1616 [     0.3 <=   Dist_f_r[7]             ]                 0
-B# 1617 [     0.3 <=   Dist_f_r[8]             ]                 0
-B# 1618 [     0.3 <=   Dist_f_r[9]             ]                 0
-B# 1619 [     0.3 <=   Dist_f_r[10]            ]                 0
-B# 1620 [     0.3 <=   Dist_f_r[11]            ]                 0
-B# 1621 [     0.3 <=   Dist_f_r[12]            ]                 0
-B# 1622 [     0.3 <=   Dist_f_r[13]            ]                 0
-B# 1623 [     0.3 <=   Dist_f_r[14]            ]                 0
-B# 1624 [     0.3 <=   Dist_f_r[15]            ]                 0
-B# 1625 [     0.3 <=   Dist_f_r[16]            ]                 0
-B# 1626 [     0.3 <=   Dist_f_r[17]            ]                 0
-B# 1627 [     0.3 <=   Dist_f_r[18]            ]                 0
-B# 1628 [     0.3 <=   Dist_f_r[19]            ]                 0
-B# 1629 [     0.3 <=   Dist_f_r[20]            ]                 0
-B# 1630 [     0.3 <=   Dist_f_r[21]            ]                 0
-B# 1631 [     0.3 <=   Dist_f_r[22]            ]                 0
-B# 1632 [     0.3 <=   Dist_f_r[23]            ]                 0
-B# 1633 [     0.3 <=   Dist_f_r[24]            ]                 0
-B# 1634 [     0.3 <=   Dist_f_r[25]            ]                 0
-B# 1635 [     0.3 <=   Dist_f_r[26]            ]                 0
-B# 1636 [     0.3 <=   Dist_f_r[27]            ]                 0
-B# 1637 [     0.3 <=   Dist_f_r[28]            ]                 0
-B# 1638 [     0.3 <=   Dist_f_r[29]            ]                 0
-B# 1639 [     0.3 <=   Dist_f_r[30]            ]                 0
-B# 1640 [     0.3 <=   Dist_f_r[31]            ]                 0
-B# 1641 [     0.3 <=   Dist_f_r[32]            ]                 0
-B# 1642 [     0.3 <=   Dist_f_r[33]            ]                 0
-B# 1643 [     0.3 <=   Dist_f_r[34]            ]                 0
-B# 1644 [     0.3 <=   Dist_f_r[35]            ]                 0
-B# 1645 [     0.3 <=   Dist_f_r[36]            ]                 0
-B# 1646 [     0.3 <=   Dist_f_r[37]            ]                 0
-B# 1647 [     0.3 <=   Dist_f_r[38]            ]                 0
-B# 1648 [     0.3 <=   Dist_f_r[39]            ]                 0
-B# 1649 [     0.3 <=   Dist_f_r[40]            ]                 0
-B# 1650 [     0.3 <=   Dist_f_r[41]            ]                 0
-B# 1651 [     0.3 <=   Dist_f_r[42]            ]                 0
-B# 1652 [     0.3 <=   Dist_f_r[43]            ]                 0
-B# 1653 [     0.3 <=   Dist_f_r[44]            ]                 0
-B# 1654 [     0.3 <=   Dist_f_r[45]            ]                 0
-B# 1655 [     0.3 <=   Dist_f_r[46]            ]                 0
-B# 1656 [     0.3 <=   Dist_f_r[47]            ]                 0
-B# 1657 [     0.3 <=   Dist_f_r[48]            ]                 0
-B# 1658 [     0.3 <=   Dist_f_r[49]            ]                 0
-B# 1659 [     0.3 <=   Dist_f_r[50]            ]                 0
-B# 1660 [     0.3 <=   Dist_f_r[51]            ]                 0
-B# 1661 [     0.3 <=   Dist_f_r[52]            ]                 0
-B# 1662 [     0.3 <=   Dist_f_r[53]            ]                 0
-B# 1663 [     0.3 <=   Dist_f_r[54]            ]                 0
-B# 1664 [     0.3 <=   Dist_f_r[55]            ]                 0
-B# 1665 [     0.3 <=   Dist_f_r[56]            ]                 0
-B# 1666 [     0.3 <=   Dist_f_r[57]            ]                 0
-B# 1667 [     0.3 <=   Dist_f_r[58]            ]                 0
-B# 1668 [     0.3 <=   Dist_f_r[59]            ]                 0
-B# 1669 [     0.3 <=   Dist_f_r[60]            ]                 0
-B# 1670 [     0.3 <=   Dist_f_r[61]            ]                 0
-B# 1671 [     0.3 <=   Dist_f_r[62]            ]                 0
-B# 1672 [     0.3 <=   Dist_f_r[63]            ]                 0
-B# 1673 [     0.3 <=   Dist_f_r[64]            ]                 0
-B# 1674 [     0.3 <=   Dist_f_r[65]            ]                 0
-B# 1675 [     0.3 <=   Dist_f_r[66]            ]                 0
-B# 1676 [     0.3 <=   Dist_f_r[67]            ]                 0
-B# 1677 [     0.3 <=   Dist_f_r[68]            ]                 0
-B# 1678 [     0.3 <=   Dist_f_r[69]            ]                 0
-B# 1679 [     0.3 <=   Dist_f_l[0]             ]                 0
-B# 1680 [     0.3 <=   Dist_f_l[1]             ]                 0
-B# 1681 [     0.3 <=   Dist_f_l[2]             ]                 0
-B# 1682 [     0.3 <=   Dist_f_l[3]             ]                 0
-B# 1683 [     0.3 <=   Dist_f_l[4]             ]                 0
-B# 1684 [     0.3 <=   Dist_f_l[5]             ]                 0
-B# 1685 [     0.3 <=   Dist_f_l[6]             ]                 0
-B# 1686 [     0.3 <=   Dist_f_l[7]             ]                 0
-B# 1687 [     0.3 <=   Dist_f_l[8]             ]                 0
-B# 1688 [     0.3 <=   Dist_f_l[9]             ]                 0
-B# 1689 [     0.3 <=   Dist_f_l[10]            ]                 0
-B# 1690 [     0.3 <=   Dist_f_l[11]            ]                 0
-B# 1691 [     0.3 <=   Dist_f_l[12]            ]                 0
-B# 1692 [     0.3 <=   Dist_f_l[13]            ]                 0
-B# 1693 [     0.3 <=   Dist_f_l[14]            ]                 0
-B# 1694 [     0.3 <=   Dist_f_l[15]            ]                 0
-B# 1695 [     0.3 <=   Dist_f_l[16]            ]                 0
-B# 1696 [     0.3 <=   Dist_f_l[17]            ]                 0
-B# 1697 [     0.3 <=   Dist_f_l[18]            ]                 0
-B# 1698 [     0.3 <=   Dist_f_l[19]            ]                 0
-B# 1699 [     0.3 <=   Dist_f_l[20]            ]                 0
-B# 1700 [     0.3 <=   Dist_f_l[21]            ]                 0
-B# 1701 [     0.3 <=   Dist_f_l[22]            ]                 0
-B# 1702 [     0.3 <=   Dist_f_l[23]            ]                 0
-B# 1703 [     0.3 <=   Dist_f_l[24]            ]                 0
-B# 1704 [     0.3 <=   Dist_f_l[25]            ]                 0
-B# 1705 [     0.3 <=   Dist_f_l[26]            ]                 0
-B# 1706 [     0.3 <=   Dist_f_l[27]            ]                 0
-B# 1707 [     0.3 <=   Dist_f_l[28]            ]                 0
-B# 1708 [     0.3 <=   Dist_f_l[29]            ]                 0
-B# 1709 [     0.3 <=   Dist_f_l[30]            ]                 0
-B# 1710 [     0.3 <=   Dist_f_l[31]            ]                 0
-B# 1711 [     0.3 <=   Dist_f_l[32]            ]                 0
-B# 1712 [     0.3 <=   Dist_f_l[33]            ]                 0
-B# 1713 [     0.3 <=   Dist_f_l[34]            ]                 0
-B# 1714 [     0.3 <=   Dist_f_l[35]            ]                 0
-B# 1715 [     0.3 <=   Dist_f_l[36]            ]                 0
-B# 1716 [     0.3 <=   Dist_f_l[37]            ]                 0
-B# 1717 [     0.3 <=   Dist_f_l[38]            ]                 0
-B# 1718 [     0.3 <=   Dist_f_l[39]            ]                 0
-B# 1719 [     0.3 <=   Dist_f_l[40]            ]                 0
-B# 1720 [     0.3 <=   Dist_f_l[41]            ]                 0
-B# 1721 [     0.3 <=   Dist_f_l[42]            ]                 0
-B# 1722 [     0.3 <=   Dist_f_l[43]            ]                 0
-B# 1723 [     0.3 <=   Dist_f_l[44]            ]                 0
-B# 1724 [     0.3 <=   Dist_f_l[45]            ]                 0
-B# 1725 [     0.3 <=   Dist_f_l[46]            ]                 0
-B# 1726 [     0.3 <=   Dist_f_l[47]            ]                 0
-B# 1727 [     0.3 <=   Dist_f_l[48]            ]                 0
-B# 1728 [     0.3 <=   Dist_f_l[49]            ]                 0
-B# 1729 [     0.3 <=   Dist_f_l[50]            ]                 0
-B# 1730 [     0.3 <=   Dist_f_l[51]            ]                 0
-B# 1731 [     0.3 <=   Dist_f_l[52]            ]                 0
-B# 1732 [     0.3 <=   Dist_f_l[53]            ]                 0
-B# 1733 [     0.3 <=   Dist_f_l[54]            ]                 0
-B# 1734 [     0.3 <=   Dist_f_l[55]            ]                 0
-B# 1735 [     0.3 <=   Dist_f_l[56]            ]                 0
-B# 1736 [     0.3 <=   Dist_f_l[57]            ]                 0
-B# 1737 [     0.3 <=   Dist_f_l[58]            ]                 0
-B# 1738 [     0.3 <=   Dist_f_l[59]            ]                 0
-B# 1739 [     0.3 <=   Dist_f_l[60]            ]                 0
-B# 1740 [     0.3 <=   Dist_f_l[61]            ]                 0
-B# 1741 [     0.3 <=   Dist_f_l[62]            ]                 0
-B# 1742 [     0.3 <=   Dist_f_l[63]            ]                 0
-B# 1743 [     0.3 <=   Dist_f_l[64]            ]                 0
-B# 1744 [     0.3 <=   Dist_f_l[65]            ]                 0
-B# 1745 [     0.3 <=   Dist_f_l[66]            ]                 0
-B# 1746 [     0.3 <=   Dist_f_l[67]            ]                 0
-B# 1747 [     0.3 <=   Dist_f_l[68]            ]                 0
-B# 1748 [     0.3 <=   Dist_f_l[69]            ]                 0
-B# 1749 [     0.3 <=   Dist_r_r[0]             ]                 0
-B# 1750 [     0.3 <=   Dist_r_r[1]             ]                 0
-B# 1751 [     0.3 <=   Dist_r_r[2]             ]                 0
-B# 1752 [     0.3 <=   Dist_r_r[3]             ]                 0
-B# 1753 [     0.3 <=   Dist_r_r[4]             ]                 0
-B# 1754 [     0.3 <=   Dist_r_r[5]             ]                 0
-B# 1755 [     0.3 <=   Dist_r_r[6]             ]                 0
-B# 1756 [     0.3 <=   Dist_r_r[7]             ]                 0
-B# 1757 [     0.3 <=   Dist_r_r[8]             ]                 0
-B# 1758 [     0.3 <=   Dist_r_r[9]             ]                 0
-B# 1759 [     0.3 <=   Dist_r_r[10]            ]                 0
-B# 1760 [     0.3 <=   Dist_r_r[11]            ]                 0
-B# 1761 [     0.3 <=   Dist_r_r[12]            ]                 0
-B# 1762 [     0.3 <=   Dist_r_r[13]            ]                 0
-B# 1763 [     0.3 <=   Dist_r_r[14]            ]                 0
-B# 1764 [     0.3 <=   Dist_r_r[15]            ]                 0
-B# 1765 [     0.3 <=   Dist_r_r[16]            ]                 0
-B# 1766 [     0.3 <=   Dist_r_r[17]            ]                 0
-B# 1767 [     0.3 <=   Dist_r_r[18]            ]                 0
-B# 1768 [     0.3 <=   Dist_r_r[19]            ]                 0
-B# 1769 [     0.3 <=   Dist_r_r[20]            ]                 0
-B# 1770 [     0.3 <=   Dist_r_r[21]            ]                 0
-B# 1771 [     0.3 <=   Dist_r_r[22]            ]                 0
-B# 1772 [     0.3 <=   Dist_r_r[23]            ]                 0
-B# 1773 [     0.3 <=   Dist_r_r[24]            ]                 0
-B# 1774 [     0.3 <=   Dist_r_r[25]            ]                 0
-B# 1775 [     0.3 <=   Dist_r_r[26]            ]                 0
-B# 1776 [     0.3 <=   Dist_r_r[27]            ]                 0
-B# 1777 [     0.3 <=   Dist_r_r[28]            ]                 0
-B# 1778 [     0.3 <=   Dist_r_r[29]            ]                 0
-B# 1779 [     0.3 <=   Dist_r_r[30]            ]                 0
-B# 1780 [     0.3 <=   Dist_r_r[31]            ]                 0
-B# 1781 [     0.3 <=   Dist_r_r[32]            ]                 0
-B# 1782 [     0.3 <=   Dist_r_r[33]            ]                 0
-B# 1783 [     0.3 <=   Dist_r_r[34]            ]                 0
-B# 1784 [     0.3 <=   Dist_r_r[35]            ]                 0
-B# 1785 [     0.3 <=   Dist_r_r[36]            ]                 0
-B# 1786 [     0.3 <=   Dist_r_r[37]            ]                 0
-B# 1787 [     0.3 <=   Dist_r_r[38]            ]                 0
-B# 1788 [     0.3 <=   Dist_r_r[39]            ]                 0
-B# 1789 [     0.3 <=   Dist_r_r[40]            ]                 0
-B# 1790 [     0.3 <=   Dist_r_r[41]            ]                 0
-B# 1791 [     0.3 <=   Dist_r_r[42]            ]                 0
-B# 1792 [     0.3 <=   Dist_r_r[43]            ]                 0
-B# 1793 [     0.3 <=   Dist_r_r[44]            ]                 0
-B# 1794 [     0.3 <=   Dist_r_r[45]            ]                 0
-B# 1795 [     0.3 <=   Dist_r_r[46]            ]                 0
-B# 1796 [     0.3 <=   Dist_r_r[47]            ]                 0
-B# 1797 [     0.3 <=   Dist_r_r[48]            ]                 0
-B# 1798 [     0.3 <=   Dist_r_r[49]            ]                 0
-B# 1799 [     0.3 <=   Dist_r_r[50]            ]                 0
-B# 1800 [     0.3 <=   Dist_r_r[51]            ]                 0
-B# 1801 [     0.3 <=   Dist_r_r[52]            ]                 0
-B# 1802 [     0.3 <=   Dist_r_r[53]            ]                 0
-B# 1803 [     0.3 <=   Dist_r_r[54]            ]                 0
-B# 1804 [     0.3 <=   Dist_r_r[55]            ]                 0
-B# 1805 [     0.3 <=   Dist_r_r[56]            ]                 0
-B# 1806 [     0.3 <=   Dist_r_r[57]            ]                 0
-B# 1807 [     0.3 <=   Dist_r_r[58]            ]                 0
-B# 1808 [     0.3 <=   Dist_r_r[59]            ]                 0
-B# 1809 [     0.3 <=   Dist_r_r[60]            ]                 0
-B# 1810 [     0.3 <=   Dist_r_r[61]            ]                 0
-B# 1811 [     0.3 <=   Dist_r_r[62]            ]                 0
-B# 1812 [     0.3 <=   Dist_r_r[63]            ]                 0
-B# 1813 [     0.3 <=   Dist_r_r[64]            ]                 0
-B# 1814 [     0.3 <=   Dist_r_r[65]            ]                 0
-B# 1815 [     0.3 <=   Dist_r_r[66]            ]                 0
-B# 1816 [     0.3 <=   Dist_r_r[67]            ]                 0
-B# 1817 [     0.3 <=   Dist_r_r[68]            ]                 0
-B# 1818 [     0.3 <=   Dist_r_r[69]            ]                 0
-B# 1819 [     0.3 <=   Dist_r_l[0]             ]                 0
-B# 1820 [     0.3 <=   Dist_r_l[1]             ]                 0
-B# 1821 [     0.3 <=   Dist_r_l[2]             ]                 0
-B# 1822 [     0.3 <=   Dist_r_l[3]             ]                 0
-B# 1823 [     0.3 <=   Dist_r_l[4]             ]                 0
-B# 1824 [     0.3 <=   Dist_r_l[5]             ]                 0
-B# 1825 [     0.3 <=   Dist_r_l[6]             ]                 0
-B# 1826 [     0.3 <=   Dist_r_l[7]             ]                 0
-B# 1827 [     0.3 <=   Dist_r_l[8]             ]                 0
-B# 1828 [     0.3 <=   Dist_r_l[9]             ]                 0
-B# 1829 [     0.3 <=   Dist_r_l[10]            ]                 0
-B# 1830 [     0.3 <=   Dist_r_l[11]            ]                 0
-B# 1831 [     0.3 <=   Dist_r_l[12]            ]                 0
-B# 1832 [     0.3 <=   Dist_r_l[13]            ]                 0
-B# 1833 [     0.3 <=   Dist_r_l[14]            ]                 0
-B# 1834 [     0.3 <=   Dist_r_l[15]            ]                 0
-B# 1835 [     0.3 <=   Dist_r_l[16]            ]                 0
-B# 1836 [     0.3 <=   Dist_r_l[17]            ]                 0
-B# 1837 [     0.3 <=   Dist_r_l[18]            ]                 0
-B# 1838 [     0.3 <=   Dist_r_l[19]            ]                 0
-B# 1839 [     0.3 <=   Dist_r_l[20]            ]                 0
-B# 1840 [     0.3 <=   Dist_r_l[21]            ]                 0
-B# 1841 [     0.3 <=   Dist_r_l[22]            ]                 0
-B# 1842 [     0.3 <=   Dist_r_l[23]            ]                 0
-B# 1843 [     0.3 <=   Dist_r_l[24]            ]                 0
-B# 1844 [     0.3 <=   Dist_r_l[25]            ]                 0
-B# 1845 [     0.3 <=   Dist_r_l[26]            ]                 0
-B# 1846 [     0.3 <=   Dist_r_l[27]            ]                 0
-B# 1847 [     0.3 <=   Dist_r_l[28]            ]                 0
-B# 1848 [     0.3 <=   Dist_r_l[29]            ]                 0
-B# 1849 [     0.3 <=   Dist_r_l[30]            ]                 0
-B# 1850 [     0.3 <=   Dist_r_l[31]            ]                 0
-B# 1851 [     0.3 <=   Dist_r_l[32]            ]                 0
-B# 1852 [     0.3 <=   Dist_r_l[33]            ]                 0
-B# 1853 [     0.3 <=   Dist_r_l[34]            ]                 0
-B# 1854 [     0.3 <=   Dist_r_l[35]            ]                 0
-B# 1855 [     0.3 <=   Dist_r_l[36]            ]                 0
-B# 1856 [     0.3 <=   Dist_r_l[37]            ]                 0
-B# 1857 [     0.3 <=   Dist_r_l[38]            ]                 0
-B# 1858 [     0.3 <=   Dist_r_l[39]            ]                 0
-B# 1859 [     0.3 <=   Dist_r_l[40]            ]                 0
-B# 1860 [     0.3 <=   Dist_r_l[41]            ]                 0
-B# 1861 [     0.3 <=   Dist_r_l[42]            ]                 0
-B# 1862 [     0.3 <=   Dist_r_l[43]            ]                 0
-B# 1863 [     0.3 <=   Dist_r_l[44]            ]                 0
-B# 1864 [     0.3 <=   Dist_r_l[45]            ]                 0
-B# 1865 [     0.3 <=   Dist_r_l[46]            ]                 0
-B# 1866 [     0.3 <=   Dist_r_l[47]            ]                 0
-B# 1867 [     0.3 <=   Dist_r_l[48]            ]                 0
-B# 1868 [     0.3 <=   Dist_r_l[49]            ]                 0
-B# 1869 [     0.3 <=   Dist_r_l[50]            ]                 0
-B# 1870 [     0.3 <=   Dist_r_l[51]            ]                 0
-B# 1871 [     0.3 <=   Dist_r_l[52]            ]                 0
-B# 1872 [     0.3 <=   Dist_r_l[53]            ]                 0
-B# 1873 [     0.3 <=   Dist_r_l[54]            ]                 0
-B# 1874 [     0.3 <=   Dist_r_l[55]            ]                 0
-B# 1875 [     0.3 <=   Dist_r_l[56]            ]                 0
-B# 1876 [     0.3 <=   Dist_r_l[57]            ]                 0
-B# 1877 [     0.3 <=   Dist_r_l[58]            ]                 0
-B# 1878 [     0.3 <=   Dist_r_l[59]            ]                 0
-B# 1879 [     0.3 <=   Dist_r_l[60]            ]                 0
-B# 1880 [     0.3 <=   Dist_r_l[61]            ]                 0
-B# 1881 [     0.3 <=   Dist_r_l[62]            ]                 0
-B# 1882 [     0.3 <=   Dist_r_l[63]            ]                 0
-B# 1883 [     0.3 <=   Dist_r_l[64]            ]                 0
-B# 1884 [     0.3 <=   Dist_r_l[65]            ]                 0
-B# 1885 [     0.3 <=   Dist_r_l[66]            ]                 0
-B# 1886 [     0.3 <=   Dist_r_l[67]            ]                 0
-B# 1887 [     0.3 <=   Dist_r_l[68]            ]                 0
-B# 1888 [     0.3 <=   Dist_r_l[69]            ]                 0
-B# 2029 [                T_delta     == 0      ]                 0
-B# 2030 [                  a11       == 0      ]                 0
-B# 2031 [                  a12       == 0      ]                 0
-B# 2032 [                  a21       == 0      ]                 0
-B# 2033 [                  a22       == 0      ]                 0
-B# 2034 [                   b1       == 0      ]                 0
-B# 2035 [                   b2       == 0      ]                 0
-B# 2036 [                 Q_vel      == 0      ]                 0
-B# 2037 [                 Q_acc      == 0      ]                 0
-B# 2038 [                  Q_v       == 0      ]                 0
-B# 2039 [                Q_v_dot     == 0      ]                 0
-B# 2040 [                Q_v_2dot    == 0      ]                 0
-B# 2041 [                Q_theta     == 0      ]                 0
-B# 2042 [              Q_theta_dot   == 0      ]                 0
-B# 2043 [              Q_theta_2dot  == 0      ]                 0
-B# 2044 [                Q_delta     == 0      ]                 0
-B# 2045 [              Q_delta_dot   == 0      ]                 0
-B# 2046 [                 Sf_vel     == 0      ]                 0
-B# 2047 [                 Sf_acc     == 0      ]                 0
-B# 2048 [                  Sf_v      == 0      ]                 0
-B# 2049 [                Sf_v_dot    == 0      ]                 0
-B# 2050 [               Sf_v_2dot    == 0      ]                 0
-B# 2051 [                Sf_theta    == 0      ]                 0
-B# 2052 [              Sf_theta_dot  == 0      ]                 0
-B# 2053 [             Sf_theta_2dot  == 0      ]                 0
-B# 2054 [                Sf_delta    == 0      ]                 0
-B# 2055 [              Sf_delta_dot  == 0      ]                 0
-B# 2056 [               dist_front   == 0      ]                 0
-B# 2057 [               dist_rear    == 0      ]                 0
-B# 2058 [              theta_front   == 0      ]                 0
-B# 2059 [               theta_rear   == 0      ]                 0
-B# 2060 [                 init_u     == 0      ]                 0
-B# 2061 [                init_vel    == 0      ]                 1
-B# 2062 [                 init_v     == 0      ]                 0
-B# 2063 [               init_v_dot   == 0      ]                 0
-B# 2064 [               init_theta   == 0      ]                 0
-B# 2065 [             init_theta_dot == 0      ]                 0
-B# 2066 [               init_delta   == 0      ]                 0
-B# 2067 [               vel_ref[0]   == 0      ]                 0
-B# 2068 [               vel_ref[1]   == 0      ]                 0
-B# 2069 [               vel_ref[2]   == 0      ]                 0
-B# 2070 [               vel_ref[3]   == 0      ]                 0
-B# 2071 [               vel_ref[4]   == 0      ]                 0
-B# 2072 [               vel_ref[5]   == 0      ]                 0
-B# 2073 [               vel_ref[6]   == 0      ]                 0
-B# 2074 [               vel_ref[7]   == 0      ]                 0
-B# 2075 [               vel_ref[8]   == 0      ]                 0
-B# 2076 [               vel_ref[9]   == 0      ]                 0
-B# 2077 [              vel_ref[10]   == 0      ]                 0
-B# 2078 [              vel_ref[11]   == 0      ]                 0
-B# 2079 [              vel_ref[12]   == 0      ]                 0
-B# 2080 [              vel_ref[13]   == 0      ]                 0
-B# 2081 [              vel_ref[14]   == 0      ]                 0
-B# 2082 [              vel_ref[15]   == 0      ]                 0
-B# 2083 [              vel_ref[16]   == 0      ]                 0
-B# 2084 [              vel_ref[17]   == 0      ]                 0
-B# 2085 [              vel_ref[18]   == 0      ]                 0
-B# 2086 [              vel_ref[19]   == 0      ]                 0
-B# 2087 [              vel_ref[20]   == 0      ]                 0
-B# 2088 [              vel_ref[21]   == 0      ]                 0
-B# 2089 [              vel_ref[22]   == 0      ]                 0
-B# 2090 [              vel_ref[23]   == 0      ]                 0
-B# 2091 [              vel_ref[24]   == 0      ]                 0
-B# 2092 [              vel_ref[25]   == 0      ]                 0
-B# 2093 [              vel_ref[26]   == 0      ]                 0
-B# 2094 [              vel_ref[27]   == 0      ]                 0
-B# 2095 [              vel_ref[28]   == 0      ]                 0
-B# 2096 [              vel_ref[29]   == 0      ]                 0
-B# 2097 [              vel_ref[30]   == 0      ]                 0
-B# 2098 [              vel_ref[31]   == 0      ]                 0
-B# 2099 [              vel_ref[32]   == 0      ]                 0
-B# 2100 [              vel_ref[33]   == 0      ]                 0
-B# 2101 [              vel_ref[34]   == 0      ]                 0
-B# 2102 [              vel_ref[35]   == 0      ]                 0
-B# 2103 [              vel_ref[36]   == 0      ]                 0
-B# 2104 [              vel_ref[37]   == 0      ]                 0
-B# 2105 [              vel_ref[38]   == 0      ]                 0
-B# 2106 [              vel_ref[39]   == 0      ]                 0
-B# 2107 [              vel_ref[40]   == 0      ]                 0
-B# 2108 [              vel_ref[41]   == 0      ]                 0
-B# 2109 [              vel_ref[42]   == 0      ]                 0
-B# 2110 [              vel_ref[43]   == 0      ]                 0
-B# 2111 [              vel_ref[44]   == 0      ]                 0
-B# 2112 [              vel_ref[45]   == 0      ]                 0
-B# 2113 [              vel_ref[46]   == 0      ]                 0
-B# 2114 [              vel_ref[47]   == 0      ]                 0
-B# 2115 [              vel_ref[48]   == 0      ]                 0
-B# 2116 [              vel_ref[49]   == 0      ]                 0
-B# 2117 [              vel_ref[50]   == 0      ]                 0
-B# 2118 [              vel_ref[51]   == 0      ]                 0
-B# 2119 [              vel_ref[52]   == 0      ]                 0
-B# 2120 [              vel_ref[53]   == 0      ]                 0
-B# 2121 [              vel_ref[54]   == 0      ]                 0
-B# 2122 [              vel_ref[55]   == 0      ]                 0
-B# 2123 [              vel_ref[56]   == 0      ]                 0
-B# 2124 [              vel_ref[57]   == 0      ]                 0
-B# 2125 [              vel_ref[58]   == 0      ]                 0
-B# 2126 [              vel_ref[59]   == 0      ]                 0
-B# 2127 [              vel_ref[60]   == 0      ]                 0
-B# 2128 [              vel_ref[61]   == 0      ]                 0
-B# 2129 [              vel_ref[62]   == 0      ]                 0
-B# 2130 [              vel_ref[63]   == 0      ]                 0
-B# 2131 [              vel_ref[64]   == 0      ]                 0
-B# 2132 [              vel_ref[65]   == 0      ]                 0
-B# 2133 [              vel_ref[66]   == 0      ]                 0
-B# 2134 [              vel_ref[67]   == 0      ]                 0
-B# 2135 [              vel_ref[68]   == 0      ]                 0
-B# 2136 [              vel_ref[69]   == 0      ]                 0
-B# 2137 [               vel_max[0]   == 0      ]                 0
-B# 2138 [               vel_max[1]   == 0      ]                 0
-B# 2139 [               vel_max[2]   == 0      ]                 0
-B# 2140 [               vel_max[3]   == 0      ]                 0
-B# 2141 [               vel_max[4]   == 0      ]                 0
-B# 2142 [               vel_max[5]   == 0      ]                 0
-B# 2143 [               vel_max[6]   == 0      ]                 0
-B# 2144 [               vel_max[7]   == 0      ]                 0
-B# 2145 [               vel_max[8]   == 0      ]                 0
-B# 2146 [               vel_max[9]   == 0      ]                 0
-B# 2147 [              vel_max[10]   == 0      ]                 0
-B# 2148 [              vel_max[11]   == 0      ]                 0
-B# 2149 [              vel_max[12]   == 0      ]                 0
-B# 2150 [              vel_max[13]   == 0      ]                 0
-B# 2151 [              vel_max[14]   == 0      ]                 0
-B# 2152 [              vel_max[15]   == 0      ]                 0
-B# 2153 [              vel_max[16]   == 0      ]                 0
-B# 2154 [              vel_max[17]   == 0      ]                 0
-B# 2155 [              vel_max[18]   == 0      ]                 0
-B# 2156 [              vel_max[19]   == 0      ]                 0
-B# 2157 [              vel_max[20]   == 0      ]                 0
-B# 2158 [              vel_max[21]   == 0      ]                 0
-B# 2159 [              vel_max[22]   == 0      ]                 0
-B# 2160 [              vel_max[23]   == 0      ]                 0
-B# 2161 [              vel_max[24]   == 0      ]                 0
-B# 2162 [              vel_max[25]   == 0      ]                 0
-B# 2163 [              vel_max[26]   == 0      ]                 0
-B# 2164 [              vel_max[27]   == 0      ]                 0
-B# 2165 [              vel_max[28]   == 0      ]                 0
-B# 2166 [              vel_max[29]   == 0      ]                 0
-B# 2167 [              vel_max[30]   == 0      ]                 0
-B# 2168 [              vel_max[31]   == 0      ]                 0
-B# 2169 [              vel_max[32]   == 0      ]                 0
-B# 2170 [              vel_max[33]   == 0      ]                 0
-B# 2171 [              vel_max[34]   == 0      ]                 0
-B# 2172 [              vel_max[35]   == 0      ]                 0
-B# 2173 [              vel_max[36]   == 0      ]                 0
-B# 2174 [              vel_max[37]   == 0      ]                 0
-B# 2175 [              vel_max[38]   == 0      ]                 0
-B# 2176 [              vel_max[39]   == 0      ]                 0
-B# 2177 [              vel_max[40]   == 0      ]                 0
-B# 2178 [              vel_max[41]   == 0      ]                 0
-B# 2179 [              vel_max[42]   == 0      ]                 0
-B# 2180 [              vel_max[43]   == 0      ]                 0
-B# 2181 [              vel_max[44]   == 0      ]                 0
-B# 2182 [              vel_max[45]   == 0      ]                 0
-B# 2183 [              vel_max[46]   == 0      ]                 0
-B# 2184 [              vel_max[47]   == 0      ]                 0
-B# 2185 [              vel_max[48]   == 0      ]                 0
-B# 2186 [              vel_max[49]   == 0      ]                 0
-B# 2187 [              vel_max[50]   == 0      ]                 0
-B# 2188 [              vel_max[51]   == 0      ]                 0
-B# 2189 [              vel_max[52]   == 0      ]                 0
-B# 2190 [              vel_max[53]   == 0      ]                 0
-B# 2191 [              vel_max[54]   == 0      ]                 0
-B# 2192 [              vel_max[55]   == 0      ]                 0
-B# 2193 [              vel_max[56]   == 0      ]                 0
-B# 2194 [              vel_max[57]   == 0      ]                 0
-B# 2195 [              vel_max[58]   == 0      ]                 0
-B# 2196 [              vel_max[59]   == 0      ]                 0
-B# 2197 [              vel_max[60]   == 0      ]                 0
-B# 2198 [              vel_max[61]   == 0      ]                 0
-B# 2199 [              vel_max[62]   == 0      ]                 0
-B# 2200 [              vel_max[63]   == 0      ]                 0
-B# 2201 [              vel_max[64]   == 0      ]                 0
-B# 2202 [              vel_max[65]   == 0      ]                 0
-B# 2203 [              vel_max[66]   == 0      ]                 0
-B# 2204 [              vel_max[67]   == 0      ]                 0
-B# 2205 [              vel_max[68]   == 0      ]                 0
-B# 2206 [              vel_max[69]   == 0      ]                -1
-B# 2207 [                v_ref[0]    == 0      ]                 0
-B# 2208 [                v_ref[1]    == 0      ]                 0
-B# 2209 [                v_ref[2]    == 0      ]                 0
-B# 2210 [                v_ref[3]    == 0      ]                 0
-B# 2211 [                v_ref[4]    == 0      ]                 0
-B# 2212 [                v_ref[5]    == 0      ]                 0
-B# 2213 [                v_ref[6]    == 0      ]                 0
-B# 2214 [                v_ref[7]    == 0      ]                 0
-B# 2215 [                v_ref[8]    == 0      ]                 0
-B# 2216 [                v_ref[9]    == 0      ]                 0
-B# 2217 [               v_ref[10]    == 0      ]                 0
-B# 2218 [               v_ref[11]    == 0      ]                 0
-B# 2219 [               v_ref[12]    == 0      ]                 0
-B# 2220 [               v_ref[13]    == 0      ]                 0
-B# 2221 [               v_ref[14]    == 0      ]                 0
-B# 2222 [               v_ref[15]    == 0      ]                 0
-B# 2223 [               v_ref[16]    == 0      ]                 0
-B# 2224 [               v_ref[17]    == 0      ]                 0
-B# 2225 [               v_ref[18]    == 0      ]                 0
-B# 2226 [               v_ref[19]    == 0      ]                 0
-B# 2227 [               v_ref[20]    == 0      ]                 0
-B# 2228 [               v_ref[21]    == 0      ]                 0
-B# 2229 [               v_ref[22]    == 0      ]                 0
-B# 2230 [               v_ref[23]    == 0      ]                 0
-B# 2231 [               v_ref[24]    == 0      ]                 0
-B# 2232 [               v_ref[25]    == 0      ]                 0
-B# 2233 [               v_ref[26]    == 0      ]                 0
-B# 2234 [               v_ref[27]    == 0      ]                 0
-B# 2235 [               v_ref[28]    == 0      ]                 0
-B# 2236 [               v_ref[29]    == 0      ]                 0
-B# 2237 [               v_ref[30]    == 0      ]                 0
-B# 2238 [               v_ref[31]    == 0      ]                 0
-B# 2239 [               v_ref[32]    == 0      ]                 0
-B# 2240 [               v_ref[33]    == 0      ]                 0
-B# 2241 [               v_ref[34]    == 0      ]                 0
-B# 2242 [               v_ref[35]    == 0      ]                 0
-B# 2243 [               v_ref[36]    == 0      ]                 0
-B# 2244 [               v_ref[37]    == 0      ]                 0
-B# 2245 [               v_ref[38]    == 0      ]                 0
-B# 2246 [               v_ref[39]    == 0      ]                 0
-B# 2247 [               v_ref[40]    == 0      ]                 0
-B# 2248 [               v_ref[41]    == 0      ]                 0
-B# 2249 [               v_ref[42]    == 0      ]                 0
-B# 2250 [               v_ref[43]    == 0      ]                 0
-B# 2251 [               v_ref[44]    == 0      ]                 0
-B# 2252 [               v_ref[45]    == 0      ]                 0
-B# 2253 [               v_ref[46]    == 0      ]                 0
-B# 2254 [               v_ref[47]    == 0      ]                 0
-B# 2255 [               v_ref[48]    == 0      ]                 0
-B# 2256 [               v_ref[49]    == 0      ]                 0
-B# 2257 [               v_ref[50]    == 0      ]                 0
-B# 2258 [               v_ref[51]    == 0      ]                 0
-B# 2259 [               v_ref[52]    == 0      ]                 0
-B# 2260 [               v_ref[53]    == 0      ]                 0
-B# 2261 [               v_ref[54]    == 0      ]                 0
-B# 2262 [               v_ref[55]    == 0      ]                 0
-B# 2263 [               v_ref[56]    == 0      ]                 0
-B# 2264 [               v_ref[57]    == 0      ]                 0
-B# 2265 [               v_ref[58]    == 0      ]                 0
-B# 2266 [               v_ref[59]    == 0      ]                 0
-B# 2267 [               v_ref[60]    == 0      ]                 0
-B# 2268 [               v_ref[61]    == 0      ]                 0
-B# 2269 [               v_ref[62]    == 0      ]                 0
-B# 2270 [               v_ref[63]    == 0      ]                 0
-B# 2271 [               v_ref[64]    == 0      ]                 0
-B# 2272 [               v_ref[65]    == 0      ]                 0
-B# 2273 [               v_ref[66]    == 0      ]                 0
-B# 2274 [               v_ref[67]    == 0      ]                 0
-B# 2275 [               v_ref[68]    == 0      ]                 0
-B# 2276 [               v_ref[69]    == 0      ]                 0
-B# 2277 [                v_max[0]    == 0      ]                 0
-B# 2278 [                v_max[1]    == 0      ]                 0
-B# 2279 [                v_max[2]    == 0      ]                 0
-B# 2280 [                v_max[3]    == 0      ]                 0
-B# 2281 [                v_max[4]    == 0      ]                 0
-B# 2282 [                v_max[5]    == 0      ]                 0
-B# 2283 [                v_max[6]    == 0      ]                 0
-B# 2284 [                v_max[7]    == 0      ]                 0
-B# 2285 [                v_max[8]    == 0      ]                 0
-B# 2286 [                v_max[9]    == 0      ]                 0
-B# 2287 [               v_max[10]    == 0      ]                 0
-B# 2288 [               v_max[11]    == 0      ]                 0
-B# 2289 [               v_max[12]    == 0      ]                 0
-B# 2290 [               v_max[13]    == 0      ]                 0
-B# 2291 [               v_max[14]    == 0      ]                 0
-B# 2292 [               v_max[15]    == 0      ]                 0
-B# 2293 [               v_max[16]    == 0      ]                 0
-B# 2294 [               v_max[17]    == 0      ]                 0
-B# 2295 [               v_max[18]    == 0      ]                 0
-B# 2296 [               v_max[19]    == 0      ]                 0
-B# 2297 [               v_max[20]    == 0      ]                 0
-B# 2298 [               v_max[21]    == 0      ]                 0
-B# 2299 [               v_max[22]    == 0      ]                 0
-B# 2300 [               v_max[23]    == 0      ]                 0
-B# 2301 [               v_max[24]    == 0      ]                 0
-B# 2302 [               v_max[25]    == 0      ]                 0
-B# 2303 [               v_max[26]    == 0      ]                 0
-B# 2304 [               v_max[27]    == 0      ]                 0
-B# 2305 [               v_max[28]    == 0      ]                 0
-B# 2306 [               v_max[29]    == 0      ]                 0
-B# 2307 [               v_max[30]    == 0      ]                 0
-B# 2308 [               v_max[31]    == 0      ]                 0
-B# 2309 [               v_max[32]    == 0      ]                 0
-B# 2310 [               v_max[33]    == 0      ]                 0
-B# 2311 [               v_max[34]    == 0      ]                 0
-B# 2312 [               v_max[35]    == 0      ]                 0
-B# 2313 [               v_max[36]    == 0      ]                 0
-B# 2314 [               v_max[37]    == 0      ]                 0
-B# 2315 [               v_max[38]    == 0      ]                 0
-B# 2316 [               v_max[39]    == 0      ]                 0
-B# 2317 [               v_max[40]    == 0      ]                 0
-B# 2318 [               v_max[41]    == 0      ]                 0
-B# 2319 [               v_max[42]    == 0      ]                 0
-B# 2320 [               v_max[43]    == 0      ]                 0
-B# 2321 [               v_max[44]    == 0      ]                 0
-B# 2322 [               v_max[45]    == 0      ]                 0
-B# 2323 [               v_max[46]    == 0      ]                 0
-B# 2324 [               v_max[47]    == 0      ]                 0
-B# 2325 [               v_max[48]    == 0      ]                 0
-B# 2326 [               v_max[49]    == 0      ]                 0
-B# 2327 [               v_max[50]    == 0      ]                 0
-B# 2328 [               v_max[51]    == 0      ]                 0
-B# 2329 [               v_max[52]    == 0      ]                 0
-B# 2330 [               v_max[53]    == 0      ]                 0
-B# 2331 [               v_max[54]    == 0      ]                 0
-B# 2332 [               v_max[55]    == 0      ]                 0
-B# 2333 [               v_max[56]    == 0      ]                 0
-B# 2334 [               v_max[57]    == 0      ]                 0
-B# 2335 [               v_max[58]    == 0      ]                 0
-B# 2336 [               v_max[59]    == 0      ]                 0
-B# 2337 [               v_max[60]    == 0      ]                 0
-B# 2338 [               v_max[61]    == 0      ]                 0
-B# 2339 [               v_max[62]    == 0      ]                 0
-B# 2340 [               v_max[63]    == 0      ]                 0
-B# 2341 [               v_max[64]    == 0      ]                 0
-B# 2342 [               v_max[65]    == 0      ]                 0
-B# 2343 [               v_max[66]    == 0      ]                 0
-B# 2344 [               v_max[67]    == 0      ]                 0
-B# 2345 [               v_max[68]    == 0      ]                 0
-B# 2346 [               v_max[69]    == 0      ]                 0
-B# 2347 [                v_min[0]    == 0      ]                 0
-B# 2348 [                v_min[1]    == 0      ]                 0
-B# 2349 [                v_min[2]    == 0      ]                 0
-B# 2350 [                v_min[3]    == 0      ]                 0
-B# 2351 [                v_min[4]    == 0      ]                 0
-B# 2352 [                v_min[5]    == 0      ]                 0
-B# 2353 [                v_min[6]    == 0      ]                 0
-B# 2354 [                v_min[7]    == 0      ]                 0
-B# 2355 [                v_min[8]    == 0      ]                 0
-B# 2356 [                v_min[9]    == 0      ]                 0
-B# 2357 [               v_min[10]    == 0      ]                 0
-B# 2358 [               v_min[11]    == 0      ]                 0
-B# 2359 [               v_min[12]    == 0      ]                 0
-B# 2360 [               v_min[13]    == 0      ]                 0
-B# 2361 [               v_min[14]    == 0      ]                 0
-B# 2362 [               v_min[15]    == 0      ]                 0
-B# 2363 [               v_min[16]    == 0      ]                 0
-B# 2364 [               v_min[17]    == 0      ]                 0
-B# 2365 [               v_min[18]    == 0      ]                 0
-B# 2366 [               v_min[19]    == 0      ]                 0
-B# 2367 [               v_min[20]    == 0      ]                 0
-B# 2368 [               v_min[21]    == 0      ]                 0
-B# 2369 [               v_min[22]    == 0      ]                 0
-B# 2370 [               v_min[23]    == 0      ]                 0
-B# 2371 [               v_min[24]    == 0      ]                 0
-B# 2372 [               v_min[25]    == 0      ]                 0
-B# 2373 [               v_min[26]    == 0      ]                 0
-B# 2374 [               v_min[27]    == 0      ]                 0
-B# 2375 [               v_min[28]    == 0      ]                 0
-B# 2376 [               v_min[29]    == 0      ]                 0
-B# 2377 [               v_min[30]    == 0      ]                 0
-B# 2378 [               v_min[31]    == 0      ]                 0
-B# 2379 [               v_min[32]    == 0      ]                 0
-B# 2380 [               v_min[33]    == 0      ]                 0
-B# 2381 [               v_min[34]    == 0      ]                 0
-B# 2382 [               v_min[35]    == 0      ]                 0
-B# 2383 [               v_min[36]    == 0      ]                 0
-B# 2384 [               v_min[37]    == 0      ]                 0
-B# 2385 [               v_min[38]    == 0      ]                 0
-B# 2386 [               v_min[39]    == 0      ]                 0
-B# 2387 [               v_min[40]    == 0      ]                 0
-B# 2388 [               v_min[41]    == 0      ]                 0
-B# 2389 [               v_min[42]    == 0      ]                 0
-B# 2390 [               v_min[43]    == 0      ]                 0
-B# 2391 [               v_min[44]    == 0      ]                 0
-B# 2392 [               v_min[45]    == 0      ]                 0
-B# 2393 [               v_min[46]    == 0      ]                 0
-B# 2394 [               v_min[47]    == 0      ]                 0
-B# 2395 [               v_min[48]    == 0      ]                 0
-B# 2396 [               v_min[49]    == 0      ]                 0
-B# 2397 [               v_min[50]    == 0      ]                 0
-B# 2398 [               v_min[51]    == 0      ]                 0
-B# 2399 [               v_min[52]    == 0      ]                 0
-B# 2400 [               v_min[53]    == 0      ]                 0
-B# 2401 [               v_min[54]    == 0      ]                 0
-B# 2402 [               v_min[55]    == 0      ]                 0
-B# 2403 [               v_min[56]    == 0      ]                 0
-B# 2404 [               v_min[57]    == 0      ]                 0
-B# 2405 [               v_min[58]    == 0      ]                 0
-B# 2406 [               v_min[59]    == 0      ]                 0
-B# 2407 [               v_min[60]    == 0      ]                 0
-B# 2408 [               v_min[61]    == 0      ]                 0
-B# 2409 [               v_min[62]    == 0      ]                 0
-B# 2410 [               v_min[63]    == 0      ]                 0
-B# 2411 [               v_min[64]    == 0      ]                 0
-B# 2412 [               v_min[65]    == 0      ]                 0
-B# 2413 [               v_min[66]    == 0      ]                 0
-B# 2414 [               v_min[67]    == 0      ]                 0
-B# 2415 [               v_min[68]    == 0      ]                 0
-B# 2416 [               v_min[69]    == 0      ]                 0
-B# 2417 [             v_front_max[0] == 0      ]                 0
-B# 2418 [             v_front_max[1] == 0      ]                 0
-B# 2419 [             v_front_max[2] == 0      ]                 0
-B# 2420 [             v_front_max[3] == 0      ]                 0
-B# 2421 [             v_front_max[4] == 0      ]                 0
-B# 2422 [             v_front_max[5] == 0      ]                 0
-B# 2423 [             v_front_max[6] == 0      ]                 0
-B# 2424 [             v_front_max[7] == 0      ]                 0
-B# 2425 [             v_front_max[8] == 0      ]                 0
-B# 2426 [             v_front_max[9] == 0      ]                 0
-B# 2427 [            v_front_max[10] == 0      ]                 0
-B# 2428 [            v_front_max[11] == 0      ]                 0
-B# 2429 [            v_front_max[12] == 0      ]                 0
-B# 2430 [            v_front_max[13] == 0      ]                 0
-B# 2431 [            v_front_max[14] == 0      ]                 0
-B# 2432 [            v_front_max[15] == 0      ]                 0
-B# 2433 [            v_front_max[16] == 0      ]                 0
-B# 2434 [            v_front_max[17] == 0      ]                 0
-B# 2435 [            v_front_max[18] == 0      ]                 0
-B# 2436 [            v_front_max[19] == 0      ]                 0
-B# 2437 [            v_front_max[20] == 0      ]                 0
-B# 2438 [            v_front_max[21] == 0      ]                 0
-B# 2439 [            v_front_max[22] == 0      ]                 0
-B# 2440 [            v_front_max[23] == 0      ]                 0
-B# 2441 [            v_front_max[24] == 0      ]                 0
-B# 2442 [            v_front_max[25] == 0      ]                 0
-B# 2443 [            v_front_max[26] == 0      ]                 0
-B# 2444 [            v_front_max[27] == 0      ]                 0
-B# 2445 [            v_front_max[28] == 0      ]                 0
-B# 2446 [            v_front_max[29] == 0      ]                 0
-B# 2447 [            v_front_max[30] == 0      ]                 0
-B# 2448 [            v_front_max[31] == 0      ]                 0
-B# 2449 [            v_front_max[32] == 0      ]                 0
-B# 2450 [            v_front_max[33] == 0      ]                 0
-B# 2451 [            v_front_max[34] == 0      ]                 0
-B# 2452 [            v_front_max[35] == 0      ]                 0
-B# 2453 [            v_front_max[36] == 0      ]                 0
-B# 2454 [            v_front_max[37] == 0      ]                 0
-B# 2455 [            v_front_max[38] == 0      ]                 0
-B# 2456 [            v_front_max[39] == 0      ]                 0
-B# 2457 [            v_front_max[40] == 0      ]                 0
-B# 2458 [            v_front_max[41] == 0      ]                 0
-B# 2459 [            v_front_max[42] == 0      ]                 0
-B# 2460 [            v_front_max[43] == 0      ]                 0
-B# 2461 [            v_front_max[44] == 0      ]                 0
-B# 2462 [            v_front_max[45] == 0      ]                 0
-B# 2463 [            v_front_max[46] == 0      ]                 0
-B# 2464 [            v_front_max[47] == 0      ]                 0
-B# 2465 [            v_front_max[48] == 0      ]                 0
-B# 2466 [            v_front_max[49] == 0      ]                 0
-B# 2467 [            v_front_max[50] == 0      ]                 0
-B# 2468 [            v_front_max[51] == 0      ]                 0
-B# 2469 [            v_front_max[52] == 0      ]                 0
-B# 2470 [            v_front_max[53] == 0      ]                 0
-B# 2471 [            v_front_max[54] == 0      ]                 0
-B# 2472 [            v_front_max[55] == 0      ]                 0
-B# 2473 [            v_front_max[56] == 0      ]                 0
-B# 2474 [            v_front_max[57] == 0      ]                 0
-B# 2475 [            v_front_max[58] == 0      ]                 0
-B# 2476 [            v_front_max[59] == 0      ]                 0
-B# 2477 [            v_front_max[60] == 0      ]                 0
-B# 2478 [            v_front_max[61] == 0      ]                 0
-B# 2479 [            v_front_max[62] == 0      ]                 0
-B# 2480 [            v_front_max[63] == 0      ]                 0
-B# 2481 [            v_front_max[64] == 0      ]                 0
-B# 2482 [            v_front_max[65] == 0      ]                 0
-B# 2483 [            v_front_max[66] == 0      ]                 0
-B# 2484 [            v_front_max[67] == 0      ]                 0
-B# 2485 [            v_front_max[68] == 0      ]                 0
-B# 2486 [            v_front_max[69] == 0      ]                 0
-B# 2487 [             v_front_min[0] == 0      ]                 0
-B# 2488 [             v_front_min[1] == 0      ]                 0
-B# 2489 [             v_front_min[2] == 0      ]                 0
-B# 2490 [             v_front_min[3] == 0      ]                 0
-B# 2491 [             v_front_min[4] == 0      ]                 0
-B# 2492 [             v_front_min[5] == 0      ]                 0
-B# 2493 [             v_front_min[6] == 0      ]                 0
-B# 2494 [             v_front_min[7] == 0      ]                 0
-B# 2495 [             v_front_min[8] == 0      ]                 0
-B# 2496 [             v_front_min[9] == 0      ]                 0
-B# 2497 [            v_front_min[10] == 0      ]                 0
-B# 2498 [            v_front_min[11] == 0      ]                 0
-B# 2499 [            v_front_min[12] == 0      ]                 0
-B# 2500 [            v_front_min[13] == 0      ]                 0
-B# 2501 [            v_front_min[14] == 0      ]                 0
-B# 2502 [            v_front_min[15] == 0      ]                 0
-B# 2503 [            v_front_min[16] == 0      ]                 0
-B# 2504 [            v_front_min[17] == 0      ]                 0
-B# 2505 [            v_front_min[18] == 0      ]                 0
-B# 2506 [            v_front_min[19] == 0      ]                 0
-B# 2507 [            v_front_min[20] == 0      ]                 0
-B# 2508 [            v_front_min[21] == 0      ]                 0
-B# 2509 [            v_front_min[22] == 0      ]                 0
-B# 2510 [            v_front_min[23] == 0      ]                 0
-B# 2511 [            v_front_min[24] == 0      ]                 0
-B# 2512 [            v_front_min[25] == 0      ]                 0
-B# 2513 [            v_front_min[26] == 0      ]                 0
-B# 2514 [            v_front_min[27] == 0      ]                 0
-B# 2515 [            v_front_min[28] == 0      ]                 0
-B# 2516 [            v_front_min[29] == 0      ]                 0
-B# 2517 [            v_front_min[30] == 0      ]                 0
-B# 2518 [            v_front_min[31] == 0      ]                 0
-B# 2519 [            v_front_min[32] == 0      ]                 0
-B# 2520 [            v_front_min[33] == 0      ]                 0
-B# 2521 [            v_front_min[34] == 0      ]                 0
-B# 2522 [            v_front_min[35] == 0      ]                 0
-B# 2523 [            v_front_min[36] == 0      ]                 0
-B# 2524 [            v_front_min[37] == 0      ]                 0
-B# 2525 [            v_front_min[38] == 0      ]                 0
-B# 2526 [            v_front_min[39] == 0      ]                 0
-B# 2527 [            v_front_min[40] == 0      ]                 0
-B# 2528 [            v_front_min[41] == 0      ]                 0
-B# 2529 [            v_front_min[42] == 0      ]                 0
-B# 2530 [            v_front_min[43] == 0      ]                 0
-B# 2531 [            v_front_min[44] == 0      ]                 0
-B# 2532 [            v_front_min[45] == 0      ]                 0
-B# 2533 [            v_front_min[46] == 0      ]                 0
-B# 2534 [            v_front_min[47] == 0      ]                 0
-B# 2535 [            v_front_min[48] == 0      ]                 0
-B# 2536 [            v_front_min[49] == 0      ]                 0
-B# 2537 [            v_front_min[50] == 0      ]                 0
-B# 2538 [            v_front_min[51] == 0      ]                 0
-B# 2539 [            v_front_min[52] == 0      ]                 0
-B# 2540 [            v_front_min[53] == 0      ]                 0
-B# 2541 [            v_front_min[54] == 0      ]                 0
-B# 2542 [            v_front_min[55] == 0      ]                 0
-B# 2543 [            v_front_min[56] == 0      ]                 0
-B# 2544 [            v_front_min[57] == 0      ]                 0
-B# 2545 [            v_front_min[58] == 0      ]                 0
-B# 2546 [            v_front_min[59] == 0      ]                 0
-B# 2547 [            v_front_min[60] == 0      ]                 0
-B# 2548 [            v_front_min[61] == 0      ]                 0
-B# 2549 [            v_front_min[62] == 0      ]                 0
-B# 2550 [            v_front_min[63] == 0      ]                 0
-B# 2551 [            v_front_min[64] == 0      ]                 0
-B# 2552 [            v_front_min[65] == 0      ]                 0
-B# 2553 [            v_front_min[66] == 0      ]                 0
-B# 2554 [            v_front_min[67] == 0      ]                 0
-B# 2555 [            v_front_min[68] == 0      ]                 0
-B# 2556 [            v_front_min[69] == 0      ]                 0
-B# 2557 [                 Rho[0]     == 0      ]                 0
-B# 2558 [                 Rho[1]     == 0      ]                 0
-B# 2559 [                 Rho[2]     == 0      ]                 0
-B# 2560 [                 Rho[3]     == 0      ]                 0
-B# 2561 [                 Rho[4]     == 0      ]                 0
-B# 2562 [                 Rho[5]     == 0      ]                 0
-B# 2563 [                 Rho[6]     == 0      ]                 0
-B# 2564 [                 Rho[7]     == 0      ]                 0
-B# 2565 [                 Rho[8]     == 0      ]                 0
-B# 2566 [                 Rho[9]     == 0      ]                 0
-B# 2567 [                Rho[10]     == 0      ]                 0
-B# 2568 [                Rho[11]     == 0      ]                 0
-B# 2569 [                Rho[12]     == 0      ]                 0
-B# 2570 [                Rho[13]     == 0      ]                 0
-B# 2571 [                Rho[14]     == 0      ]                 0
-B# 2572 [                Rho[15]     == 0      ]                 0
-B# 2573 [                Rho[16]     == 0      ]                 0
-B# 2574 [                Rho[17]     == 0      ]                 0
-B# 2575 [                Rho[18]     == 0      ]                 0
-B# 2576 [                Rho[19]     == 0      ]                 0
-B# 2577 [                Rho[20]     == 0      ]                 0
-B# 2578 [                Rho[21]     == 0      ]                 0
-B# 2579 [                Rho[22]     == 0      ]                 0
-B# 2580 [                Rho[23]     == 0      ]                 0
-B# 2581 [                Rho[24]     == 0      ]                 0
-B# 2582 [                Rho[25]     == 0      ]                 0
-B# 2583 [                Rho[26]     == 0      ]                 0
-B# 2584 [                Rho[27]     == 0      ]                 0
-B# 2585 [                Rho[28]     == 0      ]                 0
-B# 2586 [                Rho[29]     == 0      ]                 0
-B# 2587 [                Rho[30]     == 0      ]                 0
-B# 2588 [                Rho[31]     == 0      ]                 0
-B# 2589 [                Rho[32]     == 0      ]                 0
-B# 2590 [                Rho[33]     == 0      ]                 0
-B# 2591 [                Rho[34]     == 0      ]                 0
-B# 2592 [                Rho[35]     == 0      ]                 0
-B# 2593 [                Rho[36]     == 0      ]                 0
-B# 2594 [                Rho[37]     == 0      ]                 0
-B# 2595 [                Rho[38]     == 0      ]                 0
-B# 2596 [                Rho[39]     == 0      ]                 0
-B# 2597 [                Rho[40]     == 0      ]                 0
-B# 2598 [                Rho[41]     == 0      ]                 0
-B# 2599 [                Rho[42]     == 0      ]                 0
-B# 2600 [                Rho[43]     == 0      ]                 0
-B# 2601 [                Rho[44]     == 0      ]                 0
-B# 2602 [                Rho[45]     == 0      ]                 0
-B# 2603 [                Rho[46]     == 0      ]                 0
-B# 2604 [                Rho[47]     == 0      ]                 0
-B# 2605 [                Rho[48]     == 0      ]                 0
-B# 2606 [                Rho[49]     == 0      ]                 0
-B# 2607 [                Rho[50]     == 0      ]                 0
-B# 2608 [                Rho[51]     == 0      ]                 0
-B# 2609 [                Rho[52]     == 0      ]                 0
-B# 2610 [                Rho[53]     == 0      ]                 0
-B# 2611 [                Rho[54]     == 0      ]                 0
-B# 2612 [                Rho[55]     == 0      ]                 0
-B# 2613 [                Rho[56]     == 0      ]                 0
-B# 2614 [                Rho[57]     == 0      ]                 0
-B# 2615 [                Rho[58]     == 0      ]                 0
-B# 2616 [                Rho[59]     == 0      ]                 0
-B# 2617 [                Rho[60]     == 0      ]                 0
-B# 2618 [                Rho[61]     == 0      ]                 0
-B# 2619 [                Rho[62]     == 0      ]                 0
-B# 2620 [                Rho[63]     == 0      ]                 0
-B# 2621 [                Rho[64]     == 0      ]                 0
-B# 2622 [                Rho[65]     == 0      ]                 0
-B# 2623 [                Rho[66]     == 0      ]                 0
-B# 2624 [                Rho[67]     == 0      ]                 0
-B# 2625 [                Rho[68]     == 0      ]                 0
-B# 2626 [                  x_pd      == 0      ]                 0
-B# 2627 [                  y_pd      == 0      ]                 0
-B# 2628 [                 vel_pd     == 0      ]                 0
+        [              BOUND TYPE             ]     DUAL VALUE   
+B#   71 [       0 <=     vel[0]               ]                 0
+B#   72 [       0 <=     vel[1]               ]                 0
+B#   73 [       0 <=     vel[2]               ]                 0
+B#   74 [       0 <=     vel[3]               ]                 0
+B#   75 [       0 <=     vel[4]               ]                 0
+B#   76 [       0 <=     vel[5]               ]                 0
+B#   77 [       0 <=     vel[6]               ]                 0
+B#   78 [       0 <=     vel[7]               ]                 0
+B#   79 [       0 <=     vel[8]               ]                 0
+B#   80 [       0 <=     vel[9]               ]                 0
+B#   81 [       0 <=     vel[10]              ]                 0
+B#   82 [       0 <=     vel[11]              ]                 0
+B#   83 [       0 <=     vel[12]              ]                 0
+B#   84 [       0 <=     vel[13]              ]                 0
+B#   85 [       0 <=     vel[14]              ]                 0
+B#   86 [       0 <=     vel[15]              ]                 0
+B#   87 [       0 <=     vel[16]              ]                 0
+B#   88 [       0 <=     vel[17]              ]                 0
+B#   89 [       0 <=     vel[18]              ]                 0
+B#   90 [       0 <=     vel[19]              ]                 0
+B#   91 [       0 <=     vel[20]              ]                 0
+B#   92 [       0 <=     vel[21]              ]                 0
+B#   93 [       0 <=     vel[22]              ]                 0
+B#   94 [       0 <=     vel[23]              ]                 0
+B#   95 [       0 <=     vel[24]              ]                 0
+B#   96 [       0 <=     vel[25]              ]                 0
+B#   97 [       0 <=     vel[26]              ]                 0
+B#   98 [       0 <=     vel[27]              ]                 0
+B#   99 [       0 <=     vel[28]              ]                 0
+B#  100 [       0 <=     vel[29]              ]                 0
+B#  101 [       0 <=     vel[30]              ]                 0
+B#  102 [       0 <=     vel[31]              ]                 0
+B#  103 [       0 <=     vel[32]              ]                 0
+B#  104 [       0 <=     vel[33]              ]                 0
+B#  105 [       0 <=     vel[34]              ]                 0
+B#  106 [       0 <=     vel[35]              ]                 0
+B#  107 [       0 <=     vel[36]              ]                 0
+B#  108 [       0 <=     vel[37]              ]                 0
+B#  109 [       0 <=     vel[38]              ]                 0
+B#  110 [       0 <=     vel[39]              ]                 0
+B#  111 [       0 <=     vel[40]              ]                 0
+B#  112 [       0 <=     vel[41]              ]                 0
+B#  113 [       0 <=     vel[42]              ]                 0
+B#  114 [       0 <=     vel[43]              ]                 0
+B#  115 [       0 <=     vel[44]              ]                 0
+B#  116 [       0 <=     vel[45]              ]                 0
+B#  117 [       0 <=     vel[46]              ]                 0
+B#  118 [       0 <=     vel[47]              ]                 0
+B#  119 [       0 <=     vel[48]              ]                 0
+B#  120 [       0 <=     vel[49]              ]                 0
+B#  121 [       0 <=     vel[50]              ]                 0
+B#  122 [       0 <=     vel[51]              ]                 0
+B#  123 [       0 <=     vel[52]              ]                 0
+B#  124 [       0 <=     vel[53]              ]                 0
+B#  125 [       0 <=     vel[54]              ]                 0
+B#  126 [       0 <=     vel[55]              ]                 0
+B#  127 [       0 <=     vel[56]              ]                 0
+B#  128 [       0 <=     vel[57]              ]                 0
+B#  129 [       0 <=     vel[58]              ]                 0
+B#  130 [       0 <=     vel[59]              ]                 0
+B#  131 [       0 <=     vel[60]              ]                 0
+B#  132 [       0 <=     vel[61]              ]                 0
+B#  133 [       0 <=     vel[62]              ]                 0
+B#  134 [       0 <=     vel[63]              ]                 0
+B#  135 [       0 <=     vel[64]              ]                 0
+B#  136 [       0 <=     vel[65]              ]                 0
+B#  137 [       0 <=     vel[66]              ]                 0
+B#  138 [       0 <=     vel[67]              ]                 0
+B#  139 [       0 <=     vel[68]              ]                 0
+B#  140 [       0 <=     vel[69]              ]                 0
+B#  141 [      -3 <=     acc[0]     <= 3.3    ]                 0
+B#  142 [      -3 <=     acc[1]     <= 3.3    ]                 0
+B#  143 [      -3 <=     acc[2]     <= 3.3    ]                 0
+B#  144 [      -3 <=     acc[3]     <= 3.3    ]                 0
+B#  145 [      -3 <=     acc[4]     <= 3.3    ]                 0
+B#  146 [      -3 <=     acc[5]     <= 3.3    ]                 0
+B#  147 [      -3 <=     acc[6]     <= 3.3    ]                 0
+B#  148 [      -3 <=     acc[7]     <= 3.3    ]                 0
+B#  149 [      -3 <=     acc[8]     <= 3.3    ]                 0
+B#  150 [      -3 <=     acc[9]     <= 3.3    ]                 0
+B#  151 [      -3 <=     acc[10]    <= 3.3    ]                 0
+B#  152 [      -3 <=     acc[11]    <= 3.3    ]                 0
+B#  153 [      -3 <=     acc[12]    <= 3.3    ]                 0
+B#  154 [      -3 <=     acc[13]    <= 3.3    ]                 0
+B#  155 [      -3 <=     acc[14]    <= 3.3    ]                 0
+B#  156 [      -3 <=     acc[15]    <= 3.3    ]                 0
+B#  157 [      -3 <=     acc[16]    <= 3.3    ]                 0
+B#  158 [      -3 <=     acc[17]    <= 3.3    ]                 0
+B#  159 [      -3 <=     acc[18]    <= 3.3    ]                 0
+B#  160 [      -3 <=     acc[19]    <= 3.3    ]                 0
+B#  161 [      -3 <=     acc[20]    <= 3.3    ]                 0
+B#  162 [      -3 <=     acc[21]    <= 3.3    ]                 0
+B#  163 [      -3 <=     acc[22]    <= 3.3    ]                 0
+B#  164 [      -3 <=     acc[23]    <= 3.3    ]                 0
+B#  165 [      -3 <=     acc[24]    <= 3.3    ]                 0
+B#  166 [      -3 <=     acc[25]    <= 3.3    ]                 0
+B#  167 [      -3 <=     acc[26]    <= 3.3    ]                 0
+B#  168 [      -3 <=     acc[27]    <= 3.3    ]                 0
+B#  169 [      -3 <=     acc[28]    <= 3.3    ]                 0
+B#  170 [      -3 <=     acc[29]    <= 3.3    ]                 0
+B#  171 [      -3 <=     acc[30]    <= 3.3    ]                 0
+B#  172 [      -3 <=     acc[31]    <= 3.3    ]                 0
+B#  173 [      -3 <=     acc[32]    <= 3.3    ]                 0
+B#  174 [      -3 <=     acc[33]    <= 3.3    ]                 0
+B#  175 [      -3 <=     acc[34]    <= 3.3    ]                 0
+B#  176 [      -3 <=     acc[35]    <= 3.3    ]                 0
+B#  177 [      -3 <=     acc[36]    <= 3.3    ]                 0
+B#  178 [      -3 <=     acc[37]    <= 3.3    ]                 0
+B#  179 [      -3 <=     acc[38]    <= 3.3    ]                 0
+B#  180 [      -3 <=     acc[39]    <= 3.3    ]                 0
+B#  181 [      -3 <=     acc[40]    <= 3.3    ]                 0
+B#  182 [      -3 <=     acc[41]    <= 3.3    ]                 0
+B#  183 [      -3 <=     acc[42]    <= 3.3    ]                 0
+B#  184 [      -3 <=     acc[43]    <= 3.3    ]                 0
+B#  185 [      -3 <=     acc[44]    <= 3.3    ]                 0
+B#  186 [      -3 <=     acc[45]    <= 3.3    ]                 0
+B#  187 [      -3 <=     acc[46]    <= 3.3    ]                 0
+B#  188 [      -3 <=     acc[47]    <= 3.3    ]                 0
+B#  189 [      -3 <=     acc[48]    <= 3.3    ]                 0
+B#  190 [      -3 <=     acc[49]    <= 3.3    ]                 0
+B#  191 [      -3 <=     acc[50]    <= 3.3    ]                 0
+B#  192 [      -3 <=     acc[51]    <= 3.3    ]                 0
+B#  193 [      -3 <=     acc[52]    <= 3.3    ]                 0
+B#  194 [      -3 <=     acc[53]    <= 3.3    ]                 0
+B#  195 [      -3 <=     acc[54]    <= 3.3    ]                 0
+B#  196 [      -3 <=     acc[55]    <= 3.3    ]                 0
+B#  197 [      -3 <=     acc[56]    <= 3.3    ]                 0
+B#  198 [      -3 <=     acc[57]    <= 3.3    ]                 0
+B#  199 [      -3 <=     acc[58]    <= 3.3    ]                 0
+B#  200 [      -3 <=     acc[59]    <= 3.3    ]                 0
+B#  201 [      -3 <=     acc[60]    <= 3.3    ]                 0
+B#  202 [      -3 <=     acc[61]    <= 3.3    ]                 0
+B#  203 [      -3 <=     acc[62]    <= 3.3    ]                 0
+B#  204 [      -3 <=     acc[63]    <= 3.3    ]                 0
+B#  205 [      -3 <=     acc[64]    <= 3.3    ]                 0
+B#  206 [      -3 <=     acc[65]    <= 3.3    ]                 0
+B#  207 [      -3 <=     acc[66]    <= 3.3    ]                 0
+B#  208 [      -3 <=     acc[67]    <= 3.3    ]                 0
+B#  209 [      -3 <=     acc[68]    <= 3.3    ]                 0
+B#  210 [      -3 <=     acc[69]    <= 3.3    ]                 0
+B#  631 [ -1.0472 <=    delta[0]    <= 1.0472 ]                 0
+B#  632 [ -1.0472 <=    delta[1]    <= 1.0472 ]                 0
+B#  633 [ -1.0472 <=    delta[2]    <= 1.0472 ]                 0
+B#  634 [ -1.0472 <=    delta[3]    <= 1.0472 ]                 0
+B#  635 [ -1.0472 <=    delta[4]    <= 1.0472 ]                 0
+B#  636 [ -1.0472 <=    delta[5]    <= 1.0472 ]                 0
+B#  637 [ -1.0472 <=    delta[6]    <= 1.0472 ]                 0
+B#  638 [ -1.0472 <=    delta[7]    <= 1.0472 ]                 0
+B#  639 [ -1.0472 <=    delta[8]    <= 1.0472 ]                 0
+B#  640 [ -1.0472 <=    delta[9]    <= 1.0472 ]                 0
+B#  641 [ -1.0472 <=    delta[10]   <= 1.0472 ]                 0
+B#  642 [ -1.0472 <=    delta[11]   <= 1.0472 ]                 0
+B#  643 [ -1.0472 <=    delta[12]   <= 1.0472 ]                 0
+B#  644 [ -1.0472 <=    delta[13]   <= 1.0472 ]                 0
+B#  645 [ -1.0472 <=    delta[14]   <= 1.0472 ]                 0
+B#  646 [ -1.0472 <=    delta[15]   <= 1.0472 ]                 0
+B#  647 [ -1.0472 <=    delta[16]   <= 1.0472 ]                 0
+B#  648 [ -1.0472 <=    delta[17]   <= 1.0472 ]                 0
+B#  649 [ -1.0472 <=    delta[18]   <= 1.0472 ]                 0
+B#  650 [ -1.0472 <=    delta[19]   <= 1.0472 ]                 0
+B#  651 [ -1.0472 <=    delta[20]   <= 1.0472 ]                 0
+B#  652 [ -1.0472 <=    delta[21]   <= 1.0472 ]                 0
+B#  653 [ -1.0472 <=    delta[22]   <= 1.0472 ]                 0
+B#  654 [ -1.0472 <=    delta[23]   <= 1.0472 ]                 0
+B#  655 [ -1.0472 <=    delta[24]   <= 1.0472 ]                 0
+B#  656 [ -1.0472 <=    delta[25]   <= 1.0472 ]                 0
+B#  657 [ -1.0472 <=    delta[26]   <= 1.0472 ]                 0
+B#  658 [ -1.0472 <=    delta[27]   <= 1.0472 ]                 0
+B#  659 [ -1.0472 <=    delta[28]   <= 1.0472 ]                 0
+B#  660 [ -1.0472 <=    delta[29]   <= 1.0472 ]                 0
+B#  661 [ -1.0472 <=    delta[30]   <= 1.0472 ]                 0
+B#  662 [ -1.0472 <=    delta[31]   <= 1.0472 ]                 0
+B#  663 [ -1.0472 <=    delta[32]   <= 1.0472 ]                 0
+B#  664 [ -1.0472 <=    delta[33]   <= 1.0472 ]                 0
+B#  665 [ -1.0472 <=    delta[34]   <= 1.0472 ]                 0
+B#  666 [ -1.0472 <=    delta[35]   <= 1.0472 ]                 0
+B#  667 [ -1.0472 <=    delta[36]   <= 1.0472 ]                 0
+B#  668 [ -1.0472 <=    delta[37]   <= 1.0472 ]                 0
+B#  669 [ -1.0472 <=    delta[38]   <= 1.0472 ]                 0
+B#  670 [ -1.0472 <=    delta[39]   <= 1.0472 ]                 0
+B#  671 [ -1.0472 <=    delta[40]   <= 1.0472 ]                 0
+B#  672 [ -1.0472 <=    delta[41]   <= 1.0472 ]                 0
+B#  673 [ -1.0472 <=    delta[42]   <= 1.0472 ]                 0
+B#  674 [ -1.0472 <=    delta[43]   <= 1.0472 ]                 0
+B#  675 [ -1.0472 <=    delta[44]   <= 1.0472 ]                 0
+B#  676 [ -1.0472 <=    delta[45]   <= 1.0472 ]                 0
+B#  677 [ -1.0472 <=    delta[46]   <= 1.0472 ]                 0
+B#  678 [ -1.0472 <=    delta[47]   <= 1.0472 ]                 0
+B#  679 [ -1.0472 <=    delta[48]   <= 1.0472 ]                 0
+B#  680 [ -1.0472 <=    delta[49]   <= 1.0472 ]                 0
+B#  681 [ -1.0472 <=    delta[50]   <= 1.0472 ]                 0
+B#  682 [ -1.0472 <=    delta[51]   <= 1.0472 ]                 0
+B#  683 [ -1.0472 <=    delta[52]   <= 1.0472 ]                 0
+B#  684 [ -1.0472 <=    delta[53]   <= 1.0472 ]                 0
+B#  685 [ -1.0472 <=    delta[54]   <= 1.0472 ]                 0
+B#  686 [ -1.0472 <=    delta[55]   <= 1.0472 ]                 0
+B#  687 [ -1.0472 <=    delta[56]   <= 1.0472 ]                 0
+B#  688 [ -1.0472 <=    delta[57]   <= 1.0472 ]                 0
+B#  689 [ -1.0472 <=    delta[58]   <= 1.0472 ]                 0
+B#  690 [ -1.0472 <=    delta[59]   <= 1.0472 ]                 0
+B#  691 [ -1.0472 <=    delta[60]   <= 1.0472 ]                 0
+B#  692 [ -1.0472 <=    delta[61]   <= 1.0472 ]                 0
+B#  693 [ -1.0472 <=    delta[62]   <= 1.0472 ]                 0
+B#  694 [ -1.0472 <=    delta[63]   <= 1.0472 ]                 0
+B#  695 [ -1.0472 <=    delta[64]   <= 1.0472 ]                 0
+B#  696 [ -1.0472 <=    delta[65]   <= 1.0472 ]                 0
+B#  697 [ -1.0472 <=    delta[66]   <= 1.0472 ]                 0
+B#  698 [ -1.0472 <=    delta[67]   <= 1.0472 ]                 0
+B#  699 [ -1.0472 <=    delta[68]   <= 1.0472 ]                 0
+B#  700 [ -1.0472 <=    delta[69]   <= 1.0472 ]                 0
+B#  701 [    -0.5 <=  delta_dot[0]  <= 0.5    ]                 0
+B#  702 [    -0.5 <=  delta_dot[1]  <= 0.5    ]                 0
+B#  703 [    -0.5 <=  delta_dot[2]  <= 0.5    ]                 0
+B#  704 [    -0.5 <=  delta_dot[3]  <= 0.5    ]                 0
+B#  705 [    -0.5 <=  delta_dot[4]  <= 0.5    ]                 0
+B#  706 [    -0.5 <=  delta_dot[5]  <= 0.5    ]                 0
+B#  707 [    -0.5 <=  delta_dot[6]  <= 0.5    ]                 0
+B#  708 [    -0.5 <=  delta_dot[7]  <= 0.5    ]                 0
+B#  709 [    -0.5 <=  delta_dot[8]  <= 0.5    ]                 0
+B#  710 [    -0.5 <=  delta_dot[9]  <= 0.5    ]                 0
+B#  711 [    -0.5 <=  delta_dot[10] <= 0.5    ]                 0
+B#  712 [    -0.5 <=  delta_dot[11] <= 0.5    ]                 0
+B#  713 [    -0.5 <=  delta_dot[12] <= 0.5    ]                 0
+B#  714 [    -0.5 <=  delta_dot[13] <= 0.5    ]                 0
+B#  715 [    -0.5 <=  delta_dot[14] <= 0.5    ]                 0
+B#  716 [    -0.5 <=  delta_dot[15] <= 0.5    ]                 0
+B#  717 [    -0.5 <=  delta_dot[16] <= 0.5    ]                 0
+B#  718 [    -0.5 <=  delta_dot[17] <= 0.5    ]                 0
+B#  719 [    -0.5 <=  delta_dot[18] <= 0.5    ]                 0
+B#  720 [    -0.5 <=  delta_dot[19] <= 0.5    ]                 0
+B#  721 [    -0.5 <=  delta_dot[20] <= 0.5    ]                 0
+B#  722 [    -0.5 <=  delta_dot[21] <= 0.5    ]                 0
+B#  723 [    -0.5 <=  delta_dot[22] <= 0.5    ]                 0
+B#  724 [    -0.5 <=  delta_dot[23] <= 0.5    ]                 0
+B#  725 [    -0.5 <=  delta_dot[24] <= 0.5    ]                 0
+B#  726 [    -0.5 <=  delta_dot[25] <= 0.5    ]                 0
+B#  727 [    -0.5 <=  delta_dot[26] <= 0.5    ]                 0
+B#  728 [    -0.5 <=  delta_dot[27] <= 0.5    ]                 0
+B#  729 [    -0.5 <=  delta_dot[28] <= 0.5    ]                 0
+B#  730 [    -0.5 <=  delta_dot[29] <= 0.5    ]                 0
+B#  731 [    -0.5 <=  delta_dot[30] <= 0.5    ]                 0
+B#  732 [    -0.5 <=  delta_dot[31] <= 0.5    ]                 0
+B#  733 [    -0.5 <=  delta_dot[32] <= 0.5    ]                 0
+B#  734 [    -0.5 <=  delta_dot[33] <= 0.5    ]                 0
+B#  735 [    -0.5 <=  delta_dot[34] <= 0.5    ]                 0
+B#  736 [    -0.5 <=  delta_dot[35] <= 0.5    ]                 0
+B#  737 [    -0.5 <=  delta_dot[36] <= 0.5    ]                 0
+B#  738 [    -0.5 <=  delta_dot[37] <= 0.5    ]                 0
+B#  739 [    -0.5 <=  delta_dot[38] <= 0.5    ]                 0
+B#  740 [    -0.5 <=  delta_dot[39] <= 0.5    ]                 0
+B#  741 [    -0.5 <=  delta_dot[40] <= 0.5    ]                 0
+B#  742 [    -0.5 <=  delta_dot[41] <= 0.5    ]                 0
+B#  743 [    -0.5 <=  delta_dot[42] <= 0.5    ]                 0
+B#  744 [    -0.5 <=  delta_dot[43] <= 0.5    ]                 0
+B#  745 [    -0.5 <=  delta_dot[44] <= 0.5    ]                 0
+B#  746 [    -0.5 <=  delta_dot[45] <= 0.5    ]                 0
+B#  747 [    -0.5 <=  delta_dot[46] <= 0.5    ]                 0
+B#  748 [    -0.5 <=  delta_dot[47] <= 0.5    ]                 0
+B#  749 [    -0.5 <=  delta_dot[48] <= 0.5    ]                 0
+B#  750 [    -0.5 <=  delta_dot[49] <= 0.5    ]                 0
+B#  751 [    -0.5 <=  delta_dot[50] <= 0.5    ]                 0
+B#  752 [    -0.5 <=  delta_dot[51] <= 0.5    ]                 0
+B#  753 [    -0.5 <=  delta_dot[52] <= 0.5    ]                 0
+B#  754 [    -0.5 <=  delta_dot[53] <= 0.5    ]                 0
+B#  755 [    -0.5 <=  delta_dot[54] <= 0.5    ]                 0
+B#  756 [    -0.5 <=  delta_dot[55] <= 0.5    ]                 0
+B#  757 [    -0.5 <=  delta_dot[56] <= 0.5    ]                 0
+B#  758 [    -0.5 <=  delta_dot[57] <= 0.5    ]                 0
+B#  759 [    -0.5 <=  delta_dot[58] <= 0.5    ]                 0
+B#  760 [    -0.5 <=  delta_dot[59] <= 0.5    ]                 0
+B#  761 [    -0.5 <=  delta_dot[60] <= 0.5    ]                 0
+B#  762 [    -0.5 <=  delta_dot[61] <= 0.5    ]                 0
+B#  763 [    -0.5 <=  delta_dot[62] <= 0.5    ]                 0
+B#  764 [    -0.5 <=  delta_dot[63] <= 0.5    ]                 0
+B#  765 [    -0.5 <=  delta_dot[64] <= 0.5    ]                 0
+B#  766 [    -0.5 <=  delta_dot[65] <= 0.5    ]                 0
+B#  767 [    -0.5 <=  delta_dot[66] <= 0.5    ]                 0
+B#  768 [    -0.5 <=  delta_dot[67] <= 0.5    ]                 0
+B#  769 [    -0.5 <=  delta_dot[68] <= 0.5    ]                 0
+B#  770 [    -0.5 <=  delta_dot[69] <= 0.5    ]                 0
+B# 1539 [     0.9 <=     Dist[0]              ]                 0
+B# 1540 [     0.9 <=     Dist[1]              ]                 0
+B# 1541 [     0.9 <=     Dist[2]              ]                 0
+B# 1542 [     0.9 <=     Dist[3]              ]                 0
+B# 1543 [     0.9 <=     Dist[4]              ]                 0
+B# 1544 [     0.9 <=     Dist[5]              ]                 0
+B# 1545 [     0.9 <=     Dist[6]              ]                 0
+B# 1546 [     0.9 <=     Dist[7]              ]                 0
+B# 1547 [     0.9 <=     Dist[8]              ]                 0
+B# 1548 [     0.9 <=     Dist[9]              ]                 0
+B# 1549 [     0.9 <=    Dist[10]              ]                 0
+B# 1550 [     0.9 <=    Dist[11]              ]                 0
+B# 1551 [     0.9 <=    Dist[12]              ]                 0
+B# 1552 [     0.9 <=    Dist[13]              ]                 0
+B# 1553 [     0.9 <=    Dist[14]              ]                 0
+B# 1554 [     0.9 <=    Dist[15]              ]                 0
+B# 1555 [     0.9 <=    Dist[16]              ]                 0
+B# 1556 [     0.9 <=    Dist[17]              ]                 0
+B# 1557 [     0.9 <=    Dist[18]              ]                 0
+B# 1558 [     0.9 <=    Dist[19]              ]                 0
+B# 1559 [     0.9 <=    Dist[20]              ]                 0
+B# 1560 [     0.9 <=    Dist[21]              ]                 0
+B# 1561 [     0.9 <=    Dist[22]              ]                 0
+B# 1562 [     0.9 <=    Dist[23]              ]                 0
+B# 1563 [     0.9 <=    Dist[24]              ]                 0
+B# 1564 [     0.9 <=    Dist[25]              ]                 0
+B# 1565 [     0.9 <=    Dist[26]              ]                 0
+B# 1566 [     0.9 <=    Dist[27]              ]                 0
+B# 1567 [     0.9 <=    Dist[28]              ]                 0
+B# 1568 [     0.9 <=    Dist[29]              ]                 0
+B# 1569 [     0.9 <=    Dist[30]              ]                 0
+B# 1570 [     0.9 <=    Dist[31]              ]                 0
+B# 1571 [     0.9 <=    Dist[32]              ]                 0
+B# 1572 [     0.9 <=    Dist[33]              ]                 0
+B# 1573 [     0.9 <=    Dist[34]              ]                 0
+B# 1574 [     0.9 <=    Dist[35]              ]                 0
+B# 1575 [     0.9 <=    Dist[36]              ]                 0
+B# 1576 [     0.9 <=    Dist[37]              ]                 0
+B# 1577 [     0.9 <=    Dist[38]              ]                 0
+B# 1578 [     0.9 <=    Dist[39]              ]                 0
+B# 1579 [     0.9 <=    Dist[40]              ]                 0
+B# 1580 [     0.9 <=    Dist[41]              ]                 0
+B# 1581 [     0.9 <=    Dist[42]              ]                 0
+B# 1582 [     0.9 <=    Dist[43]              ]                 0
+B# 1583 [     0.9 <=    Dist[44]              ]                 0
+B# 1584 [     0.9 <=    Dist[45]              ]                 0
+B# 1585 [     0.9 <=    Dist[46]              ]                 0
+B# 1586 [     0.9 <=    Dist[47]              ]                 0
+B# 1587 [     0.9 <=    Dist[48]              ]                 0
+B# 1588 [     0.9 <=    Dist[49]              ]                 0
+B# 1589 [     0.9 <=    Dist[50]              ]                 0
+B# 1590 [     0.9 <=    Dist[51]              ]                 0
+B# 1591 [     0.9 <=    Dist[52]              ]                 0
+B# 1592 [     0.9 <=    Dist[53]              ]                 0
+B# 1593 [     0.9 <=    Dist[54]              ]                 0
+B# 1594 [     0.9 <=    Dist[55]              ]                 0
+B# 1595 [     0.9 <=    Dist[56]              ]                 0
+B# 1596 [     0.9 <=    Dist[57]              ]                 0
+B# 1597 [     0.9 <=    Dist[58]              ]                 0
+B# 1598 [     0.9 <=    Dist[59]              ]                 0
+B# 1599 [     0.9 <=    Dist[60]              ]                 0
+B# 1600 [     0.9 <=    Dist[61]              ]                 0
+B# 1601 [     0.9 <=    Dist[62]              ]                 0
+B# 1602 [     0.9 <=    Dist[63]              ]                 0
+B# 1603 [     0.9 <=    Dist[64]              ]                 0
+B# 1604 [     0.9 <=    Dist[65]              ]                 0
+B# 1605 [     0.9 <=    Dist[66]              ]                 0
+B# 1606 [     0.9 <=    Dist[67]              ]                 0
+B# 1607 [     0.9 <=    Dist[68]              ]                 0
+B# 1608 [     0.9 <=    Dist[69]              ]                 0
+B# 1609 [     0.3 <=   Dist_f_r[0]            ]                 0
+B# 1610 [     0.3 <=   Dist_f_r[1]            ]                 0
+B# 1611 [     0.3 <=   Dist_f_r[2]            ]                 0
+B# 1612 [     0.3 <=   Dist_f_r[3]            ]                 0
+B# 1613 [     0.3 <=   Dist_f_r[4]            ]                 0
+B# 1614 [     0.3 <=   Dist_f_r[5]            ]                 0
+B# 1615 [     0.3 <=   Dist_f_r[6]            ]                 0
+B# 1616 [     0.3 <=   Dist_f_r[7]            ]                 0
+B# 1617 [     0.3 <=   Dist_f_r[8]            ]                 0
+B# 1618 [     0.3 <=   Dist_f_r[9]            ]                 0
+B# 1619 [     0.3 <=  Dist_f_r[10]            ]                 0
+B# 1620 [     0.3 <=  Dist_f_r[11]            ]                 0
+B# 1621 [     0.3 <=  Dist_f_r[12]            ]                 0
+B# 1622 [     0.3 <=  Dist_f_r[13]            ]                 0
+B# 1623 [     0.3 <=  Dist_f_r[14]            ]                 0
+B# 1624 [     0.3 <=  Dist_f_r[15]            ]                 0
+B# 1625 [     0.3 <=  Dist_f_r[16]            ]                 0
+B# 1626 [     0.3 <=  Dist_f_r[17]            ]                 0
+B# 1627 [     0.3 <=  Dist_f_r[18]            ]                 0
+B# 1628 [     0.3 <=  Dist_f_r[19]            ]                 0
+B# 1629 [     0.3 <=  Dist_f_r[20]            ]                 0
+B# 1630 [     0.3 <=  Dist_f_r[21]            ]                 0
+B# 1631 [     0.3 <=  Dist_f_r[22]            ]                 0
+B# 1632 [     0.3 <=  Dist_f_r[23]            ]                 0
+B# 1633 [     0.3 <=  Dist_f_r[24]            ]                 0
+B# 1634 [     0.3 <=  Dist_f_r[25]            ]                 0
+B# 1635 [     0.3 <=  Dist_f_r[26]            ]                 0
+B# 1636 [     0.3 <=  Dist_f_r[27]            ]                 0
+B# 1637 [     0.3 <=  Dist_f_r[28]            ]                 0
+B# 1638 [     0.3 <=  Dist_f_r[29]            ]                 0
+B# 1639 [     0.3 <=  Dist_f_r[30]            ]                 0
+B# 1640 [     0.3 <=  Dist_f_r[31]            ]                 0
+B# 1641 [     0.3 <=  Dist_f_r[32]            ]                 0
+B# 1642 [     0.3 <=  Dist_f_r[33]            ]                 0
+B# 1643 [     0.3 <=  Dist_f_r[34]            ]                 0
+B# 1644 [     0.3 <=  Dist_f_r[35]            ]                 0
+B# 1645 [     0.3 <=  Dist_f_r[36]            ]                 0
+B# 1646 [     0.3 <=  Dist_f_r[37]            ]                 0
+B# 1647 [     0.3 <=  Dist_f_r[38]            ]                 0
+B# 1648 [     0.3 <=  Dist_f_r[39]            ]                 0
+B# 1649 [     0.3 <=  Dist_f_r[40]            ]                 0
+B# 1650 [     0.3 <=  Dist_f_r[41]            ]                 0
+B# 1651 [     0.3 <=  Dist_f_r[42]            ]                 0
+B# 1652 [     0.3 <=  Dist_f_r[43]            ]                 0
+B# 1653 [     0.3 <=  Dist_f_r[44]            ]                 0
+B# 1654 [     0.3 <=  Dist_f_r[45]            ]                 0
+B# 1655 [     0.3 <=  Dist_f_r[46]            ]                 0
+B# 1656 [     0.3 <=  Dist_f_r[47]            ]                 0
+B# 1657 [     0.3 <=  Dist_f_r[48]            ]                 0
+B# 1658 [     0.3 <=  Dist_f_r[49]            ]                 0
+B# 1659 [     0.3 <=  Dist_f_r[50]            ]                 0
+B# 1660 [     0.3 <=  Dist_f_r[51]            ]                 0
+B# 1661 [     0.3 <=  Dist_f_r[52]            ]                 0
+B# 1662 [     0.3 <=  Dist_f_r[53]            ]                 0
+B# 1663 [     0.3 <=  Dist_f_r[54]            ]                 0
+B# 1664 [     0.3 <=  Dist_f_r[55]            ]                 0
+B# 1665 [     0.3 <=  Dist_f_r[56]            ]                 0
+B# 1666 [     0.3 <=  Dist_f_r[57]            ]                 0
+B# 1667 [     0.3 <=  Dist_f_r[58]            ]                 0
+B# 1668 [     0.3 <=  Dist_f_r[59]            ]                 0
+B# 1669 [     0.3 <=  Dist_f_r[60]            ]                 0
+B# 1670 [     0.3 <=  Dist_f_r[61]            ]                 0
+B# 1671 [     0.3 <=  Dist_f_r[62]            ]                 0
+B# 1672 [     0.3 <=  Dist_f_r[63]            ]                 0
+B# 1673 [     0.3 <=  Dist_f_r[64]            ]                 0
+B# 1674 [     0.3 <=  Dist_f_r[65]            ]                 0
+B# 1675 [     0.3 <=  Dist_f_r[66]            ]                 0
+B# 1676 [     0.3 <=  Dist_f_r[67]            ]                 0
+B# 1677 [     0.3 <=  Dist_f_r[68]            ]                 0
+B# 1678 [     0.3 <=  Dist_f_r[69]            ]                 0
+B# 1679 [     0.3 <=   Dist_f_l[0]            ]                 0
+B# 1680 [     0.3 <=   Dist_f_l[1]            ]                 0
+B# 1681 [     0.3 <=   Dist_f_l[2]            ]                 0
+B# 1682 [     0.3 <=   Dist_f_l[3]            ]                 0
+B# 1683 [     0.3 <=   Dist_f_l[4]            ]                 0
+B# 1684 [     0.3 <=   Dist_f_l[5]            ]                 0
+B# 1685 [     0.3 <=   Dist_f_l[6]            ]                 0
+B# 1686 [     0.3 <=   Dist_f_l[7]            ]                 0
+B# 1687 [     0.3 <=   Dist_f_l[8]            ]                 0
+B# 1688 [     0.3 <=   Dist_f_l[9]            ]                 0
+B# 1689 [     0.3 <=  Dist_f_l[10]            ]                 0
+B# 1690 [     0.3 <=  Dist_f_l[11]            ]                 0
+B# 1691 [     0.3 <=  Dist_f_l[12]            ]                 0
+B# 1692 [     0.3 <=  Dist_f_l[13]            ]                 0
+B# 1693 [     0.3 <=  Dist_f_l[14]            ]                 0
+B# 1694 [     0.3 <=  Dist_f_l[15]            ]                 0
+B# 1695 [     0.3 <=  Dist_f_l[16]            ]                 0
+B# 1696 [     0.3 <=  Dist_f_l[17]            ]                 0
+B# 1697 [     0.3 <=  Dist_f_l[18]            ]                 0
+B# 1698 [     0.3 <=  Dist_f_l[19]            ]                 0
+B# 1699 [     0.3 <=  Dist_f_l[20]            ]                 0
+B# 1700 [     0.3 <=  Dist_f_l[21]            ]                 0
+B# 1701 [     0.3 <=  Dist_f_l[22]            ]                 0
+B# 1702 [     0.3 <=  Dist_f_l[23]            ]                 0
+B# 1703 [     0.3 <=  Dist_f_l[24]            ]                 0
+B# 1704 [     0.3 <=  Dist_f_l[25]            ]                 0
+B# 1705 [     0.3 <=  Dist_f_l[26]            ]                 0
+B# 1706 [     0.3 <=  Dist_f_l[27]            ]                 0
+B# 1707 [     0.3 <=  Dist_f_l[28]            ]                 0
+B# 1708 [     0.3 <=  Dist_f_l[29]            ]                 0
+B# 1709 [     0.3 <=  Dist_f_l[30]            ]                 0
+B# 1710 [     0.3 <=  Dist_f_l[31]            ]                 0
+B# 1711 [     0.3 <=  Dist_f_l[32]            ]                 0
+B# 1712 [     0.3 <=  Dist_f_l[33]            ]                 0
+B# 1713 [     0.3 <=  Dist_f_l[34]            ]                 0
+B# 1714 [     0.3 <=  Dist_f_l[35]            ]                 0
+B# 1715 [     0.3 <=  Dist_f_l[36]            ]                 0
+B# 1716 [     0.3 <=  Dist_f_l[37]            ]                 0
+B# 1717 [     0.3 <=  Dist_f_l[38]            ]                 0
+B# 1718 [     0.3 <=  Dist_f_l[39]            ]                 0
+B# 1719 [     0.3 <=  Dist_f_l[40]            ]                 0
+B# 1720 [     0.3 <=  Dist_f_l[41]            ]                 0
+B# 1721 [     0.3 <=  Dist_f_l[42]            ]                 0
+B# 1722 [     0.3 <=  Dist_f_l[43]            ]                 0
+B# 1723 [     0.3 <=  Dist_f_l[44]            ]                 0
+B# 1724 [     0.3 <=  Dist_f_l[45]            ]                 0
+B# 1725 [     0.3 <=  Dist_f_l[46]            ]                 0
+B# 1726 [     0.3 <=  Dist_f_l[47]            ]                 0
+B# 1727 [     0.3 <=  Dist_f_l[48]            ]                 0
+B# 1728 [     0.3 <=  Dist_f_l[49]            ]                 0
+B# 1729 [     0.3 <=  Dist_f_l[50]            ]                 0
+B# 1730 [     0.3 <=  Dist_f_l[51]            ]                 0
+B# 1731 [     0.3 <=  Dist_f_l[52]            ]                 0
+B# 1732 [     0.3 <=  Dist_f_l[53]            ]                 0
+B# 1733 [     0.3 <=  Dist_f_l[54]            ]                 0
+B# 1734 [     0.3 <=  Dist_f_l[55]            ]                 0
+B# 1735 [     0.3 <=  Dist_f_l[56]            ]                 0
+B# 1736 [     0.3 <=  Dist_f_l[57]            ]                 0
+B# 1737 [     0.3 <=  Dist_f_l[58]            ]                 0
+B# 1738 [     0.3 <=  Dist_f_l[59]            ]                 0
+B# 1739 [     0.3 <=  Dist_f_l[60]            ]                 0
+B# 1740 [     0.3 <=  Dist_f_l[61]            ]                 0
+B# 1741 [     0.3 <=  Dist_f_l[62]            ]                 0
+B# 1742 [     0.3 <=  Dist_f_l[63]            ]                 0
+B# 1743 [     0.3 <=  Dist_f_l[64]            ]                 0
+B# 1744 [     0.3 <=  Dist_f_l[65]            ]                 0
+B# 1745 [     0.3 <=  Dist_f_l[66]            ]                 0
+B# 1746 [     0.3 <=  Dist_f_l[67]            ]                 0
+B# 1747 [     0.3 <=  Dist_f_l[68]            ]                 0
+B# 1748 [     0.3 <=  Dist_f_l[69]            ]                 0
+B# 1749 [     0.3 <=   Dist_r_r[0]            ]                 0
+B# 1750 [     0.3 <=   Dist_r_r[1]            ]                 0
+B# 1751 [     0.3 <=   Dist_r_r[2]            ]                 0
+B# 1752 [     0.3 <=   Dist_r_r[3]            ]                 0
+B# 1753 [     0.3 <=   Dist_r_r[4]            ]                 0
+B# 1754 [     0.3 <=   Dist_r_r[5]            ]                 0
+B# 1755 [     0.3 <=   Dist_r_r[6]            ]                 0
+B# 1756 [     0.3 <=   Dist_r_r[7]            ]                 0
+B# 1757 [     0.3 <=   Dist_r_r[8]            ]                 0
+B# 1758 [     0.3 <=   Dist_r_r[9]            ]                 0
+B# 1759 [     0.3 <=  Dist_r_r[10]            ]                 0
+B# 1760 [     0.3 <=  Dist_r_r[11]            ]                 0
+B# 1761 [     0.3 <=  Dist_r_r[12]            ]                 0
+B# 1762 [     0.3 <=  Dist_r_r[13]            ]                 0
+B# 1763 [     0.3 <=  Dist_r_r[14]            ]                 0
+B# 1764 [     0.3 <=  Dist_r_r[15]            ]                 0
+B# 1765 [     0.3 <=  Dist_r_r[16]            ]                 0
+B# 1766 [     0.3 <=  Dist_r_r[17]            ]                 0
+B# 1767 [     0.3 <=  Dist_r_r[18]            ]                 0
+B# 1768 [     0.3 <=  Dist_r_r[19]            ]                 0
+B# 1769 [     0.3 <=  Dist_r_r[20]            ]                 0
+B# 1770 [     0.3 <=  Dist_r_r[21]            ]                 0
+B# 1771 [     0.3 <=  Dist_r_r[22]            ]                 0
+B# 1772 [     0.3 <=  Dist_r_r[23]            ]                 0
+B# 1773 [     0.3 <=  Dist_r_r[24]            ]                 0
+B# 1774 [     0.3 <=  Dist_r_r[25]            ]                 0
+B# 1775 [     0.3 <=  Dist_r_r[26]            ]                 0
+B# 1776 [     0.3 <=  Dist_r_r[27]            ]                 0
+B# 1777 [     0.3 <=  Dist_r_r[28]            ]                 0
+B# 1778 [     0.3 <=  Dist_r_r[29]            ]                 0
+B# 1779 [     0.3 <=  Dist_r_r[30]            ]                 0
+B# 1780 [     0.3 <=  Dist_r_r[31]            ]                 0
+B# 1781 [     0.3 <=  Dist_r_r[32]            ]                 0
+B# 1782 [     0.3 <=  Dist_r_r[33]            ]                 0
+B# 1783 [     0.3 <=  Dist_r_r[34]            ]                 0
+B# 1784 [     0.3 <=  Dist_r_r[35]            ]                 0
+B# 1785 [     0.3 <=  Dist_r_r[36]            ]                 0
+B# 1786 [     0.3 <=  Dist_r_r[37]            ]                 0
+B# 1787 [     0.3 <=  Dist_r_r[38]            ]                 0
+B# 1788 [     0.3 <=  Dist_r_r[39]            ]                 0
+B# 1789 [     0.3 <=  Dist_r_r[40]            ]                 0
+B# 1790 [     0.3 <=  Dist_r_r[41]            ]                 0
+B# 1791 [     0.3 <=  Dist_r_r[42]            ]                 0
+B# 1792 [     0.3 <=  Dist_r_r[43]            ]                 0
+B# 1793 [     0.3 <=  Dist_r_r[44]            ]                 0
+B# 1794 [     0.3 <=  Dist_r_r[45]            ]                 0
+B# 1795 [     0.3 <=  Dist_r_r[46]            ]                 0
+B# 1796 [     0.3 <=  Dist_r_r[47]            ]                 0
+B# 1797 [     0.3 <=  Dist_r_r[48]            ]                 0
+B# 1798 [     0.3 <=  Dist_r_r[49]            ]                 0
+B# 1799 [     0.3 <=  Dist_r_r[50]            ]                 0
+B# 1800 [     0.3 <=  Dist_r_r[51]            ]                 0
+B# 1801 [     0.3 <=  Dist_r_r[52]            ]                 0
+B# 1802 [     0.3 <=  Dist_r_r[53]            ]                 0
+B# 1803 [     0.3 <=  Dist_r_r[54]            ]                 0
+B# 1804 [     0.3 <=  Dist_r_r[55]            ]                 0
+B# 1805 [     0.3 <=  Dist_r_r[56]            ]                 0
+B# 1806 [     0.3 <=  Dist_r_r[57]            ]                 0
+B# 1807 [     0.3 <=  Dist_r_r[58]            ]                 0
+B# 1808 [     0.3 <=  Dist_r_r[59]            ]                 0
+B# 1809 [     0.3 <=  Dist_r_r[60]            ]                 0
+B# 1810 [     0.3 <=  Dist_r_r[61]            ]                 0
+B# 1811 [     0.3 <=  Dist_r_r[62]            ]                 0
+B# 1812 [     0.3 <=  Dist_r_r[63]            ]                 0
+B# 1813 [     0.3 <=  Dist_r_r[64]            ]                 0
+B# 1814 [     0.3 <=  Dist_r_r[65]            ]                 0
+B# 1815 [     0.3 <=  Dist_r_r[66]            ]                 0
+B# 1816 [     0.3 <=  Dist_r_r[67]            ]                 0
+B# 1817 [     0.3 <=  Dist_r_r[68]            ]                 0
+B# 1818 [     0.3 <=  Dist_r_r[69]            ]                 0
+B# 1819 [     0.3 <=   Dist_r_l[0]            ]                 0
+B# 1820 [     0.3 <=   Dist_r_l[1]            ]                 0
+B# 1821 [     0.3 <=   Dist_r_l[2]            ]                 0
+B# 1822 [     0.3 <=   Dist_r_l[3]            ]                 0
+B# 1823 [     0.3 <=   Dist_r_l[4]            ]                 0
+B# 1824 [     0.3 <=   Dist_r_l[5]            ]                 0
+B# 1825 [     0.3 <=   Dist_r_l[6]            ]                 0
+B# 1826 [     0.3 <=   Dist_r_l[7]            ]                 0
+B# 1827 [     0.3 <=   Dist_r_l[8]            ]                 0
+B# 1828 [     0.3 <=   Dist_r_l[9]            ]                 0
+B# 1829 [     0.3 <=  Dist_r_l[10]            ]                 0
+B# 1830 [     0.3 <=  Dist_r_l[11]            ]                 0
+B# 1831 [     0.3 <=  Dist_r_l[12]            ]                 0
+B# 1832 [     0.3 <=  Dist_r_l[13]            ]                 0
+B# 1833 [     0.3 <=  Dist_r_l[14]            ]                 0
+B# 1834 [     0.3 <=  Dist_r_l[15]            ]                 0
+B# 1835 [     0.3 <=  Dist_r_l[16]            ]                 0
+B# 1836 [     0.3 <=  Dist_r_l[17]            ]                 0
+B# 1837 [     0.3 <=  Dist_r_l[18]            ]                 0
+B# 1838 [     0.3 <=  Dist_r_l[19]            ]                 0
+B# 1839 [     0.3 <=  Dist_r_l[20]            ]                 0
+B# 1840 [     0.3 <=  Dist_r_l[21]            ]                 0
+B# 1841 [     0.3 <=  Dist_r_l[22]            ]                 0
+B# 1842 [     0.3 <=  Dist_r_l[23]            ]                 0
+B# 1843 [     0.3 <=  Dist_r_l[24]            ]                 0
+B# 1844 [     0.3 <=  Dist_r_l[25]            ]                 0
+B# 1845 [     0.3 <=  Dist_r_l[26]            ]                 0
+B# 1846 [     0.3 <=  Dist_r_l[27]            ]                 0
+B# 1847 [     0.3 <=  Dist_r_l[28]            ]                 0
+B# 1848 [     0.3 <=  Dist_r_l[29]            ]                 0
+B# 1849 [     0.3 <=  Dist_r_l[30]            ]                 0
+B# 1850 [     0.3 <=  Dist_r_l[31]            ]                 0
+B# 1851 [     0.3 <=  Dist_r_l[32]            ]                 0
+B# 1852 [     0.3 <=  Dist_r_l[33]            ]                 0
+B# 1853 [     0.3 <=  Dist_r_l[34]            ]                 0
+B# 1854 [     0.3 <=  Dist_r_l[35]            ]                 0
+B# 1855 [     0.3 <=  Dist_r_l[36]            ]                 0
+B# 1856 [     0.3 <=  Dist_r_l[37]            ]                 0
+B# 1857 [     0.3 <=  Dist_r_l[38]            ]                 0
+B# 1858 [     0.3 <=  Dist_r_l[39]            ]                 0
+B# 1859 [     0.3 <=  Dist_r_l[40]            ]                 0
+B# 1860 [     0.3 <=  Dist_r_l[41]            ]                 0
+B# 1861 [     0.3 <=  Dist_r_l[42]            ]                 0
+B# 1862 [     0.3 <=  Dist_r_l[43]            ]                 0
+B# 1863 [     0.3 <=  Dist_r_l[44]            ]                 0
+B# 1864 [     0.3 <=  Dist_r_l[45]            ]                 0
+B# 1865 [     0.3 <=  Dist_r_l[46]            ]                 0
+B# 1866 [     0.3 <=  Dist_r_l[47]            ]                 0
+B# 1867 [     0.3 <=  Dist_r_l[48]            ]                 0
+B# 1868 [     0.3 <=  Dist_r_l[49]            ]                 0
+B# 1869 [     0.3 <=  Dist_r_l[50]            ]                 0
+B# 1870 [     0.3 <=  Dist_r_l[51]            ]                 0
+B# 1871 [     0.3 <=  Dist_r_l[52]            ]                 0
+B# 1872 [     0.3 <=  Dist_r_l[53]            ]                 0
+B# 1873 [     0.3 <=  Dist_r_l[54]            ]                 0
+B# 1874 [     0.3 <=  Dist_r_l[55]            ]                 0
+B# 1875 [     0.3 <=  Dist_r_l[56]            ]                 0
+B# 1876 [     0.3 <=  Dist_r_l[57]            ]                 0
+B# 1877 [     0.3 <=  Dist_r_l[58]            ]                 0
+B# 1878 [     0.3 <=  Dist_r_l[59]            ]                 0
+B# 1879 [     0.3 <=  Dist_r_l[60]            ]                 0
+B# 1880 [     0.3 <=  Dist_r_l[61]            ]                 0
+B# 1881 [     0.3 <=  Dist_r_l[62]            ]                 0
+B# 1882 [     0.3 <=  Dist_r_l[63]            ]                 0
+B# 1883 [     0.3 <=  Dist_r_l[64]            ]                 0
+B# 1884 [     0.3 <=  Dist_r_l[65]            ]                 0
+B# 1885 [     0.3 <=  Dist_r_l[66]            ]                 0
+B# 1886 [     0.3 <=  Dist_r_l[67]            ]                 0
+B# 1887 [     0.3 <=  Dist_r_l[68]            ]                 0
+B# 1888 [     0.3 <=  Dist_r_l[69]            ]                 0
+B# 2029 [                T_delta    == 0      ]                 0
+B# 2030 [                  a11      == 0      ]                 0
+B# 2031 [                  a12      == 0      ]                 0
+B# 2032 [                  a21      == 0      ]                 0
+B# 2033 [                  a22      == 0      ]                 0
+B# 2034 [                  b1       == 0      ]                 0
+B# 2035 [                  b2       == 0      ]                 0
+B# 2036 [                 Q_vel     == 0      ]                 0
+B# 2037 [                 Q_acc     == 0      ]                 0
+B# 2038 [                  Q_v      == 0      ]                 0
+B# 2039 [                Q_v_dot    == 0      ]                 0
+B# 2040 [               Q_v_2dot    == 0      ]                 0
+B# 2041 [                Q_theta    == 0      ]                 0
+B# 2042 [              Q_theta_dot  == 0      ]                 0
+B# 2043 [             Q_theta_2dot  == 0      ]                 0
+B# 2044 [                Q_delta    == 0      ]                 0
+B# 2045 [              Q_delta_dot  == 0      ]                 0
+B# 2046 [                Sf_vel     == 0      ]                 0
+B# 2047 [                Sf_acc     == 0      ]                 0
+B# 2048 [                 Sf_v      == 0      ]                 0
+B# 2049 [               Sf_v_dot    == 0      ]                 0
+B# 2050 [               Sf_v_2dot   == 0      ]                 0
+B# 2051 [               Sf_theta    == 0      ]                 0
+B# 2052 [             Sf_theta_dot  == 0      ]                 0
+B# 2053 [             Sf_theta_2dot == 0      ]                 0
+B# 2054 [               Sf_delta    == 0      ]                 0
+B# 2055 [             Sf_delta_dot  == 0      ]                 0
+B# 2056 [              dist_front   == 0      ]                 0
+B# 2057 [               dist_rear   == 0      ]                 0
+B# 2058 [              theta_front  == 0      ]                 0
+B# 2059 [              theta_rear   == 0      ]                 0
+B# 2060 [                init_u     == 0      ]                 0
+B# 2061 [               init_vel    == 0      ]                 1
+B# 2062 [                init_v     == 0      ]                 0
+B# 2063 [              init_v_dot   == 0      ]                 0
+B# 2064 [              init_theta   == 0      ]                 0
+B# 2065 [            init_theta_dot == 0      ]                 0
+B# 2066 [              init_delta   == 0      ]                 0
+B# 2067 [              vel_ref[0]   == 0      ]                 0
+B# 2068 [              vel_ref[1]   == 0      ]                 0
+B# 2069 [              vel_ref[2]   == 0      ]                 0
+B# 2070 [              vel_ref[3]   == 0      ]                 0
+B# 2071 [              vel_ref[4]   == 0      ]                 0
+B# 2072 [              vel_ref[5]   == 0      ]                 0
+B# 2073 [              vel_ref[6]   == 0      ]                 0
+B# 2074 [              vel_ref[7]   == 0      ]                 0
+B# 2075 [              vel_ref[8]   == 0      ]                 0
+B# 2076 [              vel_ref[9]   == 0      ]                 0
+B# 2077 [              vel_ref[10]  == 0      ]                 0
+B# 2078 [              vel_ref[11]  == 0      ]                 0
+B# 2079 [              vel_ref[12]  == 0      ]                 0
+B# 2080 [              vel_ref[13]  == 0      ]                 0
+B# 2081 [              vel_ref[14]  == 0      ]                 0
+B# 2082 [              vel_ref[15]  == 0      ]                 0
+B# 2083 [              vel_ref[16]  == 0      ]                 0
+B# 2084 [              vel_ref[17]  == 0      ]                 0
+B# 2085 [              vel_ref[18]  == 0      ]                 0
+B# 2086 [              vel_ref[19]  == 0      ]                 0
+B# 2087 [              vel_ref[20]  == 0      ]                 0
+B# 2088 [              vel_ref[21]  == 0      ]                 0
+B# 2089 [              vel_ref[22]  == 0      ]                 0
+B# 2090 [              vel_ref[23]  == 0      ]                 0
+B# 2091 [              vel_ref[24]  == 0      ]                 0
+B# 2092 [              vel_ref[25]  == 0      ]                 0
+B# 2093 [              vel_ref[26]  == 0      ]                 0
+B# 2094 [              vel_ref[27]  == 0      ]                 0
+B# 2095 [              vel_ref[28]  == 0      ]                 0
+B# 2096 [              vel_ref[29]  == 0      ]                 0
+B# 2097 [              vel_ref[30]  == 0      ]                 0
+B# 2098 [              vel_ref[31]  == 0      ]                 0
+B# 2099 [              vel_ref[32]  == 0      ]                 0
+B# 2100 [              vel_ref[33]  == 0      ]                 0
+B# 2101 [              vel_ref[34]  == 0      ]                 0
+B# 2102 [              vel_ref[35]  == 0      ]                 0
+B# 2103 [              vel_ref[36]  == 0      ]                 0
+B# 2104 [              vel_ref[37]  == 0      ]                 0
+B# 2105 [              vel_ref[38]  == 0      ]                 0
+B# 2106 [              vel_ref[39]  == 0      ]                 0
+B# 2107 [              vel_ref[40]  == 0      ]                 0
+B# 2108 [              vel_ref[41]  == 0      ]                 0
+B# 2109 [              vel_ref[42]  == 0      ]                 0
+B# 2110 [              vel_ref[43]  == 0      ]                 0
+B# 2111 [              vel_ref[44]  == 0      ]                 0
+B# 2112 [              vel_ref[45]  == 0      ]                 0
+B# 2113 [              vel_ref[46]  == 0      ]                 0
+B# 2114 [              vel_ref[47]  == 0      ]                 0
+B# 2115 [              vel_ref[48]  == 0      ]                 0
+B# 2116 [              vel_ref[49]  == 0      ]                 0
+B# 2117 [              vel_ref[50]  == 0      ]                 0
+B# 2118 [              vel_ref[51]  == 0      ]                 0
+B# 2119 [              vel_ref[52]  == 0      ]                 0
+B# 2120 [              vel_ref[53]  == 0      ]                 0
+B# 2121 [              vel_ref[54]  == 0      ]                 0
+B# 2122 [              vel_ref[55]  == 0      ]                 0
+B# 2123 [              vel_ref[56]  == 0      ]                 0
+B# 2124 [              vel_ref[57]  == 0      ]                 0
+B# 2125 [              vel_ref[58]  == 0      ]                 0
+B# 2126 [              vel_ref[59]  == 0      ]                 0
+B# 2127 [              vel_ref[60]  == 0      ]                 0
+B# 2128 [              vel_ref[61]  == 0      ]                 0
+B# 2129 [              vel_ref[62]  == 0      ]                 0
+B# 2130 [              vel_ref[63]  == 0      ]                 0
+B# 2131 [              vel_ref[64]  == 0      ]                 0
+B# 2132 [              vel_ref[65]  == 0      ]                 0
+B# 2133 [              vel_ref[66]  == 0      ]                 0
+B# 2134 [              vel_ref[67]  == 0      ]                 0
+B# 2135 [              vel_ref[68]  == 0      ]                 0
+B# 2136 [              vel_ref[69]  == 0      ]                 0
+B# 2137 [              vel_max[0]   == 0      ]                 0
+B# 2138 [              vel_max[1]   == 0      ]                 0
+B# 2139 [              vel_max[2]   == 0      ]                 0
+B# 2140 [              vel_max[3]   == 0      ]                 0
+B# 2141 [              vel_max[4]   == 0      ]                 0
+B# 2142 [              vel_max[5]   == 0      ]                 0
+B# 2143 [              vel_max[6]   == 0      ]                 0
+B# 2144 [              vel_max[7]   == 0      ]                 0
+B# 2145 [              vel_max[8]   == 0      ]                 0
+B# 2146 [              vel_max[9]   == 0      ]                 0
+B# 2147 [              vel_max[10]  == 0      ]                 0
+B# 2148 [              vel_max[11]  == 0      ]                 0
+B# 2149 [              vel_max[12]  == 0      ]                 0
+B# 2150 [              vel_max[13]  == 0      ]                 0
+B# 2151 [              vel_max[14]  == 0      ]                 0
+B# 2152 [              vel_max[15]  == 0      ]                 0
+B# 2153 [              vel_max[16]  == 0      ]                 0
+B# 2154 [              vel_max[17]  == 0      ]                 0
+B# 2155 [              vel_max[18]  == 0      ]                 0
+B# 2156 [              vel_max[19]  == 0      ]                 0
+B# 2157 [              vel_max[20]  == 0      ]                 0
+B# 2158 [              vel_max[21]  == 0      ]                 0
+B# 2159 [              vel_max[22]  == 0      ]                 0
+B# 2160 [              vel_max[23]  == 0      ]                 0
+B# 2161 [              vel_max[24]  == 0      ]                 0
+B# 2162 [              vel_max[25]  == 0      ]                 0
+B# 2163 [              vel_max[26]  == 0      ]                 0
+B# 2164 [              vel_max[27]  == 0      ]                 0
+B# 2165 [              vel_max[28]  == 0      ]                 0
+B# 2166 [              vel_max[29]  == 0      ]                 0
+B# 2167 [              vel_max[30]  == 0      ]                 0
+B# 2168 [              vel_max[31]  == 0      ]                 0
+B# 2169 [              vel_max[32]  == 0      ]                 0
+B# 2170 [              vel_max[33]  == 0      ]                 0
+B# 2171 [              vel_max[34]  == 0      ]                 0
+B# 2172 [              vel_max[35]  == 0      ]                 0
+B# 2173 [              vel_max[36]  == 0      ]                 0
+B# 2174 [              vel_max[37]  == 0      ]                 0
+B# 2175 [              vel_max[38]  == 0      ]                 0
+B# 2176 [              vel_max[39]  == 0      ]                 0
+B# 2177 [              vel_max[40]  == 0      ]                 0
+B# 2178 [              vel_max[41]  == 0      ]                 0
+B# 2179 [              vel_max[42]  == 0      ]                 0
+B# 2180 [              vel_max[43]  == 0      ]                 0
+B# 2181 [              vel_max[44]  == 0      ]                 0
+B# 2182 [              vel_max[45]  == 0      ]                 0
+B# 2183 [              vel_max[46]  == 0      ]                 0
+B# 2184 [              vel_max[47]  == 0      ]                 0
+B# 2185 [              vel_max[48]  == 0      ]                 0
+B# 2186 [              vel_max[49]  == 0      ]                 0
+B# 2187 [              vel_max[50]  == 0      ]                 0
+B# 2188 [              vel_max[51]  == 0      ]                 0
+B# 2189 [              vel_max[52]  == 0      ]                 0
+B# 2190 [              vel_max[53]  == 0      ]                 0
+B# 2191 [              vel_max[54]  == 0      ]                 0
+B# 2192 [              vel_max[55]  == 0      ]                 0
+B# 2193 [              vel_max[56]  == 0      ]                 0
+B# 2194 [              vel_max[57]  == 0      ]                 0
+B# 2195 [              vel_max[58]  == 0      ]                 0
+B# 2196 [              vel_max[59]  == 0      ]                 0
+B# 2197 [              vel_max[60]  == 0      ]                 0
+B# 2198 [              vel_max[61]  == 0      ]                 0
+B# 2199 [              vel_max[62]  == 0      ]                 0
+B# 2200 [              vel_max[63]  == 0      ]                 0
+B# 2201 [              vel_max[64]  == 0      ]                 0
+B# 2202 [              vel_max[65]  == 0      ]                 0
+B# 2203 [              vel_max[66]  == 0      ]                 0
+B# 2204 [              vel_max[67]  == 0      ]                 0
+B# 2205 [              vel_max[68]  == 0      ]                 0
+B# 2206 [              vel_max[69]  == 0      ]                -1
+B# 2207 [               v_ref[0]    == 0      ]                 0
+B# 2208 [               v_ref[1]    == 0      ]                 0
+B# 2209 [               v_ref[2]    == 0      ]                 0
+B# 2210 [               v_ref[3]    == 0      ]                 0
+B# 2211 [               v_ref[4]    == 0      ]                 0
+B# 2212 [               v_ref[5]    == 0      ]                 0
+B# 2213 [               v_ref[6]    == 0      ]                 0
+B# 2214 [               v_ref[7]    == 0      ]                 0
+B# 2215 [               v_ref[8]    == 0      ]                 0
+B# 2216 [               v_ref[9]    == 0      ]                 0
+B# 2217 [               v_ref[10]   == 0      ]                 0
+B# 2218 [               v_ref[11]   == 0      ]                 0
+B# 2219 [               v_ref[12]   == 0      ]                 0
+B# 2220 [               v_ref[13]   == 0      ]                 0
+B# 2221 [               v_ref[14]   == 0      ]                 0
+B# 2222 [               v_ref[15]   == 0      ]                 0
+B# 2223 [               v_ref[16]   == 0      ]                 0
+B# 2224 [               v_ref[17]   == 0      ]                 0
+B# 2225 [               v_ref[18]   == 0      ]                 0
+B# 2226 [               v_ref[19]   == 0      ]                 0
+B# 2227 [               v_ref[20]   == 0      ]                 0
+B# 2228 [               v_ref[21]   == 0      ]                 0
+B# 2229 [               v_ref[22]   == 0      ]                 0
+B# 2230 [               v_ref[23]   == 0      ]                 0
+B# 2231 [               v_ref[24]   == 0      ]                 0
+B# 2232 [               v_ref[25]   == 0      ]                 0
+B# 2233 [               v_ref[26]   == 0      ]                 0
+B# 2234 [               v_ref[27]   == 0      ]                 0
+B# 2235 [               v_ref[28]   == 0      ]                 0
+B# 2236 [               v_ref[29]   == 0      ]                 0
+B# 2237 [               v_ref[30]   == 0      ]                 0
+B# 2238 [               v_ref[31]   == 0      ]                 0
+B# 2239 [               v_ref[32]   == 0      ]                 0
+B# 2240 [               v_ref[33]   == 0      ]                 0
+B# 2241 [               v_ref[34]   == 0      ]                 0
+B# 2242 [               v_ref[35]   == 0      ]                 0
+B# 2243 [               v_ref[36]   == 0      ]                 0
+B# 2244 [               v_ref[37]   == 0      ]                 0
+B# 2245 [               v_ref[38]   == 0      ]                 0
+B# 2246 [               v_ref[39]   == 0      ]                 0
+B# 2247 [               v_ref[40]   == 0      ]                 0
+B# 2248 [               v_ref[41]   == 0      ]                 0
+B# 2249 [               v_ref[42]   == 0      ]                 0
+B# 2250 [               v_ref[43]   == 0      ]                 0
+B# 2251 [               v_ref[44]   == 0      ]                 0
+B# 2252 [               v_ref[45]   == 0      ]                 0
+B# 2253 [               v_ref[46]   == 0      ]                 0
+B# 2254 [               v_ref[47]   == 0      ]                 0
+B# 2255 [               v_ref[48]   == 0      ]                 0
+B# 2256 [               v_ref[49]   == 0      ]                 0
+B# 2257 [               v_ref[50]   == 0      ]                 0
+B# 2258 [               v_ref[51]   == 0      ]                 0
+B# 2259 [               v_ref[52]   == 0      ]                 0
+B# 2260 [               v_ref[53]   == 0      ]                 0
+B# 2261 [               v_ref[54]   == 0      ]                 0
+B# 2262 [               v_ref[55]   == 0      ]                 0
+B# 2263 [               v_ref[56]   == 0      ]                 0
+B# 2264 [               v_ref[57]   == 0      ]                 0
+B# 2265 [               v_ref[58]   == 0      ]                 0
+B# 2266 [               v_ref[59]   == 0      ]                 0
+B# 2267 [               v_ref[60]   == 0      ]                 0
+B# 2268 [               v_ref[61]   == 0      ]                 0
+B# 2269 [               v_ref[62]   == 0      ]                 0
+B# 2270 [               v_ref[63]   == 0      ]                 0
+B# 2271 [               v_ref[64]   == 0      ]                 0
+B# 2272 [               v_ref[65]   == 0      ]                 0
+B# 2273 [               v_ref[66]   == 0      ]                 0
+B# 2274 [               v_ref[67]   == 0      ]                 0
+B# 2275 [               v_ref[68]   == 0      ]                 0
+B# 2276 [               v_ref[69]   == 0      ]                 0
+B# 2277 [               v_max[0]    == 0      ]                 0
+B# 2278 [               v_max[1]    == 0      ]                 0
+B# 2279 [               v_max[2]    == 0      ]                 0
+B# 2280 [               v_max[3]    == 0      ]                 0
+B# 2281 [               v_max[4]    == 0      ]                 0
+B# 2282 [               v_max[5]    == 0      ]                 0
+B# 2283 [               v_max[6]    == 0      ]                 0
+B# 2284 [               v_max[7]    == 0      ]                 0
+B# 2285 [               v_max[8]    == 0      ]                 0
+B# 2286 [               v_max[9]    == 0      ]                 0
+B# 2287 [               v_max[10]   == 0      ]                 0
+B# 2288 [               v_max[11]   == 0      ]                 0
+B# 2289 [               v_max[12]   == 0      ]                 0
+B# 2290 [               v_max[13]   == 0      ]                 0
+B# 2291 [               v_max[14]   == 0      ]                 0
+B# 2292 [               v_max[15]   == 0      ]                 0
+B# 2293 [               v_max[16]   == 0      ]                 0
+B# 2294 [               v_max[17]   == 0      ]                 0
+B# 2295 [               v_max[18]   == 0      ]                 0
+B# 2296 [               v_max[19]   == 0      ]                 0
+B# 2297 [               v_max[20]   == 0      ]                 0
+B# 2298 [               v_max[21]   == 0      ]                 0
+B# 2299 [               v_max[22]   == 0      ]                 0
+B# 2300 [               v_max[23]   == 0      ]                 0
+B# 2301 [               v_max[24]   == 0      ]                 0
+B# 2302 [               v_max[25]   == 0      ]                 0
+B# 2303 [               v_max[26]   == 0      ]                 0
+B# 2304 [               v_max[27]   == 0      ]                 0
+B# 2305 [               v_max[28]   == 0      ]                 0
+B# 2306 [               v_max[29]   == 0      ]                 0
+B# 2307 [               v_max[30]   == 0      ]                 0
+B# 2308 [               v_max[31]   == 0      ]                 0
+B# 2309 [               v_max[32]   == 0      ]                 0
+B# 2310 [               v_max[33]   == 0      ]                 0
+B# 2311 [               v_max[34]   == 0      ]                 0
+B# 2312 [               v_max[35]   == 0      ]                 0
+B# 2313 [               v_max[36]   == 0      ]                 0
+B# 2314 [               v_max[37]   == 0      ]                 0
+B# 2315 [               v_max[38]   == 0      ]                 0
+B# 2316 [               v_max[39]   == 0      ]                 0
+B# 2317 [               v_max[40]   == 0      ]                 0
+B# 2318 [               v_max[41]   == 0      ]                 0
+B# 2319 [               v_max[42]   == 0      ]                 0
+B# 2320 [               v_max[43]   == 0      ]                 0
+B# 2321 [               v_max[44]   == 0      ]                 0
+B# 2322 [               v_max[45]   == 0      ]                 0
+B# 2323 [               v_max[46]   == 0      ]                 0
+B# 2324 [               v_max[47]   == 0      ]                 0
+B# 2325 [               v_max[48]   == 0      ]                 0
+B# 2326 [               v_max[49]   == 0      ]                 0
+B# 2327 [               v_max[50]   == 0      ]                 0
+B# 2328 [               v_max[51]   == 0      ]                 0
+B# 2329 [               v_max[52]   == 0      ]                 0
+B# 2330 [               v_max[53]   == 0      ]                 0
+B# 2331 [               v_max[54]   == 0      ]                 0
+B# 2332 [               v_max[55]   == 0      ]                 0
+B# 2333 [               v_max[56]   == 0      ]                 0
+B# 2334 [               v_max[57]   == 0      ]                 0
+B# 2335 [               v_max[58]   == 0      ]                 0
+B# 2336 [               v_max[59]   == 0      ]                 0
+B# 2337 [               v_max[60]   == 0      ]                 0
+B# 2338 [               v_max[61]   == 0      ]                 0
+B# 2339 [               v_max[62]   == 0      ]                 0
+B# 2340 [               v_max[63]   == 0      ]                 0
+B# 2341 [               v_max[64]   == 0      ]                 0
+B# 2342 [               v_max[65]   == 0      ]                 0
+B# 2343 [               v_max[66]   == 0      ]                 0
+B# 2344 [               v_max[67]   == 0      ]                 0
+B# 2345 [               v_max[68]   == 0      ]                 0
+B# 2346 [               v_max[69]   == 0      ]                 0
+B# 2347 [               v_min[0]    == 0      ]                 0
+B# 2348 [               v_min[1]    == 0      ]                 0
+B# 2349 [               v_min[2]    == 0      ]                 0
+B# 2350 [               v_min[3]    == 0      ]                 0
+B# 2351 [               v_min[4]    == 0      ]                 0
+B# 2352 [               v_min[5]    == 0      ]                 0
+B# 2353 [               v_min[6]    == 0      ]                 0
+B# 2354 [               v_min[7]    == 0      ]                 0
+B# 2355 [               v_min[8]    == 0      ]                 0
+B# 2356 [               v_min[9]    == 0      ]                 0
+B# 2357 [               v_min[10]   == 0      ]                 0
+B# 2358 [               v_min[11]   == 0      ]                 0
+B# 2359 [               v_min[12]   == 0      ]                 0
+B# 2360 [               v_min[13]   == 0      ]                 0
+B# 2361 [               v_min[14]   == 0      ]                 0
+B# 2362 [               v_min[15]   == 0      ]                 0
+B# 2363 [               v_min[16]   == 0      ]                 0
+B# 2364 [               v_min[17]   == 0      ]                 0
+B# 2365 [               v_min[18]   == 0      ]                 0
+B# 2366 [               v_min[19]   == 0      ]                 0
+B# 2367 [               v_min[20]   == 0      ]                 0
+B# 2368 [               v_min[21]   == 0      ]                 0
+B# 2369 [               v_min[22]   == 0      ]                 0
+B# 2370 [               v_min[23]   == 0      ]                 0
+B# 2371 [               v_min[24]   == 0      ]                 0
+B# 2372 [               v_min[25]   == 0      ]                 0
+B# 2373 [               v_min[26]   == 0      ]                 0
+B# 2374 [               v_min[27]   == 0      ]                 0
+B# 2375 [               v_min[28]   == 0      ]                 0
+B# 2376 [               v_min[29]   == 0      ]                 0
+B# 2377 [               v_min[30]   == 0      ]                 0
+B# 2378 [               v_min[31]   == 0      ]                 0
+B# 2379 [               v_min[32]   == 0      ]                 0
+B# 2380 [               v_min[33]   == 0      ]                 0
+B# 2381 [               v_min[34]   == 0      ]                 0
+B# 2382 [               v_min[35]   == 0      ]                 0
+B# 2383 [               v_min[36]   == 0      ]                 0
+B# 2384 [               v_min[37]   == 0      ]                 0
+B# 2385 [               v_min[38]   == 0      ]                 0
+B# 2386 [               v_min[39]   == 0      ]                 0
+B# 2387 [               v_min[40]   == 0      ]                 0
+B# 2388 [               v_min[41]   == 0      ]                 0
+B# 2389 [               v_min[42]   == 0      ]                 0
+B# 2390 [               v_min[43]   == 0      ]                 0
+B# 2391 [               v_min[44]   == 0      ]                 0
+B# 2392 [               v_min[45]   == 0      ]                 0
+B# 2393 [               v_min[46]   == 0      ]                 0
+B# 2394 [               v_min[47]   == 0      ]                 0
+B# 2395 [               v_min[48]   == 0      ]                 0
+B# 2396 [               v_min[49]   == 0      ]                 0
+B# 2397 [               v_min[50]   == 0      ]                 0
+B# 2398 [               v_min[51]   == 0      ]                 0
+B# 2399 [               v_min[52]   == 0      ]                 0
+B# 2400 [               v_min[53]   == 0      ]                 0
+B# 2401 [               v_min[54]   == 0      ]                 0
+B# 2402 [               v_min[55]   == 0      ]                 0
+B# 2403 [               v_min[56]   == 0      ]                 0
+B# 2404 [               v_min[57]   == 0      ]                 0
+B# 2405 [               v_min[58]   == 0      ]                 0
+B# 2406 [               v_min[59]   == 0      ]                 0
+B# 2407 [               v_min[60]   == 0      ]                 0
+B# 2408 [               v_min[61]   == 0      ]                 0
+B# 2409 [               v_min[62]   == 0      ]                 0
+B# 2410 [               v_min[63]   == 0      ]                 0
+B# 2411 [               v_min[64]   == 0      ]                 0
+B# 2412 [               v_min[65]   == 0      ]                 0
+B# 2413 [               v_min[66]   == 0      ]                 0
+B# 2414 [               v_min[67]   == 0      ]                 0
+B# 2415 [               v_min[68]   == 0      ]                 0
+B# 2416 [               v_min[69]   == 0      ]                 0
+B# 2417 [            v_front_max[0] == 0      ]                 0
+B# 2418 [            v_front_max[1] == 0      ]                 0
+B# 2419 [            v_front_max[2] == 0      ]                 0
+B# 2420 [            v_front_max[3] == 0      ]                 0
+B# 2421 [            v_front_max[4] == 0      ]                 0
+B# 2422 [            v_front_max[5] == 0      ]                 0
+B# 2423 [            v_front_max[6] == 0      ]                 0
+B# 2424 [            v_front_max[7] == 0      ]                 0
+B# 2425 [            v_front_max[8] == 0      ]                 0
+B# 2426 [            v_front_max[9] == 0      ]                 0
+B# 2427 [               v_front_max[10]    == 0      ]                 0
+B# 2428 [               v_front_max[11]    == 0      ]                 0
+B# 2429 [               v_front_max[12]    == 0      ]                 0
+B# 2430 [               v_front_max[13]    == 0      ]                 0
+B# 2431 [               v_front_max[14]    == 0      ]                 0
+B# 2432 [               v_front_max[15]    == 0      ]                 0
+B# 2433 [               v_front_max[16]    == 0      ]                 0
+B# 2434 [               v_front_max[17]    == 0      ]                 0
+B# 2435 [               v_front_max[18]    == 0      ]                 0
+B# 2436 [               v_front_max[19]    == 0      ]                 0
+B# 2437 [               v_front_max[20]    == 0      ]                 0
+B# 2438 [               v_front_max[21]    == 0      ]                 0
+B# 2439 [               v_front_max[22]    == 0      ]                 0
+B# 2440 [               v_front_max[23]    == 0      ]                 0
+B# 2441 [               v_front_max[24]    == 0      ]                 0
+B# 2442 [               v_front_max[25]    == 0      ]                 0
+B# 2443 [               v_front_max[26]    == 0      ]                 0
+B# 2444 [               v_front_max[27]    == 0      ]                 0
+B# 2445 [               v_front_max[28]    == 0      ]                 0
+B# 2446 [               v_front_max[29]    == 0      ]                 0
+B# 2447 [               v_front_max[30]    == 0      ]                 0
+B# 2448 [               v_front_max[31]    == 0      ]                 0
+B# 2449 [               v_front_max[32]    == 0      ]                 0
+B# 2450 [               v_front_max[33]    == 0      ]                 0
+B# 2451 [               v_front_max[34]    == 0      ]                 0
+B# 2452 [               v_front_max[35]    == 0      ]                 0
+B# 2453 [               v_front_max[36]    == 0      ]                 0
+B# 2454 [               v_front_max[37]    == 0      ]                 0
+B# 2455 [               v_front_max[38]    == 0      ]                 0
+B# 2456 [               v_front_max[39]    == 0      ]                 0
+B# 2457 [               v_front_max[40]    == 0      ]                 0
+B# 2458 [               v_front_max[41]    == 0      ]                 0
+B# 2459 [               v_front_max[42]    == 0      ]                 0
+B# 2460 [               v_front_max[43]    == 0      ]                 0
+B# 2461 [               v_front_max[44]    == 0      ]                 0
+B# 2462 [               v_front_max[45]    == 0      ]                 0
+B# 2463 [               v_front_max[46]    == 0      ]                 0
+B# 2464 [               v_front_max[47]    == 0      ]                 0
+B# 2465 [               v_front_max[48]    == 0      ]                 0
+B# 2466 [               v_front_max[49]    == 0      ]                 0
+B# 2467 [               v_front_max[50]    == 0      ]                 0
+B# 2468 [               v_front_max[51]    == 0      ]                 0
+B# 2469 [               v_front_max[52]    == 0      ]                 0
+B# 2470 [               v_front_max[53]    == 0      ]                 0
+B# 2471 [               v_front_max[54]    == 0      ]                 0
+B# 2472 [               v_front_max[55]    == 0      ]                 0
+B# 2473 [               v_front_max[56]    == 0      ]                 0
+B# 2474 [               v_front_max[57]    == 0      ]                 0
+B# 2475 [               v_front_max[58]    == 0      ]                 0
+B# 2476 [               v_front_max[59]    == 0      ]                 0
+B# 2477 [               v_front_max[60]    == 0      ]                 0
+B# 2478 [               v_front_max[61]    == 0      ]                 0
+B# 2479 [               v_front_max[62]    == 0      ]                 0
+B# 2480 [               v_front_max[63]    == 0      ]                 0
+B# 2481 [               v_front_max[64]    == 0      ]                 0
+B# 2482 [               v_front_max[65]    == 0      ]                 0
+B# 2483 [               v_front_max[66]    == 0      ]                 0
+B# 2484 [               v_front_max[67]    == 0      ]                 0
+B# 2485 [               v_front_max[68]    == 0      ]                 0
+B# 2486 [               v_front_max[69]    == 0      ]                 0
+B# 2487 [            v_front_min[0] == 0      ]                 0
+B# 2488 [            v_front_min[1] == 0      ]                 0
+B# 2489 [            v_front_min[2] == 0      ]                 0
+B# 2490 [            v_front_min[3] == 0      ]                 0
+B# 2491 [            v_front_min[4] == 0      ]                 0
+B# 2492 [            v_front_min[5] == 0      ]                 0
+B# 2493 [            v_front_min[6] == 0      ]                 0
+B# 2494 [            v_front_min[7] == 0      ]                 0
+B# 2495 [            v_front_min[8] == 0      ]                 0
+B# 2496 [            v_front_min[9] == 0      ]                 0
+B# 2497 [               v_front_min[10]    == 0      ]                 0
+B# 2498 [               v_front_min[11]    == 0      ]                 0
+B# 2499 [               v_front_min[12]    == 0      ]                 0
+B# 2500 [               v_front_min[13]    == 0      ]                 0
+B# 2501 [               v_front_min[14]    == 0      ]                 0
+B# 2502 [               v_front_min[15]    == 0      ]                 0
+B# 2503 [               v_front_min[16]    == 0      ]                 0
+B# 2504 [               v_front_min[17]    == 0      ]                 0
+B# 2505 [               v_front_min[18]    == 0      ]                 0
+B# 2506 [               v_front_min[19]    == 0      ]                 0
+B# 2507 [               v_front_min[20]    == 0      ]                 0
+B# 2508 [               v_front_min[21]    == 0      ]                 0
+B# 2509 [               v_front_min[22]    == 0      ]                 0
+B# 2510 [               v_front_min[23]    == 0      ]                 0
+B# 2511 [               v_front_min[24]    == 0      ]                 0
+B# 2512 [               v_front_min[25]    == 0      ]                 0
+B# 2513 [               v_front_min[26]    == 0      ]                 0
+B# 2514 [               v_front_min[27]    == 0      ]                 0
+B# 2515 [               v_front_min[28]    == 0      ]                 0
+B# 2516 [               v_front_min[29]    == 0      ]                 0
+B# 2517 [               v_front_min[30]    == 0      ]                 0
+B# 2518 [               v_front_min[31]    == 0      ]                 0
+B# 2519 [               v_front_min[32]    == 0      ]                 0
+B# 2520 [               v_front_min[33]    == 0      ]                 0
+B# 2521 [               v_front_min[34]    == 0      ]                 0
+B# 2522 [               v_front_min[35]    == 0      ]                 0
+B# 2523 [               v_front_min[36]    == 0      ]                 0
+B# 2524 [               v_front_min[37]    == 0      ]                 0
+B# 2525 [               v_front_min[38]    == 0      ]                 0
+B# 2526 [               v_front_min[39]    == 0      ]                 0
+B# 2527 [               v_front_min[40]    == 0      ]                 0
+B# 2528 [               v_front_min[41]    == 0      ]                 0
+B# 2529 [               v_front_min[42]    == 0      ]                 0
+B# 2530 [               v_front_min[43]    == 0      ]                 0
+B# 2531 [               v_front_min[44]    == 0      ]                 0
+B# 2532 [               v_front_min[45]    == 0      ]                 0
+B# 2533 [               v_front_min[46]    == 0      ]                 0
+B# 2534 [               v_front_min[47]    == 0      ]                 0
+B# 2535 [               v_front_min[48]    == 0      ]                 0
+B# 2536 [               v_front_min[49]    == 0      ]                 0
+B# 2537 [               v_front_min[50]    == 0      ]                 0
+B# 2538 [               v_front_min[51]    == 0      ]                 0
+B# 2539 [               v_front_min[52]    == 0      ]                 0
+B# 2540 [               v_front_min[53]    == 0      ]                 0
+B# 2541 [               v_front_min[54]    == 0      ]                 0
+B# 2542 [               v_front_min[55]    == 0      ]                 0
+B# 2543 [               v_front_min[56]    == 0      ]                 0
+B# 2544 [               v_front_min[57]    == 0      ]                 0
+B# 2545 [               v_front_min[58]    == 0      ]                 0
+B# 2546 [               v_front_min[59]    == 0      ]                 0
+B# 2547 [               v_front_min[60]    == 0      ]                 0
+B# 2548 [               v_front_min[61]    == 0      ]                 0
+B# 2549 [               v_front_min[62]    == 0      ]                 0
+B# 2550 [               v_front_min[63]    == 0      ]                 0
+B# 2551 [               v_front_min[64]    == 0      ]                 0
+B# 2552 [               v_front_min[65]    == 0      ]                 0
+B# 2553 [               v_front_min[66]    == 0      ]                 0
+B# 2554 [               v_front_min[67]    == 0      ]                 0
+B# 2555 [               v_front_min[68]    == 0      ]                 0
+B# 2556 [               v_front_min[69]    == 0      ]                 0
+B# 2557 [             v_rear_max[0] == 0      ]                 0
+B# 2558 [             v_rear_max[1] == 0      ]                 0
+B# 2559 [             v_rear_max[2] == 0      ]                 0
+B# 2560 [             v_rear_max[3] == 0      ]                 0
+B# 2561 [             v_rear_max[4] == 0      ]                 0
+B# 2562 [             v_rear_max[5] == 0      ]                 0
+B# 2563 [             v_rear_max[6] == 0      ]                 0
+B# 2564 [             v_rear_max[7] == 0      ]                 0
+B# 2565 [             v_rear_max[8] == 0      ]                 0
+B# 2566 [             v_rear_max[9] == 0      ]                 0
+B# 2567 [            v_rear_max[10] == 0      ]                 0
+B# 2568 [            v_rear_max[11] == 0      ]                 0
+B# 2569 [            v_rear_max[12] == 0      ]                 0
+B# 2570 [            v_rear_max[13] == 0      ]                 0
+B# 2571 [            v_rear_max[14] == 0      ]                 0
+B# 2572 [            v_rear_max[15] == 0      ]                 0
+B# 2573 [            v_rear_max[16] == 0      ]                 0
+B# 2574 [            v_rear_max[17] == 0      ]                 0
+B# 2575 [            v_rear_max[18] == 0      ]                 0
+B# 2576 [            v_rear_max[19] == 0      ]                 0
+B# 2577 [            v_rear_max[20] == 0      ]                 0
+B# 2578 [            v_rear_max[21] == 0      ]                 0
+B# 2579 [            v_rear_max[22] == 0      ]                 0
+B# 2580 [            v_rear_max[23] == 0      ]                 0
+B# 2581 [            v_rear_max[24] == 0      ]                 0
+B# 2582 [            v_rear_max[25] == 0      ]                 0
+B# 2583 [            v_rear_max[26] == 0      ]                 0
+B# 2584 [            v_rear_max[27] == 0      ]                 0
+B# 2585 [            v_rear_max[28] == 0      ]                 0
+B# 2586 [            v_rear_max[29] == 0      ]                 0
+B# 2587 [            v_rear_max[30] == 0      ]                 0
+B# 2588 [            v_rear_max[31] == 0      ]                 0
+B# 2589 [            v_rear_max[32] == 0      ]                 0
+B# 2590 [            v_rear_max[33] == 0      ]                 0
+B# 2591 [            v_rear_max[34] == 0      ]                 0
+B# 2592 [            v_rear_max[35] == 0      ]                 0
+B# 2593 [            v_rear_max[36] == 0      ]                 0
+B# 2594 [            v_rear_max[37] == 0      ]                 0
+B# 2595 [            v_rear_max[38] == 0      ]                 0
+B# 2596 [            v_rear_max[39] == 0      ]                 0
+B# 2597 [            v_rear_max[40] == 0      ]                 0
+B# 2598 [            v_rear_max[41] == 0      ]                 0
+B# 2599 [            v_rear_max[42] == 0      ]                 0
+B# 2600 [            v_rear_max[43] == 0      ]                 0
+B# 2601 [            v_rear_max[44] == 0      ]                 0
+B# 2602 [            v_rear_max[45] == 0      ]                 0
+B# 2603 [            v_rear_max[46] == 0      ]                 0
+B# 2604 [            v_rear_max[47] == 0      ]                 0
+B# 2605 [            v_rear_max[48] == 0      ]                 0
+B# 2606 [            v_rear_max[49] == 0      ]                 0
+B# 2607 [            v_rear_max[50] == 0      ]                 0
+B# 2608 [            v_rear_max[51] == 0      ]                 0
+B# 2609 [            v_rear_max[52] == 0      ]                 0
+B# 2610 [            v_rear_max[53] == 0      ]                 0
+B# 2611 [            v_rear_max[54] == 0      ]                 0
+B# 2612 [            v_rear_max[55] == 0      ]                 0
+B# 2613 [            v_rear_max[56] == 0      ]                 0
+B# 2614 [            v_rear_max[57] == 0      ]                 0
+B# 2615 [            v_rear_max[58] == 0      ]                 0
+B# 2616 [            v_rear_max[59] == 0      ]                 0
+B# 2617 [            v_rear_max[60] == 0      ]                 0
+B# 2618 [            v_rear_max[61] == 0      ]                 0
+B# 2619 [            v_rear_max[62] == 0      ]                 0
+B# 2620 [            v_rear_max[63] == 0      ]                 0
+B# 2621 [            v_rear_max[64] == 0      ]                 0
+B# 2622 [            v_rear_max[65] == 0      ]                 0
+B# 2623 [            v_rear_max[66] == 0      ]                 0
+B# 2624 [            v_rear_max[67] == 0      ]                 0
+B# 2625 [            v_rear_max[68] == 0      ]                 0
+B# 2626 [            v_rear_max[69] == 0      ]                 0
+B# 2627 [             v_rear_min[0] == 0      ]                 0
+B# 2628 [             v_rear_min[1] == 0      ]                 0
+B# 2629 [             v_rear_min[2] == 0      ]                 0
+B# 2630 [             v_rear_min[3] == 0      ]                 0
+B# 2631 [             v_rear_min[4] == 0      ]                 0
+B# 2632 [             v_rear_min[5] == 0      ]                 0
+B# 2633 [             v_rear_min[6] == 0      ]                 0
+B# 2634 [             v_rear_min[7] == 0      ]                 0
+B# 2635 [             v_rear_min[8] == 0      ]                 0
+B# 2636 [             v_rear_min[9] == 0      ]                 0
+B# 2637 [            v_rear_min[10] == 0      ]                 0
+B# 2638 [            v_rear_min[11] == 0      ]                 0
+B# 2639 [            v_rear_min[12] == 0      ]                 0
+B# 2640 [            v_rear_min[13] == 0      ]                 0
+B# 2641 [            v_rear_min[14] == 0      ]                 0
+B# 2642 [            v_rear_min[15] == 0      ]                 0
+B# 2643 [            v_rear_min[16] == 0      ]                 0
+B# 2644 [            v_rear_min[17] == 0      ]                 0
+B# 2645 [            v_rear_min[18] == 0      ]                 0
+B# 2646 [            v_rear_min[19] == 0      ]                 0
+B# 2647 [            v_rear_min[20] == 0      ]                 0
+B# 2648 [            v_rear_min[21] == 0      ]                 0
+B# 2649 [            v_rear_min[22] == 0      ]                 0
+B# 2650 [            v_rear_min[23] == 0      ]                 0
+B# 2651 [            v_rear_min[24] == 0      ]                 0
+B# 2652 [            v_rear_min[25] == 0      ]                 0
+B# 2653 [            v_rear_min[26] == 0      ]                 0
+B# 2654 [            v_rear_min[27] == 0      ]                 0
+B# 2655 [            v_rear_min[28] == 0      ]                 0
+B# 2656 [            v_rear_min[29] == 0      ]                 0
+B# 2657 [            v_rear_min[30] == 0      ]                 0
+B# 2658 [            v_rear_min[31] == 0      ]                 0
+B# 2659 [            v_rear_min[32] == 0      ]                 0
+B# 2660 [            v_rear_min[33] == 0      ]                 0
+B# 2661 [            v_rear_min[34] == 0      ]                 0
+B# 2662 [            v_rear_min[35] == 0      ]                 0
+B# 2663 [            v_rear_min[36] == 0      ]                 0
+B# 2664 [            v_rear_min[37] == 0      ]                 0
+B# 2665 [            v_rear_min[38] == 0      ]                 0
+B# 2666 [            v_rear_min[39] == 0      ]                 0
+B# 2667 [            v_rear_min[40] == 0      ]                 0
+B# 2668 [            v_rear_min[41] == 0      ]                 0
+B# 2669 [            v_rear_min[42] == 0      ]                 0
+B# 2670 [            v_rear_min[43] == 0      ]                 0
+B# 2671 [            v_rear_min[44] == 0      ]                 0
+B# 2672 [            v_rear_min[45] == 0      ]                 0
+B# 2673 [            v_rear_min[46] == 0      ]                 0
+B# 2674 [            v_rear_min[47] == 0      ]                 0
+B# 2675 [            v_rear_min[48] == 0      ]                 0
+B# 2676 [            v_rear_min[49] == 0      ]                 0
+B# 2677 [            v_rear_min[50] == 0      ]                 0
+B# 2678 [            v_rear_min[51] == 0      ]                 0
+B# 2679 [            v_rear_min[52] == 0      ]                 0
+B# 2680 [            v_rear_min[53] == 0      ]                 0
+B# 2681 [            v_rear_min[54] == 0      ]                 0
+B# 2682 [            v_rear_min[55] == 0      ]                 0
+B# 2683 [            v_rear_min[56] == 0      ]                 0
+B# 2684 [            v_rear_min[57] == 0      ]                 0
+B# 2685 [            v_rear_min[58] == 0      ]                 0
+B# 2686 [            v_rear_min[59] == 0      ]                 0
+B# 2687 [            v_rear_min[60] == 0      ]                 0
+B# 2688 [            v_rear_min[61] == 0      ]                 0
+B# 2689 [            v_rear_min[62] == 0      ]                 0
+B# 2690 [            v_rear_min[63] == 0      ]                 0
+B# 2691 [            v_rear_min[64] == 0      ]                 0
+B# 2692 [            v_rear_min[65] == 0      ]                 0
+B# 2693 [            v_rear_min[66] == 0      ]                 0
+B# 2694 [            v_rear_min[67] == 0      ]                 0
+B# 2695 [            v_rear_min[68] == 0      ]                 0
+B# 2696 [            v_rear_min[69] == 0      ]                 0
+B# 2697 [                Rho[0]     == 0      ]                 0
+B# 2698 [                Rho[1]     == 0      ]                 0
+B# 2699 [                Rho[2]     == 0      ]                 0
+B# 2700 [                Rho[3]     == 0      ]                 0
+B# 2701 [                Rho[4]     == 0      ]                 0
+B# 2702 [                Rho[5]     == 0      ]                 0
+B# 2703 [                Rho[6]     == 0      ]                 0
+B# 2704 [                Rho[7]     == 0      ]                 0
+B# 2705 [                Rho[8]     == 0      ]                 0
+B# 2706 [                Rho[9]     == 0      ]                 0
+B# 2707 [                Rho[10]    == 0      ]                 0
+B# 2708 [                Rho[11]    == 0      ]                 0
+B# 2709 [                Rho[12]    == 0      ]                 0
+B# 2710 [                Rho[13]    == 0      ]                 0
+B# 2711 [                Rho[14]    == 0      ]                 0
+B# 2712 [                Rho[15]    == 0      ]                 0
+B# 2713 [                Rho[16]    == 0      ]                 0
+B# 2714 [                Rho[17]    == 0      ]                 0
+B# 2715 [                Rho[18]    == 0      ]                 0
+B# 2716 [                Rho[19]    == 0      ]                 0
+B# 2717 [                Rho[20]    == 0      ]                 0
+B# 2718 [                Rho[21]    == 0      ]                 0
+B# 2719 [                Rho[22]    == 0      ]                 0
+B# 2720 [                Rho[23]    == 0      ]                 0
+B# 2721 [                Rho[24]    == 0      ]                 0
+B# 2722 [                Rho[25]    == 0      ]                 0
+B# 2723 [                Rho[26]    == 0      ]                 0
+B# 2724 [                Rho[27]    == 0      ]                 0
+B# 2725 [                Rho[28]    == 0      ]                 0
+B# 2726 [                Rho[29]    == 0      ]                 0
+B# 2727 [                Rho[30]    == 0      ]                 0
+B# 2728 [                Rho[31]    == 0      ]                 0
+B# 2729 [                Rho[32]    == 0      ]                 0
+B# 2730 [                Rho[33]    == 0      ]                 0
+B# 2731 [                Rho[34]    == 0      ]                 0
+B# 2732 [                Rho[35]    == 0      ]                 0
+B# 2733 [                Rho[36]    == 0      ]                 0
+B# 2734 [                Rho[37]    == 0      ]                 0
+B# 2735 [                Rho[38]    == 0      ]                 0
+B# 2736 [                Rho[39]    == 0      ]                 0
+B# 2737 [                Rho[40]    == 0      ]                 0
+B# 2738 [                Rho[41]    == 0      ]                 0
+B# 2739 [                Rho[42]    == 0      ]                 0
+B# 2740 [                Rho[43]    == 0      ]                 0
+B# 2741 [                Rho[44]    == 0      ]                 0
+B# 2742 [                Rho[45]    == 0      ]                 0
+B# 2743 [                Rho[46]    == 0      ]                 0
+B# 2744 [                Rho[47]    == 0      ]                 0
+B# 2745 [                Rho[48]    == 0      ]                 0
+B# 2746 [                Rho[49]    == 0      ]                 0
+B# 2747 [                Rho[50]    == 0      ]                 0
+B# 2748 [                Rho[51]    == 0      ]                 0
+B# 2749 [                Rho[52]    == 0      ]                 0
+B# 2750 [                Rho[53]    == 0      ]                 0
+B# 2751 [                Rho[54]    == 0      ]                 0
+B# 2752 [                Rho[55]    == 0      ]                 0
+B# 2753 [                Rho[56]    == 0      ]                 0
+B# 2754 [                Rho[57]    == 0      ]                 0
+B# 2755 [                Rho[58]    == 0      ]                 0
+B# 2756 [                Rho[59]    == 0      ]                 0
+B# 2757 [                Rho[60]    == 0      ]                 0
+B# 2758 [                Rho[61]    == 0      ]                 0
+B# 2759 [                Rho[62]    == 0      ]                 0
+B# 2760 [                Rho[63]    == 0      ]                 0
+B# 2761 [                Rho[64]    == 0      ]                 0
+B# 2762 [                Rho[65]    == 0      ]                 0
+B# 2763 [                Rho[66]    == 0      ]                 0
+B# 2764 [                Rho[67]    == 0      ]                 0
+B# 2765 [                Rho[68]    == 0      ]                 0
+B# 2766 [                 x_pd      == 0      ]                 0
+B# 2767 [                 y_pd      == 0      ]                 0
+B# 2768 [                vel_pd     == 0      ]                 0
 
 %%
 %% CONSTRAINTS 
@@ -7750,3 +8241,143 @@ C# 1954 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[66]      ]           
 C# 1955 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[67]      ]                 0
 C# 1956 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[68]      ]                 0
 C# 1957 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:186[69]      ]                 0
+C# 1958 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[0] <= 0 ]                 0
+C# 1959 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[1] <= 0 ]                 0
+C# 1960 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[2] <= 0 ]                 0
+C# 1961 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[3] <= 0 ]                 0
+C# 1962 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[4] <= 0 ]                 0
+C# 1963 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[5] <= 0 ]                 0
+C# 1964 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[6] <= 0 ]                 0
+C# 1965 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[7] <= 0 ]                 0
+C# 1966 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[8] <= 0 ]                 0
+C# 1967 [       C:\MPCsimulation\Optimization\NUOPT.smp:187[9] <= 0 ]                 0
+C# 1968 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[10] <= 0 ]                 0
+C# 1969 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[11] <= 0 ]                 0
+C# 1970 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[12] <= 0 ]                 0
+C# 1971 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[13] <= 0 ]                 0
+C# 1972 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[14] <= 0 ]                 0
+C# 1973 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[15] <= 0 ]                 0
+C# 1974 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[16] <= 0 ]                 0
+C# 1975 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[17] <= 0 ]                 0
+C# 1976 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[18] <= 0 ]                 0
+C# 1977 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[19] <= 0 ]                 0
+C# 1978 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[20] <= 0 ]                 0
+C# 1979 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[21] <= 0 ]                 0
+C# 1980 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[22] <= 0 ]                 0
+C# 1981 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[23] <= 0 ]                 0
+C# 1982 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[24] <= 0 ]                 0
+C# 1983 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[25] <= 0 ]                 0
+C# 1984 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[26] <= 0 ]                 0
+C# 1985 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[27] <= 0 ]                 0
+C# 1986 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[28] <= 0 ]                 0
+C# 1987 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[29] <= 0 ]                 0
+C# 1988 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[30] <= 0 ]                 0
+C# 1989 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[31] <= 0 ]                 0
+C# 1990 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[32] <= 0 ]                 0
+C# 1991 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[33] <= 0 ]                 0
+C# 1992 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[34] <= 0 ]                 0
+C# 1993 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[35] <= 0 ]                 0
+C# 1994 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[36] <= 0 ]                 0
+C# 1995 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[37] <= 0 ]                 0
+C# 1996 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[38] <= 0 ]                 0
+C# 1997 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[39] <= 0 ]                 0
+C# 1998 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[40] <= 0 ]                 0
+C# 1999 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[41] <= 0 ]                 0
+C# 2000 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[42] <= 0 ]                 0
+C# 2001 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[43] <= 0 ]                 0
+C# 2002 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[44] <= 0 ]                 0
+C# 2003 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[45] <= 0 ]                 0
+C# 2004 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[46] <= 0 ]                 0
+C# 2005 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[47] <= 0 ]                 0
+C# 2006 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[48] <= 0 ]                 0
+C# 2007 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[49] <= 0 ]                 0
+C# 2008 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[50] <= 0 ]                 0
+C# 2009 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[51] <= 0 ]                 0
+C# 2010 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[52] <= 0 ]                 0
+C# 2011 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[53] <= 0 ]                 0
+C# 2012 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[54] <= 0 ]                 0
+C# 2013 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[55] <= 0 ]                 0
+C# 2014 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[56] <= 0 ]                 0
+C# 2015 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[57] <= 0 ]                 0
+C# 2016 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[58] <= 0 ]                 0
+C# 2017 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[59] <= 0 ]                 0
+C# 2018 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[60] <= 0 ]                 0
+C# 2019 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[61] <= 0 ]                 0
+C# 2020 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[62] <= 0 ]                 0
+C# 2021 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[63] <= 0 ]                 0
+C# 2022 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[64] <= 0 ]                 0
+C# 2023 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[65] <= 0 ]                 0
+C# 2024 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[66] <= 0 ]                 0
+C# 2025 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[67] <= 0 ]                 0
+C# 2026 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[68] <= 0 ]                 0
+C# 2027 [      C:\MPCsimulation\Optimization\NUOPT.smp:187[69] <= 0 ]                 0
+C# 2028 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[0]      ]                 0
+C# 2029 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[1]      ]                 0
+C# 2030 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[2]      ]                 0
+C# 2031 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[3]      ]                 0
+C# 2032 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[4]      ]                 0
+C# 2033 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[5]      ]                 0
+C# 2034 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[6]      ]                 0
+C# 2035 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[7]      ]                 0
+C# 2036 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[8]      ]                 0
+C# 2037 [ 0 <=  C:\MPCsimulation\Optimization\NUOPT.smp:188[9]      ]                 0
+C# 2038 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[10]      ]                 0
+C# 2039 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[11]      ]                 0
+C# 2040 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[12]      ]                 0
+C# 2041 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[13]      ]                 0
+C# 2042 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[14]      ]                 0
+C# 2043 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[15]      ]                 0
+C# 2044 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[16]      ]                 0
+C# 2045 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[17]      ]                 0
+C# 2046 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[18]      ]                 0
+C# 2047 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[19]      ]                 0
+C# 2048 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[20]      ]                 0
+C# 2049 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[21]      ]                 0
+C# 2050 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[22]      ]                 0
+C# 2051 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[23]      ]                 0
+C# 2052 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[24]      ]                 0
+C# 2053 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[25]      ]                 0
+C# 2054 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[26]      ]                 0
+C# 2055 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[27]      ]                 0
+C# 2056 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[28]      ]                 0
+C# 2057 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[29]      ]                 0
+C# 2058 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[30]      ]                 0
+C# 2059 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[31]      ]                 0
+C# 2060 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[32]      ]                 0
+C# 2061 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[33]      ]                 0
+C# 2062 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[34]      ]                 0
+C# 2063 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[35]      ]                 0
+C# 2064 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[36]      ]                 0
+C# 2065 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[37]      ]                 0
+C# 2066 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[38]      ]                 0
+C# 2067 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[39]      ]                 0
+C# 2068 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[40]      ]                 0
+C# 2069 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[41]      ]                 0
+C# 2070 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[42]      ]                 0
+C# 2071 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[43]      ]                 0
+C# 2072 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[44]      ]                 0
+C# 2073 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[45]      ]                 0
+C# 2074 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[46]      ]                 0
+C# 2075 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[47]      ]                 0
+C# 2076 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[48]      ]                 0
+C# 2077 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[49]      ]                 0
+C# 2078 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[50]      ]                 0
+C# 2079 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[51]      ]                 0
+C# 2080 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[52]      ]                 0
+C# 2081 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[53]      ]                 0
+C# 2082 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[54]      ]                 0
+C# 2083 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[55]      ]                 0
+C# 2084 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[56]      ]                 0
+C# 2085 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[57]      ]                 0
+C# 2086 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[58]      ]                 0
+C# 2087 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[59]      ]                 0
+C# 2088 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[60]      ]                 0
+C# 2089 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[61]      ]                 0
+C# 2090 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[62]      ]                 0
+C# 2091 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[63]      ]                 0
+C# 2092 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[64]      ]                 0
+C# 2093 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[65]      ]                 0
+C# 2094 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[66]      ]                 0
+C# 2095 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[67]      ]                 0
+C# 2096 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[68]      ]                 0
+C# 2097 [ 0 <= C:\MPCsimulation\Optimization\NUOPT.smp:188[69]      ]                 0

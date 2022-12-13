@@ -130,7 +130,7 @@ void InitState(double u_start, double v_start, double theta_start, double vel_st
 {
 	for (int i = 0; i < vsize; i++)
 	{
-		shareddata->u[i] = u_start + 3 * T_delta * i;
+		shareddata->u[i] = u_start + 40.0 * T_delta * i;
 		shareddata->vel[i] = vel_start;
 		shareddata->acc[i] = 0;
 		shareddata->v[i] = v_start;
@@ -200,7 +200,7 @@ void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData
 	double x_car, y_car;
 	x_car = shareddata->x[0];
 	y_car = shareddata->y[0];
-	double closs_pd = vel_ref * ((ped.x_pd / vel_ref) - (ped.y_pd / ped.vel_pd));
+	double closs_pd = ped.x_pd  - vel_ref*(ped.y_pd / ped.vel_pd);
 	int trigger = shareddata->trigger;
 	ped.x_pd = ped.x_pd;
 	if (trigger==0)
@@ -558,7 +558,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 #ifdef PD
 		//UpdatePed(ped,prm.T_delta,vel_ref);//歩行者　判断なし
 		UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);//歩行者　判断あり
-		judge_collision(ped, shareddata); 
+		// judge_collision(ped, shareddata); //歩行者との衝突判定
 #endif //PD
 		
 		//result_plot(shareddata,gp);//結果プロット
