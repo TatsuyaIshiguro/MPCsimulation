@@ -15,7 +15,7 @@
 #include <sstream>
 #include <random.h>
 #include <plot.h>
-#include <ped_func.h>
+#include <ped_function.h>
 
 
 //Setting of shared memory
@@ -192,7 +192,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	prm.Load_Prm(CSV_prm, 0);
 
 #ifdef PD	//•àsÒ‚Ì‰Šúİ’è
-	Pedestrian ped(vel_ref, course[5]);
+	Pedestrian ped(vel_ref, course[5], shareddata);
 	ped_func ped_func;
 #endif //PD
 
@@ -239,8 +239,9 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		system(path);
 		UpdateState();
 #ifdef PD
-		//ped_func.UpdatePed(ped,prm.T_delta,vel_ref);//•àsÒ
-		ped_func.UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
+		//ped_func.UpdatePed(ped,prm.T_delta,vel_ref, shareddata);//•àsÒ
+		//ped_func.UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
+		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
 #endif //PD
 
 #ifdef PLOT
@@ -327,14 +328,25 @@ int main()
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 5; //Initial u
-	double u_end = 80; //goal of u
+	double u_end = 85; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
 	double vel_ref = 6; //Reference velocit defo=6
 
-	course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
-	SetFrenet(course, setting, frenet);
-	Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref);
+	int attempt_num = 1;//ŒJ‚è•Ô‚µ‰ñ”
+	int count = 0;
+
+	while (count < attempt_num) {
+		course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
+		SetFrenet(course, setting, frenet);
+		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref);
+		count++;
+	}
+
+
+	//course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
+	//SetFrenet(course, setting, frenet);
+	//Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref);
 
 #endif // CSV
 

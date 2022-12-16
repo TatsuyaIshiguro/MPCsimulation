@@ -70,6 +70,9 @@ bool SetSharedData(MyProblem myProblem)
 		shareddata->x_PD[i] = myProblem.x_PD[i];
 		shareddata->y_PD[i] = myProblem.y_PD[i];
 		//
+		//
+		shareddata->v_front_l[i] = myProblem.v_front_l[i];
+		//
 	}
 
 	shareddata->error_code = myProblem.error_code;

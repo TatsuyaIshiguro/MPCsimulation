@@ -272,7 +272,7 @@ System_NUOPT::System_NUOPT()
 			smp_line(__LINE__, __FILE__); v_rear_l[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI - theta_rear);
 			smp_line(__LINE__, __FILE__); v_rear_r[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI + theta_rear);
 			//歩行者の予測あり
-			smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_PD[k], 2) + pow(v[k] - y_PD[k], 2), 0.5);
+			smp_line(__LINE__, __FILE__); Dist[k] == (u[k] - x_PD[k])* (u[k] - x_PD[k]) +(v[k] - y_PD[k])* (v[k] - y_PD[k]);
 			//歩行者の予測なし
 			//smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2), 0.5);
 			
@@ -283,7 +283,7 @@ System_NUOPT::System_NUOPT()
 			
 
 		}
-		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow(pow(u[rcd_horizon] - x_PD[rcd_horizon], 2) + pow(v[rcd_horizon] - y_PD[rcd_horizon], 2), 0.5);
+		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == (u[rcd_horizon] - x_PD[rcd_horizon])* (u[rcd_horizon] - x_PD[rcd_horizon]) +(v[rcd_horizon] - y_PD[rcd_horizon])* (v[rcd_horizon] - y_PD[rcd_horizon]);
 
 		//制約条件
 		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;//加速度
@@ -298,7 +298,7 @@ System_NUOPT::System_NUOPT()
 		//smp_line(__LINE__, __FILE__); v_rear_l[Idx] <= v_rear_max[Idx], Idx;
 
 		//歩行者がいる時の制約
-		smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.8, Idx;
+		smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.5, Idx;
 		//歩行者と車の距離が1m以上の制約
 
 

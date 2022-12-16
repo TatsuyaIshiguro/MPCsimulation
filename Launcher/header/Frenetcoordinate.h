@@ -245,7 +245,7 @@ public:
 				if (index < 0) index = size - 1;
 			}
 			else
-				index = index > 0 ? index-- : 0;
+				index = index > 0 ? index=index-1 : 0;
 
 			uv = points[index].GetLocalPos(target);
 		}

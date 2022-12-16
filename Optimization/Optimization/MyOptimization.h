@@ -9,13 +9,17 @@ public:
 	int rcd_horizon, error_code, iters, fevals, method; //2,3,4番目 -> nuoptのマニュアル参照、method -> IPM or SQP
 	double T_delta, eps, elapse_time, optValue, tolerance, residual; //nuoptのマニュアル参照
 	std::vector<double> v_ref, v_max, v_min, vel_ref, vel_max, Rho, v_front_max, v_front_min; //u, v, theta -> frenet coordinate
-	std::vector<double> u, v, v_dot, v_2dot, theta, theta_dot, theta_2dot, delta, delta_dot, vel, acc, u_front_l, u_front_r, u_center_l, u_center_r, u_rear_l, u_rear_r, lateral_G, lateral_jerk, longitudinal_jerk;
+	std::vector<double> u, v, v_dot, v_2dot, theta, theta_dot, theta_2dot, delta, delta_dot, vel, acc, u_center_l, u_center_r, lateral_G, lateral_jerk, longitudinal_jerk;
 	std::vector<double> x, y, yaw; // x, y, yaw -> global coordinate
+	//
+	std::vector<double> v_front_l, v_front_r, v_rear_l, v_rear_r;
+	std::vector<double> u_front_l, u_front_r, u_rear_l, u_rear_r;
+	//
 	double M, Iz, l_f, l_r, C_f, C_r, width, dist_front, dist_rear, theta_front, theta_rear; // 車両モデルのパラメータ
 	double a11, a12, a21, a22, b1, b2;
 
 	//歩行者
-	double x_pd, y_pd, vel_pd, closs_pd;
+	double x_pd_mpc, y_pd_mpc, vel_pd_mpc, closs_pd;
 	//
 	std::vector<double> x_PD, y_PD;
 

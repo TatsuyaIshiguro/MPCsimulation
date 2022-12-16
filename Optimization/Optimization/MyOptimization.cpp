@@ -47,9 +47,9 @@ MyProblem::MyProblem(SharedData* shareddata)
 		System_NUOPT* m = ((System_NUOPT*)model.get());
 
 		//•àsÒ
-		x_pd = shareddata->x_pd;
-		y_pd = shareddata->y_pd;
-		vel_pd = shareddata->vel_pd;
+		x_pd_mpc = shareddata->x_pd_mpc;
+		y_pd_mpc = shareddata->y_pd_mpc;
+		vel_pd_mpc = shareddata->vel_pd_mpc;
 		closs_pd = shareddata->closs_pd;
 		//
 
@@ -148,6 +148,10 @@ void MyProblem::InitOptVec()
 	//
 	x_PD.resize(vsize);
 	y_PD.resize(vsize);
+	//
+	v_front_l.resize(vsize);
+
+	//
 }
 
 void MyProblem::InitState(SharedData* shareddata)
@@ -172,9 +176,9 @@ void MyProblem::InitState(SharedData* shareddata)
 	}
 	u[rcd_horizon - 1] = u[rcd_horizon - 2] + vel[rcd_horizon - 2] * T_delta;
 
-	x_pd = shareddata->x_pd;
-	y_pd = shareddata->y_pd;
-	vel_pd = shareddata->vel_pd;
+	x_pd_mpc = shareddata->x_pd_mpc;
+	y_pd_mpc = shareddata->y_pd_mpc;
+	vel_pd_mpc = shareddata->vel_pd_mpc;
 	closs_pd = shareddata->closs_pd;
 
 }
@@ -325,9 +329,9 @@ void MyProblem::SetAllState()
 	}
 
 
-	m->x_pd = x_pd;
-	m->y_pd = y_pd;
-	m->vel_pd = vel_pd;
+	m->x_pd = x_pd_mpc;
+	m->y_pd = y_pd_mpc;
+	m->vel_pd = vel_pd_mpc;
 	m->closs_pd = closs_pd;
 }
 
@@ -424,8 +428,8 @@ void MyProblem::Solve()
 	v_center_l.SetData();
 	VariableDumper v_center_r(m->v_center_r.val);
 	v_center_r.SetData();
-	VariableDumper v_front_l(m->v_front_l.val);
-	v_front_l.SetData();
+	//VariableDumper v_front_l(m->v_front_l.val);
+	//v_front_l.SetData();
 	VariableDumper v_front_r(m->v_front_r.val);
 	v_front_r.SetData();
 	VariableDumper v_front_max(m->v_front_max.val);
@@ -437,6 +441,10 @@ void MyProblem::Solve()
 	x_PD.SetData();
 	VariableDumper y_PD(m->y_PD.val);
 	y_PD.SetData();
+	//
+	//
+	VariableDumper v_front_l(m->v_front_l.val);
+	v_front_l.SetData();
 	//
 
 	this->u = u.data;
@@ -453,6 +461,8 @@ void MyProblem::Solve()
 	//
 	this->x_PD = x_PD.data;
 	this->y_PD = y_PD.data;
+	//
+	this->v_front_l = v_front_l.data;
 	//
 
 	this->v_ref = v_ref.data;

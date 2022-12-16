@@ -73,6 +73,13 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("19x_pd", shareddata->x_pd);
 	logger.push_back<double>("20y_pd", shareddata->y_pd);
 	logger.push_back<double>("21vel_pd", shareddata->vel_pd);
+	logger.push_back<int>("22action_num", shareddata->action_num);
+	logger.push_back<int>("23vel_pd_num", shareddata->vel_pd_num);
+	logger.push_back<double>("24closs_pd", shareddata->closs_pd);
+	logger.push_back<double>("25closs_range", shareddata->closs_range);
+	logger.push_back<double>("26closs_y_pd", shareddata->closs_y_pd);
+	logger.push_back<double>("27vel_ref", shareddata->vel_ref);
+
 
 	//«—ˆ‹““®‚ÌŒ‹‰Ê‚ğo—Í
 	std::string data_name;
