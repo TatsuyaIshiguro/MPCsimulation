@@ -52,7 +52,7 @@ struct Pedestrian
 		range_min = (-1.0) * vel_ref * course_width[0] / vel_pd_start;
 		range_max = vel_ref * course_width[0] / vel_pd_start;
 
-		x_pd_mpc = 100;// x_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
+		x_pd_mpc = 50;// x_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
 		y_pd_mpc =10;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
 		vel_pd_mpc = 0;
 
