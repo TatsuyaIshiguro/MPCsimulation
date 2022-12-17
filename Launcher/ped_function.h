@@ -128,7 +128,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 
 	ped.x_pd = ped.x_pd;
 
-	double sensor = 30.0;
+	double sensor = 40.0;
 
 
 

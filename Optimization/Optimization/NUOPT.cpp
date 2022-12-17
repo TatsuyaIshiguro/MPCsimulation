@@ -333,7 +333,7 @@ System_NUOPT::System_NUOPT()
 
 		//•àsŽÒ‚ª‚¢‚éŽž‚Ì§–ñ
 		//smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.5, Idx;
-		smp_line(__LINE__, __FILE__); pow((u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]),0.5) >= 0.8, Idx;
+		smp_line(__LINE__, __FILE__); pow((u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]),0.5) >= 0.5, Idx;
 		//smp_line(__LINE__, __FILE__); Dist_f_l[Idx] >= 0.1, Idx;
 		//smp_line(__LINE__, __FILE__); Dist_f_r[Idx] >= 0.1, Idx;
 		//smp_line(__LINE__, __FILE__); Dist_r_l[Idx] >= 0.1, Idx;
