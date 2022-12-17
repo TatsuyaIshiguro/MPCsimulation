@@ -58,7 +58,8 @@ struct Pedestrian
 
 		x_pd = x_pd_start;
 		y_pd = y_pd_start;
-		vel_pd = vel_pd_start;
+		//vel_pd = vel_pd_start;
+		vel_pd = 0.5;
 		
 
 		closs_range = (rand_num.Make_num() % 32767 - 16383.0) / 16383.0 * range_max;
