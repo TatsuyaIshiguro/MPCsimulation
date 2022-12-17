@@ -72,6 +72,14 @@ bool SetSharedData(MyProblem myProblem)
 		//
 		//
 		shareddata->v_front_l[i] = myProblem.v_front_l[i];
+		shareddata->v_front_r[i] = myProblem.v_front_r[i];
+		shareddata->v_rear_l[i] = myProblem.v_rear_l[i];
+		shareddata->v_rear_r[i] = myProblem.v_rear_r[i];
+		shareddata->u_front_l[i] = myProblem.u_front_l[i];
+		shareddata->u_front_r[i] = myProblem.u_front_r[i];
+		shareddata->u_rear_l[i] = myProblem.u_rear_l[i];
+		shareddata->u_rear_r[i] = myProblem.u_rear_r[i];
+		shareddata->dist_pd[i] = myProblem.dist_g[i];
 		//
 	}
 

@@ -32,6 +32,7 @@ struct Pedestrian
 		y_pd_start = 2.0;
 		//vel_pd_start = ((rand_num.Make_num() % 101 + 50.0) * 1000 + rand_num.Make_num() % 1000)/100000;
 		int select_vel = rand_num.Make_num() % 4;
+		select_vel = 1;
 		if (select_vel == 0) {
 			vel_pd_start = 0.88889;//slow
 		}
@@ -46,12 +47,13 @@ struct Pedestrian
 		}
 
 		action_num = rand_num.Make_num() % 5;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
+		action_num = 0;
 
 		range_min = (-1.0) * vel_ref * course_width[0] / vel_pd_start;
 		range_max = vel_ref * course_width[0] / vel_pd_start;
 
-		x_pd_mpc = 500;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
-		y_pd_mpc = 500;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
+		x_pd_mpc = 100;// x_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
+		y_pd_mpc =10;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
 		vel_pd_mpc = 0;
 
 		x_pd = x_pd_start;

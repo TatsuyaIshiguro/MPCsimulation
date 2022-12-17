@@ -242,6 +242,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		//ped_func.UpdatePed(ped,prm.T_delta,vel_ref, shareddata);//•àsÒ
 		//ped_func.UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
 		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
+		ped_func.collision_judge(ped, shareddata);
 #endif //PD
 
 #ifdef PLOT

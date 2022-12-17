@@ -12,6 +12,7 @@ public:
 	void UpdatePed(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
 	void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
 	void UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
+	void collision_judge(Pedestrian& ped, SharedData* shareddata);
 
 
 };
@@ -244,3 +245,51 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 }
 
 //Õ“Ë”»’è‚ÌŠÖ”
+inline void ped_func::collision_judge(Pedestrian& ped, SharedData* shareddata)
+{
+	double dist_g, dist_f_l, dist_f_r, dist_r_l, dist_r_r;
+	double x_car, y_car;
+	double x_pd, y_pd;
+	double u_front_r, u_front_l, u_rear_r, u_rear_l;
+	double v_front_r, v_front_l, v_rear_r, v_rear_l;
+	int collision_judge;
+
+	//’¼ü“¹˜H‚É‚¨‚¢‚Ä‚Ì‚ÝAx:u,y:v‚Å‘Î‰ž‚µ‚Ä‚¢‚é
+
+	x_car = shareddata->x[0];
+	y_car = shareddata->y[0];
+
+	u_front_l = shareddata->u_front_l[0];
+	u_front_r = shareddata->u_front_r[0];
+	u_rear_l = shareddata->u_rear_l[0];
+	u_rear_r = shareddata->u_rear_r[0];
+
+	v_front_l = shareddata->v_front_l[0];
+	v_front_r = shareddata->v_front_r[0];
+	v_rear_l = shareddata->v_rear_l[0];
+	v_rear_r = shareddata->v_rear_r[0];
+
+
+	x_pd = ped.x_pd;
+	y_pd = ped.y_pd;
+
+	dist_g = pow(pow(x_car - x_pd, 2) + pow(x_car - y_pd, 2), 0.5);
+	dist_f_l = pow(pow(u_front_l - x_pd, 2) + pow(v_front_l - y_pd, 2), 0.5);
+	dist_f_r = pow(pow(u_front_r - x_pd, 2) + pow(v_front_r - y_pd, 2), 0.5);
+	dist_r_l = pow(pow(u_rear_l - x_pd, 2) + pow(v_rear_l - y_pd, 2), 0.5);
+	dist_r_r = pow(pow(u_rear_r - x_pd, 2) + pow(v_rear_r - y_pd, 2), 0.5);
+
+
+	if (dist_g >= 1.0 && dist_f_l >= 0.1 && dist_f_r >= 0.1 && dist_r_l >= 0.1 && dist_r_r >= 0.1)
+	{
+		collision_judge = 0;
+	}
+	else
+	{
+		collision_judge = 1;
+	}
+
+
+	shareddata->collision_num = collision_judge;
+
+}
