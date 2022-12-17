@@ -79,6 +79,7 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("25closs_range", shareddata->closs_range);
 	logger.push_back<double>("26closs_y_pd", shareddata->closs_y_pd);
 	logger.push_back<double>("27vel_ref", shareddata->vel_ref);
+	logger.push_back<int>("28collision_num", shareddata->collision_num);
 
 
 	//«—ˆ‹““®‚ÌŒ‹‰Ê‚ğo—Í
