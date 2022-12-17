@@ -294,12 +294,12 @@ System_NUOPT::System_NUOPT()
 			smp_line(__LINE__, __FILE__); u_rear_l[k+1] == u[k+1] + dist_rear * cos(theta[k+1] + M_PI - theta_rear);
 			smp_line(__LINE__, __FILE__); u_rear_r[k+1] == u[k+1] + dist_rear * cos(theta[k+1] + M_PI + theta_rear);
 			//•àsŽÒ‚Ì—\‘ª‚ ‚è
-			smp_line(__LINE__, __FILE__); Dist[k] == pow((u[k] - x_PD[k])* (u[k] - x_PD[k]) +(v[k] - y_PD[k])* (v[k] - y_PD[k]),0.5);
+			smp_line(__LINE__, __FILE__); Dist[k] == (u[k] - x_PD[k])* (u[k] - x_PD[k]) +(v[k] - y_PD[k])* (v[k] - y_PD[k]);
 			//
-			smp_line(__LINE__, __FILE__); Dist_f_l[k] == pow((u_front_l[k] - x_PD[k])* (u_front_l[k] - x_PD[k]) +(v_front_l[k] - y_PD[k])* (v_front_l[k] - y_PD[k]),0.5);
-			smp_line(__LINE__, __FILE__); Dist_f_r[k] == pow((u_front_r[k] - x_PD[k])* (u_front_r[k] - x_PD[k]) +(v_front_r[k] - y_PD[k])* (v_front_r[k] - y_PD[k]),0.5);
-			smp_line(__LINE__, __FILE__); Dist_r_l[k] == pow((u_rear_l[k] - x_PD[k])* (u_rear_l[k] - x_PD[k]) +(v_rear_l[k] - y_PD[k])* (v_rear_l[k] - y_PD[k]),0.5);
-			smp_line(__LINE__, __FILE__); Dist_r_r[k] == pow((u_rear_r[k] - x_PD[k])* (u_rear_r[k] - x_PD[k]) +(v_rear_r[k] - y_PD[k])* (v_rear_r[k] - y_PD[k]),0.5);
+			smp_line(__LINE__, __FILE__); Dist_f_l[k] == (u_front_l[k] - x_PD[k])* (u_front_l[k] - x_PD[k]) +(v_front_l[k] - y_PD[k])* (v_front_l[k] - y_PD[k]);
+			smp_line(__LINE__, __FILE__); Dist_f_r[k] == (u_front_r[k] - x_PD[k])* (u_front_r[k] - x_PD[k]) +(v_front_r[k] - y_PD[k])* (v_front_r[k] - y_PD[k]);
+			smp_line(__LINE__, __FILE__); Dist_r_l[k] == (u_rear_l[k] - x_PD[k])* (u_rear_l[k] - x_PD[k]) +(v_rear_l[k] - y_PD[k])* (v_rear_l[k] - y_PD[k]);
+			smp_line(__LINE__, __FILE__); Dist_r_r[k] == (u_rear_r[k] - x_PD[k])* (u_rear_r[k] - x_PD[k]) +(v_rear_r[k] - y_PD[k])* (v_rear_r[k] - y_PD[k]);
 		
 			//
 			
@@ -310,12 +310,12 @@ System_NUOPT::System_NUOPT()
 			
 
 		}
-		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == pow((u[rcd_horizon] - x_PD[rcd_horizon])* (u[rcd_horizon] - x_PD[rcd_horizon]) +(v[rcd_horizon] - y_PD[rcd_horizon])* (v[rcd_horizon] - y_PD[rcd_horizon]),0.5);
+		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == (u[rcd_horizon] - x_PD[rcd_horizon])* (u[rcd_horizon] - x_PD[rcd_horizon]) +(v[rcd_horizon] - y_PD[rcd_horizon])* (v[rcd_horizon] - y_PD[rcd_horizon]);
 		//
-		smp_line(__LINE__, __FILE__); Dist_f_l[rcd_horizon] == pow((u_front_l[rcd_horizon] - x_PD[rcd_horizon]) * (u_front_l[rcd_horizon] - x_PD[rcd_horizon]) + (v_front_l[rcd_horizon] - y_PD[rcd_horizon]) * (v_front_l[rcd_horizon] - y_PD[rcd_horizon]), 0.5);
-		smp_line(__LINE__, __FILE__); Dist_f_r[rcd_horizon] == pow((u_front_r[rcd_horizon] - x_PD[rcd_horizon]) * (u_front_r[rcd_horizon] - x_PD[rcd_horizon]) + (v_front_r[rcd_horizon] - y_PD[rcd_horizon]) * (v_front_r[rcd_horizon] - y_PD[rcd_horizon]), 0.5);
-		smp_line(__LINE__, __FILE__); Dist_r_l[rcd_horizon] == pow((u_rear_l[rcd_horizon] - x_PD[rcd_horizon]) * (u_rear_l[rcd_horizon] - x_PD[rcd_horizon]) + (v_rear_l[rcd_horizon] - y_PD[rcd_horizon]) * (v_rear_l[rcd_horizon] - y_PD[rcd_horizon]), 0.5);
-		smp_line(__LINE__, __FILE__); Dist_r_r[rcd_horizon] == pow((u_rear_r[rcd_horizon] - x_PD[rcd_horizon]) * (u_rear_r[rcd_horizon] - x_PD[rcd_horizon]) + (v_rear_r[rcd_horizon] - y_PD[rcd_horizon]) * (v_rear_r[rcd_horizon] - y_PD[rcd_horizon]), 0.5);
+		smp_line(__LINE__, __FILE__); Dist_f_l[rcd_horizon] == (u_front_l[rcd_horizon] - x_PD[rcd_horizon]) * (u_front_l[rcd_horizon] - x_PD[rcd_horizon]) + (v_front_l[rcd_horizon] - y_PD[rcd_horizon]) * (v_front_l[rcd_horizon] - y_PD[rcd_horizon]);
+		smp_line(__LINE__, __FILE__); Dist_f_r[rcd_horizon] == (u_front_r[rcd_horizon] - x_PD[rcd_horizon]) * (u_front_r[rcd_horizon] - x_PD[rcd_horizon]) + (v_front_r[rcd_horizon] - y_PD[rcd_horizon]) * (v_front_r[rcd_horizon] - y_PD[rcd_horizon]);
+		smp_line(__LINE__, __FILE__); Dist_r_l[rcd_horizon] == (u_rear_l[rcd_horizon] - x_PD[rcd_horizon]) * (u_rear_l[rcd_horizon] - x_PD[rcd_horizon]) + (v_rear_l[rcd_horizon] - y_PD[rcd_horizon]) * (v_rear_l[rcd_horizon] - y_PD[rcd_horizon]);
+		smp_line(__LINE__, __FILE__); Dist_r_r[rcd_horizon] == (u_rear_r[rcd_horizon] - x_PD[rcd_horizon]) * (u_rear_r[rcd_horizon] - x_PD[rcd_horizon]) + (v_rear_r[rcd_horizon] - y_PD[rcd_horizon]) * (v_rear_r[rcd_horizon] - y_PD[rcd_horizon]);
 		//
 
 
@@ -334,7 +334,7 @@ System_NUOPT::System_NUOPT()
 
 		//•àsŽÒ‚ª‚¢‚éŽž‚Ì§–ñ
 		//smp_line(__LINE__, __FILE__); Dist[Idx] >= 0.5, Idx;
-		smp_line(__LINE__, __FILE__); pow((u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]),0.5) >= 0.5, Idx;
+		smp_line(__LINE__, __FILE__); (u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]) >= 0.5, Idx;
 		//smp_line(__LINE__, __FILE__); Dist_f_l[Idx] >= 0.1, Idx;
 		//smp_line(__LINE__, __FILE__); Dist_f_r[Idx] >= 0.1, Idx;
 		//smp_line(__LINE__, __FILE__); Dist_r_l[Idx] >= 0.1, Idx;

@@ -332,8 +332,8 @@ void MyProblem::SetAllState()
 	}
 
 
-	m->x_pd = 100;
-	m->y_pd = 2;
+	m->x_pd = x_pd_mpc;
+	m->y_pd = y_pd_mpc;
 	m->vel_pd = vel_pd_mpc;
 	m->closs_pd = closs_pd;
 }
