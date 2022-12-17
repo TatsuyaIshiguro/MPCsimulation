@@ -24,7 +24,7 @@ constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
-FILE*gp = _popen("C:\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
+FILE*gp = _popen("C:\\MPCsimulation\\gnuplot\\bin\\gnuplot.exe ", "w");//プロットのため
 
 char path[] = "\"C:\\MPCsimulation\\Optimization\\exe\\x64\\Release\\Optimization.exe\"";
 
@@ -234,7 +234,8 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 
 	//loop
-	while (shareddata->u[0] < u_end)
+	//while (shareddata->u[0] < u_end)
+	while(true)
 	{
 		system(path);
 		UpdateState();
@@ -326,7 +327,7 @@ int main()
 #endif // SINE
 
 #ifdef CSV
-	setting.Path_coursecsv = "C:\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
+	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 5; //Initial u
 	double u_end = 85; //goal of u
 	double v_start = 0; //Initial v
@@ -342,7 +343,6 @@ int main()
 		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref);
 		count++;
 	}
-
 
 	//course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 	//SetFrenet(course, setting, frenet);

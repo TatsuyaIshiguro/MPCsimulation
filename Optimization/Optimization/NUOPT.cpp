@@ -248,6 +248,7 @@ System_NUOPT::System_NUOPT()
 		//
 		smp_line(__LINE__, __FILE__); x_PD[0] == x_pd;
 		smp_line(__LINE__, __FILE__); y_PD[0] == y_pd;
+		smp_line(__LINE__, __FILE__); Dist[0] == (u[0] - x_PD[0]) * (u[0] - x_PD[0]) + (v[0] - y_PD[0]) * (v[0] - y_PD[0]);
 		//
 		
 
@@ -271,19 +272,16 @@ System_NUOPT::System_NUOPT()
 			smp_line(__LINE__, __FILE__); v_center_r[k + 1] == v[k + 1] + (dist_front * sin(theta[k + 1] - theta_front) + dist_rear * sin(theta[k + 1] + M_PI + theta_rear)) / 2;
 			smp_line(__LINE__, __FILE__); v_rear_l[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI - theta_rear);
 			smp_line(__LINE__, __FILE__); v_rear_r[k + 1] == v[k + 1] + dist_rear * sin(theta[k + 1] + M_PI + theta_rear);
-			//•àsŽÒ‚Ì—\‘ª‚ ‚è
-			smp_line(__LINE__, __FILE__); Dist[k] == (u[k] - x_PD[k])* (u[k] - x_PD[k]) +(v[k] - y_PD[k])* (v[k] - y_PD[k]);
-			//•àsŽÒ‚Ì—\‘ª‚È‚µ
-			//smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2), 0.5);
-			
-
 			//•àsŽÒ
 			smp_line(__LINE__, __FILE__); x_PD[k + 1] == x_PD[k];
 			smp_line(__LINE__, __FILE__); y_PD[k + 1] == y_PD[k] - vel_pd * T_delta;
-			
+			//•àsŽÒ‚Ì—\‘ª‚ ‚è
+			smp_line(__LINE__, __FILE__); Dist[k + 1] == (u[k + 1] - x_PD[k + 1])* (u[k + 1] - x_PD[k + 1]) +(v[k + 1] - y_PD[k + 1])* (v[k + 1] - y_PD[k + 1]);
+			//•àsŽÒ‚Ì—\‘ª‚È‚µ
+			//smp_line(__LINE__, __FILE__); Dist[k] == pow(pow(u[k] - x_pd, 2) + pow(v[k] - y_pd, 2), 0.5);		
 
 		}
-		smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == (u[rcd_horizon] - x_PD[rcd_horizon])* (u[rcd_horizon] - x_PD[rcd_horizon]) +(v[rcd_horizon] - y_PD[rcd_horizon])* (v[rcd_horizon] - y_PD[rcd_horizon]);
+		//smp_line(__LINE__, __FILE__); Dist[rcd_horizon] == (u[rcd_horizon] - x_PD[rcd_horizon])* (u[rcd_horizon] - x_PD[rcd_horizon]) +(v[rcd_horizon] - y_PD[rcd_horizon])* (v[rcd_horizon] - y_PD[rcd_horizon]);
 
 		//§–ñðŒ
 		smp_line(__LINE__, __FILE__); acc[Idx] >= -3, Idx;//‰Á‘¬“x
