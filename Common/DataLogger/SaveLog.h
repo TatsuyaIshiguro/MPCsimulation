@@ -18,6 +18,10 @@ std::string CreateLogFileName(std::string str, std::string method, CourseSetting
 	std::string day = buf1;
 	std::string time = buf2;
 	std::string dire_path = "C:\\Data\\MPC\\" + day; //パス
+#ifdef WHILE
+	std::string While = "While";
+	dire_path += "\\" + While;
+#endif //WHILE
 	std::string temp_csv = ".csv"; //拡張子
 	std::string temp_filename = dire_path; 
 	
@@ -34,6 +38,7 @@ std::string CreateLogFileName(std::string str, std::string method, CourseSetting
 #endif // SINE
 #ifdef CSV
 	std::string foldername = time + "csv";
+
 #endif // CSV
 
 
@@ -43,6 +48,12 @@ std::string CreateLogFileName(std::string str, std::string method, CourseSetting
 	std::string dire_today = dire_path + "\\" + foldername;
 	printf(dire_path.c_str());
 	_mkdir(dire_path.c_str());
+	//
+#ifdef WHILE
+	printf(dire_path.c_str());
+	_mkdir(dire_path.c_str());
+#endif //While
+	//
 	printf(dire_today.c_str());
 	_mkdir(dire_today.c_str());
 	// write header
@@ -80,7 +91,8 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("26closs_y_pd", shareddata->closs_y_pd);
 	logger.push_back<double>("27vel_ref", shareddata->vel_ref);
 	logger.push_back<int>("28collision_num", shareddata->collision_num);
-
+	logger.push_back<double>("29acc", shareddata->acc[0]);
+	logger.push_back<double>("30dist_pd", shareddata->dist_pd[0]);
 
 	//将来挙動の結果を出力
 	std::string data_name;
