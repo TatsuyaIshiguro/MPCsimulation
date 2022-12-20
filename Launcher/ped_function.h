@@ -128,7 +128,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 
 	ped.x_pd = ped.x_pd;
 
-	double sensor = 40.0;
+	double sensor = 20.0;
 
 
 
@@ -138,7 +138,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 		if (x_car + ped.closs_range >= closs_pd) { //•àsÒ‚Ì“®‚«o‚µ
 			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 
-			if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5)) {
+			if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 1.5)) {
 				ped.vel_pd = 0.0;
 
 

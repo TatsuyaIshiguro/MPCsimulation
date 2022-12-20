@@ -183,6 +183,7 @@
     <ClInclude Include="header\TableLinearInterporater.h" />
     <ClInclude Include="Optimization\MyOptimization.h" />
     <ClInclude Include="Optimization\NUOPT.h" />
+    <ClInclude Include="setting_model.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

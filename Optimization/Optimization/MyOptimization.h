@@ -19,8 +19,8 @@ public:
 	double a11, a12, a21, a22, b1, b2;
 
 	//ï‡çsé“
-	double x_pd_mpc, y_pd_mpc, vel_pd_mpc, closs_pd;
-	//
+	double x_pd_mpc, y_pd_mpc, vel_pd_mpc;
+	
 	std::vector<double> x_PD, y_PD, dist_g;
 
 

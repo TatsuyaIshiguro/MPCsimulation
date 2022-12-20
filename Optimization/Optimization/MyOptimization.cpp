@@ -50,7 +50,6 @@ MyProblem::MyProblem(SharedData* shareddata)
 		x_pd_mpc = shareddata->x_pd_mpc;
 		y_pd_mpc = shareddata->y_pd_mpc;
 		vel_pd_mpc = shareddata->vel_pd_mpc;
-		closs_pd = shareddata->closs_pd;
 		//
 
 
@@ -182,7 +181,7 @@ void MyProblem::InitState(SharedData* shareddata)
 	x_pd_mpc = shareddata->x_pd_mpc;
 	y_pd_mpc = shareddata->y_pd_mpc;
 	vel_pd_mpc = shareddata->vel_pd_mpc;
-	closs_pd = shareddata->closs_pd;
+	
 
 }
 
@@ -335,7 +334,10 @@ void MyProblem::SetAllState()
 	m->x_pd = x_pd_mpc;
 	m->y_pd = y_pd_mpc;
 	m->vel_pd = vel_pd_mpc;
-	m->closs_pd = closs_pd;
+	//KBM
+	m->l_f = l_f;
+	m->l_r = l_r;
+	
 }
 
 void MyProblem::UpdateState()
@@ -377,10 +379,12 @@ void MyProblem::Solve()
 		options.method = "tipm"; //信頼領域内点法
 	}
 
+	
 	options.outputMode = "silent"; //on->標準出力抑制
 	options.outfilename = "_NULL_";
 	options.iisDetect = "off";	//191112 kanada 実行不可能の原因を探らない
 	//showSystem();
+	//setNuoptWatchFile("out.csv");
 	for (size_t i = 0; i < 2; i++)
 	{
 		try
@@ -431,10 +435,6 @@ void MyProblem::Solve()
 	v_center_l.SetData();
 	VariableDumper v_center_r(m->v_center_r.val);
 	v_center_r.SetData();
-	//VariableDumper v_front_l(m->v_front_l.val);
-	//v_front_l.SetData();
-	//VariableDumper v_front_r(m->v_front_r.val);
-	//v_front_r.SetData();
 	VariableDumper v_front_max(m->v_front_max.val);
 	v_front_max.SetData();
 	VariableDumper v_front_min(m->v_front_min.val);

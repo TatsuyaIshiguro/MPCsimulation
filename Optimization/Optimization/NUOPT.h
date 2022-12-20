@@ -107,16 +107,17 @@ System_NUOPT();
   VariableParameterProxy x_pd;
   VariableParameterProxy y_pd;
   VariableParameterProxy vel_pd;
-  VariableParameterProxy closs_pd;
   //
   VariableProxy Dist;
-  VariableProxy Dist_f_l;
-  VariableProxy Dist_f_r;
-  VariableProxy Dist_r_l;
-  VariableProxy Dist_r_r;
   //
   VariableProxy x_PD;
   VariableProxy y_PD;
+  //
+  //KBMópÅ@
+  VariableParameterProxy l_f;
+  VariableParameterProxy l_r;
+  VariableProxy beta;
+
   //
 
 

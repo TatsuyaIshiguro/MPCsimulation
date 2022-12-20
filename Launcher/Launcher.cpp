@@ -234,8 +234,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 
 	//loop
-	//while (shareddata->u[0] < u_end)
-	while(true)
+	while (shareddata->u[0] < u_end)
 	{
 		system(path);
 		UpdateState();
@@ -329,8 +328,8 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 5; //Initial u
-	double u_end = 85; //goal of u
+	double u_start = 10; //Initial u
+	double u_end = 45; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
 	double vel_ref = 6; //Reference velocit defo=6
