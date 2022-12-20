@@ -56,9 +56,6 @@
     <ClInclude Include="plot.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ped_func.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ped_function.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>

@@ -176,7 +176,6 @@
     <ClInclude Include="header\Frenetcoordinate.h" />
     <ClInclude Include="header\TableLinearInterporater.h" />
     <ClInclude Include="Pedestrian.h" />
-    <ClInclude Include="ped_func.h" />
     <ClInclude Include="ped_function.h" />
     <ClInclude Include="plot.h" />
     <ClInclude Include="random.h" />

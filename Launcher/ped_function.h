@@ -25,7 +25,11 @@ inline void ped_func::UpdatePed(Pedestrian& ped, double T_delta, double vel_ref,
 
 
 
+	double dist_sensor = pow(pow(x_car - ped.x_pd, 2) + pow(y_car - ped.y_pd, 2), 0.5);
+
 	ped.x_pd = ped.x_pd;
+
+	double sensor = 20.0;
 
 	if (x_car + ped.closs_range >= closs_pd) {
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
@@ -34,12 +38,28 @@ inline void ped_func::UpdatePed(Pedestrian& ped, double T_delta, double vel_ref,
 		ped.y_pd = ped.y_pd;
 	}
 
+	//センサーによる認識を再現
+	if (dist_sensor <= sensor) {
+		ped.x_pd_mpc = ped.x_pd;
+		ped.y_pd_mpc = ped.y_pd;
+		ped.vel_pd_mpc = ped.vel_pd;
 
-	//データの受け渡し
+	}
+	else {
+		ped.x_pd_mpc = ped.x_pd_mpc;
+		ped.y_pd_mpc = ped.y_pd_mpc;
+		ped.vel_pd_mpc = ped.vel_pd_mpc;
+	}
+
 	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
 	shareddata->vel_pd = ped.vel_pd;
 	shareddata->closs_pd = closs_pd;
+	shareddata->x_pd_mpc = ped.x_pd_mpc;
+	shareddata->y_pd_mpc = ped.y_pd_mpc;
+	shareddata->vel_pd_mpc = ped.vel_pd_mpc;
+	shareddata->closs_y_pd = ped.closs_y_pd;
+
 }
 
 inline void ped_func::UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata) {
