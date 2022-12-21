@@ -385,7 +385,7 @@ void MyProblem::Solve()
 	options.iisDetect = "off";	//191112 kanada Às•s‰Â”\‚ÌŒ´ˆö‚ğ’T‚ç‚È‚¢
 	//showSystem();
 	//setNuoptWatchFile("out.csv");
-	for (size_t i = 0; i < 2; i++)
+	for (size_t i = 0; i < 3; i++)
 	{
 		try
 		{

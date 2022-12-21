@@ -56,9 +56,9 @@ struct Pedestrian
 		y_pd_mpc = 2;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
 		vel_pd_mpc = 0;
 
-		x_pd_start = 35.0;
-		y_pd_start = 2.0;
-		vel_pd_start = 0.8;
+		x_pd_start = 25.0;
+		y_pd_start = 1.5;
+		vel_pd_start = 0;
 
 		x_pd = x_pd_start;
 		y_pd = y_pd_start;

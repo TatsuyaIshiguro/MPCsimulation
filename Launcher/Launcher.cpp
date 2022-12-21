@@ -248,7 +248,10 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 #ifdef PLOT
 		plot.result_plot(shareddata,gp);//Œ‹‰Êƒvƒƒbƒg
 #endif//PLOT
-	
+		if (shareddata->error_code != 0)
+		{
+			printf("------------infeasible------------\n");
+		}
 
 		if (!ReadSharedMemory(SHARED_MEMORY_SIZE))
 		{
