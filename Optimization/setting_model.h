@@ -1,4 +1,4 @@
 #pragma once
 
-//#define KBM
-#define DBM
+#define KBM
+//#define DBM
