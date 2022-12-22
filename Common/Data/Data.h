@@ -25,9 +25,11 @@ struct SharedData
 
 	double x_pd, y_pd, vel_pd, closs_pd, closs_y_pd, closs_range;
 	int trigger, action_num, vel_pd_num, collision_num;
-	double x_pd_mpc, y_pd_mpc, vel_pd_mpc;
+	double x_pd_mpc, y_pd_mpc, vel_pd_mpc, Q_pena_dist, Q_pena_vel;
 
 	double u_front_r[vsize], u_front_l[vsize], u_rear_r[vsize], u_rear_l[vsize];
 	double v_front_r[vsize], v_front_l[vsize], v_rear_r[vsize], v_rear_l[vsize];
+
+	double x_pd_pre[vsize], y_pd_pre[vsize];
 
 };

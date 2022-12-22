@@ -50,6 +50,9 @@ MyProblem::MyProblem(SharedData* shareddata)
 		x_pd_mpc = shareddata->x_pd_mpc;
 		y_pd_mpc = shareddata->y_pd_mpc;
 		vel_pd_mpc = shareddata->vel_pd_mpc;
+		Q_pena_vel = shareddata->Q_pena_vel;
+		Q_pena_dist = shareddata->Q_pena_dist;
+
 		//
 
 
@@ -152,7 +155,6 @@ void MyProblem::InitOptVec()
 	v_front_r.resize(vsize);
 	v_rear_l.resize(vsize);
 	v_rear_r.resize(vsize);
-	dist_g.resize(vsize);
 	//
 }
 
@@ -172,8 +174,8 @@ void MyProblem::InitState(SharedData* shareddata)
 		theta_2dot[i] = shareddata->theta_2dot[i];
 		delta[i] = shareddata->delta[i];
 		//
-		x_PD[i] = shareddata->x_PD[i];
-		y_PD[i] = shareddata->y_PD[i];
+		x_PD[i] = shareddata->x_pd_pre[i];
+		y_PD[i] = shareddata->y_pd_pre[i];
 		//
 	}
 	u[rcd_horizon - 1] = u[rcd_horizon - 2] + vel[rcd_horizon - 2] * T_delta;
@@ -181,6 +183,8 @@ void MyProblem::InitState(SharedData* shareddata)
 	x_pd_mpc = shareddata->x_pd_mpc;
 	y_pd_mpc = shareddata->y_pd_mpc;
 	vel_pd_mpc = shareddata->vel_pd_mpc;
+	Q_pena_vel = shareddata->Q_pena_vel;
+	Q_pena_dist = shareddata->Q_pena_dist;
 	
 
 }
@@ -328,12 +332,18 @@ void MyProblem::SetAllState()
 		m->x_PD[i] = x_PD[i];
 		m->y_PD[i] = y_PD[i];
 		//
+		m->u_front_l[i] = u_front_l[i];
+		m->u_front_r[i] = u_front_r[i];
+		m->u_rear_l[i] = u_rear_l[i];
+		m->u_rear_r[i] = u_rear_r[i];
 	}
 
-
+	//
 	m->x_pd = x_pd_mpc;
 	m->y_pd = y_pd_mpc;
 	m->vel_pd = vel_pd_mpc;
+	//m->Q_pena_vel = Q_pena_vel;
+	//m->Q_pena_dist = Q_pena_dist;
 	//KBM
 	m->l_f = l_f;
 	m->l_r = l_r;
@@ -359,6 +369,10 @@ void MyProblem::UpdateState()
 		x_PD[i] = x_PD[i + 1];
 		y_PD[i] = y_PD[i + 1];
 		//
+		u_front_l[i] = u_front_l[i + 1];
+		u_front_r[i] = u_front_r[i + 1];
+		u_rear_l[i] = u_rear_l[i + 1];
+		u_rear_r[i] = u_rear_r[i + 1];
 	}
 	u[rcd_horizon - 1] = u[rcd_horizon - 2] + vel[rcd_horizon - 1] * T_delta;
 }
@@ -380,11 +394,11 @@ void MyProblem::Solve()
 	}
 
 	
-	options.outputMode = "silent"; //on->標準出力抑制
+	//options.outputMode = "silent"; //on->標準出力抑制
 	options.outfilename = "_NULL_";
 	options.iisDetect = "off";	//191112 kanada 実行不可能の原因を探らない
 	//showSystem();
-	//setNuoptWatchFile("out.csv");
+	setNuoptWatchFile("out.csv");
 	for (size_t i = 0; i < 3; i++)
 	{
 		try
@@ -454,8 +468,6 @@ void MyProblem::Solve()
 	v_rear_l.SetData();
 	VariableDumper v_rear_r(m->v_rear_r.val);
 	v_rear_r.SetData();
-	VariableDumper dist_g(m->Dist.val);
-	dist_g.SetData();
 	//
 
 	this->u = u.data;
@@ -477,7 +489,6 @@ void MyProblem::Solve()
 	this->v_front_r = v_front_r.data;
 	this->v_rear_l = v_rear_l.data;
 	this->v_rear_r = v_rear_r.data;
-	this->dist_g = dist_g.data;
 	//
 
 	this->v_ref = v_ref.data;

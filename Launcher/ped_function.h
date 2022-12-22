@@ -13,6 +13,7 @@ public:
 	void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
 	void UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
 	void collision_judge(Pedestrian& ped, SharedData* shareddata);
+	void ped_prediction(Pedestrian& ped, double T_delta, SharedData* shareddata);
 
 
 };
@@ -142,6 +143,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 	double closs_pd = ped.x_pd_start - vel_ref * (ped.y_pd_start / ped.vel_pd_start);
 	double turning_point = (rand_num.Make_num() % 151 - 75.0) / 100.0;
 
+
 	int action_num = ped.action_num;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
 
 	double dist_sensor = pow(pow(x_car - ped.x_pd, 2) + pow(y_car - ped.y_pd, 2), 0.5);
@@ -253,6 +255,20 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 		ped.vel_pd_mpc = ped.vel_pd_mpc;
 	}
 
+	
+
+
+	//if (y_car - 0.5 >= ped.y_pd) {
+	//	double Q_pena_vel = 0;
+	//	double Q_pena_dist = 0;
+	//	shareddata->Q_pena_vel = Q_pena_vel;
+	//	shareddata->Q_pena_dist = Q_pena_dist;
+	//}
+	//else {
+	//	shareddata->Q_pena_vel = ped.Q_pena_vel;
+	//	shareddata->Q_pena_dist =ped. Q_pena_dist;
+	//}
+
 	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
 	shareddata->vel_pd = ped.vel_pd;
@@ -309,7 +325,30 @@ inline void ped_func::collision_judge(Pedestrian& ped, SharedData* shareddata)
 		collision_judge = 1;
 	}
 
-
 	shareddata->collision_num = collision_judge;
 
+}
+
+
+//•àsŽÒ‚Ì—\‘ª
+inline void ped_func::ped_prediction(Pedestrian& ped, double T_delta, SharedData* shareddata)
+{
+	
+
+	shareddata->x_pd_pre[0] = ped.x_pd_mpc;
+	shareddata->y_pd_pre[0] = ped.y_pd_mpc;
+
+
+
+	for (int i = 0; i < 69; i++)
+	{
+		shareddata->x_pd_pre[i + 1] = shareddata->x_pd_pre[i];
+		shareddata->y_pd_pre[i + 1] = shareddata->y_pd_pre[i] - ped.vel_pd_mpc * T_delta;
+	}
+
+
+	for (int i = 0; i < 70; i++)
+	{
+		shareddata->dist_pd[i] = pow(pow(shareddata->x[i] - shareddata->x_pd_pre[i], 2) + pow(shareddata->y[i] - shareddata->y_pd_pre[i], 2), 0.5);
+	}
 }

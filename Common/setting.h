@@ -4,5 +4,5 @@
 //#define SINE
 #define CSV
 #define PD
-#define PLOT
+//#define PLOT
 //#define WHILE

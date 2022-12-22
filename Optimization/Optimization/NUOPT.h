@@ -47,6 +47,7 @@ System_NUOPT();
   VariableProxy theta_2dot;
   VariableProxy delta;
   VariableProxy delta_dot;
+  //
   VariableProxy v_front_l; //衝突判定用の状態
   VariableProxy v_front_r;
   VariableProxy v_center_l;
@@ -54,10 +55,10 @@ System_NUOPT();
   VariableProxy v_rear_l;
   VariableProxy v_rear_r;
   //
-  VariableProxy u_front_l; //衝突判定用の状態
-  VariableProxy u_front_r;
-  VariableProxy u_rear_l;
-  VariableProxy u_rear_r;
+  VariableParameterProxy u_front_l; //衝突判定用の状態
+  VariableParameterProxy u_front_r;
+  VariableParameterProxy u_rear_l;
+  VariableParameterProxy u_rear_r;
   //
   VariableProxy V_inv;
   VariableParameterProxy T_delta;
@@ -107,11 +108,12 @@ System_NUOPT();
   VariableParameterProxy x_pd;
   VariableParameterProxy y_pd;
   VariableParameterProxy vel_pd;
+  //VariableParameterProxy Q_pena_vel;
+  //VariableParameterProxy Q_pena_dist;
   //
-  VariableProxy Dist;
   //
-  VariableProxy x_PD;
-  VariableProxy y_PD;
+  VariableParameterProxy x_PD;
+  VariableParameterProxy y_PD;
   //
   //KBM用　
   VariableParameterProxy l_f;

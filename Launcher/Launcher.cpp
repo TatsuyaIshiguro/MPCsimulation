@@ -20,7 +20,7 @@
 
 //Setting of shared memory
 constexpr auto SHARED_MEMORY_NAME = L"MySharedMemory";
-constexpr auto SHARED_MEMORY_SIZE = 8 * 6500;
+constexpr auto SHARED_MEMORY_SIZE = 9 * 6500;
 static HANDLE hSharedMemory = NULL;
 SharedData* shareddata;
 
@@ -236,13 +236,19 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	//loop
 	while (shareddata->u[0] < u_end)
 	{
+#ifdef PD
+		ped_func.ped_prediction(ped, prm.T_delta, shareddata);
+		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
+		ped_func.collision_judge(ped, shareddata);
+#endif //PD
+
 		system(path);
 		UpdateState();
 #ifdef PD
 		//ped_func.UpdatePed(ped,prm.T_delta,vel_ref, shareddata);//•àsŽÒ
 		//ped_func.UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
-		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
-		ped_func.collision_judge(ped, shareddata);
+		//ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
+		//ped_func.collision_judge(ped, shareddata);
 #endif //PD
 
 #ifdef PLOT
@@ -332,10 +338,10 @@ int main()
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 10; //Initial u
-	double u_end = 45; //goal of u
+	double u_end = 65; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
-	double vel_ref = 6; //Reference velocit defo=6
+	double vel_ref = 5; //Reference velocit defo=6
 
 	int attempt_num = 1;//ŒJ‚è•Ô‚µ‰ñ”
 	int count = 0;

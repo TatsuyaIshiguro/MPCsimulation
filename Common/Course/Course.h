@@ -34,8 +34,8 @@ struct CourseSetting
 	std::string Path_coursecsv;
 
 //Setting of constraints
-	double v_min_const = -1.5;
-	double v_max_const = 1.5;
+	double v_min_const = -2.0;
+	double v_max_const = 2.0;
 };
 
 class GenCourse
