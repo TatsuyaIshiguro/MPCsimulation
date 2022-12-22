@@ -121,7 +121,7 @@ public:
 #define right rightsimple
 #endif
 
-System_NUOPT::System_NUOPT()
+System_NUOPT::System_NUOPT(double init_x_pd[70], double init_y_pd[70])
 	: SystemInterface("NUOPT")
 	, rcd_horizon(this), tempSet(this), tempElem(this), a(this), b(this), Step_cn(this), Idx(this), Step_eval(this), Idx_eval(this), eps(this), u(this), vel(this), acc(this), v(this), v_dot(this), v_2dot(this), theta(this), theta_dot(this), theta_2dot(this), delta(this), delta_dot(this), v_front_l(this), v_front_r(this), v_center_l(this), v_center_r(this), v_rear_l(this), v_rear_r(this), V_inv(this), T_delta(this), a11(this), a12(this), a21(this), a22(this), b1(this), b2(this), Q_vel(this), Q_acc(this), Q_v(this), Q_v_dot(this), Q_v_2dot(this), Q_theta(this), Q_theta_dot(this), Q_theta_2dot(this), Q_delta(this), Q_delta_dot(this), Sf_vel(this), Sf_acc(this), Sf_v(this), Sf_v_dot(this), Sf_v_2dot(this), Sf_theta(this), Sf_theta_dot(this), Sf_theta_2dot(this), Sf_delta(this), Sf_delta_dot(this), width(this), dist_front(this), dist_rear(this), theta_front(this), theta_rear(this), init_u(this), init_vel(this), acc_init(this), init_v(this), init_v_dot(this), y_2dot_init(this), init_theta(this), init_theta_dot(this), theta_2dot_init(this), init_delta(this), delta_dot_init(this), vel_ref(this), vel_max(this), v_ref(this), v_max(this), v_min(this), v_front_max(this), v_front_min(this), v_rear_max(this), v_rear_min(this), Rho(this), obj(this),x_pd(this),y_pd(this),vel_pd(this),x_PD(this),y_PD(this),u_front_l(this),u_front_r(this),u_rear_l(this),u_rear_r(this),l_f(this),l_r(this),beta(this)//,Q_pena_vel(this),Q_pena_dist(this)
 {
@@ -262,6 +262,13 @@ System_NUOPT::System_NUOPT()
 		smp_line(__LINE__, __FILE__); v_rear_l[0] == v[0] + dist_rear * sin(theta[0] + M_PI - theta_rear);
 		smp_line(__LINE__, __FILE__); v_rear_r[0] == v[0] + dist_rear * sin(theta[0] + M_PI + theta_rear);
 		//
+		//ï‡çsé“èâä˙
+		smp_line(__LINE__, __FILE__); for (int k = 0; k < rcd_horizon; k++)
+		{
+			smp_line(__LINE__, __FILE__); x_PD[k] = init_x_pd[k];
+			smp_line(__LINE__, __FILE__); y_PD[k] = init_y_pd[k];
+		}
+		//
 		//smp_line(__LINE__, __FILE__); x_PD[0] == x_pd;
 		//smp_line(__LINE__, __FILE__); y_PD[0] == y_pd;
 		//
@@ -358,7 +365,7 @@ System_NUOPT::System_NUOPT()
 
 		//ï‡çsé“Ç™Ç¢ÇÈéûÇÃêßñÒ
 		//smp_line(__LINE__, __FILE__); (u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]) >= 0.25, Idx;
-		smp_line(__LINE__, __FILE__); (u[Idx] - 35)* (u[Idx] - 35) + (v[Idx] - 1.75) * (v[Idx] - 1.75) >= 0.64, Idx;
+		//smp_line(__LINE__, __FILE__); (u[Idx] - 35)* (u[Idx] - 35) + (v[Idx] - 1.75) * (v[Idx] - 1.75) >= 0.64, Idx;
 		//smp_line(__LINE__, __FILE__); (u_front_l[Idx] - x_PD[Idx]) * (u_front_l[Idx] - x_PD[Idx]) + (v_front_l[Idx] - y_PD[Idx]) * (v_front_l[Idx] - y_PD[Idx]) >= 0.09, Idx; 
 		//smp_line(__LINE__, __FILE__); (u_front_r[Idx] - x_PD[Idx]) * (u_front_r[Idx] - x_PD[Idx]) + (v_front_r[Idx] - y_PD[Idx]) * (v_front_r[Idx] - y_PD[Idx])>= 0.09, Idx;
 		//smp_line(__LINE__, __FILE__); pow((u_rear_l[Idx] - x_PD[Idx]) * (u_rear_l[Idx] - x_PD[Idx]) + (v_rear_l[Idx] - y_PD[Idx]) * (v_rear_l[Idx] - y_PD[Idx]),0.5) >= 0.1, Idx;

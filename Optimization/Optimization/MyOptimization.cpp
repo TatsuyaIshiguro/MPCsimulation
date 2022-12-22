@@ -40,6 +40,13 @@ public:
 
 MyProblem::MyProblem(SharedData* shareddata) 
 {
+	double init_x_pd[vsize],init_y_pd[vsize];
+	for (int i = 0; i < vsize; i++)
+	{
+		init_x_pd[i] = shareddata->x_pd_pre[i];
+		init_y_pd[i] = shareddata->y_pd_pre[i];
+	}
+
 	SimpleInitialize();
 	{
 		model = (std::shared_ptr<void>)((void*)new System_NUOPT());
