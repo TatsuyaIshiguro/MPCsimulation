@@ -240,6 +240,12 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		ped_func.ped_prediction(ped, prm.T_delta, shareddata);
 		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
 		ped_func.collision_judge(ped, shareddata);
+		for (int i = 0; i < vsize; i++)
+		{
+			shareddata->vel_ref_pre[i]= ped_func.down_vel(ped, prm.T_delta, shareddata)[i];
+		}
+		
+		
 #endif //PD
 
 		system(path);
@@ -337,8 +343,8 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 10; //Initial u
-	double u_end = 65; //goal of u
+	double u_start = 5; //Initial u
+	double u_end = 50; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
 	double vel_ref = 5; //Reference velocit defo=6

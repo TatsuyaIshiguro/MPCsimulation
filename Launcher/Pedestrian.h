@@ -53,11 +53,11 @@ struct Pedestrian
 		range_min = (-1.0) * vel_ref * course_width[0] / vel_pd_start;
 		range_max = vel_ref * course_width[0] / vel_pd_start;
 
-		x_pd_mpc = 100;// x_pd_start;//無限遠にいるとする
-		y_pd_mpc = 2.5;//y_pd_start;//無限遠にいるとする
+		x_pd_mpc = 35;// x_pd_start;//無限遠にいるとする
+		y_pd_mpc = 3;//y_pd_start;//無限遠にいるとする
 		vel_pd_mpc = 0;
 
-		x_pd_start = 50.0;
+		x_pd_start = 35.0;
 		y_pd_start = 2.5;
 		vel_pd_start = 0.5;
 
@@ -69,7 +69,7 @@ struct Pedestrian
 		//Q_pena_vel = 1.25;
 
 		closs_range = (rand_num.Make_num() % 32767 - 16383.0) / 16383.0 * range_max;
-		closs_range = 15;
+		closs_range = 1;
 		
 		closs_y_pd = vel_pd_start * closs_range / vel_ref;//x_car=x_pdのときの歩行者のy座標
 		
@@ -83,6 +83,12 @@ struct Pedestrian
 		//shareddata->Q_pena_vel = Q_pena_vel;
 		//shareddata->Q_pena_dist = Q_pena_dist;
 
+
+		//参照速度をshareddataに渡す
+		for (int i = 0; i < vsize; i++)
+		{
+			shareddata->vel_ref_pre[i] = vel_ref;
+		}
 	}
 
 

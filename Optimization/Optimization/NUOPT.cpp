@@ -357,8 +357,8 @@ System_NUOPT::System_NUOPT()
 
 
 		//•àsŽÒ‚ª‚¢‚éŽž‚Ì§–ñ
-		smp_line(__LINE__, __FILE__); (u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]) >= 0.25, Idx;
-		//smp_line(__LINE__, __FILE__); (u[Idx] - 35)* (u[Idx] - 35) + (v[Idx] - 1.75) * (v[Idx] - 1.75) >= 0.64, Idx;
+		//smp_line(__LINE__, __FILE__); (u[Idx] - x_PD[Idx])* (u[Idx] - x_PD[Idx]) + (v[Idx] - y_PD[Idx]) * (v[Idx] - y_PD[Idx]) >= 0.25, Idx;
+		smp_line(__LINE__, __FILE__); (u[Idx] - 35)* (u[Idx] - 35) + (v[Idx] - 1.75) * (v[Idx] - 1.75) >= 0.64, Idx;
 		//smp_line(__LINE__, __FILE__); (u_front_l[Idx] - x_PD[Idx]) * (u_front_l[Idx] - x_PD[Idx]) + (v_front_l[Idx] - y_PD[Idx]) * (v_front_l[Idx] - y_PD[Idx]) >= 0.09, Idx; 
 		//smp_line(__LINE__, __FILE__); (u_front_r[Idx] - x_PD[Idx]) * (u_front_r[Idx] - x_PD[Idx]) + (v_front_r[Idx] - y_PD[Idx]) * (v_front_r[Idx] - y_PD[Idx])>= 0.09, Idx;
 		//smp_line(__LINE__, __FILE__); pow((u_rear_l[Idx] - x_PD[Idx]) * (u_rear_l[Idx] - x_PD[Idx]) + (v_rear_l[Idx] - y_PD[Idx]) * (v_rear_l[Idx] - y_PD[Idx]),0.5) >= 0.1, Idx;

@@ -212,12 +212,12 @@ void MyProblem::SetConstraints(std::vector<double> v_max, std::vector<double> v_
 	SetYmin_front(v_front_min);
 }
 
-void MyProblem::SetV(double current_v)
+void MyProblem::SetV(double current_v[70])
 {
 	System_NUOPT* m = ((System_NUOPT*)model.get());
 	for (int i = 0; i < vel_ref.size(); ++i) {
-		m->vel_ref[i] = current_v;
-		m->vel_max[i] = current_v + 5.0;
+		m->vel_ref[i] = current_v[i];
+		m->vel_max[i] = current_v[i] + 5.0;
 	}
 }
 
@@ -245,7 +245,7 @@ void MyProblem::SetYref(std::vector<double> v_ref)
 	}
 }
 
-void MyProblem::SetVref(std::vector<double> vel_ref)
+void MyProblem::SetVref(double vel_ref_pre[70])
 {
 	System_NUOPT* m = ((System_NUOPT*)model.get());
 	for (int i = 0; i < vel_ref.size(); ++i) {

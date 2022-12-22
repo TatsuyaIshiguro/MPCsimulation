@@ -41,7 +41,7 @@ public:
 	void UpdateState(); //状態更新用
 
 	// パラメータのセット
-	void SetV(double current_v);
+	void SetV(double current_v[70]);
 	void SetAllState();
 
 	//制約のセット
@@ -49,7 +49,7 @@ public:
 	void SetYmax(std::vector<double> v_max);
 	void SetYmin(std::vector<double> v_min);
 	void SetYref(std::vector<double> v_ref);
-	void SetVref(std::vector<double> vel_ref);
+	void SetVref(double vel_ref_pre[70]);
 	void SetVmax(std::vector<double> vel_max);
 	void SetRho(std::vector<double> Rho);
 	void SetYmax_front(std::vector<double> v_front_max);

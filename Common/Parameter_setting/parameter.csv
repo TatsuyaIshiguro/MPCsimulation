@@ -1,2 +1,2 @@
 0SQPor1IPM,rcd_horizon,T_delta,eps,Q_v,Q_v_dot,Q_v_2dot,Q_theta,Q_theta_dot,Q_theta_2dot,Q_vel,Q_acc,Q_delta,Q_delta_dot,Sf_v,Sf_v_dot,Sf_v_2dot,Sf_theta,Sf_theta_dot,Sf_theta_2dot,Sf_vel,Sf_acc,Sf_delta,Sf_delta_dot,M,Iz,l_f,l_r,C_f,C_r,overhang_front,overhang_rear,width
-1,35,0.06,1.00E-06,1.00E-01,0.00E+00,0.00E+00,1.00E-01,0.00E+00,0.00E+00,0.001,1,1,1,1.00E-01,0.00E+00,0,1.00E-01,0.00E+00,0.00E+00,1.00E-03,1.00E+00,1.00E+00,1.00E+00,500,500,1,1,30000,20000,0.3,0.2,1.1
+1,35,0.06,1.00E-06,1.00E-01,0.00E+00,0.00E+00,1.00E-01,0.00E+00,0.00E+00,100,0.5,1,1,1.00E-01,0.00E+00,0,1.00E-01,0.00E+00,0.00E+00,1.00E+02,5.00E-01,1.00E+00,1.00E+00,500,500,1,1,30000,20000,0.3,0.2,1.1

@@ -14,6 +14,7 @@ public:
 	void UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
 	void collision_judge(Pedestrian& ped, SharedData* shareddata);
 	void ped_prediction(Pedestrian& ped, double T_delta, SharedData* shareddata);
+	std::vector<double> down_vel(Pedestrian& ped, double T_delta, SharedData* shareddata);
 
 
 };
@@ -150,7 +151,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 
 	ped.x_pd = ped.x_pd;
 
-	double sensor = 20.0;
+	double sensor = 25.0;
 
 
 
@@ -316,7 +317,7 @@ inline void ped_func::collision_judge(Pedestrian& ped, SharedData* shareddata)
 	dist_r_r = pow(pow(u_rear_r - x_pd, 2) + pow(v_rear_r - y_pd, 2), 0.5);
 
 
-	if (dist_g >= 1.0 && dist_f_l >= 0.1 && dist_f_r >= 0.1 && dist_r_l >= 0.1 && dist_r_r >= 0.1)
+	if (dist_g >= 0.6 && dist_f_l >= 0.2 && dist_f_r >= 0.2 && dist_r_l >= 0.2 && dist_r_r >= 0.2)
 	{
 		collision_judge = 0;
 	}
@@ -352,3 +353,57 @@ inline void ped_func::ped_prediction(Pedestrian& ped, double T_delta, SharedData
 		shareddata->dist_pd[i] = pow(pow(shareddata->x[i] - shareddata->x_pd_pre[i], 2) + pow(shareddata->y[i] - shareddata->y_pd_pre[i], 2), 0.5);
 	}
 }
+
+
+//ï‡çsé“Ç…ãﬂÇ√Ç¢ÇΩéûÇÃå∏ë¨
+inline vector<double> ped_func::down_vel(Pedestrian& ped, double T_delta, SharedData* shareddata)
+{
+	double now_vel_ref = shareddata->vel_ref_pre[1];
+	double Init_vel_ref = shareddata->vel_ref;
+	double x_car, y_car;
+	x_car = shareddata->x[0];
+	y_car = shareddata->y[0];
+	double x_pd = ped.x_pd;
+	double y_pd = ped.y_pd;
+	double dist_g = pow(pow(x_car - x_pd, 2) + pow(x_car - y_pd, 2), 0.5);
+	double acc_down = -0.75;
+	double sensor = 25.0;
+	double vel_ref_min = 0.1;
+	std::vector<double> vel_ref_pre;
+
+	vel_ref_pre.resize(vsize);
+	for (int i = 0; i < vsize; i++)
+	{
+		vel_ref_pre[i] = now_vel_ref;
+	}
+	shareddata->dist_g = dist_g;
+
+#ifdef vel_ref_down
+	if (dist_g <= sensor)
+	{
+		for (int i = 0; i < vsize-1; i++)
+		{
+			vel_ref_pre[i + 1] = vel_ref_pre[i] + acc_down * T_delta;
+			if (vel_ref_pre[i + 1] <= vel_ref_min) {
+				vel_ref_pre[i + 1] = vel_ref_min;
+			}
+		}
+	}
+
+	if (x_car  >= x_pd) {
+		for (int i = 0; i < vsize; i++)
+		{
+			vel_ref_pre[i] = Init_vel_ref;
+		}
+	}
+
+	if (y_car-0.55 >= y_pd) {
+		for (int i = 0; i < vsize; i++)
+		{
+			vel_ref_pre[i] = Init_vel_ref;
+		}
+	}
+#endif //vel_ref_down
+	return vel_ref_pre;
+}
+

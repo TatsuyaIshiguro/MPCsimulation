@@ -23,7 +23,7 @@ struct SharedData
 	double Q_vel, Q_acc, Q_v, Q_v_dot, Q_v_2dot, Q_theta, Q_theta_dot, Q_theta_2dot, Q_delta, Q_delta_dot;
 	double Sf_vel, Sf_acc, Sf_v, Sf_v_dot, Sf_v_2dot, Sf_theta, Sf_theta_dot, Sf_theta_2dot, Sf_delta, Sf_delta_dot;
 
-	double x_pd, y_pd, vel_pd, closs_pd, closs_y_pd, closs_range;
+	double x_pd, y_pd, vel_pd, closs_pd, closs_y_pd, closs_range, dist_g;
 	int trigger, action_num, vel_pd_num, collision_num;
 	double x_pd_mpc, y_pd_mpc, vel_pd_mpc, Q_pena_dist, Q_pena_vel;
 
@@ -31,5 +31,6 @@ struct SharedData
 	double v_front_r[vsize], v_front_l[vsize], v_rear_r[vsize], v_rear_l[vsize];
 
 	double x_pd_pre[vsize], y_pd_pre[vsize];
+	double vel_ref_pre[vsize];
 
 };
