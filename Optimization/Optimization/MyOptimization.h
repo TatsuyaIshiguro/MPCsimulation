@@ -20,6 +20,7 @@ public:
 
 	//ï‡çsé“
 	double x_pd_mpc, y_pd_mpc, vel_pd_mpc, Q_pena_dist, Q_pena_vel;
+	double Q_vel, Sf_vel, Q_v, Sf_v;
 	
 	std::vector<double> x_PD, y_PD;
 

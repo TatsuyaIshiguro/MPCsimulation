@@ -49,7 +49,7 @@ MyProblem::MyProblem(SharedData* shareddata)
 
 	SimpleInitialize();
 	{
-		model = (std::shared_ptr<void>)((void*)new System_NUOPT());
+		model = (std::shared_ptr<void>)((void*)new System_NUOPT(init_x_pd,init_y_pd));
 
 		System_NUOPT* m = ((System_NUOPT*)model.get());
 
@@ -59,6 +59,10 @@ MyProblem::MyProblem(SharedData* shareddata)
 		vel_pd_mpc = shareddata->vel_pd_mpc;
 		Q_pena_vel = shareddata->Q_pena_vel;
 		Q_pena_dist = shareddata->Q_pena_dist;
+		Q_vel = shareddata->Q_vel;
+		Sf_vel = shareddata->Sf_vel;
+		Q_v = shareddata->Q_v;
+		Sf_v = shareddata->Sf_v;
 
 		//
 
@@ -192,6 +196,12 @@ void MyProblem::InitState(SharedData* shareddata)
 	vel_pd_mpc = shareddata->vel_pd_mpc;
 	Q_pena_vel = shareddata->Q_pena_vel;
 	Q_pena_dist = shareddata->Q_pena_dist;
+
+	//
+	Q_vel = shareddata->Q_vel;
+	Sf_vel = shareddata->Sf_vel;
+	Q_v = shareddata->Q_v;
+	Sf_v = shareddata->Sf_v;
 	
 
 }
@@ -349,11 +359,15 @@ void MyProblem::SetAllState()
 	m->x_pd = x_pd_mpc;
 	m->y_pd = y_pd_mpc;
 	m->vel_pd = vel_pd_mpc;
-	//m->Q_pena_vel = Q_pena_vel;
-	//m->Q_pena_dist = Q_pena_dist;
+	m->Q_pena_vel = Q_pena_vel;
+	m->Q_pena_dist = Q_pena_dist;
 	//KBM
 	m->l_f = l_f;
 	m->l_r = l_r;
+	m->Q_vel = Q_vel;
+	m->Sf_vel = Sf_vel;
+	m->Q_v = Q_v;
+	m->Sf_v = Sf_v;
 	
 }
 

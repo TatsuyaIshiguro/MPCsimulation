@@ -16,6 +16,7 @@
 #include <random.h>
 #include <plot.h>
 #include <ped_function.h>
+#include <update_vel_ref.h>
 
 
 //Setting of shared memory
@@ -143,6 +144,8 @@ void InitState(double u_start, double v_start, double theta_start, double vel_st
 		shareddata->theta_2dot[i] = 0;
 		shareddata->delta[i] = 0;
 		shareddata->delta_dot[i] = 0;
+		//
+		shareddata->vel_ref_pre[i] = vel_start;
 	}
 	shareddata->success = 0;
 }
@@ -169,7 +172,7 @@ void UpdateState()
 
 
 
-void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref)
+void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref,int attempt_num,int loop_num)
 {
 	if (!CreateSharedMemory(SHARED_MEMORY_NAME, SHARED_MEMORY_SIZE))
 	{
@@ -192,9 +195,11 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	prm.Load_Prm(CSV_prm, 0);
 
 #ifdef PD	//歩行者の初期設定
-	Pedestrian ped(vel_ref, course[5], shareddata);
+	Pedestrian ped(vel_ref, course[5], shareddata,attempt_num,loop_num);
 	ped_func ped_func;
 #endif //PD
+	//参照速度の予測用
+	update_vel_ref up_vel;
 
 	//線形補間用
 	LinearInterporater table;
@@ -231,11 +236,19 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 
 	shareddata->trigger = 0;
+	//初期の評価関数を保持
+	ped_func.preserve_init_weight(shareddata);
 
 
 	//loop
 	while (shareddata->u[0] < u_end)
 	{
+		//ただ参照速度のベクトルをshareddataに書き込んでるだけ
+		for (int i = 0; i < vsize; i++)
+		{
+			shareddata->vel_ref_pre[i] = up_vel.down_vel(shareddata)[i];
+		}
+
 #ifdef PD
 		ped_func.ped_prediction(ped, prm.T_delta, shareddata);
 		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
@@ -244,25 +257,31 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		{
 			shareddata->vel_ref_pre[i]= ped_func.down_vel(ped, prm.T_delta, shareddata)[i];
 		}
-		
-		
 #endif //PD
+
+
 
 		system(path);
 		UpdateState();
-#ifdef PD
-		//ped_func.UpdatePed(ped,prm.T_delta,vel_ref, shareddata);//歩行者
-		//ped_func.UpdatePed_judge(ped, prm.T_delta, vel_ref, shareddata);
-		//ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
-		//ped_func.collision_judge(ped, shareddata);
-#endif //PD
+
 
 #ifdef PLOT
 		plot.result_plot(shareddata,gp);//結果プロット
 #endif//PLOT
+
+		
+		
 		if (shareddata->error_code != 0)
 		{
 			printf("------------infeasible------------\n");
+
+			//whileの時のエラー発生時のための処置
+			shareddata->count_error++;
+			if (shareddata->count_error >= 10)
+			{
+				break;
+			}
+
 		}
 
 		if (!ReadSharedMemory(SHARED_MEMORY_SIZE))
@@ -355,7 +374,7 @@ int main()
 	while (count < attempt_num) {
 		course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 		SetFrenet(course, setting, frenet);
-		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref);
+		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref,attempt_num,count);
 		count++;
 	}
 

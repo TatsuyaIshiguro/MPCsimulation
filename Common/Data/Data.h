@@ -33,4 +33,8 @@ struct SharedData
 	double x_pd_pre[vsize], y_pd_pre[vsize];
 	double vel_ref_pre[vsize];
 
+	int count_error;
+	double Init_Q_vel, Init_Q_v;
+	double Init_Sf_vel, Init_Sf_v;
+
 };

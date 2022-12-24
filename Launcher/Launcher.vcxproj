@@ -179,6 +179,7 @@
     <ClInclude Include="ped_function.h" />
     <ClInclude Include="plot.h" />
     <ClInclude Include="random.h" />
+    <ClInclude Include="update_vel_ref.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

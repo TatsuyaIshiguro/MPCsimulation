@@ -15,6 +15,7 @@ public:
 	void collision_judge(Pedestrian& ped, SharedData* shareddata);
 	void ped_prediction(Pedestrian& ped, double T_delta, SharedData* shareddata);
 	std::vector<double> down_vel(Pedestrian& ped, double T_delta, SharedData* shareddata);
+	void preserve_init_weight(SharedData* shareddata);
 
 
 };
@@ -142,16 +143,18 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 	x_car = shareddata->x[0];
 	y_car = shareddata->y[0];
 	double closs_pd = ped.x_pd_start - vel_ref * (ped.y_pd_start / ped.vel_pd_start);
-	double turning_point = (rand_num.Make_num() % 151 - 75.0) / 100.0;
+	double turning_point = 0.5;
 
 
-	int action_num = ped.action_num;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
+	int action_num = shareddata->action_num;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
 
 	double dist_sensor = pow(pow(x_car - ped.x_pd, 2) + pow(y_car - ped.y_pd, 2), 0.5);
 
 	ped.x_pd = ped.x_pd;
 
 	double sensor = 25.0;
+
+	
 
 
 
@@ -249,6 +252,34 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 		ped.y_pd_mpc = ped.y_pd;
 		ped.vel_pd_mpc = ped.vel_pd;
 
+#ifdef Penalty_vel
+		shareddata->Q_pena_vel = 1.5;
+		shareddata->Q_vel = shareddata->Init_Q_vel / 10;
+		shareddata->Sf_vel = shareddata->Init_Sf_vel / 10;
+#endif //Penalty_vel
+
+#ifdef Penalty_dist
+		shareddata->Q_pena_dist = 2.0;
+		shareddata->Q_v = shareddata->Init_Q_v / 25;
+		shareddata->Sf_v = shareddata->Init_Sf_v/ 25;
+#endif //Penalty_dist
+
+		if (ped.y_pd <= y_car-0.55 && ped.x_pd<=x_car)
+		{
+
+#ifdef Penalty_vel
+			shareddata->Q_pena_vel = 0;
+			shareddata->Q_vel = shareddata->Init_Q_vel * 10;
+			shareddata->Sf_vel = shareddata->Init_Sf_vel *10;
+#endif //Penalty_vel
+
+#ifdef Penalty_dist
+			shareddata->Q_pena_dist = 0;
+			shareddata->Q_v = shareddata->Init_Q_v *25;
+			shareddata->Sf_v = shareddata->Init_Sf_v *25;
+#endif //Penalty_dist
+		}
+
 	}
 	else {
 		ped.x_pd_mpc = ped.x_pd_mpc;
@@ -257,18 +288,10 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 	}
 
 	
+	
 
 
-	//if (y_car - 0.5 >= ped.y_pd) {
-	//	double Q_pena_vel = 0;
-	//	double Q_pena_dist = 0;
-	//	shareddata->Q_pena_vel = Q_pena_vel;
-	//	shareddata->Q_pena_dist = Q_pena_dist;
-	//}
-	//else {
-	//	shareddata->Q_pena_vel = ped.Q_pena_vel;
-	//	shareddata->Q_pena_dist =ped. Q_pena_dist;
-	//}
+
 
 	shareddata->x_pd = ped.x_pd;
 	shareddata->y_pd = ped.y_pd;
@@ -407,3 +430,11 @@ inline vector<double> ped_func::down_vel(Pedestrian& ped, double T_delta, Shared
 	return vel_ref_pre;
 }
 
+inline void ped_func::preserve_init_weight(SharedData* shareddata)
+{
+	shareddata->Init_Q_v = shareddata->Q_v;
+	shareddata->Init_Q_vel = shareddata->Q_vel;
+	shareddata->Init_Sf_v= shareddata->Sf_v;
+	shareddata->Init_Sf_vel = shareddata->Sf_vel;
+		
+}
