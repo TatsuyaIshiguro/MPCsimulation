@@ -30,12 +30,12 @@ struct Pedestrian
 		this->vel_ref = vel_ref;
 		this->course_width = course_width;
 
-		x_pd_mpc = 35;// x_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
-		y_pd_mpc = 3;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
+		x_pd_mpc = 50;// x_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
+		y_pd_mpc = 4;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
 		vel_pd_mpc = 0;
 
-		x_pd_start = 30.0;
-		y_pd_start = 2.5;
+		x_pd_start = 50.0;
+		y_pd_start = 3.5;
 		vel_pd_start = 0.5;
 
 		x_pd = x_pd_start;
@@ -44,20 +44,20 @@ struct Pedestrian
 
 		int select_vel;
 		//int select_vel = rand_num.Make_num() % 4;
-		 select_vel = 1;
+		 select_vel = 0;
 
-		//if (select_vel == 0) {
-		//	vel_pd_start = 0.88889;//slow
-		//}
-		//else if (select_vel == 1) {
-		//	vel_pd_start = 1.11111;//normal
-		//}
-		//else if (select_vel == 2) {
-		//	vel_pd_start = 1.55556;//fast
-		//}
-		//else if (select_vel == 3) {
-		//	vel_pd_start = 1.77778;//jog
-		//}
+		if (select_vel == 0) {
+			vel_pd_start = 0.88889;//slow
+		}
+		else if (select_vel == 1) {
+			vel_pd_start = 1.11111;//normal
+		}
+		else if (select_vel == 2) {
+			vel_pd_start = 1.55556;//fast
+		}
+		else if (select_vel == 3) {
+			vel_pd_start = 1.77778;//jog
+		}
 
 		 int action_num = 0;
 		//action_num = rand_num.Make_num() % 5;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
@@ -74,8 +74,8 @@ struct Pedestrian
 
 		
 
-		//closs_range = 2.0 * range_max / (attempt_num - 1) * loop_num + range_min;
-		closs_range = 1;
+		closs_range = 2.0 * range_max / (attempt_num - 1) * loop_num + range_min;
+		//closs_range = 1;
 		
 		closs_y_pd = vel_pd_start * closs_range / vel_ref;//x_car=x_pd‚Ì‚Æ‚«‚Ì•àsÒ‚ÌyÀ•W
 		

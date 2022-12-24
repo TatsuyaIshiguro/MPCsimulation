@@ -362,15 +362,26 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 5; //Initial u
-	double u_end = 50; //goal of u
+	double u_start = 2; //Initial u
+	double u_end = 85; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
 	double vel_ref = 5; //Reference velocit defo=6
 
-	int attempt_num = 1;//ŒJ‚è•Ô‚µ‰ñ”
+	int attempt_num = 10;//ŒJ‚è•Ô‚µ‰ñ”
 	int count = 0;
 
+
+	//for (int i = 0; i < 7; i++)
+	//{
+	//	vel_ref = 2.77778 + 1.38889 * i;
+	//	while (count < attempt_num) {
+	//		course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
+	//		SetFrenet(course, setting, frenet);
+	//		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref, attempt_num, count);
+	//		count++;
+	//	}
+	//}
 	while (count < attempt_num) {
 		course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 		SetFrenet(course, setting, frenet);

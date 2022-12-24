@@ -259,9 +259,9 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 #endif //Penalty_vel
 
 #ifdef Penalty_dist
-		shareddata->Q_pena_dist = 2.0;
-		shareddata->Q_v = shareddata->Init_Q_v / 25;
-		shareddata->Sf_v = shareddata->Init_Sf_v/ 25;
+		shareddata->Q_pena_dist = 2.5;
+		shareddata->Q_v = shareddata->Init_Q_v / 100;
+		shareddata->Sf_v = shareddata->Init_Sf_v/ 100;
 #endif //Penalty_dist
 
 		if (ped.y_pd <= y_car-0.55 && ped.x_pd<=x_car)
@@ -275,8 +275,8 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 
 #ifdef Penalty_dist
 			shareddata->Q_pena_dist = 0;
-			shareddata->Q_v = shareddata->Init_Q_v *25;
-			shareddata->Sf_v = shareddata->Init_Sf_v *25;
+			shareddata->Q_v = shareddata->Init_Q_v *100;
+			shareddata->Sf_v = shareddata->Init_Sf_v *100;
 #endif //Penalty_dist
 		}
 
