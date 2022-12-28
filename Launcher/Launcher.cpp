@@ -239,7 +239,8 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	//‰Šú‚Ì•]‰¿ŠÖ”‚ğ•Û
 	ped_func.preserve_init_weight(shareddata);
 
-
+	shareddata->attempt_count = loop_num;
+	
 	//loop
 	while (shareddata->u[0] < u_end)
 	{
@@ -252,12 +253,16 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 #ifdef PD
 		ped_func.ped_prediction(ped, prm.T_delta, shareddata);
 		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
+		ped_func.TTC(ped, shareddata);
 		ped_func.collision_judge(ped, shareddata);
+
+#endif //PD
+#ifdef vel_ref_down
 		for (int i = 0; i < vsize; i++)
 		{
-			shareddata->vel_ref_pre[i]= ped_func.down_vel(ped, prm.T_delta, shareddata)[i];
+			shareddata->vel_ref_pre[i] = ped_func.down_vel(ped, prm.T_delta, shareddata)[i];
 		}
-#endif //PD
+#endif //vel_ref_down
 
 
 
@@ -317,6 +322,8 @@ void SetFrenet(vector<vector<double>>& course, CourseSetting setting, Frenet& fr
 		frenet.Cache_g = frenet.frenetlib.GetGlobal(course[2][i], course[4][i], 0.0, course[6][i], course[7][i], temp_theta, frenet.Cache_g); //§–ñy_min‚ğfrenet->global
 		frenet.Cache_g = frenet.frenetlib.GetGlobal(course[2][i], course[5][i], 0.0, course[8][i], course[9][i], temp_theta, frenet.Cache_g); //§–ñy_max‚ğfrenet->global
 	}
+	frenet.Cache_f.initialized = false;
+	frenet.Cache_g.initialized = false;
 }
 
 int main()
@@ -362,36 +369,38 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 2; //Initial u
-	double u_end = 85; //goal of u
+	double u_start = 5; //Initial u
+	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
-	double vel_ref = 5; //Reference velocit defo=6
+	double vel_ref = 9.72222; //Reference velocit defo=6
 
-	int attempt_num = 10;//ŒJ‚è•Ô‚µ‰ñ”
-	int count = 0;
+	int attempt_num = 1;//ŒJ‚è•Ô‚µ‰ñ”
+	int count = 1;
 
 
-	//for (int i = 0; i < 7; i++)
-	//{
-	//	vel_ref = 2.77778 + 1.38889 * i;
-	//	while (count < attempt_num) {
-	//		course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
-	//		SetFrenet(course, setting, frenet);
-	//		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref, attempt_num, count);
-	//		count++;
-	//	}
-	//}
-	while (count < attempt_num) {
-		course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
-		SetFrenet(course, setting, frenet);
-		Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref,attempt_num,count);
-		count++;
+	for (int i = 0; i < 7; i++)
+	{
+		vel_ref= 2.77778 + 1.38889 * i;
+		while (count <= attempt_num) 
+		{
+			course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
+			SetFrenet(course, setting, frenet);
+			Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref, attempt_num, count);
+	 		frenet.Cache_f.initialized = false;
+			frenet.Cache_g.initialized = false;
+			count++;
+		}
 	}
 
-	//course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
-	//SetFrenet(course, setting, frenet);
-	//Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref);
+	//while (count <= attempt_num) {
+	//	course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
+	//	SetFrenet(course, setting, frenet);
+	//	Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref,attempt_num,count);
+	//	frenet.Cache_f.initialized = false;
+	//	frenet.Cache_g.initialized = false;
+	//	count++;
+	//}
 
 #endif // CSV
 

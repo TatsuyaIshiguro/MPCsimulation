@@ -31,16 +31,14 @@ struct Pedestrian
 		this->course_width = course_width;
 
 		x_pd_mpc = 50;// x_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
-		y_pd_mpc = 4;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
+		y_pd_mpc = 3.5;//y_pd_start;//–³ŒÀ‰“‚É‚¢‚é‚Æ‚·‚é
 		vel_pd_mpc = 0;
 
 		x_pd_start = 50.0;
-		y_pd_start = 3.5;
-		vel_pd_start = 0.5;
+		y_pd_start = 3.0;
+		//vel_pd_start = 0.75;
 
-		x_pd = x_pd_start;
-		y_pd = y_pd_start;
-		vel_pd = vel_pd_start;
+
 
 		int select_vel;
 		//int select_vel = rand_num.Make_num() % 4;
@@ -59,6 +57,10 @@ struct Pedestrian
 			vel_pd_start = 1.77778;//jog
 		}
 
+		x_pd = x_pd_start;
+		y_pd = y_pd_start;
+		vel_pd = vel_pd_start;
+
 		 int action_num = 0;
 		//action_num = rand_num.Make_num() % 5;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
 		
@@ -74,9 +76,14 @@ struct Pedestrian
 
 		
 
-		closs_range = 2.0 * range_max / (attempt_num - 1) * loop_num + range_min;
-		//closs_range = 1;
 		
+		closs_range = 10;
+
+#ifdef WHILE
+		closs_range = 2.0 * range_max * loop_num / (attempt_num)+range_min;
+#endif //WHILE
+		
+
 		closs_y_pd = vel_pd_start * closs_range / vel_ref;//x_car=x_pd‚Ì‚Æ‚«‚Ì•àsŽÒ‚ÌyÀ•W
 		
 		shareddata->closs_range = closs_range;

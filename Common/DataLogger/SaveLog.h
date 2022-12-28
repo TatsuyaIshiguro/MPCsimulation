@@ -93,6 +93,7 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<int>("28collision_num", shareddata->collision_num);
 	logger.push_back<double>("29acc", shareddata->acc[0]);
 	logger.push_back<double>("30dist_pd", shareddata->dist_pd[0]);
+	logger.push_back<double>("31TTC_pd", shareddata->TTC_pd);
 
 	//è´óàãììÆÇÃåãâ ÇèoóÕ
 	std::string data_name;
@@ -106,6 +107,18 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 		data_name = "y[" + std::to_string(i) + "]";
 		logger.push_back(data_name, shareddata->y[i]);
 	}
+	//ï‡çsé“ÇÃó\ë™
+	for (int i = 0; i < vsize; i++)
+	{
+		data_name = "x_PD[" + std::to_string(i) + "]";
+		logger.push_back(data_name, shareddata->x_PD[i]);
+	}
+	for (int i = 0; i < vsize; i++)
+	{
+		data_name = "y_PD[" + std::to_string(i) + "]";
+		logger.push_back(data_name, shareddata->y_PD[i]);
+	}
+	//
 	for (int i = 0; i < vsize; i++)
 	{
 		data_name = "yaw[" + std::to_string(i) + "]";

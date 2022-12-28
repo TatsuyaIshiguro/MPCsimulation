@@ -2,7 +2,7 @@
 
 const int cprm_num = 11; //コースのパラメータ数
 const int csize = 400;
-const int vsize = 70; //状態ベクトルのサイズ
+const int vsize = 35; //状態ベクトルのサイズ
 
 struct SharedData
 {
@@ -13,7 +13,7 @@ struct SharedData
 	double vel_ref;
 	double u[vsize], vel[vsize], acc[vsize], v[vsize], v_dot[vsize], v_2dot[vsize], theta[vsize], theta_dot[vsize], theta_2dot[vsize], delta[vsize], delta_dot[vsize], front_u[vsize], lateral_G[vsize], lateral_jerk[vsize], longitudinal_jerk[vsize];
 	double x[vsize], y[vsize], yaw[vsize];
-	double x_PD[vsize], y_PD[vsize];//歩行者の状態量
+	double x_PD[vsize], y_PD[vsize];//歩行者の予測（MPC)
 	double dist_pd[vsize];
 
 	double l_f, l_r, width, dist_front, dist_rear, theta_front, theta_rear; //dist_front->フロントオーバーハングを考慮したときの左右の頂点と重心との距離、theta_front, theta_rear->左右頂点と重心間の線分と軸との角度
@@ -30,11 +30,13 @@ struct SharedData
 	double u_front_r[vsize], u_front_l[vsize], u_rear_r[vsize], u_rear_l[vsize];
 	double v_front_r[vsize], v_front_l[vsize], v_rear_r[vsize], v_rear_l[vsize];
 
-	double x_pd_pre[vsize], y_pd_pre[vsize];
+	double x_pd_pre[vsize], y_pd_pre[vsize];//歩行者の予測（現実）
 	double vel_ref_pre[vsize];
 
-	int count_error;
+	int count_error, attempt_count;
 	double Init_Q_vel, Init_Q_v;
 	double Init_Sf_vel, Init_Sf_v;
+	int count_stop_num;
+	double TTC_pd,TTC_car;
 
 };

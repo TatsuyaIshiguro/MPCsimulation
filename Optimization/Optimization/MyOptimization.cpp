@@ -430,102 +430,106 @@ void MyProblem::Solve()
 		{
 			cout << "¸”s" << endl;
 		}
+
+
+		VariableDumper u(m->u.val);
+		u.SetData();
+		VariableDumper vel(m->vel.val);
+		vel.SetData();
+		VariableDumper acc(m->acc.val);
+		acc.SetData();
+		VariableDumper v(m->v.val);
+		v.SetData();
+		VariableDumper v_dot(m->v_dot.val);
+		v_dot.SetData();
+		VariableDumper v_2dot(m->v_2dot.val);
+		v_2dot.SetData();
+		VariableDumper theta(m->theta.val);
+		theta.SetData();
+		VariableDumper theta_dot(m->theta_dot.val);
+		theta_dot.SetData();
+		VariableDumper theta_2dot(m->theta_2dot.val);
+		theta_2dot.SetData();
+		VariableDumper delta(m->delta.val);
+		delta.SetData();
+		VariableDumper delta_dot(m->delta_dot.val);
+		delta_dot.SetData();
+		VariableDumper v_ref(m->v_ref.val);
+		v_ref.SetData();
+		VariableDumper v_max(m->v_max.val);
+		v_max.SetData();
+		VariableDumper v_min(m->v_min.val);
+		v_min.SetData();
+		VariableDumper vel_ref(m->vel_ref.val);
+		vel_ref.SetData();
+		VariableDumper vel_max(m->vel_max.val);
+		vel_max.SetData();
+		VariableDumper Rho(m->Rho.val);
+		Rho.SetData();
+		VariableDumper v_center_l(m->v_center_l.val);
+		v_center_l.SetData();
+		VariableDumper v_center_r(m->v_center_r.val);
+		v_center_r.SetData();
+		VariableDumper v_front_max(m->v_front_max.val);
+		v_front_max.SetData();
+		VariableDumper v_front_min(m->v_front_min.val);
+		v_front_min.SetData();
+		//
+		VariableDumper x_PD(m->x_PD.val);
+		x_PD.SetData();
+		VariableDumper y_PD(m->y_PD.val);
+		y_PD.SetData();
+		//
+		//
+		VariableDumper v_front_l(m->v_front_l.val);
+		v_front_l.SetData();
+		VariableDumper v_front_r(m->v_front_r.val);
+		v_front_r.SetData();
+		VariableDumper v_rear_l(m->v_rear_l.val);
+		v_rear_l.SetData();
+		VariableDumper v_rear_r(m->v_rear_r.val);
+		v_rear_r.SetData();
+		//
+
+		this->u = u.data;
+		this->vel = vel.data;
+		this->acc = acc.data;
+		this->v = v.data;
+		this->v_dot = v_dot.data;
+		this->v_2dot = v_2dot.data;
+		this->theta = theta.data;
+		this->theta_dot = theta_dot.data;
+		this->theta_2dot = theta_2dot.data;
+		this->delta = delta.data;
+		this->delta_dot = delta_dot.data;
+		//
+		this->x_PD = x_PD.data;
+		this->y_PD = y_PD.data;
+		//
+		this->v_front_l = v_front_l.data;
+		this->v_front_r = v_front_r.data;
+		this->v_rear_l = v_rear_l.data;
+		this->v_rear_r = v_rear_r.data;
+		//
+
+		this->v_ref = v_ref.data;
+		this->v_max = v_max.data;
+		this->v_min = v_min.data;
+		this->vel_ref = vel_ref.data;
+		this->vel_max = vel_max.data;
+		this->Rho = Rho.data;
+
+		this->elapse_time = result.elapseTime;
+		this->error_code = result.errorCode;
+		this->iters = result.iters;
+		this->fevals = result.fevals;
+		this->optValue = result.optValue;
+		this->tolerance = result.tolerance;
+		this->residual = result.residual;
+		if (error_code == 0) {
+			break;
+		}
 	}
-	
-	VariableDumper u(m->u.val);
-	u.SetData();
-	VariableDumper vel(m->vel.val);
-	vel.SetData();
-	VariableDumper acc(m->acc.val);
-	acc.SetData();
-	VariableDumper v(m->v.val);
-	v.SetData();
-	VariableDumper v_dot(m->v_dot.val);
-	v_dot.SetData();
-	VariableDumper v_2dot(m->v_2dot.val);
-	v_2dot.SetData();
-	VariableDumper theta(m->theta.val);
-	theta.SetData();
-	VariableDumper theta_dot(m->theta_dot.val);
-	theta_dot.SetData();
-	VariableDumper theta_2dot(m->theta_2dot.val);
-	theta_2dot.SetData();
-	VariableDumper delta(m->delta.val);
-	delta.SetData();
-	VariableDumper delta_dot(m->delta_dot.val);
-	delta_dot.SetData();
-	VariableDumper v_ref(m->v_ref.val);
-	v_ref.SetData();
-	VariableDumper v_max(m->v_max.val);
-	v_max.SetData();
-	VariableDumper v_min(m->v_min.val);
-	v_min.SetData();
-	VariableDumper vel_ref(m->vel_ref.val);
-	vel_ref.SetData();
-	VariableDumper vel_max(m->vel_max.val);
-	vel_max.SetData();
-	VariableDumper Rho(m->Rho.val);
-	Rho.SetData();
-	VariableDumper v_center_l(m->v_center_l.val);
-	v_center_l.SetData();
-	VariableDumper v_center_r(m->v_center_r.val);
-	v_center_r.SetData();
-	VariableDumper v_front_max(m->v_front_max.val);
-	v_front_max.SetData();
-	VariableDumper v_front_min(m->v_front_min.val);
-	v_front_min.SetData();
-	//
-	VariableDumper x_PD(m->x_PD.val);
-	x_PD.SetData();
-	VariableDumper y_PD(m->y_PD.val);
-	y_PD.SetData();
-	//
-	//
-	VariableDumper v_front_l(m->v_front_l.val);
-	v_front_l.SetData();
-	VariableDumper v_front_r(m->v_front_r.val);
-	v_front_r.SetData();
-	VariableDumper v_rear_l(m->v_rear_l.val);
-	v_rear_l.SetData();
-	VariableDumper v_rear_r(m->v_rear_r.val);
-	v_rear_r.SetData();
-	//
-
-	this->u = u.data;
-	this->vel = vel.data;
-	this->acc = acc.data;
-	this->v = v.data;
-	this->v_dot = v_dot.data;
-	this->v_2dot = v_2dot.data;
-	this->theta = theta.data;
-	this->theta_dot = theta_dot.data;
-	this->theta_2dot = theta_2dot.data;
-	this->delta = delta.data;
-	this->delta_dot = delta_dot.data;
-	//
-	this->x_PD = x_PD.data;
-	this->y_PD = y_PD.data;
-	//
-	this->v_front_l = v_front_l.data;
-	this->v_front_r = v_front_r.data;
-	this->v_rear_l = v_rear_l.data;
-	this->v_rear_r = v_rear_r.data;
-	//
-
-	this->v_ref = v_ref.data;
-	this->v_max = v_max.data;
-	this->v_min = v_min.data;
-	this->vel_ref = vel_ref.data;
-	this->vel_max = vel_max.data;
-	this->Rho = Rho.data;
-
-	this->elapse_time = result.elapseTime;
-	this->error_code = result.errorCode;
-	this->iters = result.iters;
-	this->fevals = result.fevals;
-	this->optValue = result.optValue;
-	this->tolerance = result.tolerance;
-	this->residual = result.residual;
 
 
 	//jerk‹‚ß‚é—p

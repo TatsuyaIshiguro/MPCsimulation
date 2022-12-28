@@ -273,7 +273,8 @@ System_NUOPT::System_NUOPT(double init_x_pd[70], double init_y_pd[70])
 		//smp_line(__LINE__, __FILE__); u_front_r[0] == u[0] + dist_front * cos(theta[0] - theta_front);
 		//smp_line(__LINE__, __FILE__); u_rear_l[0] == u[0] + dist_rear * cos(theta[0] + M_PI - theta_rear);
 		//smp_line(__LINE__, __FILE__); u_rear_r[0] == u[0] + dist_rear * cos(theta[0] + M_PI + theta_rear);
-		//smp_line(__LINE__, __FILE__); beta[0] == atan(l_r * tan(delta[0]) / (l_f + l_r + 0.001));
+
+		smp_line(__LINE__, __FILE__); beta[0] == atan(l_r * tan(delta[0]) / (l_f + l_r + 0.001));
 
 
 		///////////// Dynamic Bicycle Model ////////////////////  
