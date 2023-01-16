@@ -13,7 +13,7 @@ struct Pedestrian
 	double range_min, range_max;
 	double closs_y_pd;
 	int action_num;
-	double Q_pena_vel, Q_pena_dist;
+	double Q_pena_ped;
 	
 
 	random_num rand_num;
@@ -62,7 +62,8 @@ struct Pedestrian
 		vel_pd = vel_pd_start;
 
 		 int action_num = 0;
-		//action_num = rand_num.Make_num() % 5;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
+		// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back // 5:danger (go->stop->go->stop->go)
+		// action_num=5 ‚ÍACTION‚Ìdefine‚ğoff‚É‚µ‚Äg‚¤
 		
 
 
@@ -70,14 +71,12 @@ struct Pedestrian
 		range_max = vel_ref * course_width[0] / vel_pd_start;
 
 
-
-		Q_pena_dist = 0;
-		Q_pena_vel = 0;
+		Q_pena_ped = 0;
 
 		
 
 		
-		closs_range = 10;
+		closs_range = 0;
 
 #ifdef WHILE
 		closs_range = 2.0 * range_max * loop_num / (attempt_num)+range_min;
@@ -93,9 +92,7 @@ struct Pedestrian
 		shareddata->x_pd_mpc = x_pd_mpc;
 		shareddata->y_pd_mpc = y_pd_mpc;
 		shareddata->vel_pd_mpc = vel_pd_mpc;
-		shareddata->Q_pena_vel = Q_pena_vel;
-		shareddata->Q_pena_dist = Q_pena_dist;
-
+		shareddata->Q_pena_ped = Q_pena_ped;
 
 
 	}

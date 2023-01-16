@@ -59,6 +59,11 @@ bool InitializeSharedMemory()
 
 void UnInitializeSharedMemory()
 {
+	if (shareddata != NULL)
+	{
+		UnmapViewOfFile(shareddata);
+	}
+
 	if (hSharedMemory || hSharedMemory != INVALID_HANDLE_VALUE)
 	{
 		CloseHandle(hSharedMemory);
@@ -235,7 +240,6 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-	shareddata->trigger = 0;
 	//‰Šú‚Ì•]‰¿ŠÖ”‚ğ•Û
 	ped_func.preserve_init_weight(shareddata);
 
@@ -245,10 +249,17 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	while (shareddata->u[0] < u_end)
 	{
 		//‚½‚¾QÆ‘¬“x‚ÌƒxƒNƒgƒ‹‚ğshareddata‚É‘‚«‚ñ‚Å‚é‚¾‚¯
+		//for (int i = 0; i < vsize; i++)
+		//{
+		//	shareddata->vel_ref_pre[i] = up_vel.down_vel(shareddata)[i];
+		//}
+
+#ifdef vel_ref_down
 		for (int i = 0; i < vsize; i++)
 		{
-			shareddata->vel_ref_pre[i] = up_vel.down_vel(shareddata)[i];
+			shareddata->vel_ref_pre[i] = ped_func.down_vel(ped, prm.T_delta, shareddata)[i];
 		}
+#endif //vel_ref_down
 
 #ifdef PD
 		ped_func.ped_prediction(ped, prm.T_delta, shareddata);
@@ -257,12 +268,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		ped_func.collision_judge(ped, shareddata);
 
 #endif //PD
-#ifdef vel_ref_down
-		for (int i = 0; i < vsize; i++)
-		{
-			shareddata->vel_ref_pre[i] = ped_func.down_vel(ped, prm.T_delta, shareddata)[i];
-		}
-#endif //vel_ref_down
+
 
 
 
@@ -284,6 +290,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 			shareddata->count_error++;
 			if (shareddata->count_error >= 10)
 			{
+				shareddata->count_error = 0;
 				break;
 			}
 
@@ -296,7 +303,10 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 		logger_MPC.PrintData();
 		std::cout << shareddata->u[0] << std::endl;
 	}
+	
 
+	shareddata->count_error = 0;
+	shareddata->count_stop_num = 0;
 	UnInitializeSharedMemory();
 
 
@@ -369,41 +379,38 @@ int main()
 
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
-	double u_start = 10; //Initial u
-	double u_end = 80; //goal of u
+	double u_start = 5; //Initial u
+	double u_end = 90; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
+	double vel_ref = 16.66668; //Reference velocity 
 
-	// vel_ref[km/h] =   10   ,   15  ,    20  ,   25   ,   30   ,    35  ,   40    ,   45,    50   ,    55
-	// vel_ref[m/s]  = 2.77778,4.16667, 5.55556, 6.94444, 8.33333, 9.72222, 11.11111, 12.5, 13.88889, 15.27778
-	double vel_ref = 9.72222; //Reference velocity 
+	//  vel_count    =    0   ,    1  ,     2  ,    3   ,    4   ,     5  ,    6    ,    7,     8   ,     9   ,    10
+	// vel_ref[km/h] =   10   ,   15  ,    20  ,   25   ,   30   ,    35  ,   40    ,   45,    50   ,    55   ,    60
+	// vel_ref[m/s]  = 2.77778,4.16667, 5.55556, 6.94444, 8.33333, 9.72222, 11.11111, 12.5, 13.88889, 15.27778, 16.66668
 
-	int attempt_num = 3;//ŒJ‚è•Ô‚µ‰ñ”
+
+	int attempt_num = 5;//ŒJ‚è•Ô‚µ‰ñ”
 	int count = 1;
 
 
-	for (int vel_count = 3; vel_count < 6; vel_count++)
+	for (int vel_count = 4; vel_count < 11; vel_count++)
 	{
+		count = 1;
 		vel_ref = 2.77778 + 1.38889 * vel_count;
 		while (count <= attempt_num) 
 		{
 			course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
 			SetFrenet(course, setting, frenet);
 			Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref, attempt_num, count);
+
 	 		frenet.Cache_f.initialized = false;
 			frenet.Cache_g.initialized = false;
 			count++;
 		}
 	}
 
-	//while (count <= attempt_num) {
-	//	course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
-	//	SetFrenet(course, setting, frenet);
-	//	Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref,attempt_num,count);
-	//	frenet.Cache_f.initialized = false;
-	//	frenet.Cache_g.initialized = false;
-	//	count++;
-	//}
+
 
 #endif // CSV
 

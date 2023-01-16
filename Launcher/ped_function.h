@@ -81,6 +81,8 @@ inline void ped_func::UpdatePed_judge(Pedestrian& ped, double T_delta, double ve
 		else {
 			ped.y_pd = ped.y_pd;
 		}
+
+
 	}
 	else if (trigger == 1)
 	{
@@ -135,7 +137,7 @@ inline void ped_func::UpdatePed_judge(Pedestrian& ped, double T_delta, double ve
 }
 
 //歩行者の飛び出し
-//センサーなどの認識を考慮(Lidarを例にして20メートルとした)
+//センサーなどの認識を考慮(Lidarを例にして25メートルとした)
 inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata)
 {
 	random_num rand_num;
@@ -154,13 +156,15 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 
 	double sensor = 25.0;
 
-	
+	double ped_recognition = 5.0;//2.5/5.0/7.5/10.0
+	shareddata->dist_g = dist_sensor;
 
 
 
 
 
-	if (action_num == 0) {// 0:normal
+	if (action_num == 0)
+	{// 0:normal
 		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
 			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 
@@ -174,134 +178,228 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 			ped.y_pd = ped.y_pd_start;
 
 		}
-	}
 
-	else if (action_num == 1) {// 1:slow->fast
-		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
-			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-
-			if (dist_sensor <= 5.0) {
-				ped.vel_pd = 1.3 * ped.vel_pd_start;
-
+#ifdef ACTION
+		//歩行者が車を認知 -> 行動の決定
+		if (dist_sensor <= ped_recognition)//認識距離に車が来た
+		{
+			if (shareddata->TTC_differ >= 0)
+			{
+				shareddata->action_num = 1;
 			}
-			if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5)) {
-				ped.vel_pd = 0.0;
-
-			}
-		}
-		else {
-			ped.y_pd = ped.y_pd_start;
-
-		}
-	}
-
-	else if (action_num == 2) {// 2:fast->slow
-		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
-			ped.y_pd = ped.y_pd - 1.3 * ped.vel_pd * T_delta;
-
-			if (dist_sensor <= 5.0) {
-				ped.vel_pd = ped.vel_pd_start / 1.3;
-
-			}
-			if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5)) {
-				ped.vel_pd = 0.0;
-
-			}
-		}
-		else {
-			ped.y_pd = ped.y_pd_start;
-
-		}
-	}
-	else if (action_num == 3) {// 3:normal->stop
-		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
-			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-
-			if (ped.y_pd <= turning_point) {
-				ped.vel_pd = 0.0;
-				shareddata->count_stop_num++;
-				if (shareddata->count_stop_num > 33)
+			else if(shareddata->TTC_differ < 0)
+			{
+				double avoid_dist = -1 * shareddata->avoid_dist;
+				if (ped.y_pd >= 0)
 				{
-					ped.vel_pd = ped.vel_pd_start;
+					if (avoid_dist >= 1.0)
+					{
+						shareddata->action_num = 2;
+					}
+					else if (0.6 <= avoid_dist < 1.0)
+					{
+						shareddata->action_num = 3;
+					}
+					else if (0 <= avoid_dist < 0.6)
+					{
+						shareddata->action_num = 4;
+					}
+
 				}
-
-
+				else if(ped.y_pd < 0)
+				{
+					if (avoid_dist >= 1.0)
+					{
+						shareddata->action_num = 2;
+					}
+					else if (0.6 <= avoid_dist < 1.0)
+					{
+						shareddata->action_num = 3;
+					}
+					else if (0 <= avoid_dist < 0.6)
+					{
+						shareddata->action_num = 1;
+					}
+				}
 			}
 		}
-		else {
-			ped.y_pd = ped.y_pd_start;
+#endif //ACTION
 
+
+	}
+	else if (action_num == 1) 
+	{// 1:slow->fast
+		ped.vel_pd = 1.3 * ped.vel_pd_start;
+		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+		if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5))
+		{
+			ped.vel_pd = 0.0;
+			ped.vel_pd_start = 0.0;
+		}
+	}
+
+	else if (action_num == 2)
+	{// 2:fast->slow
+		ped.vel_pd = ped.vel_pd_start / 1.3;
+		ped.y_pd = ped.y_pd -  ped.vel_pd * T_delta;
+		if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5)) {
+			ped.vel_pd = 0.0;
+			ped.vel_pd_start = 0.0;
+		}
+
+	}
+
+	else if (action_num == 3)
+	{// 3:normal->stop
+		ped.vel_pd = 0.0;
+		shareddata->count_stop_num++;
+		if (shareddata->count_stop_num*shareddata->T_delta > 3.0)
+		{
+			ped.vel_pd = ped.vel_pd_start;
+		}
+		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+		if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5)) {
+			ped.vel_pd = 0.0;
+			ped.vel_pd_start = 0.0;
 		}
 
 	}
 
 	else if (action_num == 4) {// 4:normal->back
-		if (x_car + ped.closs_range >= closs_pd) { //歩行者の動き出し
+		ped.vel_pd = -1 * ped.vel_pd_start;
+		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+
+		if (ped.y_pd >=ped.course_width[0] + 2.0)
+		{
+			ped.vel_pd = 0.0;
+			ped.vel_pd_start = 0.0;
+		}
+
+
+	}
+
+	//
+	else if (action_num == 5) {// 5:denger go->stop->go=stop->go
+		if (x_car + ped.closs_range >= closs_pd)
+		{ //歩行者の動き出し
 			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+			if (ped.y_pd <= ped.course_width[0]&& ped.y_pd >= (-1.0) * (ped.course_width[0] + 1.5))
+			{
+				shareddata->count_stop_num++;
 
-			if (ped.y_pd <= turning_point) {
-				ped.vel_pd = -1 * ped.vel_pd_start;
+				int num = shareddata->count_stop_num;
+
+				if (33<num&&num<=66)//1回目の休憩はじめ
+				{
+					ped.vel_pd = 0.0;
+				}
+				else if (66 < num && num <= 83)//1回目の休憩おわり
+				{
+					ped.vel_pd = ped.vel_pd_start;
+				}
+				else if (83 < num && num <= 116)//2回目の休憩はじめ
+				{
+					ped.vel_pd = 0.0;
+				}
+				else if (116 < num )//2回目の休憩おわり
+				{
+					ped.vel_pd = ped.vel_pd_start;
+				}
+			}
 
 
+
+
+
+			if (ped.y_pd < (-1.0) * (ped.course_width[0] + 1.5)) {
+				ped.vel_pd = 0.0;
+
+				shareddata->count_stop_num = 0;
 			}
 		}
 		else {
 			ped.y_pd = ped.y_pd_start;
 
 		}
-
 	}
+	//
+
+
+
 	//センサーによる認識を再現
 	if (dist_sensor <= sensor) {
 		ped.x_pd_mpc = ped.x_pd;
 		ped.y_pd_mpc = ped.y_pd;
 		ped.vel_pd_mpc = ped.vel_pd;
 
-#ifdef Penalty_vel
-		shareddata->Q_pena_vel = 5.0;
+#ifdef Steer_dec_mpc
+		shareddata->Q_pena_ped = 5.0;
 		shareddata->Q_vel = shareddata->Init_Q_vel / 1000;
 		shareddata->Sf_vel = shareddata->Init_Sf_vel / 1000;
-		//shareddata->Q_v = shareddata->Init_Q_v / 1.25;
-		//shareddata->Sf_v = shareddata->Init_Sf_v / 1.25;
+		shareddata->Q_v = shareddata->Init_Q_v / 1.25;
+		shareddata->Sf_v = shareddata->Init_Sf_v / 1.25;
 
 		if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
 		{
-			shareddata->Q_pena_vel = 0;
+			shareddata->Q_pena_ped = 0;
 			shareddata->Q_vel = shareddata->Init_Q_vel;
 			shareddata->Sf_vel = shareddata->Init_Sf_vel;
-			//shareddata->Q_v = shareddata->Init_Q_v ;
-			//shareddata->Sf_v = shareddata->Init_Sf_v ;
+			shareddata->Q_v = shareddata->Init_Q_v ;
+			shareddata->Sf_v = shareddata->Init_Sf_v ;
 		}
 		if (ped.x_pd <= x_car - 10)
 		{
-			shareddata->Q_pena_vel = 0;
+			shareddata->Q_pena_ped = 0;
 			shareddata->Q_vel = shareddata->Init_Q_vel;
 			shareddata->Sf_vel = shareddata->Init_Sf_vel;
-			//shareddata->Q_v = shareddata->Init_Q_v ;
-			//shareddata->Sf_v = shareddata->Init_Sf_v ;
+			shareddata->Q_v = shareddata->Init_Q_v ;
+			shareddata->Sf_v = shareddata->Init_Sf_v ;
 		}	
-#endif //Penalty_vel
+#endif //Steer_dec_mpc
 
-#ifdef Penalty_dist
-		shareddata->Q_pena_dist = 2.0;
+#ifdef Steer_mpc
+		shareddata->Q_pena_ped = 2.0;
 		shareddata->Q_v = shareddata->Init_Q_v / 1.25;//あまり小さくしすぎないほうが良いかも
 		shareddata->Sf_v = shareddata->Init_Sf_v/ 1.25;
 
 		if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
 		{
-			shareddata->Q_pena_dist = 0;
+			shareddata->Q_pena_ped = 0;
 			shareddata->Q_v = shareddata->Init_Q_v;
 			shareddata->Sf_v = shareddata->Init_Sf_v;
 		}
 		if (ped.x_pd <= x_car - 10)
 		{
-			shareddata->Q_pena_dist = 0;
+			shareddata->Q_pena_ped = 0;
 			shareddata->Q_v = shareddata->Init_Q_v;
 			shareddata->Sf_v = shareddata->Init_Sf_v;
 		}
-#endif //Penalty_dist
+#endif //Steer_mpc
 
+#ifdef Dec_mpc
+		shareddata->Q_pena_ped = 5.0;
+		shareddata->Q_vel = shareddata->Init_Q_vel / 1000;
+		shareddata->Sf_vel = shareddata->Init_Sf_vel / 1000;
+		shareddata->Q_v = shareddata->Init_Q_v *1000;
+		shareddata->Sf_v = shareddata->Init_Sf_v *1000;
 
+		if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
+		{
+			shareddata->Q_pena_ped = 0;
+			shareddata->Q_vel = shareddata->Init_Q_vel;
+			shareddata->Sf_vel = shareddata->Init_Sf_vel;
+			shareddata->Q_v = shareddata->Init_Q_v;
+			shareddata->Sf_v = shareddata->Init_Sf_v;
+		}
+		if (ped.x_pd <= x_car - 10)
+		{
+			shareddata->Q_pena_ped = 0;
+			shareddata->Q_vel = shareddata->Init_Q_vel;
+			shareddata->Sf_vel = shareddata->Init_Sf_vel;
+			shareddata->Q_v = shareddata->Init_Q_v;
+			shareddata->Sf_v = shareddata->Init_Sf_v;
+		}
+#endif //Dec_mpc
 
 		
 
@@ -413,22 +511,28 @@ inline vector<double> ped_func::down_vel(Pedestrian& ped, double T_delta, Shared
 	y_car = shareddata->y[0];
 	double x_pd = ped.x_pd;
 	double y_pd = ped.y_pd;
-	double dist_g = pow(pow(x_car - x_pd, 2) + pow(x_car - y_pd, 2), 0.5);
-	double acc_down = -0.75;
-	double sensor = 25.0;
-	double vel_ref_min = 0.1;
-	std::vector<double> vel_ref_pre;
+	double dist_g = shareddata->dist_g;
+	double acc_down1 = -0.50;
+	double acc_down2 = -1.5;
 
+	double sensor = 25.0;
+	double vel_ref_min = 0.5;
+	std::vector<double> vel_ref_pre;
+	double acc_down = 0.0;
 	vel_ref_pre.resize(vsize);
 	for (int i = 0; i < vsize; i++)
 	{
 		vel_ref_pre[i] = now_vel_ref;
 	}
-	shareddata->dist_g = dist_g;
 
 #ifdef vel_ref_down
 	if (dist_g <= sensor)
 	{
+		acc_down = acc_down1;
+		if (-1 * ped.course_width[0] < ped.y_pd < ped.course_width[0]) {
+			acc_down = acc_down2;
+		}
+
 		for (int i = 0; i < vsize-1; i++)
 		{
 			vel_ref_pre[i + 1] = vel_ref_pre[i] + acc_down * T_delta;
@@ -480,10 +584,30 @@ inline void ped_func::TTC(Pedestrian& ped, SharedData* shareddata)
 	dist_car_c = pow(pow(x_c - x_car, 2) + pow(y_c - y_car, 2), 0.5) - 1;
 	TTC_pd = dist_pd_c / ped.vel_pd_start;
 	TTC_car = dist_car_c / vel_car;
-	shareddata->TTC_pd = TTC_pd;
-	shareddata->TTC_car = TTC_car;
 
+	if (y_c > ped.y_pd)
+	{
+		TTC_pd =( -1)*dist_pd_c / ped.vel_pd_start;
+	}
+	else {
+		TTC_pd = dist_pd_c / ped.vel_pd_start;
+	}
 
+	if (x_car <= 50) {
+		shareddata->TTC_differ = TTC_car - TTC_pd;
+		shareddata->TTC_pd = TTC_pd;
+		shareddata->TTC_car = TTC_car;
+		shareddata->x_cross = x_c;
+		shareddata->y_cross = y_c;
+		shareddata->avoid_dist = ped.vel_pd_start * (TTC_car - TTC_pd);
+	}
+	else {
+		shareddata->TTC_differ = 0;
+		shareddata->TTC_pd = 0;
+		shareddata->TTC_car = 0;
+		shareddata->x_cross = 0;
+		shareddata->y_cross = 0;
+	}
 
 
 

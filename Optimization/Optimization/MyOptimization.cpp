@@ -57,8 +57,7 @@ MyProblem::MyProblem(SharedData* shareddata)
 		x_pd_mpc = shareddata->x_pd_mpc;
 		y_pd_mpc = shareddata->y_pd_mpc;
 		vel_pd_mpc = shareddata->vel_pd_mpc;
-		Q_pena_vel = shareddata->Q_pena_vel;
-		Q_pena_dist = shareddata->Q_pena_dist;
+		Q_pena_ped = shareddata->Q_pena_ped;
 		Q_vel = shareddata->Q_vel;
 		Sf_vel = shareddata->Sf_vel;
 		Q_v = shareddata->Q_v;
@@ -194,8 +193,7 @@ void MyProblem::InitState(SharedData* shareddata)
 	x_pd_mpc = shareddata->x_pd_mpc;
 	y_pd_mpc = shareddata->y_pd_mpc;
 	vel_pd_mpc = shareddata->vel_pd_mpc;
-	Q_pena_vel = shareddata->Q_pena_vel;
-	Q_pena_dist = shareddata->Q_pena_dist;
+	Q_pena_ped = shareddata->Q_pena_ped;
 
 	//
 	Q_vel = shareddata->Q_vel;
@@ -359,8 +357,7 @@ void MyProblem::SetAllState()
 	m->x_pd = x_pd_mpc;
 	m->y_pd = y_pd_mpc;
 	m->vel_pd = vel_pd_mpc;
-	m->Q_pena_vel = Q_pena_vel;
-	m->Q_pena_dist = Q_pena_dist;
+	m->Q_pena_ped = Q_pena_ped;
 	//KBM
 	m->l_f = l_f;
 	m->l_r = l_r;

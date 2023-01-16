@@ -94,6 +94,9 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("29acc", shareddata->acc[0]);
 	logger.push_back<double>("30dist_pd", shareddata->dist_pd[0]);
 	logger.push_back<double>("31TTC_pd", shareddata->TTC_pd);
+	logger.push_back<double>("32TTC_car", shareddata->TTC_car);
+	logger.push_back<double>("33y_cross", shareddata->y_cross);
+	logger.push_back<double>("34avoid_dist",shareddata->avoid_dist);
 
 	//«—ˆ‹““®‚ÌŒ‹‰Ê‚ğo—Í
 	std::string data_name;

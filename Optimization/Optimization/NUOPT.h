@@ -108,8 +108,7 @@ System_NUOPT(double init_x_pd[70],double init_y_pd[70]);
   VariableParameterProxy x_pd;
   VariableParameterProxy y_pd;
   VariableParameterProxy vel_pd;
-  VariableParameterProxy Q_pena_vel;
-  VariableParameterProxy Q_pena_dist;
+  VariableParameterProxy Q_pena_ped;
   //
   //
   VariableParameterProxy x_PD;
