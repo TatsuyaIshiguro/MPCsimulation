@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <stdexcept>
+#include <vector>
 
 //目標点を探索するために使用
 struct Points_search

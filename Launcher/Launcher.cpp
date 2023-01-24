@@ -177,7 +177,7 @@ void UpdateState()
 
 
 
-void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref,int attempt_num,int loop_num)
+void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet, double u_start, double u_end, double v_start, double theta_start, double vel_ref,int attempt_num,int loop_num,int ped_act_num,int ped_behav_num,int vel_pd_num ,std::string MPC)
 {
 	if (!CreateSharedMemory(SHARED_MEMORY_NAME, SHARED_MEMORY_SIZE))
 	{
@@ -200,7 +200,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	prm.Load_Prm(CSV_prm, 0);
 
 #ifdef PD	//歩行者の初期設定
-	Pedestrian ped(vel_ref, course[5], shareddata,attempt_num,loop_num);
+	Pedestrian ped(vel_ref, course[5], shareddata,attempt_num,loop_num,u_start,ped_act_num,vel_pd_num);
 	ped_func ped_func;
 #endif //PD
 	//参照速度の予測用
@@ -215,9 +215,9 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	DataLogger logger_Course;
 	//パラメータファイルコピー
 	SaveParam saveparam;
-	logger_MPC.Open(CreateLogFileName("data", "mpc_", setting));
-	logger_Course.Open(CreateLogFileName("data", "course_", setting));
-	saveparam.save_prm(CreateLogFileName("data", "prm_", setting));
+	logger_MPC.Open(CreateLogFileName("data", "mpc_", setting , MPC, ped));
+	logger_Course.Open(CreateLogFileName("data", "course_", setting , MPC, ped));
+	saveparam.save_prm(CreateLogFileName("data", "prm_", setting , MPC, ped));
 	//ログの保存
 	SetData_MPC(logger_MPC, shareddata);
 	OutData_Course(logger_Course, course);
@@ -248,11 +248,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 	//loop
 	while (shareddata->u[0] < u_end)
 	{
-		//ただ参照速度のベクトルをshareddataに書き込んでるだけ
-		//for (int i = 0; i < vsize; i++)
-		//{
-		//	shareddata->vel_ref_pre[i] = up_vel.down_vel(shareddata)[i];
-		//}
+		shareddata->time = shareddata->time + prm.T_delta;
 
 #ifdef vel_ref_down
 		for (int i = 0; i < vsize; i++)
@@ -263,7 +259,7 @@ void Launch(vector<vector<double>> course, CourseSetting setting, Frenet frenet,
 
 #ifdef PD
 		ped_func.ped_prediction(ped, prm.T_delta, shareddata);
-		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata);
+		ped_func.UpdatePed_run_out(ped, prm.T_delta, vel_ref, shareddata, ped_behav_num,MPC);
 		ped_func.TTC(ped, shareddata);
 		ped_func.collision_judge(ped, shareddata);
 
@@ -380,7 +376,7 @@ int main()
 #ifdef CSV
 	setting.Path_coursecsv = "C:\\MPCsimulation\\py_course\\pd_st100.csv"; //Path of course csv //pedestrian// pd_st100.csv
 	double u_start = 5; //Initial u
-	double u_end = 90; //goal of u
+	double u_end = 80; //goal of u
 	double v_start = 0; //Initial v
 	double theta_start = 0; //Initial theta
 	double vel_ref = 16.66668; //Reference velocity 
@@ -389,27 +385,76 @@ int main()
 	// vel_ref[km/h] =   10   ,   15  ,    20  ,   25   ,   30   ,    35  ,   40    ,   45,    50   ,    55   ,    60
 	// vel_ref[m/s]  = 2.77778,4.16667, 5.55556, 6.94444, 8.33333, 9.72222, 11.11111, 12.5, 13.88889, 15.27778, 16.66668
 
-
-	int attempt_num = 5;//繰り返し回数
+	//1条件に対する検証回数
+	int attempt_num = 7;//繰り返し回数
 	int count = 1;
 
+	//歩行者の挙動に関するパラメータ
+	int ped_act_num;
 
-	for (int vel_count = 4; vel_count < 11; vel_count++)
+	//制御手法の種類
+	std::string MPC;
+	for (int MPC_num = 0; MPC_num < 3; MPC_num++)
 	{
-		count = 1;
-		vel_ref = 2.77778 + 1.38889 * vel_count;
-		while (count <= attempt_num) 
+		if (MPC_num == 0)
 		{
-			course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
-			SetFrenet(course, setting, frenet);
-			Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref, attempt_num, count);
+			MPC = "dec_MPC";
+		}
+		if (MPC_num == 1)
+		{
+			MPC = "steer_MPC";
+		}
+		if (MPC_num == 2)
+		{
+			MPC = "dec+steer_MPC";
+		}
 
-	 		frenet.Cache_f.initialized = false;
-			frenet.Cache_g.initialized = false;
-			count++;
+
+		for (int ped_behav_num = 0; ped_behav_num < 4; ped_behav_num++)
+		{
+			if (ped_behav_num == 0) //等速直線運動（挙動変化無し）
+			{
+				ped_act_num = 0;
+			}
+			else if (ped_behav_num == 1) //車両回避挙動(車両を認識後に歩行者が車両を避けるような挙動を取ると仮定）
+			{
+				ped_act_num = 0;
+			}
+			else if (ped_behav_num == 2)//不規則な停止を繰り替えす挙動（危険な挙動変化）
+			{
+				ped_act_num = 5;
+			}
+			else if (ped_behav_num == 3)
+			{
+				ped_act_num = 6;
+			}
+			else
+			{
+				std::cout << "指定された歩行者挙動は存在しません\n";
+				break;
+			}
+
+			for (int vel_pd_num = 0; vel_pd_num < 4; vel_pd_num++)
+			{
+
+				for (int vel_count = 0; vel_count < 11; vel_count++)
+				{
+					count = 1;
+					vel_ref = 2.77778 + 1.38889 * vel_count;
+					while (count <= attempt_num)
+					{
+						course = gencourse.Gen_Course_csv(setting.Path_coursecsv);
+						SetFrenet(course, setting, frenet);
+						Launch(course, setting, frenet, u_start, u_end, v_start, theta_start, vel_ref, attempt_num, count, ped_act_num, ped_behav_num, vel_pd_num,MPC);
+
+						frenet.Cache_f.initialized = false;
+						frenet.Cache_g.initialized = false;
+						count++;
+					}
+				}
+			}
 		}
 	}
-
 
 
 #endif // CSV

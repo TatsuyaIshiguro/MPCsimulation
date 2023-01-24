@@ -11,7 +11,7 @@ public:
 
 	void UpdatePed(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
 	void UpdatePed_judge(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
-	void UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata);
+	void UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata, int ped_behav_num , std::string MPC);
 	void collision_judge(Pedestrian& ped, SharedData* shareddata);
 	void ped_prediction(Pedestrian& ped, double T_delta, SharedData* shareddata);
 	std::vector<double> down_vel(Pedestrian& ped, double T_delta, SharedData* shareddata);
@@ -138,7 +138,7 @@ inline void ped_func::UpdatePed_judge(Pedestrian& ped, double T_delta, double ve
 
 //•àsÒ‚Ì”ò‚Ño‚µ
 //ƒZƒ“ƒT[‚È‚Ç‚Ì”F¯‚ğl—¶(Lidar‚ğ—á‚É‚µ‚Ä25ƒ[ƒgƒ‹‚Æ‚µ‚½)
-inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata)
+inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double vel_ref, SharedData* shareddata, int ped_behav_num, std::string MPC)
 {
 	random_num rand_num;
 	double x_car, y_car;
@@ -146,6 +146,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 	y_car = shareddata->y[0];
 	double closs_pd = ped.x_pd_start - vel_ref * (ped.y_pd_start / ped.vel_pd_start);
 	double turning_point = 0.5;
+	int ped_behav_trigger = ped_behav_num;
 
 
 	int action_num = shareddata->action_num;// 0:normal // 1:slow->fast // 2:fast->slow // 3:normal->stop // 4:normal->back 
@@ -179,55 +180,57 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 
 		}
 
-#ifdef ACTION
-		//•àsÒ‚ªÔ‚ğ”F’m -> s“®‚ÌŒˆ’è
-		if (dist_sensor <= ped_recognition)//”F¯‹——£‚ÉÔ‚ª—ˆ‚½
-		{
-			if (shareddata->TTC_differ >= 0)
-			{
-				shareddata->action_num = 1;
-			}
-			else if(shareddata->TTC_differ < 0)
-			{
-				double avoid_dist = -1 * shareddata->avoid_dist;
-				if (ped.y_pd >= 0)
-				{
-					if (avoid_dist >= 1.0)
-					{
-						shareddata->action_num = 2;
-					}
-					else if (0.6 <= avoid_dist < 1.0)
-					{
-						shareddata->action_num = 3;
-					}
-					else if (0 <= avoid_dist < 0.6)
-					{
-						shareddata->action_num = 4;
-					}
 
-				}
-				else if(ped.y_pd < 0)
+		if (ped_behav_trigger == 1)
+		{
+
+			//•àsÒ‚ªÔ‚ğ”F’m -> s“®‚ÌŒˆ’è
+			if (dist_sensor <= ped_recognition)//”F¯‹——£‚ÉÔ‚ª—ˆ‚½
+			{
+				if (shareddata->TTC_differ >= 0)
 				{
-					if (avoid_dist >= 1.0)
+					shareddata->action_num = 1;
+				}
+				else if (shareddata->TTC_differ < 0)
+				{
+					double avoid_dist = -1 * shareddata->avoid_dist;
+					if (ped.y_pd >= 0)
 					{
-						shareddata->action_num = 2;
+						if (avoid_dist >= 1.0)
+						{
+							shareddata->action_num = 2;
+						}
+						else if (0.6 <= avoid_dist < 1.0)
+						{
+							shareddata->action_num = 3;
+						}
+						else if (0 <= avoid_dist < 0.6)
+						{
+							shareddata->action_num = 4;
+						}
+
 					}
-					else if (0.6 <= avoid_dist < 1.0)
+					else if (ped.y_pd < 0)
 					{
-						shareddata->action_num = 3;
-					}
-					else if (0 <= avoid_dist < 0.6)
-					{
-						shareddata->action_num = 1;
+						if (avoid_dist >= 1.0)
+						{
+							shareddata->action_num = 2;
+						}
+						else if (0.6 <= avoid_dist < 1.0)
+						{
+							shareddata->action_num = 3;
+						}
+						else if (0 <= avoid_dist < 0.6)
+						{
+							shareddata->action_num = 1;
+						}
 					}
 				}
 			}
 		}
-#endif //ACTION
-
-
 	}
-	else if (action_num == 1) 
+
+	else if (action_num == 1)
 	{// 1:slow->fast
 		ped.vel_pd = 1.3 * ped.vel_pd_start;
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
@@ -241,7 +244,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 	else if (action_num == 2)
 	{// 2:fast->slow
 		ped.vel_pd = ped.vel_pd_start / 1.3;
-		ped.y_pd = ped.y_pd -  ped.vel_pd * T_delta;
+		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 		if (ped.y_pd <= (-1.0) * (ped.course_width[0] + 0.5)) {
 			ped.vel_pd = 0.0;
 			ped.vel_pd_start = 0.0;
@@ -253,7 +256,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 	{// 3:normal->stop
 		ped.vel_pd = 0.0;
 		shareddata->count_stop_num++;
-		if (shareddata->count_stop_num*shareddata->T_delta > 3.0)
+		if (shareddata->count_stop_num * shareddata->T_delta > 3.0)
 		{
 			ped.vel_pd = ped.vel_pd_start;
 		}
@@ -269,7 +272,7 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 		ped.vel_pd = -1 * ped.vel_pd_start;
 		ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
 
-		if (ped.y_pd >=ped.course_width[0] + 2.0)
+		if (ped.y_pd >= ped.course_width[0] + 2.0)
 		{
 			ped.vel_pd = 0.0;
 			ped.vel_pd_start = 0.0;
@@ -283,38 +286,67 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 		if (x_car + ped.closs_range >= closs_pd)
 		{ //•àsÒ‚Ì“®‚«o‚µ
 			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
-			if (ped.y_pd <= ped.course_width[0]&& ped.y_pd >= (-1.0) * (ped.course_width[0] + 1.5))
+			if (ped.y_pd <= ped.course_width[0] && ped.y_pd >= (-1.0) * (ped.course_width[0] + 1.5))
 			{
-				shareddata->count_stop_num++;
 
-				int num = shareddata->count_stop_num;
-
-				if (33<num&&num<=66)//1‰ñ–Ú‚Ì‹xŒe‚Í‚¶‚ß
+				if (ped.y_pd <= 0.5)//1‰ñ–Ú‚Ì‹xŒe‚Í‚¶‚ß
 				{
 					ped.vel_pd = 0.0;
+					shareddata->count_stop_num1++;
 				}
-				else if (66 < num && num <= 83)//1‰ñ–Ú‚Ì‹xŒe‚¨‚í‚è
+				if (2.0 < shareddata->count_stop_num1 * T_delta)//1‰ñ–Ú‚Ì‹xŒe‚¨‚í‚è
 				{
 					ped.vel_pd = ped.vel_pd_start;
 				}
-				else if (83 < num && num <= 116)//2‰ñ–Ú‚Ì‹xŒe‚Í‚¶‚ß
+				if (ped.y_pd <= -0.5)//2‰ñ–Ú‚Ì‹xŒe‚Í‚¶‚ß
 				{
 					ped.vel_pd = 0.0;
+					shareddata->count_stop_num2++;
 				}
-				else if (116 < num )//2‰ñ–Ú‚Ì‹xŒe‚¨‚í‚è
+				if (2.0 < shareddata->count_stop_num2 * T_delta)//2‰ñ–Ú‚Ì‹xŒe‚¨‚í‚è
 				{
 					ped.vel_pd = ped.vel_pd_start;
 				}
 			}
 
 
+			if (ped.y_pd < (-1.0) * (ped.course_width[0] + 1.5)) {
+				ped.vel_pd = 0.0;
 
+				shareddata->count_stop_num1 = 0;
+				shareddata->count_stop_num2 = 0;
+			}
+		}
+		else {
+			ped.y_pd = ped.y_pd_start;
+
+		}
+	}
+
+	else if (action_num == 6) {// 6:denger go->long stop->go
+		if (x_car + ped.closs_range >= closs_pd)
+		{ //•àsÒ‚Ì“®‚«o‚µ
+			ped.y_pd = ped.y_pd - ped.vel_pd * T_delta;
+			if (ped.y_pd <= ped.course_width[0] && ped.y_pd >= (-1.0) * (ped.course_width[0] + 1.5))
+			{
+
+				if (ped.y_pd <= 0.2)//1‰ñ–Ú‚Ì‹xŒe‚Í‚¶‚ß
+				{
+					ped.vel_pd = 0.0;
+					shareddata->count_stop_num1++;
+				}
+				if (10.0 < shareddata->count_stop_num1 * T_delta)//1‰ñ–Ú‚Ì‹xŒe‚¨‚í‚è
+				{
+					ped.vel_pd = ped.vel_pd_start;
+				}
+			}
 
 
 			if (ped.y_pd < (-1.0) * (ped.course_width[0] + 1.5)) {
 				ped.vel_pd = 0.0;
 
-				shareddata->count_stop_num = 0;
+				shareddata->count_stop_num1 = 0;
+				shareddata->count_stop_num2 = 0;
 			}
 		}
 		else {
@@ -332,74 +364,85 @@ inline void ped_func::UpdatePed_run_out(Pedestrian& ped, double T_delta, double 
 		ped.y_pd_mpc = ped.y_pd;
 		ped.vel_pd_mpc = ped.vel_pd;
 
-#ifdef Steer_dec_mpc
-		shareddata->Q_pena_ped = 5.0;
-		shareddata->Q_vel = shareddata->Init_Q_vel / 1000;
-		shareddata->Sf_vel = shareddata->Init_Sf_vel / 1000;
-		shareddata->Q_v = shareddata->Init_Q_v / 1.25;
-		shareddata->Sf_v = shareddata->Init_Sf_v / 1.25;
 
-		if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
+		if (MPC == "dec+steer_MPC")
 		{
-			shareddata->Q_pena_ped = 0;
-			shareddata->Q_vel = shareddata->Init_Q_vel;
-			shareddata->Sf_vel = shareddata->Init_Sf_vel;
-			shareddata->Q_v = shareddata->Init_Q_v ;
-			shareddata->Sf_v = shareddata->Init_Sf_v ;
-		}
-		if (ped.x_pd <= x_car - 10)
-		{
-			shareddata->Q_pena_ped = 0;
-			shareddata->Q_vel = shareddata->Init_Q_vel;
-			shareddata->Sf_vel = shareddata->Init_Sf_vel;
-			shareddata->Q_v = shareddata->Init_Q_v ;
-			shareddata->Sf_v = shareddata->Init_Sf_v ;
-		}	
-#endif //Steer_dec_mpc
 
-#ifdef Steer_mpc
-		shareddata->Q_pena_ped = 2.0;
-		shareddata->Q_v = shareddata->Init_Q_v / 1.25;//‚ ‚Ü‚è¬‚³‚­‚µ‚·‚¬‚È‚¢‚Ù‚¤‚ª—Ç‚¢‚©‚à
-		shareddata->Sf_v = shareddata->Init_Sf_v/ 1.25;
+			shareddata->Q_pena_ped = 5.0;
+			shareddata->Q_vel = shareddata->Init_Q_vel / 1000;
+			shareddata->Sf_vel = shareddata->Init_Sf_vel / 1000;
+			shareddata->Q_v = shareddata->Init_Q_v / 1.25;
+			shareddata->Sf_v = shareddata->Init_Sf_v / 1.25;
 
-		if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
-		{
-			shareddata->Q_pena_ped = 0;
-			shareddata->Q_v = shareddata->Init_Q_v;
-			shareddata->Sf_v = shareddata->Init_Sf_v;
+			if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
+			{
+				shareddata->Q_pena_ped = 0;
+				shareddata->Q_vel = shareddata->Init_Q_vel;
+				shareddata->Sf_vel = shareddata->Init_Sf_vel;
+				shareddata->Q_v = shareddata->Init_Q_v;
+				shareddata->Sf_v = shareddata->Init_Sf_v;
+			}
+			if (ped.x_pd <= x_car - 10)
+			{
+				shareddata->Q_pena_ped = 0;
+				shareddata->Q_vel = shareddata->Init_Q_vel;
+				shareddata->Sf_vel = shareddata->Init_Sf_vel;
+				shareddata->Q_v = shareddata->Init_Q_v;
+				shareddata->Sf_v = shareddata->Init_Sf_v;
+			}
 		}
-		if (ped.x_pd <= x_car - 10)
-		{
-			shareddata->Q_pena_ped = 0;
-			shareddata->Q_v = shareddata->Init_Q_v;
-			shareddata->Sf_v = shareddata->Init_Sf_v;
-		}
-#endif //Steer_mpc
 
-#ifdef Dec_mpc
-		shareddata->Q_pena_ped = 5.0;
-		shareddata->Q_vel = shareddata->Init_Q_vel / 1000;
-		shareddata->Sf_vel = shareddata->Init_Sf_vel / 1000;
-		shareddata->Q_v = shareddata->Init_Q_v *1000;
-		shareddata->Sf_v = shareddata->Init_Sf_v *1000;
 
-		if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
+
+		if (MPC == "steer_MPC")
 		{
-			shareddata->Q_pena_ped = 0;
-			shareddata->Q_vel = shareddata->Init_Q_vel;
-			shareddata->Sf_vel = shareddata->Init_Sf_vel;
-			shareddata->Q_v = shareddata->Init_Q_v;
-			shareddata->Sf_v = shareddata->Init_Sf_v;
+
+			shareddata->Q_pena_ped = 2.0;
+			shareddata->Q_v = shareddata->Init_Q_v / 1.25;//‚ ‚Ü‚è¬‚³‚­‚µ‚·‚¬‚È‚¢‚Ù‚¤‚ª—Ç‚¢‚©‚à
+			shareddata->Sf_v = shareddata->Init_Sf_v / 1.25;
+
+			if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
+			{
+				shareddata->Q_pena_ped = 0;
+				shareddata->Q_v = shareddata->Init_Q_v;
+				shareddata->Sf_v = shareddata->Init_Sf_v;
+			}
+			if (ped.x_pd <= x_car - 10)
+			{
+				shareddata->Q_pena_ped = 0;
+				shareddata->Q_v = shareddata->Init_Q_v;
+				shareddata->Sf_v = shareddata->Init_Sf_v;
+			}
 		}
-		if (ped.x_pd <= x_car - 10)
+
+
+
+		if (MPC == "dec_MPC")
 		{
-			shareddata->Q_pena_ped = 0;
-			shareddata->Q_vel = shareddata->Init_Q_vel;
-			shareddata->Sf_vel = shareddata->Init_Sf_vel;
-			shareddata->Q_v = shareddata->Init_Q_v;
-			shareddata->Sf_v = shareddata->Init_Sf_v;
+			shareddata->Q_pena_ped = 5.0;
+			shareddata->Q_vel = shareddata->Init_Q_vel / 1000;
+			shareddata->Sf_vel = shareddata->Init_Sf_vel / 1000;
+			shareddata->Q_v = shareddata->Init_Q_v * 1000;
+			shareddata->Sf_v = shareddata->Init_Sf_v * 1000;
+
+			if (ped.y_pd <= y_car - 0.55 && ped.x_pd <= x_car)
+			{
+				shareddata->Q_pena_ped = 0;
+				shareddata->Q_vel = shareddata->Init_Q_vel;
+				shareddata->Sf_vel = shareddata->Init_Sf_vel;
+				shareddata->Q_v = shareddata->Init_Q_v;
+				shareddata->Sf_v = shareddata->Init_Sf_v;
+			}
+			if (ped.x_pd <= x_car - 10)
+			{
+				shareddata->Q_pena_ped = 0;
+				shareddata->Q_vel = shareddata->Init_Q_vel;
+				shareddata->Sf_vel = shareddata->Init_Sf_vel;
+				shareddata->Q_v = shareddata->Init_Q_v;
+				shareddata->Sf_v = shareddata->Init_Sf_v;
+			}
 		}
-#endif //Dec_mpc
+
 
 		
 
@@ -453,14 +496,11 @@ inline void ped_func::collision_judge(Pedestrian& ped, SharedData* shareddata)
 	v_rear_r = shareddata->v_rear_r[0];
 
 
-	x_pd = ped.x_pd;
-	y_pd = ped.y_pd;
-
-	dist_g = pow(pow(x_car - x_pd, 2) + pow(x_car - y_pd, 2), 0.5);
-	dist_f_l = pow(pow(u_front_l - x_pd, 2) + pow(v_front_l - y_pd, 2), 0.5);
-	dist_f_r = pow(pow(u_front_r - x_pd, 2) + pow(v_front_r - y_pd, 2), 0.5);
-	dist_r_l = pow(pow(u_rear_l - x_pd, 2) + pow(v_rear_l - y_pd, 2), 0.5);
-	dist_r_r = pow(pow(u_rear_r - x_pd, 2) + pow(v_rear_r - y_pd, 2), 0.5);
+	dist_g = pow(pow(x_car - ped.x_pd, 2) + pow(x_car - ped.y_pd, 2), 0.5);
+	dist_f_l = pow(pow(u_front_l -ped.x_pd, 2) + pow(v_front_l - ped.y_pd, 2), 0.5);
+	dist_f_r = pow(pow(u_front_r - ped.x_pd, 2) + pow(v_front_r - ped.y_pd, 2), 0.5);
+	dist_r_l = pow(pow(u_rear_l - ped.x_pd, 2) + pow(v_rear_l - ped.y_pd, 2), 0.5);
+	dist_r_r = pow(pow(u_rear_r - ped.x_pd, 2) + pow(v_rear_r - ped.y_pd, 2), 0.5);
 
 
 	if (dist_g >= 1.0 && dist_f_l >= 0.55 && dist_f_r >= 0.55 && dist_r_l >= 0.55 && dist_r_r >= 0.55)

@@ -36,9 +36,9 @@ struct SharedData
 	int count_error, attempt_count;
 	double Init_Q_vel, Init_Q_v;
 	double Init_Sf_vel, Init_Sf_v;
-	int count_stop_num;
+	int count_stop_num1, count_stop_num2, count_stop_num;
 	double TTC_pd, TTC_car, TTC_differ;
 	double x_cross, y_cross;
 	double avoid_dist;
-
+	double time;
 };

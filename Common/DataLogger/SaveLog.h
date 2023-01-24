@@ -6,7 +6,7 @@
 #include <setting.h>
 #include <format>
 
-std::string CreateLogFileName(std::string str, std::string method, CourseSetting setting) 
+std::string CreateLogFileName(std::string str, std::string method, CourseSetting setting, std::string MPC, Pedestrian ped) 
 {
 	time_t t = time(NULL);
 	struct tm local;
@@ -20,10 +20,15 @@ std::string CreateLogFileName(std::string str, std::string method, CourseSetting
 	std::string dire_path = "C:\\Data\\MPC\\" + day; //パス
 #ifdef WHILE
 	std::string While = "While";
-	dire_path += "\\" + While;
+	std::string While_path = dire_path + "\\" + While;
 #endif //WHILE
+
 	std::string temp_csv = ".csv"; //拡張子
 	std::string temp_filename = dire_path; 
+
+#ifdef WHILE
+	temp_filename = While_path;
+#endif
 	
 #ifdef OA
 	string a = std::format("{}", setting.a);
@@ -36,8 +41,14 @@ std::string CreateLogFileName(std::string str, std::string method, CourseSetting
 	string ampl = std::format("{}", setting.ampl);
 	std::string foldername = time + "cycle" + cycle + "ampl" + ampl;
 #endif // SINE
+
+
 #ifdef CSV
-	std::string foldername = time + "csv";
+	string vel_ref = std::format("{}", ped.car_vel_ref);
+	string vel_pd = std::format("{}", ped.vel_pd_start);
+	string timing = std::format("{}", ped.simu_num);
+	string action =  ped.action;
+	std::string foldername = time +MPC+ "vel_ref"+vel_ref+"vel_pd"+vel_pd+"timing"+timing +"action"+action + "csv";
 
 #endif // CSV
 
@@ -47,15 +58,16 @@ std::string CreateLogFileName(std::string str, std::string method, CourseSetting
 
 	std::string dire_today = dire_path + "\\" + foldername;
 	printf(dire_path.c_str());
-	_mkdir(dire_path.c_str());
+	_mkdir(dire_path.c_str());//日付のフォルダを作成
 	//
 #ifdef WHILE
-	printf(dire_path.c_str());
-	_mkdir(dire_path.c_str());
+	printf(While_path.c_str());
+	_mkdir(While_path.c_str());
+	dire_today = While_path + "\\" + foldername;
 #endif //While
 	//
 	printf(dire_today.c_str());
-	_mkdir(dire_today.c_str());
+	_mkdir(dire_today.c_str());//シミュレーションデータを入れるフォルダの作成
 	// write header
 
 	return temp_filename;
@@ -92,10 +104,10 @@ void SetData_MPC(DataLogger& logger, SharedData* shareddata)
 	logger.push_back<double>("27vel_ref", shareddata->vel_ref_pre[0]);
 	logger.push_back<int>("28collision_num", shareddata->collision_num);
 	logger.push_back<double>("29acc", shareddata->acc[0]);
-	logger.push_back<double>("30dist_pd", shareddata->dist_pd[0]);
+	logger.push_back<double>("30dist_pd", shareddata->dist_g);
 	logger.push_back<double>("31TTC_pd", shareddata->TTC_pd);
 	logger.push_back<double>("32TTC_car", shareddata->TTC_car);
-	logger.push_back<double>("33y_cross", shareddata->y_cross);
+	logger.push_back<double>("33Goal_time", shareddata->time);
 	logger.push_back<double>("34avoid_dist",shareddata->avoid_dist);
 
 	//将来挙動の結果を出力
